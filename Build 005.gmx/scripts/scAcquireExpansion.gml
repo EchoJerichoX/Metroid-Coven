@@ -5,6 +5,7 @@ switch (argument0)
 {
     // --- Energy Tanks ---
     case 1:
+        if (room = Tutorial9) eId.HasTutorial9ET = true;
         break;
     // --- Missile Expansions ---
     case 2:

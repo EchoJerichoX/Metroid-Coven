@@ -131,30 +131,32 @@ switch (myid)
 // The only event that handles this beam is alarm 1.
 // --- Rupture Beam ---
     case Weapons.wRuptureBeam:
-        trail = instance_create(x+lengthdir_x(random_range(-3,3),image_angle),y+lengthdir_y(random_range(-3,3),image_angle),oEffect);
-        trail.sprite_index = sprRuptureTrail;
-        trail.direction = direction-180;
-        trail.speed = random_range(1,2);
-        trail.startspeed = speed;
-        trail.image_alpha = other.image_alpha/1.5;
-        trail.image_speed = 0.5;
-        break;
-// --- Rupture Beam Particle ---
-// Also see oProjectile object for trail information.
-    case Projectiles.pRuptureBeamParticle:
-        if (instance_exists(oActor)) then
+        if (particle)
         {
-           var tar;
-           tar = instance_nearest(x,y,oActor);
-           if (point_distance(x,y,tar.x,tar.y) < 100)
-           and (!collision_line(x,y,tar.x,tar.y,oVectorLine,true,false)) then
-           {
-              var DiffDir;
-              DiffDir = point_direction(x,y,tar.x,tar.y)-direction;
-              if (abs(DiffDir) <= 180) direction += median(-15,15,DiffDir) 
-              else direction += median(-15,15,DiffDir-sign(DiffDir)*360);      
-              speed += .2;
-           }
+            if (instance_exists(oActor)) then
+            {
+               var tar;
+               tar = instance_nearest(x,y,oActor);
+               if (point_distance(x,y,tar.x,tar.y) < 100)
+               and (!collision_line(x,y,tar.x,tar.y,oVectorLine,true,false)) then
+               {
+                  var DiffDir;
+                  DiffDir = point_direction(x,y,tar.x,tar.y)-direction;
+                  if (abs(DiffDir) <= 180) direction += median(-15,15,DiffDir) 
+                  else direction += median(-15,15,DiffDir-sign(DiffDir)*360);      
+                  speed += .2;
+               }
+            }
+        }
+        else
+        {
+            trail = instance_create(x+lengthdir_x(random_range(-3,3),image_angle),y+lengthdir_y(random_range(-3,3),image_angle),oEffect);
+            trail.sprite_index = sprRuptureTrail;
+            trail.direction = direction-180;
+            trail.speed = random_range(1,2);
+            trail.startspeed = speed;
+            trail.image_alpha = other.image_alpha/1.5;
+            trail.image_speed = 0.5;
         }
         break;
 // --- Phazon Beam ---
@@ -192,7 +194,7 @@ switch (myid)
             image_speed = .35;
         }
         break;
-// --- Ball Bomb
+// --- Ball Bomb ---
     case Weapons.wBallBomb:
         if (speed > 0)
             { fadeout = false; alarm[0] = 70; }
@@ -208,7 +210,7 @@ switch (myid)
         if (speed > 0) speed -= .15;
         if (speed <= 0) speed = 0;
         break;
-// --- Power Bomb
+// --- Power Bomb ---
     case Weapons.wPowerBomb:
         if (speed > 0)
             { fadeout = false; alarm[0] = 100; }
@@ -231,7 +233,6 @@ switch (myid)
         trail.flex = 1;
         break;
 }
-
 if (fadeout)
 and (myid != Weapons.wBallBomb)
 and (myid != Weapons.wPowerBomb) image_alpha -= 0.15;

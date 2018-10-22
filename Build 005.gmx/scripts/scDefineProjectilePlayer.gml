@@ -29,9 +29,9 @@ if (charged) // Make changes to common variables if the player fired the project
     lightalpha = lightalpha*2;
     lightradius = lightradius*2;
 }
-pop = instance_create(x,y,oParticle);        // Create a small particle burst.
-pop.myid = myid;                             // ^
-pop.c = charged;                             // ^
+pop = instance_create(x,y,oParticle); // Create a small particle burst.
+pop.myid = myid;                      // ^
+pop.c = charged;                      // ^
 image_speed = 0.5;
 switch (myid)
 {
@@ -126,28 +126,31 @@ switch (myid)
         break;
 // --- Rupture Beam ---
     case Weapons.wRuptureBeam:
-        if (!charged)
-            { sprite = sprRupture; Damage = 1; }
+        if (particle)
+        {
+            Damage = 0.5;
+            sprite_index = sprRuptureParticle;
+            speed = random_range(1,3);
+            direction = random(360);
+            alarm[0] = 20;
+            alarm[1] = 2;
+        }
         else
-            { sprite = sprRuptureCharge; Damage = 5; }
-        sprite_index = sprite;
-        speed = 9;
-        blend = c_orange;
-        sound_play(BeamRupture);
-        alarm[0] = 25+random(5);
-        alarm[1] = 2;
-        with (instance_create(x,y,oDestroyAnim))
-            { sprite_index = sprBeamFire1; image_blend = other.blend; image_speed = .5; }
-        image_speed = .25;
-        break;
-// --- Rupture Beam Particle---
-    case Projectiles.pRuptureBeamParticle:
-        Damage = 0.5;
-        sprite_index = sprRuptureParticle;
-        speed = random_range(1,3);
-        direction = random(360);
-        alarm[0] = 20;
-        alarm[1] = 2;
+        {
+            if (!charged)
+                { sprite = sprRupture; Damage = 1; }
+            else
+                { sprite = sprRuptureCharge; Damage = 5; }
+            sprite_index = sprite;
+            speed = 9;
+            blend = c_orange;
+            sound_play(BeamRupture);
+            alarm[0] = 25+random(5);
+            alarm[1] = 2;
+            with (instance_create(x,y,oDestroyAnim))
+                { sprite_index = sprBeamFire1; image_blend = other.blend; image_speed = .5; }
+            image_speed = .25;
+        }
         break;
 // --- Phazon Beam ---
     case Weapons.wPhazonBeam:

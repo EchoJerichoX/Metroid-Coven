@@ -84,9 +84,9 @@ visible = true;
             <string>switch (sprite_index)
 {
     case sprMissileSmoke:
-        if (image_speed &gt; .05) image_speed -= .005;
         image_xscale += .01;
         image_yscale += .01;
+        if (image_alpha &gt; 0) image_alpha -= 0.015;
         break;
     case sprShockwave:
         image_xscale += 0.1;
@@ -94,12 +94,6 @@ visible = true;
         if (image_alpha &gt; 0) image_alpha -= 0.05;
         else instance_destroy();
         break;
-}
-if (sprite_index = sprMissileSmoke) 
-{
-    if (image_speed &gt; .05) image_speed -= .005;
-    image_xscale += .01;
-    image_yscale += .01;
 }
 </string>
           </argument>

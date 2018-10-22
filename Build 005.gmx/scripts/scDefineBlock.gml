@@ -1,7 +1,9 @@
 myid = argument0;
 depth = 10;
 stopdash = 1;
-if (tile_layer_find(1,x+sprite_width/2,y+sprite_height/2)) image_alpha = 0;
+if (myid = Blocks.bSolid)      // Used just for a single, small blocking
+    { image_alpha = 0; exit; } //   object that never gets destroyed.
+if (tile_layer_find(eId.secrettilelayer,x+sprite_width/2,y+sprite_height/2)) image_alpha = 0;
 else image_alpha = 1;
 switch (object_index)
 {

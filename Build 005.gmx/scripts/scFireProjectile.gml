@@ -81,5 +81,6 @@ else with (instance_create(xx,yy,oProjectile)) // Behavior for all other project
     Charger = other.Charger;
     direction = argument0+random_range(other.WeaponAccuracy*-1,other.WeaponAccuracy);
     image_angle = direction;
+    if (other.HoldingWeaponId = Weapons.wRuptureBeam) particle = 0; // Make sure to create th eright
     scDefineProjectilePlayer(argument1);
 }

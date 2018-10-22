@@ -218,7 +218,8 @@ blend = c_white;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!diffuser) exit;
+            <string>if (diffuser) exit;
+instance_destroy();
 </string>
           </argument>
         </arguments>

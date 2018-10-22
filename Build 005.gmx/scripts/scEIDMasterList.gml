@@ -25,8 +25,7 @@ enum Weapons
 }
 enum Projectiles
 {
-    pRuptureBeamParticle = 20001,
-    pTurret = 20002
+    pTurret = 20001
 }
 enum Enemies
 {
@@ -77,13 +76,14 @@ enum Doors
 }
 enum Blocks
 {
-    bBasic = 60001,
-    bReform = 60002,
-    bBomb = 60003,
-    bPowerBomb = 60004,
-    bMissile = 60005,
-    bSuperMissile = 60006,
-    bArcDash = 60007
+    bSolid = 60001,
+    bBasic = 60002,
+    bReform = 60003,
+    bBomb = 60004,
+    bPowerBomb = 60005,
+    bMissile = 60006,
+    bSuperMissile = 60007,
+    bArcDash = 60008
 }
 enum Other
 {

@@ -50,7 +50,15 @@ switch (room)
         break;
     case Tutorial8:
         if (y < room_height/2) trans = 2; // Blue to Tutorial7.
-        else trans = 1;
+        else trans = 1; // Blue to Tutorial9;
+        break;
+    case Tutorial9:
+        if (sprite_index = sprTransitionGuideUD)
+        {
+            if (x < room_width/2) trans = 1; // Blue to Tutorial7.
+            else trans = 2; // Blue To Tutorial3.
+        }
+        else trans = 3; // Red to Tutorial10.
         break;
         
     /*

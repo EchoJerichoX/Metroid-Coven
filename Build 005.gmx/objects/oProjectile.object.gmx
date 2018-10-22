@@ -176,6 +176,17 @@ if (DiesOnContact)
         trail.shrink = 1;
         alarm[1] = 2;
     break;
+    case Weapons.wRuptureBeam:
+        if (particle)
+        {
+            trail = instance_create(x,y,oEffect);
+            trail.sprite_index = sprite_index;
+            trail.direction = direction-180;
+            trail.speed = 0.25;
+            trail.image_alpha = other.image_alpha/2;
+            trail.shrink = 1;
+            alarm[1] = 2;        
+        }
 }
 </string>
           </argument>

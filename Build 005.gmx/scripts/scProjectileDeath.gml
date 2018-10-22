@@ -87,42 +87,46 @@ switch (myid)
         break;
 // --- Rupture Beam ---
     case Weapons.wRuptureBeam:
-        sound_play(BeamImpact4);
-        with (instance_create(x,y,oDestroyAnim))
+        if (particle)
         {
-            myid = other.myid;
-            Charger = other.Charger;
-            sprite_index = sprBeamExplosion2;
-            image_blend = c_orange;
-            image_speed = .25;
-            var PartAmount;
-            if (other.Charger < 60)
-                { scProjectileLight(.1,c_white,c_orange,.3); PartAmount = 6; }
-            else
-                { scProjectileLight(.4,c_white,c_orange,.6); PartAmount = 18; scDiffuserBurst(); }
-            repeat (PartAmount)
+            sound_play(BeamImpact1);
+            with (instance_create(x,y,oDestroyAnim))
             {
-                with (instance_create(x,y,oProjectile))
-                {
-                    Charger = other.Charger;
-                    direction = random(360);
-                    scDefineProjectilePlayer(Projectiles.pRuptureBeamParticle);
-                    alarm[1] = 2;
-                }
+                sprite_index = sprBeamExplosion2;
+                image_blend = c_orange;
+                image_speed = .25;
+                image_xscale = .5;
+                image_yscale = .5;
+                scProjectileLight(.05,c_white,c_orange,.2);
             }
         }
-        break;
-// --- Rupture Beam Particle ---
-    case Projectiles.pRuptureBeamParticle:
-        sound_play(BeamImpact1);
-        with (instance_create(x,y,oDestroyAnim))
+        else
         {
-            sprite_index = sprBeamExplosion2;
-            image_blend = c_orange;
-            image_speed = .25;
-            image_xscale = .5;
-            image_yscale = .5;
-            scProjectileLight(.05,c_white,c_orange,.2);
+            sound_play(BeamImpact4);
+            with (instance_create(x,y,oDestroyAnim))
+            {
+                myid = other.myid;
+                Charger = other.Charger;
+                sprite_index = sprBeamExplosion2;
+                image_blend = c_orange;
+                image_speed = .25;
+                var PartAmount;
+                if (other.Charger < 60)
+                    { scProjectileLight(.1,c_white,c_orange,.3); PartAmount = 6; }
+                else
+                    { scProjectileLight(.4,c_white,c_orange,.6); PartAmount = 18; scDiffuserBurst(); }
+                repeat (PartAmount)
+                {
+                    with (instance_create(x,y,oProjectile))
+                    {
+                        Charger = other.Charger;
+                        direction = random(360);
+                        particle = 1; // Tell the object that it is the particle, not the main projectile.
+                        scDefineProjectilePlayer(Weapons.wRuptureBeam);
+                        alarm[1] = 2;
+                    }
+                }
+            }
         }
         break;
 // --- Phazon Beam ---
@@ -156,7 +160,7 @@ switch (myid)
                 direction = random(360);
                 image_angle = random(360);
                 speed = random_range(.5,1.25);
-                image_speed = random_range(.25,.4);
+                image_speed = random_range(.3,.6);
             }
         }
         with (instance_create(x,y,oExplosion))
@@ -186,7 +190,7 @@ switch (myid)
                 direction = random(360);
                 image_angle = random(360);
                 speed = random_range(.5,1.25);
-                image_speed = random_range(.25,.4);
+                image_speed = random_range(.3,.6);
             }
         }
         with (instance_create(x,y,oExplosion))

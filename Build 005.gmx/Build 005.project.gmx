@@ -443,6 +443,7 @@
       <path>paths\Tutorial6Path3</path>
       <path>paths\Tutorial7Path1</path>
       <path>paths\Tutorial8Path1</path>
+      <path>paths\Tutorial9Path1</path>
     </paths>
     <paths name="Barria">
       <path>paths\BarriaLandingSitePath1</path>
@@ -616,10 +617,12 @@
       <script>scripts\scRoomInit.gml</script>
       <script>scripts\scEIDGetRegion.gml</script>
       <script>scripts\scTransGetLoc.gml</script>
-      <script>scripts\scTransOut.gml</script>
-      <script>scripts\scTransition.gml</script>
       <script>scripts\scTransGetDest.gml</script>
-      <script>scripts\scTransIn.gml</script>
+      <scripts name="Static">
+        <script>scripts\scTransOut.gml</script>
+        <script>scripts\scTransition.gml</script>
+        <script>scripts\scTransIn.gml</script>
+      </scripts>
     </scripts>
     <scripts name="View Controller">
       <script>scripts\scViewControllerInit.gml</script>
