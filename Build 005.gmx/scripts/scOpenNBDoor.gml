@@ -7,6 +7,7 @@ switch (argument0)
     case 1:
         // - Tutorial -
         if (room = Tutorial3) eId.OpenedTutorial3Red = true;
+        if (room = Tutorial9) eId.OpenedTutorial9Red = true;
         // - Barria Tundra -
         if (room = BarriaIntWest) eId.OpenedBarriaIntWestRed = true;
         if (room = BarriaCacheMissile) eId.OpenedBarriaCacheMissileRedE = true;

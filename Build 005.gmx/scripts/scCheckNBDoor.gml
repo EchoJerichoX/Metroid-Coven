@@ -7,6 +7,7 @@ switch (argument0)
     case 1:
         // - Tutorial -
         if (room = Tutorial3) and (eId.OpenedTutorial3Red = true) scDefineDoor(Doors.dBlue);
+        if (room = Tutorial9) and (eId.OpenedTutorial9Red = true) scDefineDoor(Doors.dBlue);
         // - Barria Tundra -
         if (room = BarriaIntWest) and (eId.OpenedBarriaIntWestRed = true) scDefineDoor(Doors.dBlue);
         if (room = BarriaCacheMissile) and (eId.OpenedBarriaCacheMissileRedE = true) and (object_index = oDoorGuideE) scDefineDoor(Doors.dBlue);

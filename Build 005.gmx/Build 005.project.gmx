@@ -444,6 +444,7 @@
       <path>paths\Tutorial7Path1</path>
       <path>paths\Tutorial8Path1</path>
       <path>paths\Tutorial9Path1</path>
+      <path>paths\Tutorial10Path1</path>
     </paths>
     <paths name="Barria">
       <path>paths\BarriaLandingSitePath1</path>
@@ -772,6 +773,8 @@
       <room>rooms\Tutorial7</room>
       <room>rooms\Tutorial8</room>
       <room>rooms\Tutorial9</room>
+      <room>rooms\Tutorial10</room>
+      <room>rooms\Tutorial11</room>
     </rooms>
     <rooms name="Barria">
       <room>rooms\BarriaLandingSite</room>

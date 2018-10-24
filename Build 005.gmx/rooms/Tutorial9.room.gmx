@@ -63,11 +63,11 @@ vector_path_add(oVectorLine,Tutorial9Path1,0,0,0);</code>
     <instance objName="oActor" x="218" y="221" name="inst_19F9EBAB" locked="0" code="scDefineTurret(45);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oActor" x="360" y="221" name="inst_9B9AFC44" locked="0" code="scDefineTurret(90);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oActor" x="496" y="222" name="inst_717E333B" locked="0" code="scDefineTurret(90);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDomeLight" x="104" y="64" name="inst_3B5A4FF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDomeLight" x="152" y="56" name="inst_5328BA48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDomeLight" x="664" y="56" name="inst_268D1414" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="104" y="72" name="inst_3B5A4FF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="152" y="64" name="inst_5328BA48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="672" y="72" name="inst_268D1414" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDomeLight" x="616" y="64" name="inst_51C9859F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDomeLight" x="712" y="408" name="inst_C8D5ED5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="696" y="416" name="inst_C8D5ED5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDomeLight" x="696" y="360" name="inst_46A74BD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallLightNS" x="256" y="232" name="inst_3BF411C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallLightNS" x="440" y="232" name="inst_AB9DDE92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -100,6 +100,9 @@ vector_path_add(oVectorLine,Tutorial9Path1,0,0,0);</code>
     <instance objName="oSpikesEW" x="656" y="352" name="inst_79CBE63D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock16" x="672" y="176" name="inst_7723B0B6" locked="0" code="scDefineBlock(Blocks.bBomb);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oItem" x="680" y="184" name="inst_7B578A53" locked="0" code="scDefineItem(Items.iEnergyTank);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDoorGuideN" x="128" y="48" name="inst_C6250C2F" locked="0" code="scDefineDoor(Doors.dBlue);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDoorGuideN" x="640" y="48" name="inst_BAF332E4" locked="0" code="scDefineDoor(Doors.dBlue);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDoorGuideE" x="720" y="384" name="inst_CD98E296" locked="0" code="scDefineDoor(Doors.dRed);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilBarriaOuter" x="656" y="176" w="32" h="16" xo="176" yo="208" id="10035399" name="inst_B10E902F" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

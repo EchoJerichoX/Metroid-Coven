@@ -4,6 +4,7 @@
 // --- Red (Missile) ---
 // - Tutorial -
 OpenedTutorial3Red = false;
+OpenedTutorial9Red = false;
 // - Barria Tundra -
 OpenedBarriaIntWestRed = false;
 OpenedBarriaCacheMissileRedE = false;

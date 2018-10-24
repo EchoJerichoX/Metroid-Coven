@@ -70,8 +70,12 @@ switch (room) // Determine current room.
             { eId.destinationroom = Tutorial8; eId.vox = 320; }
         //if (other.trans = 2)
           //  { eId.destinationroom = Tutorial11; eId.vox = 128; }
-        //if (other.trans = 3)
-          //  { eId.destinationroom = Tutorial10; eId.voy = 240; }
+        if (other.trans = 3)
+            { eId.destinationroom = Tutorial10; eId.voy = 240; }
+        break;
+    case Tutorial10:
+        eId.destinationroom = Tutorial9;
+        eId.voy = 352;
         break;
         
     // - Barria Tundra -
