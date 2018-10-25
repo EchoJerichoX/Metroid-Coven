@@ -12,6 +12,7 @@ switch (argument0)
         // - Tutorial -
         if (room = Tutorial5) eId.HasTutorial5ME = true;
         if (room = Tutorial8) eId.HasTutorial8ME = true;
+        if (room = Tutorial11) eId.HasTutorial11ME = true;
         // - Barria Tundra -
         if (room = BarriaLandingSite) eId.HasBarriaLandingSiteME = true;
         if (room = BarriaCacheMissile) eId.HasBarriaCacheMissileME = true;

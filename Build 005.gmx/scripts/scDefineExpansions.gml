@@ -5,6 +5,7 @@
 HasTutorial5ME = false;
 HasTutorial8ME = false;
 HasTutorial9ET = false;
+HasTutorial11ME = false;
 // - Barria Tundra -
 HasBarriaLandingSiteME = false;
 HasBarriaCacheMissileME = false;

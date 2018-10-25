@@ -17,6 +17,7 @@ switch (argument0)
     case 2:
         // - Tutorial -
         if (room = Tutorial3) and (eId.OpenedTutorial3Green = true) scDefineDoor(Doors.dBlue);
+        if (room = Tutorial11) and (eId.OpenedTutorial11Green = true) scDefineDoor(Doors.dBlue);
         break;
     // --- Yellow (Power Bomb) ---
     case 3:

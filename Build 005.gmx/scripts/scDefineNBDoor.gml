@@ -13,5 +13,6 @@ OpenedBarriaCacheMissileRedW = false;
 // --- Green (Super Missile) ---
 // - Tutorial -
 OpenedTutorial3Green = false;
+OpenedTutorial11Green = false;
 
 // --- Yellow (Power bomb) ---

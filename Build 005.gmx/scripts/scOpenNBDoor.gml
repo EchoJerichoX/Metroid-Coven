@@ -17,6 +17,7 @@ switch (argument0)
     case 2:
         // - Tutorial -
         if (room = Tutorial3) eId.OpenedTutorial3Green = true;
+        if (room = Tutorial11) eId.OpenedTutorial11Green = true;
         break;
     // --- Yellow (Power Bomb) ---
     case 3:
