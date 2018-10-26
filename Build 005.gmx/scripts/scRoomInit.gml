@@ -28,6 +28,7 @@ if (object_index = eId)
         case Tutorial8:
         case Tutorial9:
         case Tutorial10:
+        case Tutorial11:
             tutorialroom = 1;
             scEIDMessagesInit(); // Tell the item pickup strings to update to the tutorial versions.
             break;

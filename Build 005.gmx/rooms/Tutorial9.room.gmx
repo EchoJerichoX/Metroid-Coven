@@ -98,7 +98,7 @@ vector_path_add(oVectorLine,Tutorial9Path1,0,0,0);</code>
     <instance objName="oSpikesNS" x="640" y="368" name="inst_4585C3B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSpikesEW" x="624" y="352" name="inst_728B5BB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSpikesEW" x="656" y="352" name="inst_79CBE63D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock16" x="672" y="176" name="inst_7723B0B6" locked="0" code="scDefineBlock(Blocks.bBomb);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock16" x="672" y="176" name="inst_7723B0B6" locked="0" code="scDefineBlock(Blocks.bBasic);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oItem" x="680" y="184" name="inst_7B578A53" locked="0" code="scDefineItem(Items.iEnergyTank);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDoorGuideN" x="128" y="48" name="inst_C6250C2F" locked="0" code="scDefineDoor(Doors.dBlue);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDoorGuideN" x="640" y="48" name="inst_BAF332E4" locked="0" code="scDefineDoor(Doors.dBlue);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

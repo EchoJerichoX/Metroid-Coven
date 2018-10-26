@@ -105,7 +105,7 @@ vector_path_add(oVectorLine,Tutorial5Path1,0,0,0);</code>
     <instance objName="oDomeLight" x="664" y="64" name="inst_C6071A9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDomeLight" x="72" y="424" name="inst_903C4B02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDoorGuideW" x="48" y="384" name="inst_F80F765A" locked="0" code="scDefineDoor(Doors.dBlue);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock16" x="320" y="456" name="inst_0FA4AB1F" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock16" x="320" y="456" name="inst_0FA4AB1F" locked="0" code="scDefineBlock(Blocks.bBasic);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilBarriaOuter" x="320" y="440" w="16" h="32" xo="48" yo="0" id="10035208" name="inst_03131BB2" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

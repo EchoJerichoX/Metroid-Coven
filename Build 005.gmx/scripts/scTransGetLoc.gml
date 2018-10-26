@@ -63,6 +63,14 @@ switch (room)
     case Tutorial10:
         trans = 3; // Blue to Tutorial9.
         break;
+    case Tutorial11:
+        if (sprite_index = sprTransitionGuideUD)
+        {
+            if (x < room_width/2) trans = 2; // Blue to Tutorial9.
+            else trans = 1; // Green To Tutorial13.
+        }
+        else trans = 3; // Blue to Tutorial12.
+        break;
         
     /*
     ====
