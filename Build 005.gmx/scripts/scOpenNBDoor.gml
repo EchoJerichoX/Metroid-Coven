@@ -6,7 +6,7 @@ switch (argument0)
     // --- Red (Missile) ---
     case 1:
         // - Tutorial -
-        if (room = Tutorial3) eId.OpenedTutorial3Red = true;
+        if (room = Tutorial3) or (room = Tutorial5) eId.OpenedTutorial35Red = true;
         if (room = Tutorial9) eId.OpenedTutorial9Red = true;
         // - Barria Tundra -
         if (room = BarriaIntWest) eId.OpenedBarriaIntWestRed = true;
@@ -16,8 +16,17 @@ switch (argument0)
     // --- Green (Super Missile) ---
     case 2:
         // - Tutorial -
-        if (room = Tutorial3) eId.OpenedTutorial3Green = true;
+        if (room = Tutorial3)
+        {
+            if (object_index = oDoorGuideS) eId.OpenedTutorial313Green = true;
+            else eId.OpenedTutorial315Green = true;
+        }
         if (room = Tutorial11) eId.OpenedTutorial11Green = true;
+        if (room = Tutorial13)
+        {
+            if (y < room_height/2) eId.OpenedTutorial313Green = true;
+            else eId.OpenedTutorial1113Green = true;
+        }
         break;
     // --- Yellow (Power Bomb) ---
     case 3:

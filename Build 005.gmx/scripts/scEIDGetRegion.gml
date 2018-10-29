@@ -14,6 +14,10 @@ switch (room)
     case Tutorial9:
     case Tutorial10:
     case Tutorial11:
+    case Tutorial12:
+    case Tutorial13:
+    case Tutorial14:
+    case Tutorial15:
     // Barria Tundra: 1.
     case BarriaLandingSite:
     case BarriaIntWest:

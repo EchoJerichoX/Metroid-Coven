@@ -3,7 +3,7 @@
 
 // --- Red (Missile) ---
 // - Tutorial -
-OpenedTutorial3Red = false;
+OpenedTutorial35Red = false;
 OpenedTutorial9Red = false;
 // - Barria Tundra -
 OpenedBarriaIntWestRed = false;
@@ -12,7 +12,8 @@ OpenedBarriaCacheMissileRedW = false;
 
 // --- Green (Super Missile) ---
 // - Tutorial -
-OpenedTutorial3Green = false;
-OpenedTutorial11Green = false;
+OpenedTutorial313Green = false;
+OpenedTutorial1113Green = false;
+OpenedTutorial315Green = false;
 
 // --- Yellow (Power bomb) ---

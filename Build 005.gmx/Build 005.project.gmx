@@ -776,6 +776,10 @@
       <room>rooms\Tutorial9</room>
       <room>rooms\Tutorial10</room>
       <room>rooms\Tutorial11</room>
+      <room>rooms\Tutorial12</room>
+      <room>rooms\Tutorial13</room>
+      <room>rooms\Tutorial14</room>
+      <room>rooms\Tutorial15</room>
     </rooms>
     <rooms name="Barria">
       <room>rooms\BarriaLandingSite</room>
