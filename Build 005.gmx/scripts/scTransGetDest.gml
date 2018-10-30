@@ -39,6 +39,7 @@ switch (room) // Determine current room.
         if (other.trans = 3)
             { eId.destinationroom = Tutorial5; eId.voy = 352; }
         if (other.trans = 4) eId.destinationroom = Tutorial13;
+        if (other.trans = 5) eId.destinationroom = Tutorial15;
         break;
     case Tutorial4:
         eId.destinationroom = Tutorial3;
@@ -86,7 +87,7 @@ switch (room) // Determine current room.
             { eId.destinationroom = Tutorial12; eId.voy = 240; }
         break;
     case Tutorial12:
-        eId.destinationroom = Tutorial13;
+        eId.destinationroom = Tutorial11;
         break;
     case Tutorial13:
         if (other.trans = 1)
@@ -97,6 +98,15 @@ switch (room) // Determine current room.
         break;
     case Tutorial14:
         eId.destinationroom = Tutorial13;
+        break;
+    case Tutorial15:
+        if (other.trans = 1)
+            { eId.destinationroom = Tutorial11; eId.vox = 512; }
+        if (other.trans = 2)
+            { eId.destinationroom = Tutorial11; eId.vox = 512; }
+        if (other.trans = 3)
+            { eId.destinationroom = Tutorial11; eId.vox = 512; }
+        if (other.trans = 5) eId.destinationroom = Tutorial3;
         break;
         
     // - Barria Tundra -
