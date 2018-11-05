@@ -11,7 +11,7 @@
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code>vector_world_add(oVectorLine);
-vector_path_add(oVectorLine,Path1,0,0,0);</code>
+vector_path_add(oVectorLine,Tutorial12Path1,0,0,0);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

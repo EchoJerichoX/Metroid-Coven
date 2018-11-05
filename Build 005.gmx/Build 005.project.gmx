@@ -447,6 +447,8 @@
       <path>paths\Tutorial10Path1</path>
       <path>paths\Tutorial11Path1</path>
       <path>paths\Tutorial12Path1</path>
+      <path>paths\Tutorial13Path1</path>
+      <path>paths\Tutorial13Path2</path>
     </paths>
     <paths name="Barria">
       <path>paths\BarriaLandingSitePath1</path>
