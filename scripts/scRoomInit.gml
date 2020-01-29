@@ -85,7 +85,7 @@ background_foreground[7] = true;
 
 // Step 5: Set the AI movement planning grid to fit the size of the room, if there are actors in the room.
 if (object_index = oLE) exit; // If this script is run from the light engine, don't use this code!
-if (instance_exists(oActor))
+if (instance_exists(oActor)) or (room = GeneralTestRoom)
 {
     aigrid = mp_grid_create(0,0,room_width/aigridcellsize,
                                 room_height/aigridcellsize,

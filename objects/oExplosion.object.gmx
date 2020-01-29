@@ -94,6 +94,8 @@ blend = c_white;
             break;
     }
     //scProjectileLight(.4,c_white,c_yellow,.6);
+    
+    /*
     var xx = x+random_range(area,-area);
     var yy = y+random_range(area,-area);
     expl = instance_create(xx,yy,oDestroyAnim);
@@ -103,6 +105,8 @@ blend = c_white;
     expl.image_speed = 0.1+random(0.15);
     expl.image_angle = random(360);
     expl.cbdiff = true;
+    */
+    
     /*
     switch (expl)
     {

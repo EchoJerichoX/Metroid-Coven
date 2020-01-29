@@ -94,6 +94,10 @@ visible = true;
         if (image_alpha &gt; 0) image_alpha -= 0.05;
         else instance_destroy();
         break;
+    case sprBlockBreak16:
+    case sprBlockBreak8:
+        image_angle = 0;
+        break;
 }
 </string>
           </argument>
@@ -164,7 +168,8 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
+            <string>///draw_self();
+draw_self();
 </string>
           </argument>
         </arguments>

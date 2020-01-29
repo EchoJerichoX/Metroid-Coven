@@ -27,9 +27,9 @@ vector_path_add(oVectorLine,Tutorial11Path1,0,0,0);</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>3</page>
-    <xoffset>-3</xoffset>
-    <yoffset>-3</yoffset>
+    <page>1</page>
+    <xoffset>-82</xoffset>
+    <yoffset>-14</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="grdSnow" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -151,7 +151,6 @@ vector_path_add(oVectorLine,Tutorial11Path1,0,0,0);</code>
     <instance objName="oSmallLightNS" x="512" y="280" name="inst_23967ED3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallLightNS" x="744" y="296" name="inst_3E9E5521" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallLightNS" x="1064" y="296" name="inst_48A3C754" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPlayer" x="1336" y="160" name="inst_A4BB97EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilBarriaOuter" x="880" y="288" w="16" h="32" xo="64" yo="0" id="10035707" name="inst_BA52B469" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

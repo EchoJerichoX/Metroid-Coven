@@ -19,6 +19,7 @@ if (!impaused) and (held)
     ispeed = inputimspeed;
     held = 0;
 }
+//if (!impaused) and (!held) ispeed = 0.5;
 // All other behavior.
 switch (state)
 {
@@ -40,7 +41,7 @@ switch (state)
         }
         break;
     case 1: // Turn towards path and start it.
-        image_speed = 0.25;
+        image_speed = ispeed/2;
         direction -= clamp(angle_difference(direction,destdir),-turnrate,turnrate);
         if (abs(direction-destdir) < turnrate) direction = destdir;
         if (direction = destdir)
@@ -50,12 +51,12 @@ switch (state)
             else pspeed = 1; // Move faster if the enemy is weakened, to show panic.
                              // Would normally not be needed unless there is no den to run to when taking damage.
             path_start(mypath,pspeed,path_action_stop,0);
-            image_speed = 0.5;
+            image_speed = ispeed;
             state = 2;
         }
         break;
     case 2: // Move along path.
-        image_speed = 0.5;
+        image_speed = ispeed;
         image_angle = point_direction(x,y,xprevious,yprevious);
         if (path_position = 1)
         {
@@ -71,10 +72,11 @@ switch (state)
         // ---
     case 4: // Retreat to den.
         if (!ignorevector) ignorevector = 1;
-        image_speed = 1;
+        image_speed = ispeed*2;
         if (path_position = 1) state = 5; // Burrow when it gets to the den.
         break;
     case 5: // Disappear.
+        image_speed = ispeed;
         direction += -5+random(15);
         if (image_alpha > 0) image_alpha -= 0.05;
         if (image_alpha = 0)
@@ -113,4 +115,3 @@ if (!ignorevector)
     speed = 0;
 }
 image_angle = direction;
-image_speed = ispeed;

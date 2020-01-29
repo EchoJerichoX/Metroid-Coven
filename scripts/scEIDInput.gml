@@ -84,10 +84,16 @@ if (keyboard_check_pressed(vk_numpad3)) and (instance_exists(oPlayer))
     { if (oPlayer.CurrentPrimary = Weapons.wPlasmaBeam) oPlayer.Heat = 100; }
     
 // Spawn enemy at mouse.
-//   Set "debugenemy" variable in "GameInit" script
+//   Set "debugenemy" variable in "scGameInit" script
 //   to determine which enemy to spawn.
 if (keyboard_check_pressed(vk_numpad4))
-    { with (instance_create(mouse_x,mouse_y,oActor)) scDefineActor(other.debugenemy); }
+{
+    with (instance_create(mouse_x,mouse_y,oActor))
+    {
+        scActorInit();
+        scDefineActor(Enemies.eZoomer);
+    }
+}
 
 // Spawn a 16x16 basic block at the mouse.
 //   Snaps to nearest 16x16 grid corner.

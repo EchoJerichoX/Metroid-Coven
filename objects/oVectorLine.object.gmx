@@ -25,39 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///set defaults to avoid bugs
-
-pointx_1=x
-pointy_1=y
-pointx_2=x+lengthdir_x(sprite_width*image_xscale,image_angle)
-pointy_2=y+lengthdir_y(sprite_width*image_xscale,image_angle)
-
+            <string>pointx_1 = x;
+pointy_1 = y;
+pointx_2 = x+lengthdir_x(sprite_width*image_xscale,image_angle);
+pointy_2 = y+lengthdir_y(sprite_width*image_xscale,image_angle);
 stopdash = 1;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="oDestroyAnim">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///TEMPORARY
-
-other.image_angle=image_angle+270
 </string>
           </argument>
         </arguments>

@@ -20,8 +20,8 @@ background_hspeed[5] = 0.9;</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>2576</w>
-    <h>1374</h>
+    <w>1016</w>
+    <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -31,8 +31,8 @@ background_hspeed[5] = 0.9;</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>1</page>
-    <xoffset>-654</xoffset>
-    <yoffset>-347</yoffset>
+    <xoffset>-106</xoffset>
+    <yoffset>-61</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="TitleBG" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>

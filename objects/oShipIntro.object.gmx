@@ -183,7 +183,7 @@ else // Part 2.
     
     draw_background_ext(IntroBackground,0,0-offset*0.15,1,1,0,c_white,1);
     draw_sprite_ext(sprPlanet,0,320,240-offset*0.1,0.85,0.85,planetrot,c_white,1);
-    planetrot += 0.01;
+    planetrot += 0.005;
     draw_sprite_ext(sprite_index,0,x,y,scale,scale,image_angle,c_white,image_alpha);
     draw_sprite_ext(sprGunshipThruster,currentthrustimg,x,y,scale,scale,image_angle,c_white,image_alpha*0.9);
 }

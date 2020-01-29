@@ -2,7 +2,7 @@ draw_self();
 switch (myid)
 {
     case Enemies.eZoomer:
-        if (damaged > 0) draw_sprite_ext(sprZoomerHit,image_index,x,y,1,1,image_angle,c_white,damaged);
+        if (damaged > 0) draw_sprite_ext(sprZoomerHit,image_single,x,y,1,1,image_angle,c_white,damaged);
         if (eId.debugmode)
         {
             draw_set_color(c_blue);
@@ -10,6 +10,7 @@ switch (myid)
             draw_text(x+7,y-23,inputspeed);
             draw_text(x+7,y-36,impaused);
             draw_text(x+7,y-49,held);
+            draw_text(x+7,y-75,ispeed);
             /*
             if (nearestden != noone)
             {

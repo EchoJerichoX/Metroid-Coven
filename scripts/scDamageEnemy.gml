@@ -30,6 +30,8 @@ switch (myid)
     case Enemies.eTurret:
         if (other.myid = Weapons.wBallBomb)
         or (other.myid = Weapons.wPowerBomb)
+        or (other.myid = Weapons.wMissileLauncher)
+        or (other.myid = Weapons.wSuperMissile)
         {
             instance_destroy();
             //if (ImmuneToBomb) exit;

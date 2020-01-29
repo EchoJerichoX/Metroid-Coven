@@ -17,19 +17,19 @@ vector_path_add(oVectorLine,Path1,0,0,0);</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1026</w>
-    <h>602</h>
+    <w>1016</w>
+    <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
-    <showBackgrounds>-1</showBackgrounds>
+    <showBackgrounds>0</showBackgrounds>
     <showForegrounds>-1</showForegrounds>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>1</page>
-    <xoffset>-133</xoffset>
-    <yoffset>299</yoffset>
+    <xoffset>18</xoffset>
+    <yoffset>950</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="grdRock" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>

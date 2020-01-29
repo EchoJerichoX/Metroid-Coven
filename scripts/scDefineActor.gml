@@ -4,7 +4,8 @@ myid = argument0;
 impaused = 0;
 held = 0;
 inputspeed = 0;
-ispeed = 0;
+baseispeed = 0.4;
+ispeed = baseispeed;
 inputimspeed = 0;
 switch(myid)
 {

@@ -28,7 +28,7 @@ if (object_index = eId)
     {
         draw_set_color(c_black);
         draw_set_alpha(0.3);
-        draw_rectangle(dxo,dyo,dxo+220,dyo+90,0);
+        draw_rectangle(dxo,dyo,dxo+220,dyo+125,0);
         draw_set_color(c_white);
         draw_set_alpha(0.9);
         draw_text(dxo+4,dyo+13,"view x:");            draw_text(dxo+160,dyo+14,oViewController.x);

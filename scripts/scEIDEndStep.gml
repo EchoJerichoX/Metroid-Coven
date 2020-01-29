@@ -5,6 +5,8 @@ if (keyboard_check_pressed(vk_enter))
 or (keyboard_check_pressed(vk_return))
 {
     if (fadeStage = -1)
+    and (room != IntroSceneShip)
+    and (room != TitleRoom)
         { scPause(); exit; }
 }
 if (keyboard_check_pressed(vk_escape))
@@ -65,6 +67,7 @@ switch (fadeStage)
             text = 0;
             alpha1 = 0;
             alpha2 = 0;
+            if (room = TutorialStart) and (!sound_isplaying(BarriaOverworld)) sound_loop(BarriaOverworld);
         }
         break;
 }

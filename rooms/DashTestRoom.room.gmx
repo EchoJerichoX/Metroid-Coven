@@ -28,8 +28,8 @@ vector_path_add(oVectorLine,DashTestRoomPath1,0,0,0);</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>33</xoffset>
-    <yoffset>87</yoffset>
+    <xoffset>-108</xoffset>
+    <yoffset>-6</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="grdDirt" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
