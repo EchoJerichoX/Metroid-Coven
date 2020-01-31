@@ -115,15 +115,18 @@
         <sound>sound\snCrackleShort2</sound>
       </sounds>
       <sounds name="Player">
-        <sounds name="Weapons">
-          <sound>sound\snBeamWave</sound>
-        </sounds>
         <sounds name="Addons">
           <sound>sound\snArcDashStart</sound>
           <sound>sound\snArcDashCharge</sound>
           <sound>sound\snArcDashReadyIdle</sound>
           <sound>sound\snArcDashGo</sound>
           <sound>sound\snArcDashImpactSpark</sound>
+        </sounds>
+        <sounds name="Other">
+          <sound>sound\sndPlayerDeath</sound>
+        </sounds>
+        <sounds name="Weapons">
+          <sound>sound\snBeamWave</sound>
         </sounds>
       </sounds>
     </sounds>
@@ -332,7 +335,9 @@
       <sprite>sprites\sprMorphGravity</sprite>
       <sprite>sprites\sprMorphCorruption</sprite>
       <sprite>sprites\sprVisorLight</sprite>
-      <sprite>sprites\sprPlayerDie</sprite>
+      <sprite>sprites\sprPlayerDeath</sprite>
+      <sprite>sprites\sprPlayerDeathFlicker</sprite>
+      <sprite>sprites\sprPlayerDeathEffect</sprite>
       <sprite>sprites\sprFootPrint</sprite>
       <sprite>sprites\sprCombatVisor</sprite>
       <sprite>sprites\sprScanVisor</sprite>
@@ -670,6 +675,8 @@
       <object>objects\oActor</object>
       <object>objects\oBlockParent</object>
       <object>objects\oDestroyAnim</object>
+      <object>objects\oDeathAnim</object>
+      <object>objects\oDeathAnimEffect</object>
       <object>objects\oDestructible</object>
       <object>objects\oDoodad</object>
       <object>objects\oEffect</object>
@@ -683,6 +690,7 @@
       <object>objects\eId</object>
       <object>objects\oLE</object>
       <object>objects\oViewController</object>
+      <object>objects\oSandboxController</object>
     </objects>
     <objects name="Environment">
       <objects name="Doors">
@@ -798,6 +806,7 @@
       <room>rooms\NewRoomTemplate</room>
       <room>rooms\Fire1</room>
       <room>rooms\TransitionRoom</room>
+      <room>rooms\Sandbox</room>
     </rooms>
   </rooms>
   <help>

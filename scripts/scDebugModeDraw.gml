@@ -31,6 +31,13 @@ if (object_index = eId)
         draw_rectangle(dxo,dyo,dxo+220,dyo+125,0);
         draw_set_color(c_white);
         draw_set_alpha(0.9);
+        draw_text(dxo+4,dyo+13,"eId.HasTutorial5ME");       draw_text(dxo+160,dyo+14,eId.HasTutorial5ME);
+        if (instance_exists(oPlayer))
+        {
+            draw_text(dxo+4,dyo+26,"Player X:");            draw_text(dxo+160,dyo+27,oPlayer.x);
+            draw_text(dxo+4,dyo+39,"Player Y:");            draw_text(dxo+160,dyo+40,oPlayer.y);
+        }
+        /*
         draw_text(dxo+4,dyo+13,"view x:");            draw_text(dxo+160,dyo+14,oViewController.x);
         draw_text(dxo+4,dyo+26,"view y:");            draw_text(dxo+160,dyo+27,oViewController.y);
         draw_text(dxo+4,dyo+39,"view shake:");        draw_text(dxo+160,dyo+40,oViewController.shake);
@@ -40,6 +47,7 @@ if (object_index = eId)
         draw_text(dxo+4,dyo+91,"view truemaxspeed:"); draw_text(dxo+160,dyo+92,oViewController.truemaxspeed);
         draw_text(dxo+4,dyo+104,"view xx:");          draw_text(dxo+160,dyo+105,oViewController.xx);
         draw_text(dxo+4,dyo+117,"view yy:");          draw_text(dxo+160,dyo+118,oViewController.yy);
+        */
     }
     /*
     if (instance_exists(oPlayer))

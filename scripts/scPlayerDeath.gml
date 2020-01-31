@@ -1,15 +1,9 @@
 // Insert death sequence or precursor to death sequence. Below is placeholder.
-room_restart();
-
-// Old death sequence
-/*
-// Create the death animation placeholder.
-with (instance_create(x,y,oFreezeAnim))
+with (instance_create(x,y,oDeathAnim))
 {
-    sprite_index = sprPlayerDie;
+    sprite_index = sprPlayerDeath;
     image_angle = other.image_angle;
-    image_speed = .25;
-    sound_play(SamusDeath);
+    image_speed = 0;
     sound_play(SamusHurt6);
     
     // Create the death animation light.
@@ -17,6 +11,7 @@ with (instance_create(x,y,oFreezeAnim))
     slave.master = id;
     slave.image_xscale = .4;
     slave.image_yscale = .4;
-    slave.HasAmbient = .7
+    slave.HasAmbient = .7;
     slave.DestScale = 0;
 }
+// The remainder of the death restart code is run within oDeathAnim.

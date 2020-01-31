@@ -28,8 +28,8 @@ vector_path_add(oVectorLine,Tutorial8Path1,0,0,0);</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>3</page>
-    <xoffset>-3</xoffset>
-    <yoffset>-3</yoffset>
+    <xoffset>56</xoffset>
+    <yoffset>603</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="grdSnow" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -56,7 +56,7 @@ vector_path_add(oVectorLine,Tutorial8Path1,0,0,0);</code>
     <instance objName="oViewController" x="16" y="0" name="inst_D8715DE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oTransitionTubeUD" x="320" y="0" name="inst_6B3B6889" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oTransitionTubeUD" x="320" y="1024" name="inst_E0A58E49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="496" y="224" name="inst_AE298779" locked="0" code="scDefineItem(Items.iArcDash);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oItem" x="496" y="224" name="inst_AE298779" locked="0" code="scDefineItem(Items.iArcDash);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock16" x="144" y="368" name="inst_B6CA1222" locked="0" code="scDefineBlock(Blocks.bArcDash);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock16" x="176" y="400" name="inst_BCF667D5" locked="0" code="scDefineBlock(Blocks.bArcDash);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock16" x="160" y="400" name="inst_75DC7E5A" locked="0" code="scDefineBlock(Blocks.bArcDash);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -108,7 +108,7 @@ vector_path_add(oVectorLine,Tutorial8Path1,0,0,0);</code>
     <instance objName="oActor" x="192" y="256" name="inst_8AB1A6BC" locked="0" code="scDefineActor(Enemies.eZoomer);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oActor" x="288" y="192" name="inst_F7534474" locked="0" code="scDefineActor(Enemies.eZoomer);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oActor" x="160" y="160" name="inst_C4A557E3" locked="0" code="scDefineActor(Enemies.eZoomer);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="512" y="896" name="inst_5774DFCA" locked="0" code="scDefineItem(Items.iMissileExpansion);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oItem" x="512" y="896" name="inst_5774DFCA" locked="0" code="scDefineItem(Items.iMissileExpansion);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oActor" x="552" y="900" name="inst_22463375" locked="0" code="scDefineTurret(180);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDoorGuideN" x="320" y="48" name="inst_A6679B83" locked="0" code="scDefineDoor(Doors.dBlue);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDoorGuideS" x="320" y="976" name="inst_FA4CD5BF" locked="0" code="scDefineDoor(Doors.dBlue);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -17,19 +17,19 @@ vector_path_add(oVectorLine,Tutorial5Path1,0,0,0);</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1531</w>
-    <h>997</h>
+    <w>2576</w>
+    <h>1394</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
-    <showTiles>0</showTiles>
+    <showTiles>-1</showTiles>
     <showBackgrounds>-1</showBackgrounds>
     <showForegrounds>-1</showForegrounds>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
-    <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>2</page>
-    <xoffset>-133</xoffset>
-    <yoffset>27</yoffset>
+    <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
+    <page>0</page>
+    <xoffset>340</xoffset>
+    <yoffset>365</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="grdSnow" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -80,7 +80,7 @@ vector_path_add(oVectorLine,Tutorial5Path1,0,0,0);</code>
     <instance objName="oSmallCrate" x="448" y="416" name="inst_78E0C7BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLargeCrate" x="336" y="192" name="inst_8C88176A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock8" x="304" y="448" name="inst_9F0B3C80" locked="0" code="scDefineBlock(Blocks.bBomb);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="328" y="464" name="inst_E46D3B85" locked="0" code="scDefineItem(Items.iMissileExpansion);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oItem" x="296" y="200" name="inst_E46D3B85" locked="0" code="scDefineItem(Items.iMissileExpansion);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDomeLight" x="944" y="600" name="inst_3902711F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDomeLight" x="952" y="664" name="inst_5CBCAA9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDomeLight" x="688" y="600" name="inst_F955F7B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -105,11 +105,10 @@ vector_path_add(oVectorLine,Tutorial5Path1,0,0,0);</code>
     <instance objName="oDomeLight" x="664" y="64" name="inst_C6071A9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDomeLight" x="72" y="424" name="inst_903C4B02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDoorGuideW" x="48" y="384" name="inst_F80F765A" locked="0" code="scDefineDoor(Doors.dBlue);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock16" x="320" y="456" name="inst_0FA4AB1F" locked="0" code="scDefineBlock(Blocks.bBasic);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPlayer" x="400" y="360" name="inst_FB1BE5DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock16" x="288" y="192" name="inst_0FA4AB1F" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="tilBarriaOuter" x="320" y="440" w="16" h="32" xo="48" yo="0" id="10035208" name="inst_03131BB2" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuter" x="288" y="192" w="32" h="16" xo="208" yo="192" id="10037049" name="inst_A67A6803" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaOuter" x="976" y="592" w="48" h="32" xo="112" yo="32" id="10032941" name="inst_8B8A4747" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaOuter" x="992" y="656" w="32" h="32" xo="32" yo="0" id="10032942" name="inst_138677AB" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaOuter" x="944" y="656" w="48" h="32" xo="144" yo="0" id="10032943" name="inst_42F3DFC9" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -181,7 +180,6 @@ vector_path_add(oVectorLine,Tutorial5Path1,0,0,0);</code>
     <tile bgName="tilBarriaOuter" x="320" y="208" w="16" h="32" xo="144" yo="0" id="10033033" name="inst_800A5436" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaOuter" x="304" y="80" w="32" h="32" xo="0" yo="224" id="10033034" name="inst_46DBF405" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaOuter" x="288" y="160" w="32" h="32" xo="48" yo="192" id="10033038" name="inst_8F52BF76" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilBarriaOuter" x="288" y="192" w="32" h="16" xo="208" yo="192" id="10033039" name="inst_CAB140F4" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaOuter" x="304" y="128" w="32" h="32" xo="208" yo="208" id="10033040" name="inst_6051452C" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaOuter" x="304" y="112" w="16" h="16" xo="208" yo="80" id="10033041" name="inst_22C0FC5A" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaOuter" x="368" y="64" w="32" h="32" xo="96" yo="112" id="10033042" name="inst_25BB6BD1" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -592,6 +590,7 @@ vector_path_add(oVectorLine,Tutorial5Path1,0,0,0);</code>
     <tile bgName="tilBarriaOuter" x="296" y="496" w="8" h="8" xo="120" yo="528" id="10035241" name="inst_8FF4E29A" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaOuter" x="296" y="504" w="8" h="8" xo="120" yo="528" id="10035242" name="inst_680BE32A" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaOuter" x="400" y="416" w="32" h="32" xo="96" yo="80" id="10035243" name="inst_F154BA56" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuter" x="320" y="440" w="16" h="32" xo="80" yo="0" id="10037048" name="inst_65C10E6F" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

@@ -19,19 +19,19 @@ vector_path_add(oVectorLine,Tutorial6Path3,0,0,0);</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1491</w>
-    <h>961</h>
+    <w>1008</w>
+    <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
-    <showTiles>-1</showTiles>
+    <showTiles>0</showTiles>
     <showBackgrounds>-1</showBackgrounds>
     <showForegrounds>0</showForegrounds>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>-144</xoffset>
-    <yoffset>291</yoffset>
+    <xoffset>164</xoffset>
+    <yoffset>-72</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="grdSnow" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
