@@ -143,10 +143,6 @@
       <sprite>sprites\sprVectorLine</sprite>
       <sprite>sprites\sprLightIcon</sprite>
       <sprite>sprites\sprBlank</sprite>
-      <sprite>sprites\sprTitle</sprite>
-      <sprite>sprites\sprTitleStart</sprite>
-      <sprite>sprites\sprTitleAbout</sprite>
-      <sprite>sprites\sprTitleExit</sprite>
       <sprite>sprites\sprGunshipBack</sprite>
       <sprite>sprites\sprGunshipFront</sprite>
       <sprite>sprites\sprGunshipThruster</sprite>
@@ -296,31 +292,47 @@
       <sprite>sprites\sprShockwave</sprite>
     </sprites>
     <sprites name="Interface">
+      <sprites name="HUD">
+        <sprite>sprites\sprText</sprite>
+        <sprite>sprites\sprTextSkewed</sprite>
+        <sprite>sprites\sprHUDAccentTop</sprite>
+        <sprite>sprites\sprHUDAccentLeft</sprite>
+        <sprite>sprites\sprHUDAccentRight</sprite>
+        <sprite>sprites\sprHUDBeam</sprite>
+        <sprite>sprites\sprHUDAddonBombs</sprite>
+        <sprite>sprites\sprHUDAddonPowerBomb</sprite>
+        <sprite>sprites\sprHUDSecondaryMissile</sprite>
+        <sprite>sprites\sprHUDSecondarySuperMissile</sprite>
+        <sprite>sprites\sprHUDMap</sprite>
+        <sprite>sprites\sprHUDTextCharge</sprite>
+        <sprite>sprites\sprHUDTextHeat</sprite>
+        <sprite>sprites\sprHUDTextPhazon</sprite>
+        <sprite>sprites\sprHUDTextLightsear</sprite>
+        <sprite>sprites\sprHUDAmmoIcons</sprite>
+        <sprite>sprites\sprHUDEnergyTank</sprite>
+        <sprite>sprites\sprHUDEnergyBar</sprite>
+        <sprite>sprites\sprHUDChargeBar</sprite>
+        <sprite>sprites\sprHUDHeatBar</sprite>
+        <sprite>sprites\sprHUDPhazonBar</sprite>
+        <sprite>sprites\sprHUDLightsearBar</sprite>
+      </sprites>
       <sprites name="HUD 2.0">
         <sprite>sprites\sprHUDText</sprite>
       </sprites>
-      <sprite>sprites\sprText</sprite>
-      <sprite>sprites\sprTextSkewed</sprite>
-      <sprite>sprites\sprHUDAccentTop</sprite>
-      <sprite>sprites\sprHUDAccentLeft</sprite>
-      <sprite>sprites\sprHUDAccentRight</sprite>
-      <sprite>sprites\sprHUDBeam</sprite>
-      <sprite>sprites\sprHUDAddonBombs</sprite>
-      <sprite>sprites\sprHUDAddonPowerBomb</sprite>
-      <sprite>sprites\sprHUDSecondaryMissile</sprite>
-      <sprite>sprites\sprHUDSecondarySuperMissile</sprite>
-      <sprite>sprites\sprHUDMap</sprite>
-      <sprite>sprites\sprHUDTextCharge</sprite>
-      <sprite>sprites\sprHUDTextHeat</sprite>
-      <sprite>sprites\sprHUDTextPhazon</sprite>
-      <sprite>sprites\sprHUDTextLightsear</sprite>
-      <sprite>sprites\sprHUDAmmoIcons</sprite>
-      <sprite>sprites\sprHUDEnergyTank</sprite>
-      <sprite>sprites\sprHUDEnergyBar</sprite>
-      <sprite>sprites\sprHUDChargeBar</sprite>
-      <sprite>sprites\sprHUDHeatBar</sprite>
-      <sprite>sprites\sprHUDPhazonBar</sprite>
-      <sprite>sprites\sprHUDLightsearBar</sprite>
+      <sprites name="Menus">
+        <sprites name="Death">
+          <sprite>sprites\sprDeathGameOver</sprite>
+          <sprite>sprites\sprDeathRestart</sprite>
+          <sprite>sprites\sprDeathQuitToTitle</sprite>
+          <sprite>sprites\sprDeathRoomAtmosphere</sprite>
+        </sprites>
+        <sprites name="Title">
+          <sprite>sprites\sprTitle</sprite>
+          <sprite>sprites\sprTitleStart</sprite>
+          <sprite>sprites\sprTitleAbout</sprite>
+          <sprite>sprites\sprTitleExit</sprite>
+        </sprites>
+      </sprites>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\sprPlayer</sprite>
@@ -336,6 +348,7 @@
       <sprite>sprites\sprMorphCorruption</sprite>
       <sprite>sprites\sprVisorLight</sprite>
       <sprite>sprites\sprPlayerDeath</sprite>
+      <sprite>sprites\sprPlayerDeathWhite</sprite>
       <sprite>sprites\sprPlayerDeathFlicker</sprite>
       <sprite>sprites\sprPlayerDeathEffect</sprite>
       <sprite>sprites\sprFootPrint</sprite>
@@ -422,6 +435,7 @@
       <background>background\tilFireOuter</background>
     </backgrounds>
     <background>background\TitleBG</background>
+    <background>background\bgrDeathRoom</background>
     <background>background\TitleBGParallax1</background>
     <background>background\TitleBGParallax2</background>
     <background>background\TitleBGParallax3</background>
@@ -506,9 +520,6 @@
       </scripts>
       <script>scripts\scPause.gml</script>
       <script>scripts\scSpawnTestItems.gml</script>
-      <script>scripts\scTitleObjectInit.gml</script>
-      <script>scripts\scTitleObjectStep.gml</script>
-      <script>scripts\scTitleObjectMouseEnter.gml</script>
       <script>scripts\scUpdateMPGrid.gml</script>
     </scripts>
     <scripts name="Actors">
@@ -575,6 +586,19 @@
         <script>scripts\scCrateHit.gml</script>
         <script>scripts\scCrateDraw.gml</script>
         <script>scripts\scCrateDestroy.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="Interface">
+      <scripts name="Death">
+        <script>scripts\scDeathInit.gml</script>
+        <script>scripts\scDeathMenuObjectInit.gml</script>
+        <script>scripts\scDeathMenuObjectStep.gml</script>
+        <script>scripts\scDeathMenuObjectMouseEnter.gml</script>
+      </scripts>
+      <scripts name="Title">
+        <script>scripts\scTitleObjectInit.gml</script>
+        <script>scripts\scTitleObjectStep.gml</script>
+        <script>scripts\scTitleObjectMouseEnter.gml</script>
       </scripts>
     </scripts>
     <scripts name="Inventory">
@@ -665,9 +689,6 @@
       <object>objects\oVectorLine</object>
       <object>objects\oWallShootThrough</object>
       <object>objects\pCollision</object>
-      <object>objects\oTitleStart</object>
-      <object>objects\oTitleAbout</object>
-      <object>objects\oTitleExit</object>
       <object>objects\oShipIntro</object>
       <object>objects\oUnknownPlanetMessage</object>
     </objects>
@@ -675,8 +696,6 @@
       <object>objects\oActor</object>
       <object>objects\oBlockParent</object>
       <object>objects\oDestroyAnim</object>
-      <object>objects\oDeathAnim</object>
-      <object>objects\oDeathAnimEffect</object>
       <object>objects\oDestructible</object>
       <object>objects\oDoodad</object>
       <object>objects\oEffect</object>
@@ -756,12 +775,26 @@
         <object>objects\oWeatherSnow</object>
       </objects>
     </objects>
+    <objects name="Menus">
+      <objects name="Death">
+        <object>objects\oDeathController</object>
+        <object>objects\oDeathRestart</object>
+        <object>objects\oDeathQuitToTitle</object>
+      </objects>
+      <objects name="Title">
+        <object>objects\oTitleStart</object>
+        <object>objects\oTitleAbout</object>
+        <object>objects\oTitleExit</object>
+      </objects>
+    </objects>
     <objects name="Player">
       <object>objects\oPlayer</object>
       <object>objects\oCannon</object>
       <object>objects\oPlayerSpawn</object>
       <object>objects\oCharging</object>
       <object>objects\oPowerBombExplosion</object>
+      <object>objects\oDeathAnim</object>
+      <object>objects\oDeathAnimEffect</object>
     </objects>
     <objects name="Transitions">
       <object>objects\oTransitionParent</object>
@@ -806,6 +839,7 @@
       <room>rooms\NewRoomTemplate</room>
       <room>rooms\Fire1</room>
       <room>rooms\TransitionRoom</room>
+      <room>rooms\DeathRoom</room>
       <room>rooms\Sandbox</room>
     </rooms>
   </rooms>

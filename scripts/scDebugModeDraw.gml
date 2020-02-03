@@ -1,6 +1,9 @@
+var prevdepth = depth;
+depth = -2000;
 if (object_index = eId)
 {
-    if (!debugmode) exit;
+    if (!debugmode) exit;       // Leave if we aren't in debug mode.
+    // Set font options...
     draw_set_font(font1);
     draw_set_halign(fa_left);
     draw_set_valign(fa_bottom);
@@ -24,20 +27,29 @@ if (object_index = eId)
         draw_text(5,60,"vox:"); draw_text(40,60,vox);
         draw_text(5,80,"voy:"); draw_text(40,80,voy);
     }
+    if (instance_exists(oPlayer))
+    {
+        draw_text(dxo+4,dyo+26,"Player X:");            draw_text(dxo+160,dyo+27,oPlayer.x);
+        draw_text(dxo+4,dyo+39,"Player Y:");            draw_text(dxo+160,dyo+40,oPlayer.y);
+    }
+    // Draw contrasting background behind tracked debug vars.
+    draw_set_color(c_black);
+    draw_set_alpha(0.3);
+    draw_rectangle(dxo,dyo,dxo+220,dyo+125,0);
+    draw_set_color(c_white);
+    draw_set_alpha(0.9);
+    // Track death animation.
+    if (instance_exists(oDeathAnim))
+    {
+        draw_text(dxo+4,dyo+13,"Death image_index");    draw_text(dxo+160,dyo+13,oDeathAnim.image_index);
+        draw_text(dxo+4,dyo+26,"Death progressanim1");  draw_text(dxo+160,dyo+26,oDeathAnim.progressanim1);
+        draw_text(dxo+4,dyo+39,"Death progressanim2");  draw_text(dxo+160,dyo+39,oDeathAnim.progressanim2);
+        draw_text(dxo+4,dyo+52,"Death blackalpha");     draw_text(dxo+160,dyo+52,oDeathAnim.blackalpha);
+        draw_text(dxo+4,dyo+65,"Current Room");         draw_text(dxo+160,dyo+65,room_get_name(room));
+    }
+    /*
     if (instance_exists(oViewController))
     {
-        draw_set_color(c_black);
-        draw_set_alpha(0.3);
-        draw_rectangle(dxo,dyo,dxo+220,dyo+125,0);
-        draw_set_color(c_white);
-        draw_set_alpha(0.9);
-        draw_text(dxo+4,dyo+13,"eId.HasTutorial5ME");       draw_text(dxo+160,dyo+14,eId.HasTutorial5ME);
-        if (instance_exists(oPlayer))
-        {
-            draw_text(dxo+4,dyo+26,"Player X:");            draw_text(dxo+160,dyo+27,oPlayer.x);
-            draw_text(dxo+4,dyo+39,"Player Y:");            draw_text(dxo+160,dyo+40,oPlayer.y);
-        }
-        /*
         draw_text(dxo+4,dyo+13,"view x:");            draw_text(dxo+160,dyo+14,oViewController.x);
         draw_text(dxo+4,dyo+26,"view y:");            draw_text(dxo+160,dyo+27,oViewController.y);
         draw_text(dxo+4,dyo+39,"view shake:");        draw_text(dxo+160,dyo+40,oViewController.shake);
@@ -47,8 +59,8 @@ if (object_index = eId)
         draw_text(dxo+4,dyo+91,"view truemaxspeed:"); draw_text(dxo+160,dyo+92,oViewController.truemaxspeed);
         draw_text(dxo+4,dyo+104,"view xx:");          draw_text(dxo+160,dyo+105,oViewController.xx);
         draw_text(dxo+4,dyo+117,"view yy:");          draw_text(dxo+160,dyo+118,oViewController.yy);
-        */
     }
+    */
     /*
     if (instance_exists(oPlayer))
     {
@@ -84,5 +96,5 @@ if (object_index = eId)
     //draw_text(dxo,dyo-66,string_insert(string_format(alpha1,3,2), "Alpha 1: ",10));
     //draw_text(dxo,dyo-50,string_insert(string_format(alpha2,3,2), "Alpha 2: ",10));
     //draw_text(dxo,dyo-34,string_insert(string_format(gonextroom,3,0), "Go Next Room: ",15));
-
 }
+depth = prevdepth;

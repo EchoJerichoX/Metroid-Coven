@@ -3,7 +3,7 @@
   <spriteName>sprPlayerDeath</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1001</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -34,7 +34,60 @@ flicker = 0;
 flickerdelay = 3;
 shockwavespawned = 1;
 deatheffectarea = 30; // Rough radius of where to spawn death effects.
+progressanim1 = 0;
+whitealpha = 0;
+blackalpha = 0;
+redalpha = 1;
+progressanim2 = 0;
+whitefade = 0;
+roomgo = 0;
 // Insert future suit sprite selection here.
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto(DeathRoom);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>progressanim2 = 1;
 </string>
           </argument>
         </arguments>
@@ -58,7 +111,14 @@ deatheffectarea = 30; // Rough radius of where to spawn death effects.
           <argument>
             <kind>1</kind>
             <string>image_index += 1; // Go to next frame.
-image_speed = 0.25;
+image_speed = 0.5;
+with (instance_create(x,y,oDestroyAnim))
+{
+    sprite_index = sprShockwave;
+    image_xscale = 0.2;
+    image_yscale = image_xscale;
+    image_alpha = 0.5;
+}
 </string>
           </argument>
         </arguments>
@@ -83,7 +143,7 @@ image_speed = 0.25;
             <kind>1</kind>
             <string>sound_play(sndPlayerDeath); // Wind-up to suit bursting.
 startflicker = 1; // Initialize flicker effect on suit.
-image_speed = 0.125; // Slowly curl.
+image_speed = 0.1; // Slowly curl.
 
 /*
 
@@ -122,48 +182,47 @@ visible = true;
             <string>if (startflicker) and (flicker &lt; flickerdelay) flicker += 1;
 if (flicker = flickerdelay)
 {
-    instance_create(x-deatheffectarea+random(deatheffectarea*2),y-deatheffectarea+random(deatheffectarea*2),oDeathAnimEffect);
+    if (!progressanim1) instance_create(x-deatheffectarea+random(deatheffectarea*2),
+                                        y-deatheffectarea+random(deatheffectarea*2),
+                                        oDeathAnimEffect);
     if (flickeralpha &lt; 1) flickeralpha += 0.03;
     flicker = 0;
 }
 
-if (image_index = 5)
-    { image_speed = 0; alarm[1] = 75; }
-
-if (image_index = 11) and (!shockwavespawned)
+if (image_index = 7) and (!progressanim1)
 {
-    with (instance_create(x,y,oDestroyAnim))
-    {
-        sprite_index = sprShockwave;
-        image_xscale = 0.2;
-        image_yscale = image_xscale;
-        image_alpha = 0.5;
-    }
-    shockwavespawned = 1;
+    progressanim1 = 1;
+    image_speed = 0;
+    alarm[1] = 65;
 }
-
-
-    
-/*
-
-switch (sprite_index)
-{
-    case sprMissileSmoke:
-        image_xscale += .01;
-        image_yscale += .01;
-        if (image_alpha &gt; 0) image_alpha -= 0.015;
-        break;
-    case sprShockwave:
-        image_xscale += 0.1;
-        image_yscale = image_xscale;
-        if (image_alpha &gt; 0) image_alpha -= 0.05;
-        else instance_destroy();
-        break;
-    case sprBlockBreak16:
-    case sprBlockBreak8:
-        image_angle = 0;
-        break;
-}
+if (blackalpha = 1) and (!roomgo)
+    { roomgo = 1; alarm[3] = 120; }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>image_index = 16;
+image_speed = 0;
+alarm[2] = 45;
+// Probably more restart code here.
 </string>
           </argument>
         </arguments>
@@ -186,8 +245,42 @@ switch (sprite_index)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
+            <string>// Draw red fade on sequence start.
+depth = -1002;
+if (redalpha &gt; 0)
+{
+    redalpha -= .2;
+    draw_set_color(c_red);
+    draw_set_alpha(redalpha);
+    draw_rectangle(view_xview[0],view_yview[0],view_xview[0]+view_wview[0],view_yview[0]+view_hview[0],0);
+}
+// Draw white fade-in over black.
+if (image_index &gt;= 14)
+{
+    if (whitealpha &lt; 1) whitealpha += 0.03;
+    if (whitealpha &gt;= 1) whitealpha = 1;
+    draw_set_color(c_white);
+    draw_set_alpha(whitealpha);
+    draw_rectangle(view_xview[0],view_yview[0],view_xview[0]+view_wview[0],view_yview[0]+view_hview[0],0);
+}
+// Draw player sprites.
+depth = -1001;
+draw_set_alpha(image_alpha);
+draw_self();
 if (flicker = flickerdelay-1) draw_sprite_ext(sprPlayerDeathFlicker,image_index,x,y,1,1,image_angle,c_white,flickeralpha);
+if (image_index = 16) and (whitefade &lt; 1) whitefade += 0.075;
+if (whitefade &gt;= 1) whitefade = 1;
+if (whitefade &gt; 0) draw_sprite_ext(sprPlayerDeathWhite,image_index,x,y,1,1,image_angle,c_white,whitefade);
+// Draw fade to black.
+depth = -1002;
+if (progressanim2)
+{
+    if (blackalpha &lt; 1) blackalpha += 0.02;
+    if (blackalpha &gt;= 1) blackalpha = 1;
+    draw_set_color(c_black);
+    draw_set_alpha(blackalpha);
+    draw_rectangle(view_xview[0],view_yview[0],view_xview[0]+view_wview[0],view_yview[0]+view_hview[0],0);
+}
 </string>
           </argument>
         </arguments>
