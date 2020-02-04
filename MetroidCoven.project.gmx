@@ -177,6 +177,9 @@
         <sprite>sprites\sprTurretHit</sprite>
         <sprite>sprites\sprTurretPart</sprite>
       </sprites>
+      <sprites name="Space Pirate">
+        <sprite>sprites\sprSpacePirate</sprite>
+      </sprites>
     </sprites>
     <sprites name="Environment">
       <sprites name="Doors">
