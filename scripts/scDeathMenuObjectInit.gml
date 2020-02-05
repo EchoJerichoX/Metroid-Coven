@@ -5,5 +5,5 @@ imagedelay = 0;
 image_index = 1
 image_alpha = 0;
 alphawait = 40;
-sound_volume(Title,eId.titlevol);
-sound_loop(Title);
+sound_volume(musTitle,eId.titlevol);
+sound_loop(musTitle);

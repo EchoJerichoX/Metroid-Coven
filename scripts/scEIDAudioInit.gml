@@ -5,7 +5,7 @@
 // = PLAYER SOUNDS =
 // =================
 // - Weapons -
-sound_volume(snBeamWave,1);
+sound_volume(sndBeamWave,1);
 // - Addons -
 sound_volume(snArcDashStart,1);
 sound_volume(snArcDashCharge,1);

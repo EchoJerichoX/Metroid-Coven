@@ -100,10 +100,6 @@
         <sound>sound\ZoomerHit</sound>
         <sound>sound\ZoomerDie</sound>
       </sounds>
-      <sounds name="Music">
-        <sound>sound\BarriaOverworld</sound>
-        <sound>sound\Title</sound>
-      </sounds>
     </sounds>
     <sounds name="Sound Effects">
       <sounds name="General Effects">
@@ -126,9 +122,13 @@
           <sound>sound\sndPlayerDeath</sound>
         </sounds>
         <sounds name="Weapons">
-          <sound>sound\snBeamWave</sound>
+          <sound>sound\sndBeamWave</sound>
         </sounds>
       </sounds>
+    </sounds>
+    <sounds name="Music">
+      <sound>sound\musTitle</sound>
+      <sound>sound\musTutorial</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">

@@ -10,7 +10,7 @@ else Heat += Heating; // Increase heat by less if the shot is not from the Charg
 
 if (HoldingWeaponId = Weapons.wWaveBeam) // Specific behavior for Wave Beam.
 {
-    sound_play(snBeamWave);
+    sound_play(sndBeamWave);
     for (var i = 0; i < 2; i += 1;) // Create 2 projectiles, one for each side.
     {
         with (instance_create(xx,yy,oProjectile))

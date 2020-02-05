@@ -38,7 +38,7 @@ switch (fadeStage)
         if (gonextroom = 1) 
         {
             if (titlevol > 0) titlevol -= 0.05;
-            sound_volume(Title,titlevol);
+            sound_volume(musTitle,titlevol);
             if (alpha1 < 1) alpha1 += 0.02;
             if (alpha1 = 1) 
             {
@@ -67,7 +67,7 @@ switch (fadeStage)
             text = 0;
             alpha1 = 0;
             alpha2 = 0;
-            if (room = TutorialStart) and (!sound_isplaying(BarriaOverworld)) sound_loop(BarriaOverworld);
+            if (room = TutorialStart) and (!sound_isplaying(musTutorial)) sound_loop(musTutorial);
         }
         break;
 }
