@@ -38,7 +38,16 @@ if (object_index = eId)
     draw_rectangle(dxo,dyo,dxo+220,dyo+125,0);
     draw_set_color(c_white);
     draw_set_alpha(0.9);
+    // Track music variables.
+    draw_text(dxo+4,dyo+13,"musicselected");        draw_text(dxo+160,dyo+13,musicselected);
+    draw_text(dxo+4,dyo+26,"musicvolstart");        draw_text(dxo+160,dyo+26,musicvolstart);
+    draw_text(dxo+4,dyo+39,"musicvolend");          draw_text(dxo+160,dyo+39,musicvolend);
+    draw_text(dxo+4,dyo+52,"musicfadedir");         draw_text(dxo+160,dyo+52,musicfadedir);
+    draw_text(dxo+4,dyo+65,"musicfaderate");        draw_text(dxo+160,dyo+65,musicfaderate);
+    draw_text(dxo+4,dyo+78,"musicvol");             draw_text(dxo+160,dyo+78,musicvol);
+    draw_text(dxo+4,dyo+91,"prevmusicvol");         draw_text(dxo+160,dyo+91,prevmusicvol);
     // Track death animation.
+    /*
     if (instance_exists(oDeathAnim))
     {
         draw_text(dxo+4,dyo+13,"Death image_index");    draw_text(dxo+160,dyo+13,oDeathAnim.image_index);
@@ -47,6 +56,7 @@ if (object_index = eId)
         draw_text(dxo+4,dyo+52,"Death blackalpha");     draw_text(dxo+160,dyo+52,oDeathAnim.blackalpha);
         draw_text(dxo+4,dyo+65,"Current Room");         draw_text(dxo+160,dyo+65,room_get_name(room));
     }
+    */
     /*
     if (instance_exists(oViewController))
     {

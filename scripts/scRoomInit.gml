@@ -4,6 +4,14 @@
 
 if (!instance_exists(oViewController)) instance_create(x,y,oViewController);
 
+// Before we do anything, see if we need to do anything special!
+switch (room)
+{
+    case TitleRoom:
+        scFade(0,c_black,1,0.05); // Fade in from black.
+        scMusic(1,musTitle,0,1,0,0.0025); // Loop title music and fade it in.
+        break;
+}
 // Step 1: Determine weather type by region.
 scEIDGetRegion();
 

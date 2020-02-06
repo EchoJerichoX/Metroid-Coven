@@ -14,13 +14,29 @@ fullscreen = 0; // Determines whether the game is in fullscreen or not.
 titlefade = 0; // Used to fade the title screen.
 StartRoom = TutorialStart; // Determines where we go after the player leaves the title screen.
 wait = 120; // Delay to start intro scene.
-titlevol = 1; // Volume of title music.
 tutorialmessageshown = 0; // Has the tutorial "welcome" message been shown?
 drawhud = 1; // Draw HUD in gameplay rooms.
 trueshakemax = 8; // The absolute maximum shaking distance of the view.
 
+// Initialize fade effect stuff.
+// See scFade();
+fadealpha = 0; // If > 0, initialize a fade effect. Uses this as alpha.
+fadealpharate = 0; // How fast the fade plays out.
+fadealphacolor = -1; // Color of the fade effect.
+fadedir = 0; // Are we fading in our out?
+
+// Initialize music handler stuff.
+// See scMusic();
+musicselected = 0;  // Current music track.
+musicvolstart = 0;  // Starting volume if fading.
+musicvolend = 0     // Ending volume if fading.
+musicfadedir = 0;   // Which way are we fading?
+musicfaderate = 0;  // How fast are we fading?
+musicvol = 0;       // Volume of current music.
+prevmusicvol = 0;   // Volume of current music on previous step.
+
 // Initialize debug mode stuff.
-debugmode = 0; // Is debug mode on or off?
+debugmode = 1; // Is debug mode on or off?
 debugenemy = Enemies.eZoomer; // Determines what NUM 4 spawns in debug mode.
 allitemsgiven = 0; // Determines if all items have been given to the player via debug mode.
 drawmpgrid = 0; // Determines if we draw the motion planning grid in debug mode.
@@ -32,7 +48,8 @@ alpha1 = 0; // Used for drawing the darkening background.
 alpha2 = 0; // ^
 fadeStage = -1; // How far along we are in printing a message.
 complete = true; // Is the message done fading in?
-canEnter = false; // Can we press a key to advance the message?
+canenter = false; // Can we press a key to advance the message?
+enterdelay = 0; // Ticks down until we can press a key to progress a message again.
 text = "No text"; // The text we are printing (see the scEIDMessagesInit() script.
 scan = 0; // Tells the message system if the current message is the result of using the Scan Visor.
 gonextroom = 0; // When leaving a message, determine if we go to the game or not (from title screen).

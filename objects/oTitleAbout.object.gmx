@@ -49,7 +49,8 @@ scTitleObjectInit();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scTitleObjectMouseEnter();
+            <string>///scTitleObjectMouseEnter();
+scTitleObjectMouseEnter();
 </string>
           </argument>
         </arguments>

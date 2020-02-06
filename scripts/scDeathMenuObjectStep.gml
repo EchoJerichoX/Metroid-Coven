@@ -38,17 +38,8 @@ switch (mouseover)
                 break;
                 case oTitleAbout: url_open(eId.InfoURL) break;
                 case oTitleExit:
-                    with (eId)
-                    {
-                        if (fadeStage = -1)
-                        {
-                            scPause();
-                            fadeStage = 0;
-                            text = Exit;
-                            alarm[0] = 5;
-                        }
-                    }
-                break;
+                    scMessage(eId.Exit,1,0);
+                    break;
             }
         }
     break;

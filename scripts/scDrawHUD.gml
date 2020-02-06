@@ -1,8 +1,10 @@
 if (room = TitleRoom)
-or (room = IntroSceneShip)
+or (room = IntroRoom)
 or (room = DeathRoom)
 or (!drawhud)
 or (instance_exists(oDeathAnim)) exit;
+// Do not draw HUD in certain cases.
+
 var vx,vy,
     MissileLauncherAlpha,
     SuperMissileAlpha,

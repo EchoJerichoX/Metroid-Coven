@@ -129,6 +129,7 @@
     <sounds name="Music">
       <sound>sound\musTitle</sound>
       <sound>sound\musTutorial</sound>
+      <sound>sound\musGameOver</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -560,6 +561,9 @@
       <script>scripts\scEIDDraw.gml</script>
       <script>scripts\scDrawHUD.gml</script>
       <script>scripts\scDebugModeDraw.gml</script>
+      <script>scripts\scMusic.gml</script>
+      <script>scripts\scMessage.gml</script>
+      <script>scripts\scMessageHandler.gml</script>
     </scripts>
     <scripts name="Environment">
       <scripts name="Doors">
@@ -659,6 +663,7 @@
         <script>scripts\scTransOut.gml</script>
         <script>scripts\scTransition.gml</script>
         <script>scripts\scTransIn.gml</script>
+        <script>scripts\scFade.gml</script>
       </scripts>
     </scripts>
     <scripts name="View Controller">
@@ -778,7 +783,7 @@
         <object>objects\oWeatherSnow</object>
       </objects>
     </objects>
-    <objects name="Menus">
+    <objects name="Interface">
       <objects name="Death">
         <object>objects\oDeathController</object>
         <object>objects\oDeathRestart</object>
@@ -809,7 +814,7 @@
     <room>rooms\InitRoom</room>
     <rooms name="Intro/Title">
       <room>rooms\TitleRoom</room>
-      <room>rooms\IntroSceneShip</room>
+      <room>rooms\IntroRoom</room>
     </rooms>
     <rooms name="Tutorial">
       <room>rooms\TutorialStart</room>
