@@ -18,7 +18,7 @@ switch (argument1)
     case 1:
         with (eId)
         {
-            if (fadeStage = -1)     // -1 means there is no message being shown at all.
+            if (fadeStage = -1)     // If there is no message being shown (-1 means no message).
             {
                 scPause();          // Pause the game for this message type.
                 fadeStage = 0;      // Begin the message display process. Setting fadeStage to 0 puts

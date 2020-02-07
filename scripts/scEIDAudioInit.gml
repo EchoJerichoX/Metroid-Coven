@@ -4,7 +4,23 @@
 // ======================
 // = MUSIC AND AMBIANCE =
 // ======================
-musicvolume = 1; // This is all we need right now.
+
+// Initialize music handler stuff.
+// See scMusicAction and scMusicHandler.
+musicselected = 0;              // Currently loaded music track.
+musicdesired = musTitle;        // Music track we want to use.
+musicvolumegoal = 1;            // Volume we are trying to reach or fade to.
+musicvolume = 1;                // Starting volume if fading.
+muteduration = 0;               // Length of temporary mute.
+musicdefaultfaderate = 0.05;    // Standard rate of all music fading, up or down.
+musicfaderate = musicdefaultfaderate;
+
+
+musicvolend = 0             // Ending volume if fading.
+musicfadedir = 0;           // Which way are we fading?
+musicfaderate = 0;          // How fast are we fading?
+musicvol = 0;               // Volume of current music.
+prevmusicvol = 0;           // Volume of current music on previous step.
 
 // =================
 // = PLAYER SOUNDS =

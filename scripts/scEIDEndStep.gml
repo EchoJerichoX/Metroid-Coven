@@ -1,2 +1,3 @@
 scTransition();
 scMessageHandler();
+scMusicHandler();

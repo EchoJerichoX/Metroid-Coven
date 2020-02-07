@@ -9,7 +9,7 @@ switch (room)
 {
     case TitleRoom:
         scFade(0,c_black,1,0.05); // Fade in from black.
-        scMusic(1,musTitle,0,1,0,0.0025); // Loop title music and fade it in.
+        scMusicAction(1,musTitle,eId.musicdefaultfaderate,eId.muteduration);
         break;
 }
 // Step 1: Determine weather type by region.

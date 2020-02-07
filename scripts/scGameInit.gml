@@ -25,16 +25,6 @@ fadealpharate = 0; // How fast the fade plays out.
 fadealphacolor = -1; // Color of the fade effect.
 fadedir = 0; // Are we fading in our out?
 
-// Initialize music handler stuff.
-// See scMusic();
-musicselected = 0;  // Current music track.
-musicvolstart = 0;  // Starting volume if fading.
-musicvolend = 0     // Ending volume if fading.
-musicfadedir = 0;   // Which way are we fading?
-musicfaderate = 0;  // How fast are we fading?
-musicvol = 0;       // Volume of current music.
-prevmusicvol = 0;   // Volume of current music on previous step.
-
 // Initialize debug mode stuff.
 debugmode = 1; // Is debug mode on or off?
 debugenemy = Enemies.eZoomer; // Determines what NUM 4 spawns in debug mode.

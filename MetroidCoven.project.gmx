@@ -561,7 +561,8 @@
       <script>scripts\scEIDDraw.gml</script>
       <script>scripts\scDrawHUD.gml</script>
       <script>scripts\scDebugModeDraw.gml</script>
-      <script>scripts\scMusic.gml</script>
+      <script>scripts\scMusicAction.gml</script>
+      <script>scripts\scMusicHandler.gml</script>
       <script>scripts\scMessage.gml</script>
       <script>scripts\scMessageHandler.gml</script>
     </scripts>

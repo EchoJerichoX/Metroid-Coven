@@ -2,7 +2,8 @@ canenter = 1;
 if (enterdelay > 0)
     { canenter = 0; enterdelay -= 1; }
 
-// Only use the in-game pause if a message is not currently in use/being displayed.
+// Only use the in-game pause if a message is not
+//   currently in use/being displayed.
 if (keyboard_check_pressed(vk_enter))
 or (keyboard_check_pressed(vk_return))
 {
@@ -105,6 +106,7 @@ if (fadeStage > -1)
             fadeStage = 2;
             canenter = false;
             gonextroom = true;
+            
             exit;
         }
         if (keyboard_check_pressed(vk_escape))
