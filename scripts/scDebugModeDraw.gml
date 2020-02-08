@@ -40,12 +40,12 @@ if (object_index = eId)
     draw_set_alpha(0.9);
     // Track music variables.
     draw_text(dxo+4,dyo+13,"musicselected");        draw_text(dxo+160,dyo+13,musicselected);
-    draw_text(dxo+4,dyo+26,"musicvolstart");        draw_text(dxo+160,dyo+26,musicvolstart);
-    draw_text(dxo+4,dyo+39,"musicvolend");          draw_text(dxo+160,dyo+39,musicvolend);
-    draw_text(dxo+4,dyo+52,"musicfadedir");         draw_text(dxo+160,dyo+52,musicfadedir);
-    draw_text(dxo+4,dyo+65,"musicfaderate");        draw_text(dxo+160,dyo+65,musicfaderate);
-    draw_text(dxo+4,dyo+78,"musicvol");             draw_text(dxo+160,dyo+78,musicvol);
-    draw_text(dxo+4,dyo+91,"prevmusicvol");         draw_text(dxo+160,dyo+91,prevmusicvol);
+    draw_text(dxo+4,dyo+26,"musicdesired");         draw_text(dxo+160,dyo+26,musicdesired);
+    draw_text(dxo+4,dyo+39,"musicvolumegoal");      draw_text(dxo+160,dyo+39,musicvolumegoal);
+    draw_text(dxo+4,dyo+52,"musicvolume");          draw_text(dxo+160,dyo+52,musicvolume);
+    draw_text(dxo+4,dyo+65,"muteduration");         draw_text(dxo+160,dyo+65,muteduration);
+    draw_text(dxo+4,dyo+78,"musicdefaultfaderate"); draw_text(dxo+160,dyo+78,musicdefaultfaderate);
+    draw_text(dxo+4,dyo+91,"musicfaderate");        draw_text(dxo+160,dyo+91,musicfaderate);
     // Track death animation.
     /*
     if (instance_exists(oDeathAnim))

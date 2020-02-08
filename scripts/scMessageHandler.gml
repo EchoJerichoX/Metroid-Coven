@@ -79,51 +79,53 @@ if (fadeStage > -1)
         enterdelay = 5;
         exit;
     }
-    if (text = Exit)
+    // Special cases of action depending on text.
+    switch (text)
     {
-        if (mouse_check_button_pressed(mb_left))
-        or (keyboard_check_pressed(vk_space))
-        or (keyboard_check_pressed(vk_enter))
-        or (keyboard_check_pressed(vk_return))
-        or (keyboard_check_pressed(ord("Y")))
-            { game_end(); }
-        if (keyboard_check_pressed(vk_escape))
-        or (keyboard_check_pressed(ord("N")))
-        {
-            fadeStage = 2;
-            canenter = false;
-            exit;
-        }
-    }
-    if (text = Start)
-    {
-        if (mouse_check_button_pressed(mb_left))
-        or (keyboard_check_pressed(vk_space))
-        or (keyboard_check_pressed(vk_enter))
-        or (keyboard_check_pressed(vk_return))
-        or (keyboard_check_pressed(ord("Y")))
-        {
-            fadeStage = 2;
-            canenter = false;
-            gonextroom = true;
-            
-            exit;
-        }
-        if (keyboard_check_pressed(vk_escape))
-        or (keyboard_check_pressed(ord("N")))
-        {
-            fadeStage = 2;
-            canenter = false;
-            exit;
-        }
-    }
-    if (mouse_check_button_pressed(mb_left))
-    or (keyboard_check_pressed(vk_space))
-    or (keyboard_check_pressed(vk_enter))
-    or (keyboard_check_pressed(vk_return))
-    or (keyboard_check_pressed(vk_escape))
-    {
-        fadeStage = 2;
-        canenter = false;
+        case Exit:
+            if (mouse_check_button_pressed(mb_left))
+            or (keyboard_check_pressed(vk_space))
+            or (keyboard_check_pressed(vk_enter))
+            or (keyboard_check_pressed(vk_return))
+            or (keyboard_check_pressed(ord("Y")))
+                { game_end(); }
+            if (keyboard_check_pressed(vk_escape))
+            or (keyboard_check_pressed(ord("N")))
+            {
+                fadeStage = 2;
+                canenter = false;
+                exit;
+            }
+            break;
+        case Start:
+            if (mouse_check_button_pressed(mb_left))
+            or (keyboard_check_pressed(vk_space))
+            or (keyboard_check_pressed(vk_enter))
+            or (keyboard_check_pressed(vk_return))
+            or (keyboard_check_pressed(ord("Y")))
+            {
+                fadeStage = 2;
+                canenter = false;
+                gonextroom = true;
+                scMusicAction(0,eId.musicselected,eId.musicdefaultfaderate,eId.muteduration);
+            }
+            if (keyboard_check_pressed(vk_escape))
+            or (keyboard_check_pressed(ord("N")))
+            {
+                fadeStage = 2;
+                canenter = false;
+            }
+            break;
+        default:
+            if (mouse_check_button_pressed(mb_left))
+            or (keyboard_check_pressed(vk_space))
+            or (keyboard_check_pressed(vk_enter))
+            or (keyboard_check_pressed(vk_return))
+            or (keyboard_check_pressed(vk_escape))
+            {
+                fadeStage = 2;
+                canenter = false;
+            }
+            break;
     }
 }
