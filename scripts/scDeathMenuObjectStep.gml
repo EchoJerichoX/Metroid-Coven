@@ -17,28 +17,18 @@ switch (mouseover)
             { image_index = 2; imagedelay += 1; imagestep = 0; }
         if (image_index = 2) imagedelay += 1;
         if (imagedelay = 6)
-            { image_sindex = 1; imagedelay = 0; }
+            { image_index = 1; imagedelay = 0; }
             
         if (mouse_check_button_pressed(mb_left)) and (eId.fadeStage = -1)
         {
             //sound_play(TitleSelect);
             switch (object_index)
             {
-                case oTitleStart:
-                    with (eId)
-                    {
-                        if (fadeStage = -1)
-                        {
-                            scPause();
-                            fadeStage = 0;
-                            text = Start;
-                            alarm[0] = 5;
-                        }
-                    }
-                break;
-                case oTitleAbout: url_open(eId.InfoURL) break;
-                case oTitleExit:
-                    scMessage(eId.Exit,1,0);
+                case oDeathRestart:
+                    scMessage(eId.Restart,1,0);
+                    break;
+                case oDeathQuitToTitle:
+                    scMessage(eId.QuitToTitle,1,0);
                     break;
             }
         }

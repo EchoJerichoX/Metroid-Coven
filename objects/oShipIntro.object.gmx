@@ -47,7 +47,6 @@ offsetbooster = 0;
 blackalpha = 0;
 planetrot = 0;
 moverooms = 120;
-sound_play(IntroShip);
 </string>
           </argument>
         </arguments>
@@ -106,7 +105,7 @@ else
     if (speed &lt; 0.35) and (!instance_exists(oUnknownPlanetMessage)) instance_create(320,440,oUnknownPlanetMessage);
     if (image_alpha &lt;= 0) speed = 0;
     
-    if (whitealpha1 &gt; 0) whitealpha1 -= 0.025;
+    if (whitealpha1 &gt; 0) whitealpha1 -= 0.0125;
     if (whitealpha2 &gt; 0) whitealpha2 -= 0.05;
 }
 /*
@@ -177,7 +176,8 @@ else // Part 2.
             offsetbooster += 1;
             if (blackalpha &lt; 1) blackalpha += 0.0125;
             if (blackalpha = 1) moverooms -= 1;
-            if (moverooms = 0) room_goto(eId.StartRoom);
+            if (moverooms = 0)
+                { scMusic(0,eId.musicselected,1,0); room_goto(eId.StartRoom); }
         }
     }
     

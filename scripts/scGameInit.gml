@@ -20,13 +20,13 @@ trueshakemax = 8; // The absolute maximum shaking distance of the view.
 
 // Initialize fade effect stuff.
 // See scFade();
-fadealpha = 0; // If > 0, initialize a fade effect. Uses this as alpha.
-fadealpharate = 0; // How fast the fade plays out.
-fadealphacolor = -1; // Color of the fade effect.
-fadedir = 0; // Are we fading in our out?
+fadealpha = 0;      // Alpha of fade effect.
+fadecolor = -1;     // Color of the fade effect.
+fadealphagoal = 0;  // Target alpha of fade effect.
+fadealpharate = 0;  // How fast the fade plays out.
 
 // Initialize debug mode stuff.
-debugmode = 1; // Is debug mode on or off?
+debugmode = 0; // Is debug mode on or off?
 debugenemy = Enemies.eZoomer; // Determines what NUM 4 spawns in debug mode.
 allitemsgiven = 0; // Determines if all items have been given to the player via debug mode.
 drawmpgrid = 0; // Determines if we draw the motion planning grid in debug mode.
@@ -42,7 +42,8 @@ canenter = false; // Can we press a key to advance the message?
 enterdelay = 0; // Ticks down until we can press a key to progress a message again.
 text = "No text"; // The text we are printing (see the scEIDMessagesInit() script.
 scan = 0; // Tells the message system if the current message is the result of using the Scan Visor.
-gonextroom = 0; // When leaving a message, determine if we go to the game or not (from title screen).
+gonextroom = 0; // When leaving a message, determine if we go to another room.
+targetroom = -1; // Tells which room to go to when done with specific message types.
 
 // Initialize light and hidden area variables.
 hiddenfade1 = 0; // Fades lights in and out in hidden areas on layers -1 through -3.

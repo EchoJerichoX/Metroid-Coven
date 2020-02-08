@@ -42,9 +42,6 @@
   <NewExtensions/>
   <sounds name="sound">
     <sounds name="Old">
-      <sounds name="Ambience">
-        <sound>sound\AmbienceSnow</sound>
-      </sounds>
       <sounds name="Effects">
         <sound>sound\BeamChargeLoop</sound>
         <sound>sound\BeamChargeStart</sound>
@@ -76,7 +73,6 @@
         <sound>sound\IceBeamImpact2</sound>
         <sound>sound\IceBeamImpact3</sound>
         <sound>sound\IceShatter</sound>
-        <sound>sound\IntroShip</sound>
         <sound>sound\MissileExplosion</sound>
         <sound>sound\MissileFire</sound>
         <sound>sound\PowerBomb</sound>
@@ -101,14 +97,23 @@
         <sound>sound\ZoomerDie</sound>
       </sounds>
     </sounds>
-    <sounds name="Sound Effects">
+    <sounds name="Ambience (70 dB)">
+      <sound>sound\ambSnow</sound>
+    </sounds>
+    <sounds name="Music (80 dB)">
+      <sound>sound\musTitle</sound>
+      <sound>sound\musIntro</sound>
+      <sound>sound\musTutorial</sound>
+      <sound>sound\musGameOver</sound>
+    </sounds>
+    <sounds name="Sound Effects (84 and 89 dB)">
       <sounds name="General Effects">
         <sound>sound\snCrackleLong</sound>
         <sound>sound\snCrackleShort1</sound>
-        <sound>sound\snCrackleShort5</sound>
-        <sound>sound\snCrackleShort4</sound>
-        <sound>sound\snCrackleShort3</sound>
         <sound>sound\snCrackleShort2</sound>
+        <sound>sound\snCrackleShort3</sound>
+        <sound>sound\snCrackleShort4</sound>
+        <sound>sound\snCrackleShort5</sound>
       </sounds>
       <sounds name="Player">
         <sounds name="Addons">
@@ -119,17 +124,12 @@
           <sound>sound\snArcDashImpactSpark</sound>
         </sounds>
         <sounds name="Other">
-          <sound>sound\sndPlayerDeath</sound>
+          <sound>sound\snPlayerDeath</sound>
         </sounds>
         <sounds name="Weapons">
-          <sound>sound\sndBeamWave</sound>
+          <sound>sound\snBeamWave</sound>
         </sounds>
       </sounds>
-    </sounds>
-    <sounds name="Music">
-      <sound>sound\musTitle</sound>
-      <sound>sound\musTutorial</sound>
-      <sound>sound\musGameOver</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -561,10 +561,12 @@
       <script>scripts\scEIDDraw.gml</script>
       <script>scripts\scDrawHUD.gml</script>
       <script>scripts\scDebugModeDraw.gml</script>
-      <script>scripts\scMusicAction.gml</script>
+      <script>scripts\scMusic.gml</script>
       <script>scripts\scMusicHandler.gml</script>
       <script>scripts\scMessage.gml</script>
       <script>scripts\scMessageHandler.gml</script>
+      <script>scripts\scFade.gml</script>
+      <script>scripts\scFadeHandler.gml</script>
     </scripts>
     <scripts name="Environment">
       <scripts name="Doors">
@@ -599,6 +601,8 @@
     <scripts name="Interface">
       <scripts name="Death">
         <script>scripts\scDeathInit.gml</script>
+        <script>scripts\scDeathStep.gml</script>
+        <script>scripts\scDeathDraw.gml</script>
         <script>scripts\scDeathMenuObjectInit.gml</script>
         <script>scripts\scDeathMenuObjectStep.gml</script>
         <script>scripts\scDeathMenuObjectMouseEnter.gml</script>
@@ -664,7 +668,6 @@
         <script>scripts\scTransOut.gml</script>
         <script>scripts\scTransition.gml</script>
         <script>scripts\scTransIn.gml</script>
-        <script>scripts\scFade.gml</script>
       </scripts>
     </scripts>
     <scripts name="View Controller">
@@ -718,6 +721,7 @@
       <object>objects\eId</object>
       <object>objects\oLE</object>
       <object>objects\oViewController</object>
+      <object>objects\oDeathController</object>
       <object>objects\oSandboxController</object>
     </objects>
     <objects name="Environment">
@@ -786,7 +790,6 @@
     </objects>
     <objects name="Interface">
       <objects name="Death">
-        <object>objects\oDeathController</object>
         <object>objects\oDeathRestart</object>
         <object>objects\oDeathQuitToTitle</object>
       </objects>
@@ -813,10 +816,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\InitRoom</room>
-    <rooms name="Intro/Title">
-      <room>rooms\TitleRoom</room>
-      <room>rooms\IntroRoom</room>
-    </rooms>
     <rooms name="Tutorial">
       <room>rooms\TutorialStart</room>
       <room>rooms\Tutorial2</room>
@@ -842,14 +841,16 @@
       <room>rooms\BarriaCacheMorphBall</room>
     </rooms>
     <rooms name="Generic Rooms">
-      <room>rooms\GeneralTestRoom</room>
-      <room>rooms\EnemyTestRoom</room>
       <room>rooms\DashTestRoom</room>
-      <room>rooms\NewRoomTemplate</room>
-      <room>rooms\Fire1</room>
-      <room>rooms\TransitionRoom</room>
       <room>rooms\DeathRoom</room>
+      <room>rooms\EnemyTestRoom</room>
+      <room>rooms\Fire1</room>
+      <room>rooms\GeneralTestRoom</room>
+      <room>rooms\IntroRoom</room>
+      <room>rooms\NewRoomTemplate</room>
       <room>rooms\Sandbox</room>
+      <room>rooms\TitleRoom</room>
+      <room>rooms\TransitionRoom</room>
     </rooms>
   </rooms>
   <help>

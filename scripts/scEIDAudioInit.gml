@@ -6,10 +6,10 @@
 // ======================
 
 // Initialize music handler stuff.
-// See scMusicAction and scMusicHandler.
-musicselected = 0;              // Currently loaded music track.
-musicdesired = musTitle;        // Music track we want to use.
-musicvolumegoal = 1;            // Volume we are trying to reach or fade to.
+// See scMusic and scMusicHandler.
+musicselected = -1;       // Currently loaded music track.
+musicdesired = -2;              // Music track we want to use.
+musicvolumegoal = 0;            // Volume we are trying to reach or fade to.
 musicvolume = 0;                // Current music volume.
 muteduration = 0;               // Length of temporary mute.
 musicdefaultfaderate = 0.04;    // Standard rate of all music fading, up or down.
@@ -27,7 +27,7 @@ prevmusicvol = 0;           // Volume of current music on previous step.
 // = PLAYER SOUNDS =
 // =================
 // - Weapons -
-sound_volume(sndBeamWave,1);
+sound_volume(snBeamWave,1);
 // - Addons -
 sound_volume(snArcDashStart,1);
 sound_volume(snArcDashCharge,1);

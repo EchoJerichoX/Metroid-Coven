@@ -20,7 +20,7 @@ room_goto(TitleRoom);</code>
   <clearDisplayBuffer>0</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1016</w>
+    <w>992</w>
     <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>

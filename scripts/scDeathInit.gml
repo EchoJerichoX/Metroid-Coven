@@ -6,3 +6,5 @@ curroom = room; // Save room we are in.
 atmosalpha = 0.5;
 atmosup = 1;
 room_goto(DeathRoom);
+scFade(c_black,0,0.01);
+scMusic(1,musGameOver,eId.musicdefaultfaderate/2,0);

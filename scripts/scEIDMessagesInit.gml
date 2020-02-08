@@ -80,5 +80,7 @@ GainAccelTank = "Accel Tank acquired!#Suit recovery rates amplified.";
 // --- Miscellaneous messages ---
 Start = "Ready to begin?#Y = Yes     N = No";
 Exit = "Exit the game?#Y = Yes     N = No";
+Restart = "Continue from last save?#Y = Yes     N = No";
+QuitToTitle = "Return to title screen?#Y = Yes     N = No";
 TutorialWelcomeMessage = "Welcome to the tutorial. Here you will learn the basic gameplay mechanics and controls.##Move Samus with the -W-, -A-, -S-, and -D- keys.#Aim Samus' arm cannon with the mouse and -Left Click- to fire.#Hold and release -Right Click- to use your Charge Beam.#Press -F- to toggle your flashlight.##Explore the tutorial area as you please, the path is mostly linear, with low-detail environments and easy enemies to learn with.#DEMO NOTE: Please send all feedback and bugs to echojerichox@gmail.com.#Enjoy!";
                           // Remove the last 2 lines of this message for non-demo release(s).

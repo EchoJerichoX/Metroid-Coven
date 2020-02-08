@@ -4,13 +4,11 @@ Argument 1 = color to fade in from.
 Argument 2 = starting alpha.
 Argument 3 = fade-in rate.
 */
-if (instance_exists(eId))
+with (eId)
 {
-    with (eId)
-    {
-        fadedir = argument0;
-        fadecolor = argument1;
-        fadealpha = argument2;
-        fadealpharate = argument3;
-    }
+    fadecolor = argument0;
+    fadealphagoal = argument1;
+    fadealpharate = argument2;
+    if (fadealphagoal = 0) fadealpha = 1;
+    else fadealpha = 0;
 }

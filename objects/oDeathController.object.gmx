@@ -49,16 +49,31 @@ scDeathInit();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (atmosup)
-{
-    if (atmosalpha &lt; 0.8) atmosalpha += 0.01;
-    else atmosup = 0;
-}
-else
-{
-    if (atmosalpha &gt; 0.5) atmosalpha -= 0.01;
-    else atmosup = 1;
-}
+            <string>///scDeathStep();
+scDeathStep();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>persistent = false;
 </string>
           </argument>
         </arguments>
@@ -81,11 +96,8 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_alpha(atmosalpha);
-draw_sprite(sprDeathRoomAtmosphere,-1,640,0);
-draw_set_alpha(1);
-draw_sprite(sprDeathGameOver,-1,320,150);
-
+            <string>///scDeathDraw();
+scDeathDraw();
 </string>
           </argument>
         </arguments>

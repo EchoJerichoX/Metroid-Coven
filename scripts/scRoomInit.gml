@@ -8,8 +8,14 @@ if (!instance_exists(oViewController)) instance_create(x,y,oViewController);
 switch (room)
 {
     case TitleRoom:
-        scFade(0,c_black,1,0.05); // Fade in from black.
-        scMusicAction(1,musTitle,eId.musicdefaultfaderate,eId.muteduration);
+        scFade(c_black,0,0.015); // Fade in from black.
+        scMusic(1,musTitle,0,0);
+        break;
+    case IntroRoom:
+        scMusic(1,musIntro,1,0);
+        break;
+    case TutorialStart:
+        scMusic(1,musTutorial,0,0);
         break;
 }
 // Step 1: Determine weather type by region.
@@ -26,7 +32,19 @@ if (object_index = eId)
         // NOTE that some rooms initialize their vector paths from the room creation code.
         // - Tutorial -
         case TutorialStart:
-            alarm[1] = 10;
+            // Run the tutorial "welcome" message.
+            // This used to run on a 10-frame alarm.
+            /*
+            if (tutorialmessageshown = 0)
+            {
+                scan = 1;
+                tutorialmessageshown = 1;
+                scPause();
+                fadeStage = 0;
+                text = TutorialWelcomeMessage;
+                alarm[0] = 5;
+            }
+            */
         case Tutorial2:
         case Tutorial3:
         case Tutorial4:

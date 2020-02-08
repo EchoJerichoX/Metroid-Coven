@@ -41,7 +41,7 @@ switch (fadeStage)
             if (alpha1 < 1) alpha1 += 0.02;
             if (alpha1 = 1) 
             {
-                if (wait > 0) wait -= 1;
+                if (wait > 0) and (targetroom = IntroRoom) wait -= 1;
                 else
                 {
                     if (eId.paused = .2) scPause();
@@ -51,7 +51,9 @@ switch (fadeStage)
                     text = 0;
                     alpha1 = 0;
                     alpha2 = 0;
-                    room_goto(IntroRoom); gonextroom = 0; 
+                    gonextroom = 0; 
+                    room_goto(targetroom);
+                    wait = 120;
                 }
             }
             exit;
@@ -106,8 +108,9 @@ if (fadeStage > -1)
             {
                 fadeStage = 2;
                 canenter = false;
-                gonextroom = true;
-                scMusicAction(0,eId.musicselected,eId.musicdefaultfaderate,eId.muteduration);
+                gonextroom = 1;
+                targetroom = IntroRoom;
+                scMusic(0,eId.musicselected,0,0);
             }
             if (keyboard_check_pressed(vk_escape))
             or (keyboard_check_pressed(ord("N")))
@@ -116,12 +119,41 @@ if (fadeStage > -1)
                 canenter = false;
             }
             break;
-        default:
+        case Restart:
             if (mouse_check_button_pressed(mb_left))
             or (keyboard_check_pressed(vk_space))
             or (keyboard_check_pressed(vk_enter))
             or (keyboard_check_pressed(vk_return))
-            or (keyboard_check_pressed(vk_escape))
+            or (keyboard_check_pressed(ord("Y")))
+            {
+                fadeStage = 2;
+                canenter = false;
+                gonextroom = 1;
+                targetroom = TutorialStart; // Insert save room loading code here.
+                scMusic(0,eId.musicselected,0,0);
+            }
+            if (keyboard_check_pressed(vk_escape))
+            or (keyboard_check_pressed(ord("N")))
+            {
+                fadeStage = 2;
+                canenter = false;
+            }
+            break;
+        case QuitToTitle:
+            if (mouse_check_button_pressed(mb_left))
+            or (keyboard_check_pressed(vk_space))
+            or (keyboard_check_pressed(vk_enter))
+            or (keyboard_check_pressed(vk_return))
+            or (keyboard_check_pressed(ord("Y")))
+            {
+                fadeStage = 2;
+                canenter = false;
+                gonextroom = 1;
+                targetroom = TitleRoom;
+                scMusic(0,eId.musicselected,0,0);
+            }
+            if (keyboard_check_pressed(vk_escape))
+            or (keyboard_check_pressed(ord("N")))
             {
                 fadeStage = 2;
                 canenter = false;

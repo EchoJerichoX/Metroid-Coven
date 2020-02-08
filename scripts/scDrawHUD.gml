@@ -11,6 +11,7 @@ var vx,vy,
     PowerBombAlpha;
 vx = view_xview[0];
 vy = view_yview[0];
+draw_set_alpha(1)
 
 // ----------
 // Draw general components.
@@ -20,11 +21,11 @@ if (instance_exists(oPlayer))
 {
     var mc,height1; //mc = "Measured Charge" = the player's charge beam level measured into the height of the bar sprite.
     mc = 0.92*oPlayer.Charger;
-    if (oPlayer.Charger > 0) draw_sprite_part_ext(sprHUDChargeBar,0,0,92-mc,15,mc,vx+50,vy+211+92-mc,1,1,c_white,image_alpha);
+    if (oPlayer.Charger > 0) draw_sprite_part_ext(sprHUDChargeBar,0,0,92-mc,15,mc,vx+50,vy+211+92-mc,1,1,c_white,1);
     // ---
     var mh,height2; //mh = "Measured Heat" = the player's Plasma Beam heat level measured into the height of the bar sprite.
     mh = 1.33*oPlayer.Heat;
-    if (eId.HasPlasmaBeam) and (oPlayer.Heat > 0) draw_sprite_part_ext(sprHUDHeatBar,0,0,133-mh,57,mh,vx+57,vy+322+133-mh,1,1,c_white,image_alpha);
+    if (eId.HasPlasmaBeam) and (oPlayer.Heat > 0) draw_sprite_part_ext(sprHUDHeatBar,0,0,133-mh,57,mh,vx+57,vy+322+133-mh,1,1,c_white,1);
     // ---
     /*var mc,height3; //mc = "Measured Charge" = the player's charge beam level measured into the height of the bar sprite.
     mc = 0.92*oPlayer.Charger;
@@ -53,8 +54,8 @@ if (instance_exists(oPlayer))
     {
         if (i >= 1)
         {
-            if (oPlayer.FullTanks >= i) draw_sprite_ext(sprHUDEnergyTank,0,exbase+(19*i-1),ey,1,1,0,c_white,image_alpha);
-            else if (oPlayer.FullTanks < i) draw_sprite_ext(sprHUDEnergyTank,0,exbase+(19*i-1),ey,1,1,0,c_white,image_alpha/4);
+            if (oPlayer.FullTanks >= i) draw_sprite_ext(sprHUDEnergyTank,0,exbase+(19*i-1),ey,1,1,0,c_white,1);
+            else if (oPlayer.FullTanks < i) draw_sprite_ext(sprHUDEnergyTank,0,exbase+(19*i-1),ey,1,1,0,c_white,0.25);
         }
     }
     //Draw bar.
@@ -63,7 +64,7 @@ if (instance_exists(oPlayer))
     //Draw bar "background".
     if (oPlayer.Energy < 100) draw_sprite_ext(sprHUDEnergyBar,0,vx+246,vy+40,1,1,0,c_white,0.3);
     //Draw bar "foreground".
-    draw_sprite_part_ext(sprHUDEnergyBar,0,0,0,me,11,vx+246,vy+40,1,1,c_white,image_alpha);
+    draw_sprite_part_ext(sprHUDEnergyBar,0,0,0,me,11,vx+246,vy+40,1,1,c_white,1);
     //Draw text.
     c1 = 10;
     c2 = 10;

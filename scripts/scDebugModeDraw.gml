@@ -38,7 +38,22 @@ if (object_index = eId)
     draw_rectangle(dxo,dyo,dxo+220,dyo+125,0);
     draw_set_color(c_white);
     draw_set_alpha(0.9);
+    // Track message handler variables.
+    draw_text(dxo+4,dyo+13,"fadeStage");        draw_text(dxo+160,dyo+13,fadeStage);
+    draw_text(dxo+4,dyo+26,"alpha1");           draw_text(dxo+160,dyo+26,alpha1);
+    draw_text(dxo+4,dyo+39,"alpha2");           draw_text(dxo+160,dyo+39,alpha2);
+    draw_text(dxo+4,dyo+52,"wait");             draw_text(dxo+160,dyo+52,wait);
+    draw_text(dxo+4,dyo+65,"gonextroom");       draw_text(dxo+160,dyo+65,gonextroom);
+    draw_text(dxo+4,dyo+78,"text");             draw_text(dxo+160,dyo+78,text);
+    // Track fade handler variables.
+    /*
+    draw_text(dxo+4,dyo+13,"fadealpha");        draw_text(dxo+190,dyo+13,fadealpha);
+    draw_text(dxo+4,dyo+26,"fadecolor");        draw_text(dxo+190,dyo+26,fadecolor);
+    draw_text(dxo+4,dyo+39,"fadealphagoal");    draw_text(dxo+190,dyo+39,fadealphagoal);
+    draw_text(dxo+4,dyo+52,"fadealpharate");    draw_text(dxo+190,dyo+52,fadealpharate);
+    */
     // Track music variables.
+    /*
     draw_text(dxo+4,dyo+13,"musicselected");        draw_text(dxo+160,dyo+13,musicselected);
     draw_text(dxo+4,dyo+26,"musicdesired");         draw_text(dxo+160,dyo+26,musicdesired);
     draw_text(dxo+4,dyo+39,"musicvolumegoal");      draw_text(dxo+160,dyo+39,musicvolumegoal);
@@ -46,6 +61,7 @@ if (object_index = eId)
     draw_text(dxo+4,dyo+65,"muteduration");         draw_text(dxo+160,dyo+65,muteduration);
     draw_text(dxo+4,dyo+78,"musicdefaultfaderate"); draw_text(dxo+160,dyo+78,musicdefaultfaderate);
     draw_text(dxo+4,dyo+91,"musicfaderate");        draw_text(dxo+160,dyo+91,musicfaderate);
+    */
     // Track death animation.
     /*
     if (instance_exists(oDeathAnim))

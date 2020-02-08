@@ -55,4 +55,5 @@ if (fadeStage != -1)
     draw_text_ext(view_xview[0]+view_wview[0]/2,view_yview[0]+view_hview[0]/2,text,-15,630);
     draw_set_alpha(1);
 }
-scDebugModeDraw(); // Optional.
+scFadeHandler();
+scDebugModeDraw();

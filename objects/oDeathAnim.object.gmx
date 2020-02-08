@@ -41,6 +41,7 @@ redalpha = 1;
 progressanim2 = 0;
 whitefade = 0;
 roomgo = 0;
+scMusic(0,eId.musicselected,1,0);
 // Insert future suit sprite selection here.
 </string>
           </argument>
@@ -141,7 +142,7 @@ with (instance_create(x,y,oDestroyAnim))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sound_play(sndPlayerDeath); // Wind-up to suit bursting.
+            <string>sound_play(snPlayerDeath); // Wind-up to suit bursting.
 startflicker = 1; // Initialize flicker effect on suit.
 image_speed = 0.1; // Slowly curl.
 

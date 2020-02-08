@@ -1,3 +1,5 @@
+if (musicselected = -1) exit;
+
 sound_volume(musicselected,musicvolume);
 
 // Play.
