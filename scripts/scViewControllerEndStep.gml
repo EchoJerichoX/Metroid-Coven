@@ -2,6 +2,9 @@
 // Find the target x and y that the view will follow.
 if (instance_exists(oPlayer))
 {
+    x = oPlayer.x;
+    y = oPlayer.y;
+    /*
     var pd = point_distance(oPlayer.x,oPlayer.y,mouse_x,mouse_y);
     ox = lengthdir_x((pd/4)*-1,point_direction(oPlayer.x,oPlayer.y,mouse_x,mouse_y));
     oy = lengthdir_y((pd/4)*-1,point_direction(oPlayer.x,oPlayer.y,mouse_x,mouse_y));
@@ -11,21 +14,28 @@ if (instance_exists(oPlayer))
     //yy = mean(oPlayer.y,mouse_y);
     xx = mean(oPlayer.x,mouse_x);
     yy = mean(oPlayer.y,mouse_y);
+    */
 }
-else exit;
+//else exit;
+else
+    { x = mouse_x; y = mouse_y; exit; }
+/*
 if (point_distance(x,y,xx,yy) > truemaxspeed)
     { if (maxspeed < truemaxspeed) maxspeed += 0.25; }
 else
     { maxspeed = 0; }
+*/
 
 // Move towards the target view location.
+/*
 switch (eId.transstep)
 {
     case -1:
         if (instance_exists(oPlayer)) and (eId.paused = 0) and (eId.fadeStage = -1)
-            { move_towards_point(xx,yy,point_distance(x,y,xx,yy)/10); }
-        else speed = 0;
-        speed = clamp(speed,0,maxspeed);
+            { x = oPlayer.x; y = oPlayer.y; }
+            //{ move_towards_point(xx,yy,point_distance(x,y,xx,yy)/10); }
+        //else speed = 0;
+        //speed = clamp(speed,0,maxspeed);
         break;
     case 0:
         exit;
@@ -41,6 +51,7 @@ switch (eId.transstep)
         y = oPlayer.y;
         break;
 }
+*/
 // Center the view on the controller.
 if (shake > 0) shake -= shakerate; // Descale the view shake gradually.
 // Limit the view location to the edges of the room.

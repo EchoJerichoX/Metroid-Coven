@@ -174,3 +174,12 @@ if (keyboard_check_pressed(vk_multiply))
 // Reduce player health by 1.
 if (keyboard_check(vk_subtract))
     { if (instance_exists(oPlayer)) with (oPlayer) Energy -= 1; }
+
+// Restart game.
+if (keyboard_check(vk_pagedown)) game_restart();
+
+// Restart room. *Use with caution!*
+if (keyboard_check(vk_pageup)) room_restart(); // Re-run room entrance transition code from here somehow?
+
+// Create player object at mouse.
+if (keyboard_check_pressed(vk_home)) instance_create(mouse_x,mouse_y,oPlayer);

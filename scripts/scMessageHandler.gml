@@ -159,5 +159,15 @@ if (fadeStage > -1)
                 canenter = false;
             }
             break;
+        default:
+            if (mouse_check_button_pressed(mb_left))
+            or (keyboard_check_pressed(vk_space))
+            or (keyboard_check_pressed(vk_enter))
+            or (keyboard_check_pressed(vk_return))
+            or (keyboard_check_pressed(vk_escape))
+            {
+                fadeStage = 2;
+                canenter = false;
+            }
     }
 }

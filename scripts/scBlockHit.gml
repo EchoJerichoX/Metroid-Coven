@@ -16,6 +16,7 @@ switch (argument0)
         break;
 }
 */
+if (other.sprite_index = sprBallBomb) exit;
 switch (object_index)
 {
     case oBlock16:
