@@ -79,6 +79,10 @@ vector_path_add(oVectorLine,Tutorial2Path1,0,0,0);</code>
     <instance objName="oDomeLight" x="96" y="280" name="inst_8F2F2B3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDomeLight" x="960" y="216" name="inst_E709F1A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDomeLight" x="952" y="280" name="inst_E0152BBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oActor" x="416" y="136" name="inst_F37DE132" locked="0" code="scDefineActor(Enemies.eZoomer);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oActor" x="400" y="168" name="inst_AB5340B9" locked="0" code="scDefineActor(Enemies.eZoomer);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oActor" x="456" y="112" name="inst_2D4881A0" locked="0" code="scDefineActor(Enemies.eZoomer);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oZoomerDen" x="576" y="144" name="inst_4AFB8332" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilBarriaOuter" x="0" y="192" w="16" h="16" xo="176" yo="32" id="10031400" name="inst_A7CE2355" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

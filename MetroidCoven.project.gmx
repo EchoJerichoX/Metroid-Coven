@@ -137,6 +137,7 @@
       <sprite>sprites\sprItems</sprite>
       <sprite>sprites\sprItemScan</sprite>
       <sprite>sprites\sprLightEffect</sprite>
+      <sprite>sprites\sprLightEffectSmall</sprite>
       <sprite>sprites\sprLightEffectBright</sprite>
       <sprite>sprites\sprLightFog</sprite>
       <sprite>sprites\sprLightTorch</sprite>
@@ -164,6 +165,7 @@
       </sprites>
       <sprites name="Zoomer">
         <sprite>sprites\sprZoomer</sprite>
+        <sprite>sprites\sprZoomerLights</sprite>
         <sprite>sprites\sprZoomerHit</sprite>
         <sprite>sprites\sprZoomerDie</sprite>
         <sprite>sprites\sprZoomerPart</sprite>
@@ -175,11 +177,13 @@
       </sprites>
       <sprites name="Turret">
         <sprite>sprites\sprTurret</sprite>
+        <sprite>sprites\sprTurretLights</sprite>
         <sprite>sprites\sprTurretHit</sprite>
         <sprite>sprites\sprTurretPart</sprite>
       </sprites>
       <sprites name="Space Pirate">
         <sprite>sprites\sprSpacePirate</sprite>
+        <sprite>sprites\sprSpacePirateLights</sprite>
       </sprites>
     </sprites>
     <sprites name="Environment">
@@ -536,6 +540,7 @@
       <script>scripts\scActorWallCollide.gml</script>
       <script>scripts\scActorRoomEnd.gml</script>
       <script>scripts\scActorDeath.gml</script>
+      <script>scripts\scActorLight.gml</script>
       <scripts name="Actor-specific">
         <scripts name="Zoomer">
           <script>scripts\scZoomerStep.gml</script>
@@ -584,6 +589,9 @@
         <script>scripts\scSpikesInit.gml</script>
       </scripts>
       <scripts name="Lights and Hidden Areas">
+        <script>scripts\scLEInit.gml</script>
+        <script>scripts\scLEStep.gml</script>
+        <script>scripts\scLEDraw.gml</script>
         <script>scripts\scLightInit.gml</script>
         <script>scripts\scFadeHiddenArea.gml</script>
       </scripts>

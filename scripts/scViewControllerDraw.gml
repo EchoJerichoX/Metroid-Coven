@@ -11,5 +11,3 @@ if (DrawRed = true)
     draw_set_alpha(.5);
     DrawRed = false;
 }
-x = round(x);
-y = round(y);

@@ -50,23 +50,24 @@ switch(myid)
         ImmuneToPowerBomb = 0;
         CantTakeDamageFrom = noone;
         destdir = 0;
-        primarydir = -1; // Tells the turret where its general facing is (center of sight cone).
-                         // Defined in room creation code.
+        primarydir = -1;        // Tells the turret where its general facing is (center of sight cone).
+                                // Defined in room creation code.
         mindir = 0;
         maxdir = 0;
-        sightconesize = 120; // Full size of sight cone, in degrees out of 360.
-        range = 300; // How far the turret can see the player, in pixels.
+        sightconesize = 120;    // Full size of sight cone, in degrees out of 360.
+        truerange = 200;        // How far the turret can see the player, in pixels.
+        range = truerange;      // The range changes dynamically if attacked.
         angleDiffTurn = 0;
         turnrate = 4;
-        turn = 1; // Which direction to turn.
-        turnchangerate = 60; // Time between changing direction for random sweeps.
+        turn = 1;               // Which direction to turn.
+        turnchangerate = 60;    // Time between changing direction for random sweeps.
         turnchange = turnchangerate;
-        lastturn = 1; // Last direction it tried to turn. Switches to alternate random rotation behavior.
+        lastturn = 1;           // Last direction it tried to turn. Switches to alternate random rotation behavior.
         attack = 0;
         shotready = 1;
-        shotdelay = 60; // Delay between bursts.
+        shotdelay = 60;         // Delay between bursts.
         pulse = 0;
-        pulsedelay = 10; // Delay between individual shots in each burst.
+        pulsedelay = 10;        // Delay between individual shots in each burst.
         pulseready = pulsedelay;
         damaged = 0;
         image_speed = 0;

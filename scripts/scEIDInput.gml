@@ -28,13 +28,15 @@ if (keyboard_check_pressed(vk_f9))
             Snaps to nearest 16x16 grid corner.
             WARNING: Will delete other 16x16 basic
             blocks underneath it when placed!
-    NUM 6 - Update AI movement planning grid cells.
+    NUM 6 - Create player object at mouse.
     NUM 7 - Toggle drawing of motion planning grid.
     NUM 8 - Update motion planning grid.
     NUM 9 - Toggle HUD.
     NUM / - Toggle slowdown.
     NUM * - Grant all powerups to player.
     NUM - - Reduce player health by 1.
+    PAGE DOWN - Restart game.
+    PAGE UP - Restart current room (risky).
 */
 
 // Toggle debug mode.
@@ -113,14 +115,10 @@ if (keyboard_check_pressed(vk_numpad5))
                 { with (occ) instance_destroy(); }
         }
     }
-}    
-
-// Update AI movement planning grid cells.
-if (keyboard_check_pressed(vk_numpad6))
-{
-    mp_grid_clear_all(aigrid);
-    mp_grid_add_instances(aigrid,oBlockParent,true);
 }
+
+// Create player object at mouse.
+if (keyboard_check_pressed(vk_numpad6)) instance_create(mouse_x,mouse_y,oPlayer);
 
 // Toggle drawing of motion planning grid.
 if (keyboard_check_pressed(vk_numpad7)) drawmpgrid = !drawmpgrid;
@@ -131,7 +129,7 @@ if (keyboard_check_pressed(vk_numpad8)) scUpdateMPGrid();
 // Toggle HUD.
 if (keyboard_check_pressed(vk_numpad9)) drawhud = !drawhud;
 
-// Toggle HUD.
+// Toggle slow motion.
 if (keyboard_check_pressed(vk_divide))
 {
     if (room_speed = 60) room_speed = 15;
@@ -180,6 +178,3 @@ if (keyboard_check(vk_pagedown)) game_restart();
 
 // Restart room. *Use with caution!*
 if (keyboard_check(vk_pageup)) room_restart(); // Re-run room entrance transition code from here somehow?
-
-// Create player object at mouse.
-if (keyboard_check_pressed(vk_home)) instance_create(mouse_x,mouse_y,oPlayer);

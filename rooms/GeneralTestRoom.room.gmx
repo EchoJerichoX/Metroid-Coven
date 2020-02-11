@@ -65,20 +65,20 @@ vector_path_add(oVectorLine,GeneralTestRoomPath1,0,0,0);</code>
     <instance objName="oItem" x="240" y="80" name="inst_AEF4BC29" locked="0" code="scDefineItem(Items.iEnergyTank);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oPlayer" x="304" y="464" name="inst_80456030" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oTestItemSpawner" x="224" y="160" name="inst_CE274E12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock16" x="96" y="352" name="inst_0C0E576E" locked="0" code="scDefineBlock(Blocks.bReform);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock16" x="128" y="352" name="inst_C44C2B8A" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock16" x="160" y="352" name="inst_8D488993" locked="0" code="scDefineBlock(Blocks.bPowerBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock16" x="192" y="352" name="inst_329F1FF2" locked="0" code="scDefineBlock(Blocks.bMissile);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock16" x="224" y="352" name="inst_9921D112" locked="0" code="scDefineBlock(Blocks.bSuperMissile);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock16" x="64" y="352" name="inst_69E276EB" locked="0" code="scDefineBlock(Blocks.bBasic);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock16" x="256" y="352" name="inst_42FBB809" locked="0" code="scDefineBlock(Blocks.bArcDash);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock8" x="64" y="400" name="inst_82188426" locked="0" code="scDefineBlock(Blocks.bBasic);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock8" x="88" y="400" name="inst_7E075569" locked="0" code="scDefineBlock(Blocks.bReform);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock8" x="112" y="400" name="inst_18E98055" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock8" x="136" y="400" name="inst_9840EE3A" locked="0" code="scDefineBlock(Blocks.bPowerBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock8" x="160" y="400" name="inst_7CC7B4E4" locked="0" code="scDefineBlock(Blocks.bMissile);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock8" x="184" y="400" name="inst_A22512EA" locked="0" code="scDefineBlock(Blocks.bSuperMissile);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock8" x="208" y="400" name="inst_43675ADC" locked="0" code="scDefineBlock(Blocks.bArcDash);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock16" x="96" y="288" name="inst_0C0E576E" locked="0" code="scDefineBlock(Blocks.bReform);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock16" x="128" y="320" name="inst_C44C2B8A" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock16" x="160" y="256" name="inst_8D488993" locked="0" code="scDefineBlock(Blocks.bPowerBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock16" x="192" y="288" name="inst_329F1FF2" locked="0" code="scDefineBlock(Blocks.bMissile);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock16" x="224" y="320" name="inst_9921D112" locked="0" code="scDefineBlock(Blocks.bSuperMissile);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock16" x="64" y="256" name="inst_69E276EB" locked="0" code="scDefineBlock(Blocks.bBasic);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock16" x="256" y="256" name="inst_42FBB809" locked="0" code="scDefineBlock(Blocks.bArcDash);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock8" x="64" y="352" name="inst_82188426" locked="0" code="scDefineBlock(Blocks.bBasic);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock8" x="96" y="384" name="inst_7E075569" locked="0" code="scDefineBlock(Blocks.bReform);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock8" x="128" y="416" name="inst_18E98055" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock8" x="160" y="352" name="inst_9840EE3A" locked="0" code="scDefineBlock(Blocks.bPowerBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock8" x="192" y="384" name="inst_7CC7B4E4" locked="0" code="scDefineBlock(Blocks.bMissile);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock8" x="224" y="416" name="inst_A22512EA" locked="0" code="scDefineBlock(Blocks.bSuperMissile);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock8" x="256" y="352" name="inst_43675ADC" locked="0" code="scDefineBlock(Blocks.bArcDash);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oViewController" x="0" y="0" name="inst_E390C63E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oItem" x="512" y="80" name="inst_8853DBC0" locked="0" code="scDefineItem(Items.iMissileExpansion);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oItem" x="544" y="80" name="inst_E43F2287" locked="0" code="scDefineItem(Items.iMissileExpansion);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -91,15 +91,6 @@ vector_path_add(oVectorLine,GeneralTestRoomPath1,0,0,0);</code>
     <instance objName="oItem" x="576" y="144" name="inst_B40499E9" locked="0" code="scDefineItem(Items.iPowerBombExpansion);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock16" x="461" y="541" name="inst_3A27FD77" locked="0" code="scDefineBlock(Blocks.bReform);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oZoomerDen" x="112" y="480" name="inst_60797A8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock16" x="80" y="256" name="inst_688644B6" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock16" x="128" y="208" name="inst_F7F68651" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock16" x="176" y="208" name="inst_0120525A" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock16" x="128" y="256" name="inst_A417E7A8" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock16" x="176" y="256" name="inst_85CD3D8F" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock16" x="128" y="304" name="inst_F9E313E6" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock16" x="176" y="304" name="inst_F72FA74E" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock16" x="80" y="208" name="inst_3BA82AE3" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock16" x="80" y="304" name="inst_44FF5421" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oActor" x="320" y="656" name="inst_63EE3452" locked="0" code="scDefineTurret(270);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oIceUD" x="320" y="608" name="inst_F3241AD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallCrate" x="640" y="496" name="inst_60C750F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -217,6 +208,20 @@ vector_path_add(oVectorLine,GeneralTestRoomPath1,0,0,0);</code>
     <tile bgName="tilBarriaInstOuter" x="344" y="96" w="80" h="32" xo="160" yo="128" id="10003584" name="tile_930CAA96" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="&lt;undefined&gt;" x="96" y="528" w="48" h="48" xo="0" yo="192" id="10009154" name="tile_07295A1B" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="&lt;undefined&gt;" x="96" y="576" w="48" h="48" xo="0" yo="192" id="10009155" name="tile_C4645604" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInstOuter" x="64" y="256" w="16" h="16" xo="128" yo="48" id="10037051" name="inst_C8DBC3DC" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInstOuter" x="96" y="288" w="16" h="16" xo="128" yo="48" id="10037052" name="inst_B6712240" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInstOuter" x="128" y="320" w="16" h="16" xo="128" yo="48" id="10037053" name="inst_0F43B0AF" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInstOuter" x="160" y="256" w="16" h="16" xo="128" yo="48" id="10037054" name="inst_335671C4" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInstOuter" x="192" y="288" w="16" h="16" xo="128" yo="48" id="10037055" name="inst_66C54B7B" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInstOuter" x="224" y="320" w="16" h="16" xo="128" yo="48" id="10037056" name="inst_FDFBCB3F" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInstOuter" x="256" y="256" w="16" h="16" xo="128" yo="48" id="10037057" name="inst_B5FF5619" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInstOuter" x="64" y="352" w="16" h="16" xo="128" yo="48" id="10037058" name="inst_2E44E49A" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInstOuter" x="96" y="384" w="16" h="16" xo="128" yo="48" id="10037059" name="inst_62DAC235" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInstOuter" x="160" y="352" w="16" h="16" xo="128" yo="48" id="10037060" name="inst_B162FABB" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInstOuter" x="128" y="416" w="16" h="16" xo="128" yo="48" id="10037061" name="inst_4D72D35B" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInstOuter" x="192" y="384" w="16" h="16" xo="128" yo="48" id="10037062" name="inst_9021CA5E" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInstOuter" x="224" y="416" w="16" h="16" xo="128" yo="48" id="10037063" name="inst_6F2752A8" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInstOuter" x="256" y="352" w="16" h="16" xo="128" yo="48" id="10037064" name="inst_9DA7A611" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="grdGeneral" x="464" y="544" w="16" h="16" xo="80" yo="80" id="10034675" name="inst_7DB0B115" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaIceCave" x="352" y="256" w="16" h="16" xo="96" yo="416" id="10020553" name="inst_2879A60B" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaIceCave" x="352" y="272" w="16" h="16" xo="96" yo="416" id="10020554" name="inst_9707DB9A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

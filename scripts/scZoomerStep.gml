@@ -10,6 +10,7 @@ if (impaused)
         path_speed = 0;
         inputimspeed = ispeed;
         ispeed = 0;
+        image_speed = ispeed;
     }
     exit;
 }
@@ -17,6 +18,7 @@ if (!impaused) and (held)
 {
     path_speed = inputspeed;
     ispeed = inputimspeed;
+    image_speed = ispeed;
     held = 0;
 }
 //if (!impaused) and (!held) ispeed = 0.5;

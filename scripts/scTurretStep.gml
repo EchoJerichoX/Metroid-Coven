@@ -1,3 +1,24 @@
+// Pause handling.
+if (eId.transitioning) or (eId.paused > 0) impaused = 1;
+else impaused = 0;
+if (impaused)
+{
+    if (!held)  // Adds an extra step so we can save/load these variables below.
+                // This is the "save" step.
+    {
+        held = 1;
+        image_angle = primarydir;
+    }
+    exit;
+}
+if (!impaused) and (held) // Load the saved variables.
+{
+    path_speed = inputspeed;
+    ispeed = inputimspeed;
+    image_speed = ispeed;
+    held = 0;
+}
+
 if (instance_exists(oPlayer))
 {
     var inRange = point_distance(x,y,oPlayer.x,oPlayer.y) <= range;
@@ -40,7 +61,9 @@ if (shotready = 0) and (pulse < 3)
     }
 }
 
-if (damaged > 0) damaged -= 0.1;
+if (damaged > 0) 
+    { damaged -= 0.1; range = 10000; }
+else range = truerange;
 
 image_angle = direction;
 image_index = target;
