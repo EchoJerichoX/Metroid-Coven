@@ -142,7 +142,7 @@ with (instance_create(x,y,oDestroyAnim))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sound_play(snPlayerDeath); // Wind-up to suit bursting.
+            <string>sound_play(snSamusDeath); // Wind-up to suit bursting.
 startflicker = 1; // Initialize flicker effect on suit.
 image_speed = 0.1; // Slowly curl.
 

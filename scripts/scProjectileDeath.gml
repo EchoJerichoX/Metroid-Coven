@@ -5,7 +5,7 @@ switch (myid)
 // ===== Player Beams =====
 // --- Power Beam ---
     case Weapons.wPowerBeam:
-        sound_play(BeamImpact1);
+        sound_play(snBeamImpact1);
         with (instance_create(x,y,oDestroyAnim))
         {
             myid = other.myid;
@@ -19,7 +19,7 @@ switch (myid)
         break;
 // --- Wave Beam ---
     case Weapons.wWaveBeam:
-        sound_play(BeamImpact2);
+        sound_play(snBeamImpact2);
         with (instance_create(x,y,oDestroyAnim))
         {
             myid = other.myid;
@@ -33,7 +33,7 @@ switch (myid)
         break;
 // --- Plasma Beam ---
     case Weapons.wPlasmaBeam:
-        sound_play(BeamImpact3);
+        sound_play(snBeamImpact3);
         with (instance_create(x,y,oDestroyAnim))
         {
             myid = other.myid;
@@ -47,7 +47,7 @@ switch (myid)
         break;
 // --- Spazer Beam ---    
     case Weapons.wSpazerBeam:
-        sound_play(BeamImpact1);
+        sound_play(snBeamImpact1);
         with (instance_create(x,y,oDestroyAnim))
         {
             myid = other.myid;
@@ -61,7 +61,7 @@ switch (myid)
         break;
 // --- Pulse Beam ---
     case Weapons.wPulseBeam:
-        sound_play(BeamImpact1);
+        sound_play(snBeamImpact1);
         with (instance_create(x,y,oDestroyAnim))
         {
             sprite_index = sprBeamExplosion1;
@@ -73,7 +73,7 @@ switch (myid)
         break;
 // --- Ice Beam ---
     case Weapons.wIceBeam:
-        sound_play(choose(IceBeamImpact1,IceBeamImpact2,IceBeamImpact3));
+        sound_play(choose(snBeamImpactIce1,snBeamImpactIce2,snBeamImpactIce3));
         with (instance_create(x,y,oDestroyAnim))
         {
             myid = other.myid;
@@ -89,7 +89,7 @@ switch (myid)
     case Weapons.wRuptureBeam:
         if (particle)
         {
-            sound_play(BeamImpact1);
+            sound_play(snBeamImpact1);
             with (instance_create(x,y,oDestroyAnim))
             {
                 sprite_index = sprBeamExplosion2;
@@ -102,7 +102,7 @@ switch (myid)
         }
         else
         {
-            sound_play(BeamImpact4);
+            sound_play(snBeamImpact4);
             with (instance_create(x,y,oDestroyAnim))
             {
                 myid = other.myid;
@@ -131,7 +131,7 @@ switch (myid)
         break;
 // --- Phazon Beam ---
     case Weapons.wPhazonBeam:
-        sound_play(BeamImpact2);
+        sound_play(snBeamImpact2);
         with (instance_create(x,y,oDestroyAnim))
         {
             myid = other.myid;
@@ -205,7 +205,7 @@ switch (myid)
         break;
 // --- Ball Bomb ---
     case Weapons.wBallBomb:
-        sound_play(BombExplosion);
+        sound_play(snBombExplosion);
         with (instance_create(x,y,oExplosion))
         {
             myid = other.myid;
@@ -221,7 +221,7 @@ switch (myid)
 // ===== Enemy Beams =====
 // --- Turret Bolt ---
     case Projectiles.pTurret:
-        sound_play(BeamImpact1);
+        sound_play(snBeamImpact1);
         with (instance_create(x,y,oDestroyAnim))
         {
             sprite_index = sprBeamExplosion1;

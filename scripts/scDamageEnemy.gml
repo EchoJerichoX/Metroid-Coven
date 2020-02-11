@@ -15,7 +15,7 @@ switch (myid)
         }
         if (HP < MaxHP/2) staterate = 20; // Speed up the state changes to exhibit panic.
         if (soundcanplay = 0)
-            { sound_play(ZoomerHit) soundcanplay += 5+round(random(15)); }
+            { sound_play(snZoomerHit) soundcanplay += 5+round(random(15)); }
         if (nearestden != noone)
         {
             mp_grid_path(eId.aigrid,mypath2,x,y,nearestden.x,nearestden.y,true);

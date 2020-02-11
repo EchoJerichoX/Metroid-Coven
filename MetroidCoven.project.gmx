@@ -43,31 +43,6 @@
   <sounds name="sound">
     <sounds name="Old">
       <sounds name="Effects">
-        <sound>sound\BeamImpact1</sound>
-        <sound>sound\BeamImpact2</sound>
-        <sound>sound\BeamImpact3</sound>
-        <sound>sound\BeamImpact4</sound>
-        <sound>sound\BombExplosion</sound>
-        <sound>sound\BombLay</sound>
-        <sound>sound\Crumble1</sound>
-        <sound>sound\Crumble2</sound>
-        <sound>sound\Crumble3</sound>
-        <sound>sound\Crumble4</sound>
-        <sound>sound\Crumble5</sound>
-        <sound>sound\Crumble6</sound>
-        <sound>sound\DoorClose</sound>
-        <sound>sound\DoorHit</sound>
-        <sound>sound\DoorOpen</sound>
-        <sound>sound\EnemyZoomerDeath</sound>
-        <sound>sound\EnemyZoomerHit</sound>
-        <sound>sound\IceBeamImpact1</sound>
-        <sound>sound\IceBeamImpact2</sound>
-        <sound>sound\IceBeamImpact3</sound>
-        <sound>sound\IceShatter</sound>
-        <sound>sound\MissileExplosion</sound>
-        <sound>sound\MissileFire</sound>
-        <sound>sound\PowerBomb</sound>
-        <sound>sound\SamusBreathe</sound>
         <sound>sound\SamusDeath</sound>
         <sound>sound\SamusDodge</sound>
         <sound>sound\SamusHurt1</sound>
@@ -88,16 +63,27 @@
         <sound>sound\ZoomerDie</sound>
       </sounds>
     </sounds>
-    <sounds name="Ambience (70 dB)">
+    <sounds name="Ambience (75dB)">
       <sound>sound\ambSnow</sound>
+      <sound>sound\ambSamusBreathe</sound>
     </sounds>
-    <sounds name="Music (80 dB)">
+    <sounds name="Music (80dB)">
       <sound>sound\musTitle</sound>
       <sound>sound\musIntro</sound>
       <sound>sound\musTutorial</sound>
       <sound>sound\musGameOver</sound>
     </sounds>
-    <sounds name="Sound Effects (84 and 89 dB)">
+    <sounds name="Sound Effects (89, 84, and 80dB)">
+      <sounds name="Enemies">
+        <sound>sound\snZoomerHit</sound>
+        <sound>sound\snZoomerDeath</sound>
+      </sounds>
+      <sounds name="Environment">
+        <sound>sound\snDoorOpen</sound>
+        <sound>sound\snDoorClose</sound>
+        <sound>sound\snDoorHit</sound>
+        <sound>sound\snIceBlockShatter</sound>
+      </sounds>
       <sounds name="General Effects">
         <sound>sound\snCrackleLong</sound>
         <sound>sound\snCrackleShort1</sound>
@@ -105,6 +91,12 @@
         <sound>sound\snCrackleShort3</sound>
         <sound>sound\snCrackleShort4</sound>
         <sound>sound\snCrackleShort5</sound>
+        <sound>sound\snCrumble1</sound>
+        <sound>sound\snCrumble2</sound>
+        <sound>sound\snCrumble3</sound>
+        <sound>sound\snCrumble4</sound>
+        <sound>sound\snCrumble5</sound>
+        <sound>sound\snCrumble6</sound>
       </sounds>
       <sounds name="Player">
         <sounds name="Addons">
@@ -115,19 +107,35 @@
           <sound>sound\snArcDashImpactSpark</sound>
         </sounds>
         <sounds name="Other">
-          <sound>sound\snPlayerDeath</sound>
+          <sound>sound\snSamusDeath</sound>
         </sounds>
         <sounds name="Weapons">
-          <sound>sound\snBeamChargeStart</sound>
-          <sound>sound\snBeamChargeLoop</sound>
-          <sound>sound\snBeamPower</sound>
-          <sound>sound\snBeamWave</sound>
-          <sound>sound\snBeamPlasma</sound>
-          <sound>sound\snBeamSpazer</sound>
-          <sound>sound\snBeamPulse</sound>
-          <sound>sound\snBeamIce</sound>
-          <sound>sound\snBeamPhazon</sound>
-          <sound>sound\snBeamRupture</sound>
+          <sounds name="Beams">
+            <sound>sound\snBeamPower</sound>
+            <sound>sound\snBeamWave</sound>
+            <sound>sound\snBeamPlasma</sound>
+            <sound>sound\snBeamSpazer</sound>
+            <sound>sound\snBeamPulse</sound>
+            <sound>sound\snBeamIce</sound>
+            <sound>sound\snBeamRupture</sound>
+            <sound>sound\snBeamPhazon</sound>
+            <sound>sound\snBeamChargeStart</sound>
+            <sound>sound\snBeamChargeLoop</sound>
+            <sound>sound\snBeamImpact1</sound>
+            <sound>sound\snBeamImpact2</sound>
+            <sound>sound\snBeamImpact3</sound>
+            <sound>sound\snBeamImpact4</sound>
+            <sound>sound\snBeamImpactIce1</sound>
+            <sound>sound\snBeamImpactIce2</sound>
+            <sound>sound\snBeamImpactIce3</sound>
+          </sounds>
+          <sounds name="Secondary">
+            <sound>sound\snMissileFire</sound>
+            <sound>sound\snMissileExplosion</sound>
+            <sound>sound\snBombLay</sound>
+            <sound>sound\snBombExplosion</sound>
+            <sound>sound\snPowerBombExplosion</sound>
+          </sounds>
         </sounds>
       </sounds>
     </sounds>

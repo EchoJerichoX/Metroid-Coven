@@ -29,7 +29,7 @@ switch (myid)
             { image_speed = .25; sprite_index = sprZoomerDie; depth = other.depth; }
         //scDropLoot();
         // ^ Implement once the system is properly implemented.
-        sound_play(EnemyZoomerDeath);
+        sound_play(snZoomerDeath);
         break;
     case Enemies.eTurret:
         repeat (5)

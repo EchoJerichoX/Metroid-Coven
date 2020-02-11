@@ -28,7 +28,7 @@
             <string>timer = 0;
 image_xscale = .5;
 image_yscale = .5;
-sound_play(PowerBomb);
+sound_play(snPowerBombExplosion);
 //instance_create(x,y,objLightsearFlash);
 incr = 0;
 alpha = 0;

@@ -203,7 +203,7 @@ switch (myid)
         blend = make_color_rgb(94,174,255);
         lightalpha = 0.2;
         lightradius = 0.4;
-        sound_play(BombLay);
+        sound_play(snBombLay);
         image_speed = .1;
         createeffect = 0; // For extra visuals before exploding.
         break;
@@ -218,7 +218,7 @@ switch (myid)
         blend = c_red;
         lightalpha = 0.2;
         lightradius = 0.4;
-        sound_play(BombLay);
+        sound_play(snBombLay);
         image_speed = .03;
         createeffect = 0;
         break;

@@ -71,7 +71,7 @@ stopdash = 0;
         direction = random(360);
         image_alpha = other.image_alpha-.2;
     }
-    sound_play(IceShatter);
+    sound_play(snIceBlockShatter);
     with (instance_create(x,y,oExplosion))
     {
         sprite_index = sprIceShatter;
