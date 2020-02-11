@@ -14,7 +14,7 @@
 instance_create(0,0,eId);
 instance_create(0,0,oViewController);
 //with (eId) { fadeStage = 3; alpha1 = 1; } room_goto(TitleRoom); exit;
-room_goto(GeneralTestRoom);</code>
+room_goto(TutorialStart);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>0</clearDisplayBuffer>

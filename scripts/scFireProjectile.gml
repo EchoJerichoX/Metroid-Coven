@@ -28,7 +28,7 @@ if (HoldingWeaponId = Weapons.wWaveBeam) // Specific behavior for Wave Beam.
 }
 else if (HoldingWeaponId = Weapons.wSpazerBeam) // Specific behavior for Spazer Beam.
 {
-    sound_play(BeamSpazer);
+    sound_play(snBeamSpazer);
     for (var i = 0; i < 3; i += 1;)
     {
         with (instance_create(xx,yy,oProjectile))
@@ -45,7 +45,7 @@ else if (HoldingWeaponId = Weapons.wSpazerBeam) // Specific behavior for Spazer 
 }
 else if (HoldingWeaponId = Weapons.wPhazonBeam) // Specific behavior for Phazon Beam.
 {
-    sound_play(BeamPhazon);
+    sound_play(snBeamPhazon);
     pop = instance_create(xx,yy,oParticle);
     pop.myid = argument1;
     if (Charger < 60)

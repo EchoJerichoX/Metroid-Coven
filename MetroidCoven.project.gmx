@@ -43,19 +43,10 @@
   <sounds name="sound">
     <sounds name="Old">
       <sounds name="Effects">
-        <sound>sound\BeamChargeLoop</sound>
-        <sound>sound\BeamChargeStart</sound>
-        <sound>sound\BeamIce</sound>
         <sound>sound\BeamImpact1</sound>
         <sound>sound\BeamImpact2</sound>
         <sound>sound\BeamImpact3</sound>
         <sound>sound\BeamImpact4</sound>
-        <sound>sound\BeamPhazon</sound>
-        <sound>sound\BeamPlasma</sound>
-        <sound>sound\BeamPower</sound>
-        <sound>sound\BeamPulse</sound>
-        <sound>sound\BeamRupture</sound>
-        <sound>sound\BeamSpazer</sound>
         <sound>sound\BombExplosion</sound>
         <sound>sound\BombLay</sound>
         <sound>sound\Crumble1</sound>
@@ -127,7 +118,16 @@
           <sound>sound\snPlayerDeath</sound>
         </sounds>
         <sounds name="Weapons">
+          <sound>sound\snBeamChargeStart</sound>
+          <sound>sound\snBeamChargeLoop</sound>
+          <sound>sound\snBeamPower</sound>
           <sound>sound\snBeamWave</sound>
+          <sound>sound\snBeamPlasma</sound>
+          <sound>sound\snBeamSpazer</sound>
+          <sound>sound\snBeamPulse</sound>
+          <sound>sound\snBeamIce</sound>
+          <sound>sound\snBeamPhazon</sound>
+          <sound>sound\snBeamRupture</sound>
         </sounds>
       </sounds>
     </sounds>
@@ -534,6 +534,7 @@
       <script>scripts\scActorInit.gml</script>
       <script>scripts\scDefineActor.gml</script>
       <script>scripts\scActorStep.gml</script>
+      <script>scripts\scActorEndStep.gml</script>
       <script>scripts\scActorHit.gml</script>
       <script>scripts\scDamageEnemy.gml</script>
       <script>scripts\scActorDraw.gml</script>

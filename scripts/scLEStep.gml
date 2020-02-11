@@ -31,7 +31,7 @@ if (AmbientColor != c_white)
             }
         }
     }
-    with (oActor) scActorLight();
+    //with (oActor) scActorLight();
     draw_set_blend_mode(bm_normal);
 }
 surface_reset_target();

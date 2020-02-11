@@ -43,7 +43,7 @@ switch (myid)
         if (!charged)
             { sprite = sprPower; Damage = 1; }
         else
-            { sprite = sprPowerCharge; Damage = 5; }
+            { sprite = sprPowerCharge; Damage = 8; }
         sprite_index = sprite;
         speed = 10;
         blend = c_yellow; // Used for color of light and color of explosion at tip of arm cannon.
@@ -58,7 +58,7 @@ switch (myid)
         if (!charged)
             { sprite = sprWave; Damage = 1; }
         else
-            { sprite = sprWaveCharge; Damage = 3; }
+            { sprite = sprWaveCharge; Damage = 5; }
         sprite_index = sprite;
         speed = 6;
         blend = c_purple;
@@ -72,11 +72,11 @@ switch (myid)
         if (!charged)
             { sprite = sprPlasma; Damage = 4; }
         else
-            { sprite = sprPlasmaCharge; Damage = 12; }
+            { sprite = sprPlasmaCharge; Damage = 15; }
         sprite_index = sprite;
         speed = 6;
         blend = c_orange;
-        sound_play(BeamPlasma);
+        sound_play(snBeamPlasma);
         alarm[0] = 35+random(5);
         image_speed = 0.25;
         with (instance_create(x,y,oDestroyAnim))
@@ -88,7 +88,7 @@ switch (myid)
         if (!charged)
             { sprite = sprSpazer; Damage = 1; }
         else
-            { sprite = sprSpazerCharge; Damage = 3; }
+            { sprite = sprSpazerCharge; Damage = 4; }
         sprite_index = sprite;
         speed = 6;
         blend = c_lime;
@@ -102,8 +102,8 @@ switch (myid)
         sprite_index = sprPulse;
         speed = 11;
         blend = make_color_rgb(0,255,255);
-        if (sound_isplaying(BeamPulse)) sound_stop(BeamPulse);
-        sound_play(BeamPulse);
+        if (sound_isplaying(snBeamPulse)) sound_stop(snBeamPulse);
+        sound_play(snBeamPulse);
         alarm[0] = 15+random(5);
         with (instance_create(x,y,oDestroyAnim))
             { sprite_index = sprBeamFire1; image_blend = other.blend; image_speed = .5; }
@@ -113,7 +113,7 @@ switch (myid)
         if (!charged)
             { sprite = sprIce; Damage = 2; }
         else
-            { sprite = sprIceCharge; Damage = 6; }
+            { sprite = sprIceCharge; Damage = 8; }
         sprite_index = sprite;
         speed = 6;
         blend = make_color_rgb(94,174,255);
@@ -140,11 +140,11 @@ switch (myid)
             if (!charged)
                 { sprite = sprRupture; Damage = 1; }
             else
-                { sprite = sprRuptureCharge; Damage = 5; }
+                { sprite = sprRuptureCharge; Damage = 7; }
             sprite_index = sprite;
             speed = 9;
             blend = c_orange;
-            sound_play(BeamRupture);
+            sound_play(snBeamRupture);
             alarm[0] = 25+random(5);
             alarm[1] = 2;
             with (instance_create(x,y,oDestroyAnim))
@@ -155,12 +155,12 @@ switch (myid)
 // --- Phazon Beam ---
     case Weapons.wPhazonBeam:
         if (!charged)
-            { sprite = sprPhazon; Damage = 3; speed = 8; }
+            { sprite = sprPhazon; Damage = 4; speed = 8; }
         else
-            { sprite = sprPhazonCharge; Damage = 10; speed = 11; }
+            { sprite = sprPhazonCharge; Damage = 12; speed = 11; }
         sprite_index = sprite;
         blend = c_blue;
-        sound_play(BeamPhazon);
+        sound_play(snBeamPhazon);
         alarm[0] = 25+random(5);
         with (instance_create(x,y,oDestroyAnim))
             { sprite_index = sprBeamFire1; image_blend = other.blend; image_speed = .5; }

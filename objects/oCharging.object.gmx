@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sound_play(BeamChargeStart);
+            <string>sound_play(snBeamChargeStart);
 alarm[0] = 90;
 image_alpha = .7;
 image_speed = .25;
@@ -63,8 +63,8 @@ slave.AmbLightSprite = sprLightEffect;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sound_stop(BeamChargeLoop);
-sound_stop(BeamChargeStart);
+            <string>sound_stop(snBeamChargeLoop);
+sound_stop(snBeamChargeStart);
 </string>
           </argument>
         </arguments>
@@ -87,7 +87,7 @@ sound_stop(BeamChargeStart);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sound_loop(BeamChargeLoop);
+            <string>sound_loop(snBeamChargeLoop);
 </string>
           </argument>
         </arguments>

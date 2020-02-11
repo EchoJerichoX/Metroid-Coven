@@ -1,4 +1,5 @@
 // This script is run within oLE (the lighting engine controller).
+// * CURRENTLY UNUSED *
 switch (myid)
 {
     case Enemies.eZoomer:
