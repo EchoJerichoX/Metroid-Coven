@@ -41,28 +41,6 @@
   </datafiles>
   <NewExtensions/>
   <sounds name="sound">
-    <sounds name="Old">
-      <sounds name="Effects">
-        <sound>sound\SamusDeath</sound>
-        <sound>sound\SamusDodge</sound>
-        <sound>sound\SamusHurt1</sound>
-        <sound>sound\SamusHurt2</sound>
-        <sound>sound\SamusHurt3</sound>
-        <sound>sound\SamusHurt4</sound>
-        <sound>sound\SamusHurt5</sound>
-        <sound>sound\SamusHurt6</sound>
-        <sound>sound\SamusMorph</sound>
-        <sound>sound\SamusUnmorph</sound>
-        <sound>sound\SuperMissileExplosion</sound>
-        <sound>sound\SwitchFromSecondary</sound>
-        <sound>sound\SwitchPrimary</sound>
-        <sound>sound\SwitchToSecondary</sound>
-        <sound>sound\TitleMouseover</sound>
-        <sound>sound\TitleSelect</sound>
-        <sound>sound\ZoomerHit</sound>
-        <sound>sound\ZoomerDie</sound>
-      </sounds>
-    </sounds>
     <sounds name="Ambience (75dB)">
       <sound>sound\ambSnow</sound>
       <sound>sound\ambSamusBreathe</sound>
@@ -97,20 +75,42 @@
         <sound>sound\snCrumble4</sound>
         <sound>sound\snCrumble5</sound>
         <sound>sound\snCrumble6</sound>
+        <sound>sound\snTitleMouseover</sound>
+        <sound>sound\snTitleSelect</sound>
       </sounds>
       <sounds name="Player">
         <sounds name="Addons">
+          <sound>sound\snSamusMorph</sound>
+          <sound>sound\snSamusUnmorph</sound>
           <sound>sound\snArcDashStart</sound>
           <sound>sound\snArcDashCharge</sound>
           <sound>sound\snArcDashReadyIdle</sound>
           <sound>sound\snArcDashGo</sound>
           <sound>sound\snArcDashImpactSpark</sound>
         </sounds>
-        <sounds name="Other">
+        <sounds name="Death and Damage">
+          <sound>sound\snSamusBonkSmall1</sound>
+          <sound>sound\snSamusBonkSmall2</sound>
+          <sound>sound\snSamusBonkSmall3</sound>
+          <sound>sound\snSamusBonkSmall4</sound>
+          <sound>sound\snSamusBonkMedium1</sound>
+          <sound>sound\snSamusBonkMedium2</sound>
+          <sound>sound\snSamusBonkMedium3</sound>
+          <sound>sound\snSamusBonkBig1</sound>
+          <sound>sound\snSamusBonkBig2</sound>
+          <sound>sound\snSamusHurtMinor</sound>
+          <sound>sound\snSamusHurtSmall1</sound>
+          <sound>sound\snSamusHurtSmall2</sound>
+          <sound>sound\snSamusHurtModerate</sound>
+          <sound>sound\snSamusHurtSevere</sound>
+          <sound>sound\snSamusDeathShriek</sound>
           <sound>sound\snSamusDeath</sound>
         </sounds>
         <sounds name="Weapons">
-          <sounds name="Beams">
+          <sound>sound\snSwitch</sound>
+          <sound>sound\snSwitchToSecondary</sound>
+          <sound>sound\snSwitchFromSecondary</sound>
+          <sounds name="Primary">
             <sound>sound\snBeamPower</sound>
             <sound>sound\snBeamWave</sound>
             <sound>sound\snBeamPlasma</sound>
@@ -132,6 +132,7 @@
           <sounds name="Secondary">
             <sound>sound\snMissileFire</sound>
             <sound>sound\snMissileExplosion</sound>
+            <sound>sound\snSuperMissileExplosion</sound>
             <sound>sound\snBombLay</sound>
             <sound>sound\snBombExplosion</sound>
             <sound>sound\snPowerBombExplosion</sound>

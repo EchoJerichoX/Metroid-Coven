@@ -160,11 +160,11 @@ Cannon                      Sets the subimage for the arm cannon sprite.
 if (argument1 = 1) exit; // Set argument1 to 1 if you don't want a switching effect.
 
 // Play contextual weapon-switching sound.
-if (argument0 = CurrentUnmorphedSecondary) sound_play(SwitchToSecondary);
+if (argument0 = CurrentUnmorphedSecondary) sound_play(snSwitchToSecondary);
 else
 {
-    if (PreviousWeapon = Weapons.wMissileLauncher) sound_play(SwitchFromSecondary);
-    else sound_play(SwitchPrimary);
+    if (PreviousWeapon = Weapons.wMissileLauncher) sound_play(snSwitchFromSecondary);
+    else sound_play(snSwitch);
 }
 // Blink the arm cannon sprite for the weapon-switching effect.
 if (instance_exists(oEffect))

@@ -166,8 +166,8 @@ and (!boostchargelevel)
 {
     if (MorphBall) and (collision_circle(x,y,8,oBlockParent,true,false)) exit;
     MorphBall = !MorphBall;
-    if (MorphBall = false) sound_play(SamusUnmorph)
-    else sound_play(SamusMorph)
+    if (MorphBall = false) sound_play(snSamusUnmorph)
+    else sound_play(snSamusMorph)
     me = instance_create(x,y,oEffect);
     me.image_alpha = 1;
     me.image_angle = random(360);

@@ -1,6 +1,6 @@
 // Damage the player.
 // argument0 = minimum damage the player can take, before modifier(s).
-// argument1 = maximum damage the player can tage, before modifier(s).
+// argument1 = maximum damage the player can take, before modifier(s).
 // argument2 = bypass modifier(s). For armor-piercing or environmental hazards.
 //   0 = Do not bypass modifiers.
 //   1 = Bypass modifier(s).
@@ -28,6 +28,27 @@ if (CanTakeHit)
     }
     if (Energy > 0)
     {
+        // Player hurt sounds chooser.
+        var shriek = random(100);
+        var shriekchance = 25;      // Percentage chance of making a shrieking sound when taking damage.
+        var smallshriek = 10;       // Damage threshold for small shriek sounds.
+        var bigshriek = 35;         // Damage threshold for big shriek sounds.
+        if (loss < smallshriek)
+        {
+            sound_play(choose(snSamusBonkSmall1,snSamusBonkSmall2,snSamusBonkSmall3,snSamusBonkSmall4));
+            if (shriek < shriekchance) sound_play(choose(snSamusHurtMinor,snSamusHurtSmall1));
+        }
+        if (loss >= smallshriek) and (loss < bigshriek)
+        {
+            sound_play(choose(snSamusBonkMedium1,snSamusBonkMedium2,snSamusBonkMedium3,));
+            if (shriek < shriekchance) sound_play(choose(snSamusHurtSmall2,snSamusHurtModerate));
+        }
+        if (loss >= bigshriek)
+        {
+            sound_play(choose(snSamusBonkBig1,snSamusBonkBig2));
+            if (shriek < shriekchance) sound_play(snSamusHurtSevere);
+        }
+        /*
         if (!sound_isplaying(SamusHurt1) and
             !sound_isplaying(SamusHurt2) and
             !sound_isplaying(SamusHurt3) and
@@ -43,5 +64,6 @@ if (CanTakeHit)
                 case 4: sound_play(SamusHurt5); break;
             }
         }
+        */
     }
 }

@@ -4,7 +4,7 @@ with (instance_create(x,y,oDeathAnim))
     sprite_index = sprPlayerDeath;
     image_angle = other.image_angle;
     image_speed = 0;
-    sound_play(SamusHurt6);
+    sound_play(snSamusDeathShriek);
     
     // Create the death animation light.
     slave = instance_create(x,y,oLight);

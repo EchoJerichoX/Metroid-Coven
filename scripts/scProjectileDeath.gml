@@ -174,7 +174,7 @@ switch (myid)
         break;
 // --- Super Missile ---
     case Weapons.wSuperMissile:
-        sound_play(SuperMissileExplosion);
+        sound_play(snSuperMissileExplosion);
         with (instance_create(x,y,oDestroyAnim))
         {
             sprite_index = sprShockwave;

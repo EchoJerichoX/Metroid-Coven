@@ -18,9 +18,9 @@ with (instance_create(x,y,oDestroyAnim))
 {
     image_speed = .25;
     if (other.size = 1)
-        { sound_play(MissileExplosion); sprite_index = sprMissileExplosion; }
+        { sound_play(snMissileExplosion); sprite_index = sprMissileExplosion; }
     else
-        { sound_play(SuperMissileExplosion); sprite_index = sprLargeCrateExplosion; }
+        { sound_play(snSuperMissileExplosion); sprite_index = sprLargeCrateExplosion; }
     depth = other.depth-2;
 }
 //scDropLoot();

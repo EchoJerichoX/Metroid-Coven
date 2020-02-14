@@ -10,10 +10,11 @@ if (!Overheated) and (!pulsechargeshot)
     if (KeyRuptureBeam) && (eId.HasRuptureBeam) NewPrimary = Weapons.wRuptureBeam;
     if (KeyPhazonBeam) && (eId.HasPhazonBeam) NewPrimary = Weapons.wPhazonBeam;
 }
-if (KeySecondarySwitch) and (!MorphBall)
+if (KeySecondarySwitch) and (!MorphBall) and (eId.HasSuperMissile)
 {
-    if (CurrentUnmorphedSecondary = Weapons.wMissileLauncher) and (eId.HasSuperMissile) CurrentUnmorphedSecondary = Weapons.wSuperMissile;
+    if (CurrentUnmorphedSecondary = Weapons.wMissileLauncher)  CurrentUnmorphedSecondary = Weapons.wSuperMissile;
     else CurrentUnmorphedSecondary = Weapons.wMissileLauncher;
+    sound_play(snSwitch);
 }
 if (Overheated) or (pulsechargeshot) exit;
 if (!MorphBall)
