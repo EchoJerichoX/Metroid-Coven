@@ -21,7 +21,7 @@ switch (mouseover)
             
         if (mouse_check_button_pressed(mb_left)) and (eId.fadeStage = -1)
         {
-            //sound_play(TitleSelect);
+            sound_play(snMenuSelect);
             switch (object_index)
             {
                 case oDeathRestart:

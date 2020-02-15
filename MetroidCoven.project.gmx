@@ -43,7 +43,6 @@
   <sounds name="sound">
     <sounds name="Ambience (75dB)">
       <sound>sound\ambSnow</sound>
-      <sound>sound\ambSamusBreathe</sound>
     </sounds>
     <sounds name="Music (80dB)">
       <sound>sound\musTitle</sound>
@@ -57,6 +56,16 @@
         <sound>sound\snZoomerDeath</sound>
       </sounds>
       <sounds name="Environment">
+        <sound>sound\snCrumble1</sound>
+        <sound>sound\snCrumble2</sound>
+        <sound>sound\snCrumble3</sound>
+        <sound>sound\snCrumble4</sound>
+        <sound>sound\snCrumble5</sound>
+        <sound>sound\snReform1</sound>
+        <sound>sound\snReform2</sound>
+        <sound>sound\snReform3</sound>
+        <sound>sound\snReform4</sound>
+        <sound>sound\snReform5</sound>
         <sound>sound\snDoorOpen</sound>
         <sound>sound\snDoorClose</sound>
         <sound>sound\snDoorHit</sound>
@@ -69,14 +78,10 @@
         <sound>sound\snCrackleShort3</sound>
         <sound>sound\snCrackleShort4</sound>
         <sound>sound\snCrackleShort5</sound>
-        <sound>sound\snCrumble1</sound>
-        <sound>sound\snCrumble2</sound>
-        <sound>sound\snCrumble3</sound>
-        <sound>sound\snCrumble4</sound>
-        <sound>sound\snCrumble5</sound>
-        <sound>sound\snCrumble6</sound>
-        <sound>sound\snTitleMouseover</sound>
-        <sound>sound\snTitleSelect</sound>
+      </sounds>
+      <sounds name="Menus">
+        <sound>sound\snMenuMouseover</sound>
+        <sound>sound\snMenuSelect</sound>
       </sounds>
       <sounds name="Player">
         <sounds name="Addons">
@@ -103,6 +108,7 @@
           <sound>sound\snSamusHurtSmall2</sound>
           <sound>sound\snSamusHurtModerate</sound>
           <sound>sound\snSamusHurtSevere</sound>
+          <sound>sound\snSamusBreathe</sound>
           <sound>sound\snSamusDeathShriek</sound>
           <sound>sound\snSamusDeath</sound>
         </sounds>
@@ -553,6 +559,7 @@
       <script>scripts\scActorLight.gml</script>
       <scripts name="Actor-specific">
         <scripts name="Zoomer">
+          <script>scripts\scZoomerInit.gml</script>
           <script>scripts\scZoomerStep.gml</script>
           <script>scripts\scZoomerPathClear.gml</script>
         </scripts>
@@ -560,6 +567,7 @@
           <script>scripts\scGeemerStep.gml</script>
         </scripts>
         <scripts name="Turret">
+          <script>scripts\scTurretInit.gml</script>
           <script>scripts\scDefineTurret.gml</script>
           <script>scripts\scTurretStep.gml</script>
         </scripts>
@@ -650,6 +658,8 @@
       </scripts>
     </scripts>
     <scripts name="Loot System">
+      <script>scripts\scLootInit.gml</script>
+      <script>scripts\scLootClass.gml</script>
       <script>scripts\scDropLoot.gml</script>
     </scripts>
     <scripts name="Player">

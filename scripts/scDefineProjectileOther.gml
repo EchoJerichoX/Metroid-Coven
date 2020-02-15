@@ -22,7 +22,7 @@ switch (myid)
         pop = instance_create(x,y,oParticle);
         pop.myid = Projectiles.pTurret;
         pop.c = 0;
-        sound_play(BeamPower);
+        sound_play(snBeamPower);
         scProjectileLight(.1,c_white,c_red,.6)
         //alarm[0] = 25+random(5); Projectile goes on infinitely.
         with (instance_create(x,y,oDestroyAnim))

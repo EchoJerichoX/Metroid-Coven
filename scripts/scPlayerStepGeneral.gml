@@ -114,4 +114,4 @@ if (KeyFireReleased) and (HoldingWeaponId = Weapons.wPulseBeam)
     
 // Temporary player death sequence.
 if (Energy <= 0) instance_destroy();
-if (Energy < 30) && (!sound_isplaying(SamusBreathe)) sound_play(SamusBreathe);
+if (Energy < 30) && (!sound_isplaying(snSamusBreathe)) sound_play(snSamusBreathe);

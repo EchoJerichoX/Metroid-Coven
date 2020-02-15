@@ -52,13 +52,13 @@ r = 0;
             <string>if (instance_exists(oPlayer))
 {
     if (point_distance(x+sprite_width/2,y+sprite_height/2,oPlayer.x,oPlayer.y) &lt; 16) then
-      { alarm[0] = 1; exit; }
+      { alarm[0] = 5; exit; }
 }
 if (sprite_index = sprBlockBreak16) sprite_index = sprBlockReform16;
 if (sprite_index = sprBlockBreak8) sprite_index = sprBlockReform8;
 image_speed = .25;
 visible = true;
-//sound_play(Reform1,Reform2,Reform3,Reform4,Reform5,Reform6));
+sound_play(choose(snReform1,snReform2,snReform3,snReform4,snReform5));
 </string>
           </argument>
         </arguments>

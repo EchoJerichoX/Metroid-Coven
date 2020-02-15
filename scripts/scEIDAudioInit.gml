@@ -26,8 +26,15 @@ prevmusicvol = 0;           // Volume of current music on previous step.
 // =================
 // = PLAYER SOUNDS =
 // =================
+beamimpactvol = 0.6; // Volume of beam impact sound effects.
 // - Weapons -
-sound_volume(snBeamWave,1);
+sound_volume(snBeamImpact1,beamimpactvol);
+sound_volume(snBeamImpact2,beamimpactvol);
+sound_volume(snBeamImpact3,beamimpactvol);
+sound_volume(snBeamImpact4,beamimpactvol);
+sound_volume(snBeamImpactIce1,beamimpactvol);
+sound_volume(snBeamImpactIce2,beamimpactvol);
+sound_volume(snBeamImpactIce3,beamimpactvol);
 // - Addons -
 sound_volume(snArcDashStart,1);
 sound_volume(snArcDashCharge,1);

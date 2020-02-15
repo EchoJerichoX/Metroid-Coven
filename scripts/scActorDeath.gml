@@ -27,8 +27,7 @@ switch (myid)
         }
         with (instance_create(x,y,oDestroyAnim))
             { image_speed = .25; sprite_index = sprZoomerDie; depth = other.depth; }
-        //scDropLoot();
-        // ^ Implement once the system is properly implemented.
+        scDropLoot();
         sound_play(snZoomerDeath);
         break;
     case Enemies.eTurret:
@@ -50,8 +49,7 @@ switch (myid)
         }
         with (instance_create(x,y,oDestroyAnim))
             { image_speed = .25; sprite_index = sprMissileExplosion; depth = other.depth; image_blend = c_yellow; }
-        //scDropLoot();
-        // ^ Implement once the system is properly implemented.
-        sound_play(MissileExplosion);
+        scDropLoot();
+        sound_play(snMissileExplosion);
         break;
 }

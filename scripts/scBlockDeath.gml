@@ -1,5 +1,5 @@
 // Init audio-visual effects.
-sound_play(choose(snCrumble1,snCrumble2,snCrumble3,snCrumble4,snCrumble5,snCrumble6));
+sound_play(choose(snCrumble1,snCrumble2,snCrumble3,snCrumble4,snCrumble5));
 with (instance_create(x,y,oDestroyAnim))
 {
     if (other.object_index = oBlock16) sprite_index = sprBlockBreak16;

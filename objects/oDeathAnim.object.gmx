@@ -145,19 +145,6 @@ with (instance_create(x,y,oDestroyAnim))
             <string>sound_play(snSamusDeath); // Wind-up to suit bursting.
 startflicker = 1; // Initialize flicker effect on suit.
 image_speed = 0.1; // Slowly curl.
-
-/*
-
-if (instance_exists(oPlayer))
-{
-    if (point_distance(x+sprite_width/2,y+sprite_height/2,oPlayer.x,oPlayer.y) &lt; 16) then
-      { alarm[0] = 1; exit; }
-}
-if (sprite_index = sprBlockBreak16) sprite_index = sprBlockReform16;
-if (sprite_index = sprBlockBreak8) sprite_index = sprBlockReform8;
-image_speed = .25;
-visible = true;
-//sound_play(Reform1,Reform2,Reform3,Reform4,Reform5,Reform6));
 </string>
           </argument>
         </arguments>

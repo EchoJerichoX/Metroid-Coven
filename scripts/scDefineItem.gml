@@ -228,16 +228,25 @@ switch (myid)
         StepSpeed      = 2;
         speed = random(2);
         direction = random(360);
-        alarm[9] = 1200; // 20 seconds until despawn.
+        alarm[9] = 900; // 15 seconds until despawn.
         Name = "Large Health";
         break;
-    case Items.hHealthSuper:
+    case Items.hHealthHuge:
         AnimationStart = 74;
         AnimationEnd   = 77;
         StepSpeed      = 2;
         speed = random(2);
         direction = random(360);
         alarm[9] = 1800; // 30 seconds until despawn.
+        Name = "Huge Health";
+        break;
+    case Items.hHealthSuper:
+        AnimationStart = 78;
+        AnimationEnd   = 81;
+        StepSpeed      = 2;
+        speed = random(2);
+        direction = random(360);
+        alarm[9] = 2700; // 45 seconds until despawn.
         Name = "Super Health";
         break;
     

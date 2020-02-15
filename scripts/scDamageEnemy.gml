@@ -1,4 +1,6 @@
-HP -= other.Damage; // Reduce health by a value determined by the projectile.
+// This script runs within scActorHit, at the end.
+// Start by placing damage on the affected actor.
+HP -= other.Damage; // Reduce health. Determined by the damaging object.
 if (HP <= 0)
     { instance_destroy(); exit; }
 
@@ -7,6 +9,7 @@ switch (myid)
     case Enemies.eZoomer:
         if (other.myid = Weapons.wBallBomb)
         or (other.myid = Weapons.wPowerBomb)
+        or (other.myid = Weapons.wArcDash)
         {
             instance_destroy();
             exit;

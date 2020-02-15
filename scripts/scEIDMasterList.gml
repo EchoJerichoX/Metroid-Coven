@@ -21,7 +21,8 @@ enum Weapons
     wDiffuser = 10011,
     // - Player Addons -
     wBallBomb = 10012,
-    wPowerBomb = 10013
+    wPowerBomb = 10013,
+    wArcDash = 10014
 }
 enum Projectiles
 {
@@ -65,7 +66,8 @@ enum Items
     aPowerBombAmmo = 40028, 
     hHealthSmall = 40029,
     hHealthLarge = 40030,
-    hHealthSuper = 40031
+    hHealthHuge = 40031,
+    hHealthSuper = 40032
 }
 enum Doors
 {

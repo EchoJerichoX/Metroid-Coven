@@ -150,6 +150,10 @@ if (!MorphBall) and (eId.HasArcDash)
                 image_alpha = 1;
                 image_speed = 0.5;
                 //flex = 1;
+                // For dealing damage to actors...
+                playerweapon = 1;
+                myid = Weapons.wArcDash;
+                Damage = 10;
             }
         }
     }

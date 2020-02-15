@@ -151,7 +151,7 @@ switch (myid)
 // ===== Player Secondary Weapons and Addons =====
 // --- Missile ---
     case Weapons.wMissileLauncher:
-        sound_play(MissileExplosion);
+        sound_play(snMissileExplosion);
         repeat (20)
         {
             with (instance_create(x,y,oDestroyAnim))

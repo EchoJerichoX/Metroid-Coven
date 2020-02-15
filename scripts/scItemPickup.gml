@@ -66,35 +66,35 @@ switch (myid)
         }
         break;
 // --- Ammo Pickups ---
-    case Items.aSMissileAmmo:
+    case Items.aSMissileAmmo: // Small Missile drop, +2.
         with (other)
         {
             scWeaponSetAmmo(Weapons.wMissileLauncher,scWeaponGetAmmo(Weapons.wMissileLauncher)+2);
             scRegulateAmmo(Weapons.wMissileLauncher);
         }
         break;
-    case Items.aLMissileAmmo:
+    case Items.aLMissileAmmo: // Large Missile drop, +5.
         with (other)
         {
             scWeaponSetAmmo(Weapons.wMissileLauncher,scWeaponGetAmmo(Weapons.wMissileLauncher)+5);
             scRegulateAmmo(Weapons.wMissileLauncher);
         }
         break;
-    case Items.aSSuperMissileAmmo:
+    case Items.aSSuperMissileAmmo: // Small Super Missile drop, +1.
         with (other)
         {
             scWeaponSetAmmo(Weapons.wSuperMissile,scWeaponGetAmmo(Weapons.wSuperMissile)+1);
             scRegulateAmmo(Weapons.wSuperMissile);
         }
         break;
-    case Items.aLSuperMissileAmmo:
+    case Items.aLSuperMissileAmmo: // Large Super Missile drop, +2.
         with (other)
         {
             scWeaponSetAmmo(Weapons.wSuperMissile,scWeaponGetAmmo(Weapons.wSuperMissile)+2);
             scRegulateAmmo(Weapons.wSuperMissile);
         }
         break;
-    case Items.aPowerBombAmmo:
+    case Items.aPowerBombAmmo: // Power Bomb drop, +1.
         with (other)
         {
             scWeaponSetAmmo(Weapons.wPowerBomb,scWeaponGetAmmo(Weapons.wPowerBomb)+1);
@@ -103,10 +103,13 @@ switch (myid)
         break;
 // --- Health Pickups ---
     case Items.hHealthSmall:
-        with (other) GainEnergy = 5;
+        with (other) GainEnergy = 10;
         break;
     case Items.hHealthLarge:
         with (other) GainEnergy = 20;
+        break;
+    case Items.hHealthHuge:
+        with (other) GainEnergy = 50;
         break;
     case Items.hHealthSuper:
         with (other) GainEnergy = 100;

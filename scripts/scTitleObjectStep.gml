@@ -20,7 +20,7 @@ switch (mouseover)
             { image_index = 1; imagedelay = 0; }
         if (mouse_check_button_pressed(mb_left))
         {
-            //sound_play(TitleSelect);
+            sound_play(snMenuSelect);
             switch (object_index)
             {
                 case oTitleStart:

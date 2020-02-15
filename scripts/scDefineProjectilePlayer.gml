@@ -47,7 +47,7 @@ switch (myid)
         sprite_index = sprite;
         speed = 10;
         blend = c_yellow; // Used for color of light and color of explosion at tip of arm cannon.
-        sound_play(BeamPower);
+        sound_play(snBeamPower);
         alarm[0] = 20+random(5); // Time until the projectile starts fading out.
         with (instance_create(x,y,oDestroyAnim)) // Create a small explosion at tip of arm cannon.
             { sprite_index = sprBeamFire1; image_blend = other.blend; image_speed = .5; }
@@ -117,7 +117,7 @@ switch (myid)
         sprite_index = sprite;
         speed = 6;
         blend = make_color_rgb(94,174,255);
-        sound_play(BeamIce);
+        sound_play(snBeamIce);
         alarm[0] = 30+random(5);
         alarm[1] = 2;
         with (instance_create(x,y,oDestroyAnim))
@@ -176,7 +176,7 @@ switch (myid)
         sprite_index = sprMissile;
         speed = 6;
         blend = c_orange;
-        sound_play(MissileFire);
+        sound_play(snMissileFire);
         alarm[0] = 600;
         break;
 // --- Super Missile ---
@@ -186,7 +186,7 @@ switch (myid)
         sprite_index = sprSuperMissile;
         speed = 4;
         blend = make_color_rgb(196,121,196);
-        sound_play(MissileFire);
+        sound_play(snMissileFire);
         alarm[0] = 600;
         break;
 // ==========

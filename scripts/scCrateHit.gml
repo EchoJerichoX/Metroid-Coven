@@ -12,7 +12,7 @@ var crumble = choose(1,2,3,4);
 if (crumble = 1)
 {
     if (soundcanplay = 0)
-        { sound_play(choose(snCrumble1,snCrumble2,snCrumble3,snCrumble4,snCrumble5,snCrumble6)) soundcanplay += 5+round(random(25)); }
+        { sound_play(choose(snCrumble1,snCrumble2,snCrumble3,snCrumble4,snCrumble5)) soundcanplay += 5+round(random(25)); }
     repeat ((1*size)+(round(random(3*size))))
     {
         with (instance_create((x-sprite_width/2)+(random(sprite_width)),(y-sprite_height/2)+(random(sprite_height)),oDoodad))
