@@ -659,8 +659,8 @@
     </scripts>
     <scripts name="Loot System">
       <script>scripts\scLootInit.gml</script>
-      <script>scripts\scLootClass.gml</script>
       <script>scripts\scDropLoot.gml</script>
+      <script>scripts\scDropBackupLoot.gml</script>
     </scripts>
     <scripts name="Player">
       <script>scripts\scPlayerInit.gml</script>
@@ -678,6 +678,21 @@
       <script>scripts\scPlayerDamage.gml</script>
       <script>scripts\scPlayerDeath.gml</script>
       <script>scripts\scDiffuserBurst.gml</script>
+      <scripts name="Weapon">
+        <script>scripts\scDefineWeapon.gml</script>
+        <script>scripts\scWeaponStep.gml</script>
+        <script>scripts\scWeaponFire.gml</script>
+        <scripts name="Ammo Functions">
+          <script>scripts\scWeaponGetAmmoMax.gml</script>
+          <script>scripts\scWeaponSetAmmoMax.gml</script>
+          <script>scripts\scRegulateAmmo.gml</script>
+          <script>scripts\scWeaponGetAmmo.gml</script>
+          <script>scripts\scWeaponSetAmmo.gml</script>
+          <script>scripts\scRequiresAmmo.gml</script>
+          <script>scripts\scGetRequiresAmmo.gml</script>
+          <script>scripts\scWeaponInitValues.gml</script>
+        </scripts>
+      </scripts>
     </scripts>
     <scripts name="Projectile">
       <script>scripts\scFireProjectile.gml</script>
@@ -703,21 +718,6 @@
       <script>scripts\scViewControllerEndStep.gml</script>
       <script>scripts\scViewControllerDraw.gml</script>
       <script>scripts\scViewShake.gml</script>
-    </scripts>
-    <scripts name="Weapon">
-      <script>scripts\scDefineWeapon.gml</script>
-      <script>scripts\scWeaponStep.gml</script>
-      <script>scripts\scWeaponFire.gml</script>
-      <scripts name="Ammo Functions">
-        <script>scripts\scWeaponGetAmmoMax.gml</script>
-        <script>scripts\scWeaponSetAmmoMax.gml</script>
-        <script>scripts\scRegulateAmmo.gml</script>
-        <script>scripts\scWeaponGetAmmo.gml</script>
-        <script>scripts\scWeaponSetAmmo.gml</script>
-        <script>scripts\scRequiresAmmo.gml</script>
-        <script>scripts\scGetRequiresAmmo.gml</script>
-        <script>scripts\scWeaponInitValues.gml</script>
-      </scripts>
     </scripts>
   </scripts>
   <fonts name="fonts">

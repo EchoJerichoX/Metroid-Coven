@@ -1,13 +1,60 @@
 // Don't run if player object does not exist.
-if (instance_exists(oPlayer))
+eId.classkills[lootclass] += 1; // WARNING: This runs any time this script is run.
+                                // Should narrow this down later to only increase if the player gets the kill.
+if (eId.classkills[lootclass] >= 8) eId.classkills[lootclass] = 0; // Reset to 0 so we don't go out of bounds
+                                                                   //   within the array.
+if (!instance_exists(oPlayer)) or (lootclass = 0) exit;
+if (lootclass > 0) and (lootclass < eId.classcount-6) // Check that we are a loot class that uses prize
+                                                       //   packs. We use "6" because the last 6 classes
+                                                       //   are reserved for classes that can drop a lot
+                                                       //   of pickups at once.
 {
-    if (random(3) <= 1) and (eId.HasMissileLauncher = true)
+    var mydroprate = eId.droprate[lootclass]; // Can plug in some custom drop rates here later.
+    if (round(random(100)) > mydroprate) exit; // Roll for chance at loot.
+    var itemtodrop = eId.drop[lootclass,eId.classkills[lootclass]]; // Set item we are going to try to drop.
+    switch (itemtodrop) // Do our ammo checks before dropping things.
     {
-        with (instance_create(x,y,oItem))
-        {
-            // Tentative, until proper loot classes are added.
-            scDefineItem(choose(Items.aSMissileAmmo,Items.aSSuperMissileAmmo,Items.aPowerBombAmmo))
-        }
+        case Items.aPowerBombAmmo:
+            with (oPlayer)
+            {
+                if (!eId.HasPowerBomb)
+                or (scWeaponGetAmmo(Weapons.wPowerBomb) = scWeaponGetAmmoMax(Weapons.wPowerBomb))
+                {
+                    //with (other) scDropBackupLoot(other.itemtodrop);
+                    exit;
+                }
+            }
+            break;
+        case Items.aSSuperMissileAmmo:
+        case Items.aLSuperMissileAmmo:
+            with (oPlayer)
+            {
+                if (!eId.HasSuperMissile)
+                or (scWeaponGetAmmo(Weapons.wSuperMissile) = scWeaponGetAmmoMax(Weapons.wSuperMissile))
+                {
+                    //with (other) scDropBackupLoot(other.itemtodrop);
+                    exit;
+                }
+            }
+            break;
+        case Items.aSMissileAmmo:
+        case Items.aLMissileAmmo:
+            with (oPlayer)
+            {
+                if (!eId.HasMissileLauncher)
+                or (scWeaponGetAmmo(Weapons.wMissileLauncher) = scWeaponGetAmmoMax(Weapons.wMissileLauncher))
+                {
+                    //with (other) scDropBackupLoot(other.itemtodrop);
+                    exit;
+                }
+            }
+            break;
+        case Items.hHealthSmall:
+        case Items.hHealthLarge:
+        case Items.hHealthHuge:
+        case Items.hHealthSuper:
+            if (oPlayer.Energy = 100) and (oPlayer.FullTanks = oPlayer.EnergyTanks) exit;
+            break;
     }
-
+    with (instance_create(x,y,oItem)) scDefineItem(itemtodrop);
 }

@@ -11,7 +11,7 @@ stateratemultiplier = 5;        // Multiplies the statetimer.
 statechange = staterate+round(random(staterate*stateratemultiplier)); // After reaching 0, we choose a new state, if possible.
 damaged = 0;            // Determines if we took non-lethal damage.
 soundcanplay = 0;       // Keeps hit sounds from overlapping.
-scLootClass(0);         // Standard.
+lootclass = 1; // Standard.
 // Movement and AI.
 MaxSpeed = 2.25;
 turnrate = 5;               // How fast we turn towards "destdir."

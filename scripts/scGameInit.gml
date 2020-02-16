@@ -17,6 +17,7 @@ wait = 120; // Delay to start intro scene.
 tutorialmessageshown = 0; // Has the tutorial "welcome" message been shown?
 drawhud = 1; // Draw HUD in gameplay rooms.
 trueshakemax = 8; // The absolute maximum shaking distance of the view.
+scLootInit(); // Initialize loot system.
 
 // Initialize fade effect stuff.
 // See scFade();
