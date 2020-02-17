@@ -37,6 +37,8 @@ if (object_index = eId)
     draw_set_color(c_white);
     draw_set_alpha(0.9);
     
+    // Track actors.
+    scDebugModeDrawActor();
     // Track blocks.
     /*
     if (instance_exists(oBlock16))

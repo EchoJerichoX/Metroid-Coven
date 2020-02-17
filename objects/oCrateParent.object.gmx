@@ -121,7 +121,8 @@ scCrateHit();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (other.boosting) instance_destroy();
+            <string>///scCrateHit();
+scCrateHit();
 </string>
           </argument>
         </arguments>
@@ -192,7 +193,8 @@ scCrateHit();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (other.sprite_index = sprArcDashTrail) instance_destroy();
+            <string>///scCrateHit();
+scCrateHit();
 </string>
           </argument>
         </arguments>

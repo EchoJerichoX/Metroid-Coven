@@ -8,4 +8,12 @@ switch (myid)
             image_angle = other.image_angle;
         }
         break;
+    case Enemies.eTurret:
+        with (lightSlave)
+        {
+            x = other.x;
+            y = other.y;
+            image_angle = other.image_angle;
+        }
+        break;
 }

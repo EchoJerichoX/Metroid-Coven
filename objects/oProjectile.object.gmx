@@ -377,7 +377,6 @@ if (DiesOnContact)
           <argument>
             <kind>1</kind>
             <string>if (!playerweapon) exit;
-other.HitPoints -= Damage;
 other.TakeHitDirection = direction;
 if (DiesOnContact) 
     { instance_destroy(); }

@@ -68,10 +68,10 @@ vector_path_add(oVectorLine,Tutorial13Path2,0,0,0);</code>
     <instance objName="oActor" x="105" y="120" name="inst_4AC0C41C" locked="0" code="scDefineTurret(315);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oActor" x="169" y="311" name="inst_EDA0FF37" locked="0" code="scDefineTurret(45);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oIceUD" x="400" y="176" name="inst_96886BA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSmallCrate" x="512" y="272" name="inst_F3189AA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSmallCrate" x="407" y="255" name="inst_1556F45B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSmallCrate" x="306" y="242" name="inst_6A8B6C59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSmallCrate" x="329" y="252" name="inst_F7532BD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSmallCrateBarria" x="512" y="272" name="inst_F3189AA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSmallCrateBarria" x="407" y="255" name="inst_1556F45B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSmallCrateBarria" x="306" y="242" name="inst_6A8B6C59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSmallCrateBarria" x="329" y="252" name="inst_F7532BD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLargeCrate" x="488" y="376" name="inst_FBADF0C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLargeCrate" x="572" y="333" name="inst_357BCBA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLargeCrate" x="565" y="97" name="inst_1FEE4C41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

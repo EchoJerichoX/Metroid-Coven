@@ -170,6 +170,24 @@ for (class = 0; class < classcount-1; class++;)
             droprate[class] = 100;
             // Drops determined in the "scDropLoot" script.
             break;
+            
+        // Class 15, "Small Container".
+        case 15:
+            classname[class] = "Small Container";
+            droprate[class] = 100;
+            // Drops determined in the "scDropLoot" script.
+            
+        // Class 16, "Medium Container".
+        case 16:
+            classname[class] = "Medium Container";
+            droprate[class] = 100;
+            // Drops determined in the "scDropLoot" script.
+            
+        // Class 17, "Large Container".
+        case 17:
+            classname[class] = "Large Container";
+            droprate[class] = 100;
+            // Drops determined in the "scDropLoot" script.
     }
 }
 

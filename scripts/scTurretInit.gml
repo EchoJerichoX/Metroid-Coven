@@ -4,6 +4,7 @@ ActorSprite = sprTurret;
 ActorSpriteHit = sprTurretHit;
 image_speed = 0;
 damaged = 0;
+lootclass = 1; // Standard.
 
 // Movement and AI.
 destdir = 0;

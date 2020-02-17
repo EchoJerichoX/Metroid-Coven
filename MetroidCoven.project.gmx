@@ -263,13 +263,18 @@
           <sprite>sprites\sprBlockReform16</sprite>
           <sprite>sprites\sprBlockReform8</sprite>
         </sprites>
-        <sprite>sprites\sprIceUD</sprite>
-        <sprite>sprites\sprIceLR</sprite>
-        <sprite>sprites\sprIceShatter</sprite>
-        <sprite>sprites\sprIceMelt</sprite>
-        <sprite>sprites\sprIcePart</sprite>
-        <sprite>sprites\sprSmallCrate</sprite>
-        <sprite>sprites\sprLargeCrate</sprite>
+        <sprites name="By Region">
+          <sprites name="Barria Tundra">
+            <sprite>sprites\sprIceUD</sprite>
+            <sprite>sprites\sprIceLR</sprite>
+            <sprite>sprites\sprIceShatter</sprite>
+            <sprite>sprites\sprIcePart</sprite>
+            <sprite>sprites\sprIceMelt</sprite>
+            <sprite>sprites\sprCrateSmallBarria</sprite>
+            <sprite>sprites\sprCrateMediumBarria</sprite>
+            <sprite>sprites\sprCrateLargeBarria</sprite>
+          </sprites>
+        </sprites>
         <sprite>sprites\sprCrateHit</sprite>
         <sprite>sprites\sprCratePart</sprite>
       </sprites>
@@ -584,6 +589,7 @@
       <script>scripts\scEIDDraw.gml</script>
       <script>scripts\scDrawHUD.gml</script>
       <script>scripts\scDebugModeDraw.gml</script>
+      <script>scripts\scDebugModeDrawActor.gml</script>
       <script>scripts\scMusic.gml</script>
       <script>scripts\scMusicHandler.gml</script>
       <script>scripts\scMessage.gml</script>
@@ -790,12 +796,15 @@
         <object>objects\oDestructibleBlockParent</object>
         <object>objects\oBlock16</object>
         <object>objects\oBlock8</object>
-        <object>objects\oIceParent</object>
-        <object>objects\oIceLR</object>
-        <object>objects\oIceUD</object>
         <object>objects\oCrateParent</object>
-        <object>objects\oSmallCrate</object>
-        <object>objects\oLargeCrate</object>
+        <objects name="By Region">
+          <object>objects\oIceParent</object>
+          <object>objects\oIceLR</object>
+          <object>objects\oIceUD</object>
+          <object>objects\oSmallCrateBarria</object>
+          <object>objects\oMediumCrateBarria</object>
+          <object>objects\oLargeCrate</object>
+        </objects>
       </objects>
       <objects name="Other">
         <object>objects\oShip</object>

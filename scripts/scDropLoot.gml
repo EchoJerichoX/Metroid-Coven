@@ -1,7 +1,7 @@
 // Don't run if player object does not exist.
-eId.classkills[lootclass] += 1; // WARNING: This runs any time this script is run.
-                                // Should narrow this down later to only increase if the player gets the kill.
-if (eId.classkills[lootclass] >= 8) eId.classkills[lootclass] = 0; // Reset to 0 so we don't go out of bounds
+eId.classkills[lootclass] += 1; // WARNING: Kill count goes up any time this script is run.
+                                // Should narrow this down later to only increase if the PLAYER gets the kill.
+if (eId.classkills[lootclass] >= 9) eId.classkills[lootclass] = 1; // Reset to 0 so we don't go out of bounds
                                                                    //   within the array.
 if (!instance_exists(oPlayer)) or (lootclass = 0) exit;
 if (lootclass > 0) and (lootclass < eId.classcount-6) // Check that we are a loot class that uses prize
@@ -11,7 +11,7 @@ if (lootclass > 0) and (lootclass < eId.classcount-6) // Check that we are a loo
 {
     var mydroprate = eId.droprate[lootclass]; // Can plug in some custom drop rates here later.
     if (round(random(100)) > mydroprate) exit; // Roll for chance at loot.
-    var itemtodrop = eId.drop[lootclass,eId.classkills[lootclass]]; // Set item we are going to try to drop.
+    var itemtodrop = eId.drop[lootclass,eId.classkills[lootclass]-1]; // Set item we are going to try to drop.
     switch (itemtodrop) // Do our ammo checks before dropping things.
     {
         case Items.aPowerBombAmmo:
