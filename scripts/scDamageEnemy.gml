@@ -27,7 +27,7 @@ switch (myid)
             path_start(mypath2,1,path_action_stop,0);
             state = 4;
         }
-        damaged = 1;
+        damaged = eId.hiteffectfadestart;
         break;
     // - - -
     case Enemies.eTurret:
@@ -40,5 +40,5 @@ switch (myid)
             //if (ImmuneToBomb) exit;
             //else ImmuneToBomb = 6;
         }
-        damaged = 1; break;
+        damaged = eId.hiteffectfadestart; break;
 }

@@ -2,7 +2,14 @@ repeat ((3*size)+(round(random(6*size))))
 {
     with (instance_create((x-sprite_width/4)+(random(sprite_width/2)),(y-sprite_height/4)+(random(sprite_height/2)),oDoodad))
     {
-        sprite_index = sprCratePart;
+        switch (other.sprite_index)
+        {
+            case sprCrateSmallBarria:
+            case sprCrateMediumBarria:
+            case sprCrateLargeBarria:
+                sprite_index = sprCratePartBarria;
+                break;
+        }
         depth = other.depth-choose(0,1);
         image_angle = random(360);
         image_xscale = (0.4*other.size)+(random(0.2*other.size));

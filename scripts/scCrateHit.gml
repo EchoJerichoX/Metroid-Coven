@@ -15,7 +15,7 @@ if (other.object_index = oProjectile)
 }
 if (hp <= 0)
     { instance_destroy(); exit; }
-hitfade = 1;
+hitfade = eId.hiteffectfadestart;
 var csndchance = 5;
 if (random(100) < csndchance)
 {
@@ -25,7 +25,14 @@ if (random(100) < csndchance)
     {
         with (instance_create((x-sprite_width/2)+(random(sprite_width)),(y-sprite_height/2)+(random(sprite_height)),oDoodad))
         {
-            sprite_index = sprCratePart;
+            switch (other.sprite_index)
+            {
+                case sprCrateSmallBarria:
+                case sprCrateMediumBarria:
+                case sprCrateLargeBarria:
+                    sprite_index = sprCratePartBarria;
+                    break;
+            }
             depth = other.depth+1;
             image_angle = random(360);
             image_xscale = (0.4*other.size)+(random(0.2*other.size));

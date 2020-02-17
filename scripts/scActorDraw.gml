@@ -20,6 +20,7 @@ switch (myid)
             draw_text(x+7,y-36,abs(angleDiffTurn));
             draw_text(x+7,y-49,target);
             draw_text(x+7,y-62,shotready);
+            */
             /*
             draw_text(x+7,y-10,primarydir);
             draw_text(x+7,y-23,destdir);

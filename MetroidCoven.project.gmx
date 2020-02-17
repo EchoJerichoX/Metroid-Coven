@@ -178,6 +178,16 @@
         <sprite>sprites\sprGeemer</sprite>
         <sprite>sprites\sprGeemerPart</sprite>
       </sprites>
+      <sprites name="Space Pirate">
+        <sprite>sprites\sprSpacePirate</sprite>
+        <sprite>sprites\sprSpacePirateLights</sprite>
+      </sprites>
+      <sprites name="Turret">
+        <sprite>sprites\sprTurret</sprite>
+        <sprite>sprites\sprTurretLights</sprite>
+        <sprite>sprites\sprTurretHit</sprite>
+        <sprite>sprites\sprTurretPart</sprite>
+      </sprites>
       <sprites name="Zoomer">
         <sprite>sprites\sprZoomer</sprite>
         <sprite>sprites\sprZoomerLights</sprite>
@@ -189,16 +199,6 @@
       <sprites name="Miscellaneous">
         <sprite>sprites\sprDen</sprite>
         <sprite>sprites\sprActorSpawner</sprite>
-      </sprites>
-      <sprites name="Turret">
-        <sprite>sprites\sprTurret</sprite>
-        <sprite>sprites\sprTurretLights</sprite>
-        <sprite>sprites\sprTurretHit</sprite>
-        <sprite>sprites\sprTurretPart</sprite>
-      </sprites>
-      <sprites name="Space Pirate">
-        <sprite>sprites\sprSpacePirate</sprite>
-        <sprite>sprites\sprSpacePirateLights</sprite>
       </sprites>
     </sprites>
     <sprites name="Environment">
@@ -271,12 +271,17 @@
             <sprite>sprites\sprIcePart</sprite>
             <sprite>sprites\sprIceMelt</sprite>
             <sprite>sprites\sprCrateSmallBarria</sprite>
+            <sprite>sprites\sprCrateSmallBarriaLights</sprite>
+            <sprite>sprites\sprCrateSmallBarriaHit</sprite>
             <sprite>sprites\sprCrateMediumBarria</sprite>
+            <sprite>sprites\sprCrateMediumBarriaLights</sprite>
+            <sprite>sprites\sprCrateMediumBarriaHit</sprite>
             <sprite>sprites\sprCrateLargeBarria</sprite>
+            <sprite>sprites\sprCrateLargeBarriaLights</sprite>
+            <sprite>sprites\sprCrateLargeBarriaHit</sprite>
+            <sprite>sprites\sprCratePartBarria</sprite>
           </sprites>
         </sprites>
-        <sprite>sprites\sprCrateHit</sprite>
-        <sprite>sprites\sprCratePart</sprite>
       </sprites>
       <sprites name="Other">
         <sprite>sprites\sprShip</sprite>

@@ -106,7 +106,7 @@ and (state != 4) // Regularly update the nearest retreat destination.
 }
 
 if (statechange > 0) statechange -= 1;
-if (damaged > 0) damaged -= 0.1;
+if (damaged > 0) damaged -= eId.hiteffectfadespeed;
 if (soundcanplay > 0) soundcanplay -= 1;
 
 if (!ignorevector)

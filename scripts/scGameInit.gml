@@ -18,6 +18,8 @@ tutorialmessageshown = 0; // Has the tutorial "welcome" message been shown?
 drawhud = 1; // Draw HUD in gameplay rooms.
 trueshakemax = 8; // The absolute maximum shaking distance of the view.
 scLootInit(); // Initialize loot system.
+hiteffectfadestart = 1; // Starting alpha of "hit" effects on objects making contact with certain things.
+hiteffectfadespeed = 0.2; // How quickly "hit" effects fade off of objects making contact with certain things.
 
 // Initialize fade effect stuff.
 // See scFade();

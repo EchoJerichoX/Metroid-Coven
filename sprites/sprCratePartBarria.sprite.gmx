@@ -20,12 +20,12 @@
   <width>10</width>
   <height>7</height>
   <frames>
-    <frame index="0">images\sprCratePart_0.png</frame>
-    <frame index="1">images\sprCratePart_1.png</frame>
-    <frame index="2">images\sprCratePart_2.png</frame>
-    <frame index="3">images\sprCratePart_3.png</frame>
-    <frame index="4">images\sprCratePart_4.png</frame>
-    <frame index="5">images\sprCratePart_5.png</frame>
-    <frame index="6">images\sprCratePart_6.png</frame>
+    <frame index="0">images\sprCratePartBarria_0.png</frame>
+    <frame index="1">images\sprCratePartBarria_1.png</frame>
+    <frame index="2">images\sprCratePartBarria_2.png</frame>
+    <frame index="3">images\sprCratePartBarria_3.png</frame>
+    <frame index="4">images\sprCratePartBarria_4.png</frame>
+    <frame index="5">images\sprCratePartBarria_5.png</frame>
+    <frame index="6">images\sprCratePartBarria_6.png</frame>
   </frames>
 </sprite>

@@ -62,7 +62,7 @@ if (shotready = 0) and (pulse < 3)
 }
 
 if (damaged > 0) 
-    { damaged -= 0.1; range = 10000; }
+    { damaged -= eId.hiteffectfadespeed; range = 10000; }
 else range = truerange;
 
 image_angle = direction;
