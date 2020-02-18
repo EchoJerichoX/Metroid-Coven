@@ -366,6 +366,8 @@
           <sprite>sprites\sprTitleExit</sprite>
         </sprites>
       </sprites>
+      <sprite>sprites\sprFont</sprite>
+      <sprite>sprites\sprFont2x</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\sprPlayer</sprite>
@@ -645,6 +647,7 @@
         <script>scripts\scDeathMenuObjectMouseEnter.gml</script>
       </scripts>
       <scripts name="Title">
+        <script>scripts\scTitleInit.gml</script>
         <script>scripts\scTitleObjectInit.gml</script>
         <script>scripts\scTitleObjectStep.gml</script>
         <script>scripts\scTitleObjectMouseEnter.gml</script>

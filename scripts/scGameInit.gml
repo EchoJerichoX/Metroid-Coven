@@ -11,7 +11,7 @@ scEIDMessagesInit(); // Init the various messages of the game.
 scEIDAudioInit();
 region = 0; // Determines what region we are in.
 fullscreen = 0; // Determines whether the game is in fullscreen or not.
-titlefade = 0; // Used to fade the title screen.
+scTitleInit(); // Initialize various title variables.
 StartRoom = TutorialStart; // Determines where we go after the player leaves the title screen.
 wait = 120; // Delay to start intro scene.
 tutorialmessageshown = 0; // Has the tutorial "welcome" message been shown?
@@ -20,6 +20,9 @@ trueshakemax = 8; // The absolute maximum shaking distance of the view.
 scLootInit(); // Initialize loot system.
 hiteffectfadestart = 1; // Starting alpha of "hit" effects on objects making contact with certain things.
 hiteffectfadespeed = 0.2; // How quickly "hit" effects fade off of objects making contact with certain things.
+// Create special sprite fonts.
+sfont = font_add_sprite_ext(sprFont,"AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890,.!?>^<*+=()[]/ ",1,-1);
+sfont2x = font_add_sprite_ext(sprFont2x,"AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890,.!?>^<*+=()[]/ ",1,2);
 
 // Initialize fade effect stuff.
 // See scFade();

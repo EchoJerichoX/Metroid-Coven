@@ -2,6 +2,29 @@ if (room = TitleRoom)
 {
     draw_set_alpha(1);
     draw_sprite(sprTitle,0,320,96);
+    if (titlemouseover > 0)
+    {
+        draw_set_font(sfont);
+        draw_set_halign(fa_right);
+        draw_set_valign(fa_bottom);
+        var xos = 640-10;
+        var yos = 480-10;
+        if (oTitleStart.mouseover+oTitleAbout.mouseover+oTitleExit.mouseover != 0)
+        {
+            switch (titlemouseover)
+            {
+                case 1:
+                    draw_text_color(xos,yos,titletextstart,c_white,c_white,c_white,c_white,1); // oTitleStart.
+                    break;
+                case 2:
+                    draw_text_color(xos,yos,titletextabout,c_white,c_white,c_white,c_white,1); // oTitleStart.
+                    break;
+                case 3:
+                    draw_text_color(xos,yos,titletextexit,c_white,c_white,c_white,c_white,1); // oTitleStart.
+                    break;
+            }
+        }
+    }
 }
 // If we are in the process of fading in or out, draw the actual fade effect as well as the transition tunnel.
 if (transfade > 0)

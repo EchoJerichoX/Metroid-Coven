@@ -37,6 +37,13 @@ if (object_index = eId)
     draw_set_color(c_white);
     draw_set_alpha(0.9);
     
+    // Track title stuff.
+    /*
+    if (room = TitleRoom)
+    {
+        draw_text(20,20,titlemouseover);
+    }
+    */
     // Track actors.
     scDebugModeDrawActor();
     // Track blocks.

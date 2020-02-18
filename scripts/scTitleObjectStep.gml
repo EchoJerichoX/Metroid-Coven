@@ -18,6 +18,12 @@ switch (mouseover)
         if (image_index = 2) imagedelay += 1;
         if (imagedelay = 6)
             { image_index = 1; imagedelay = 0; }
+        switch (object_index)
+        {
+            case oTitleStart: eId.titlemouseover = 1; break;
+            case oTitleAbout: eId.titlemouseover = 2; break;
+            case oTitleExit: eId.titlemouseover = 3; break;
+        }
         if (mouse_check_button_pressed(mb_left))
         {
             sound_play(snMenuSelect);
