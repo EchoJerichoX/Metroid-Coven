@@ -172,6 +172,8 @@ if (keyboard_check_pressed(vk_multiply))
 // Reduce player health by 1.
 if (keyboard_check(vk_subtract))
     { if (instance_exists(oPlayer)) with (oPlayer) Energy -= 1; }
+//  { scPlayerDamage(1,1,1); }
+
 
 // Restart game.
 if (keyboard_check(vk_pagedown)) game_restart();
