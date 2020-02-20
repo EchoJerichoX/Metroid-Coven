@@ -9,7 +9,7 @@ if (room = TitleRoom)
         draw_set_valign(fa_bottom);
         var xos = 640-10;
         var yos = 480-10;
-        if (oTitleStart.mouseover+oTitleAbout.mouseover+oTitleExit.mouseover != 0)
+        if (oTitleStart.mouseover+oTitleAbout.mouseover+oTitleExit.mouseover+oTitleDebug.mouseover != 0)
         {
             switch (titlemouseover)
             {
@@ -21,6 +21,9 @@ if (room = TitleRoom)
                     break;
                 case 3:
                     draw_text_color(xos,yos,titletextexit,c_white,c_white,c_white,c_white,1); // oTitleStart.
+                    break;
+                case 4:
+                    draw_text_color(xos,yos,titletextdebug,c_white,c_white,c_white,c_white,1); // oTitleStart.
                     break;
             }
         }

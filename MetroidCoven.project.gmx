@@ -364,6 +364,7 @@
           <sprite>sprites\sprTitleStart</sprite>
           <sprite>sprites\sprTitleAbout</sprite>
           <sprite>sprites\sprTitleExit</sprite>
+          <sprite>sprites\sprTitleDebug</sprite>
         </sprites>
       </sprites>
       <sprite>sprites\sprFont</sprite>
@@ -595,6 +596,8 @@
       <script>scripts\scEIDMessagesInit.gml</script>
       <script>scripts\scEIDDraw.gml</script>
       <script>scripts\scDrawHUD.gml</script>
+      <script>scripts\scDrawHUD1.gml</script>
+      <script>scripts\scDrawHUD2.gml</script>
       <script>scripts\scDebugModeDraw.gml</script>
       <script>scripts\scDebugModeDrawActor.gml</script>
       <script>scripts\scMusic.gml</script>
@@ -842,6 +845,7 @@
         <object>objects\oTitleStart</object>
         <object>objects\oTitleAbout</object>
         <object>objects\oTitleExit</object>
+        <object>objects\oTitleDebug</object>
       </objects>
     </objects>
     <objects name="Player">

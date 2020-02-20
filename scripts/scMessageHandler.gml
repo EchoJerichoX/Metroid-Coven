@@ -119,6 +119,26 @@ if (fadeStage > -1)
                 canenter = false;
             }
             break;
+        case Debug:
+            if (mouse_check_button_pressed(mb_left))
+            or (keyboard_check_pressed(vk_space))
+            or (keyboard_check_pressed(vk_enter))
+            or (keyboard_check_pressed(vk_return))
+            or (keyboard_check_pressed(ord("Y")))
+            {
+                fadeStage = 2;
+                canenter = false;
+                gonextroom = 1;
+                targetroom = GeneralTestRoom;
+                scMusic(0,eId.musicselected,0,0);
+            }
+            if (keyboard_check_pressed(vk_escape))
+            or (keyboard_check_pressed(ord("N")))
+            {
+                fadeStage = 2;
+                canenter = false;
+            }
+            break;
         case Restart:
             if (mouse_check_button_pressed(mb_left))
             or (keyboard_check_pressed(vk_space))

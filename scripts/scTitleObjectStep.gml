@@ -23,6 +23,7 @@ switch (mouseover)
             case oTitleStart: eId.titlemouseover = 1; break;
             case oTitleAbout: eId.titlemouseover = 2; break;
             case oTitleExit: eId.titlemouseover = 3; break;
+            case oTitleDebug: eId.titlemouseover = 4; break;
         }
         if (mouse_check_button_pressed(mb_left))
         {
@@ -35,6 +36,9 @@ switch (mouseover)
                 case oTitleAbout: url_open(eId.InfoURL) break;
                 case oTitleExit:
                     scMessage(eId.Exit,1,0);
+                    break;
+                case oTitleDebug:
+                    scMessage(eId.Debug,1,0);
                     break;
             }
         }
