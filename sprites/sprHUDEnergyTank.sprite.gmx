@@ -3,23 +3,25 @@
   <type>0</type>
   <xorig>0</xorig>
   <yorigin>0</yorigin>
-  <colkind>0</colkind>
+  <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>16</bbox_right>
+  <bbox_right>9</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>10</bbox_bottom>
+  <bbox_bottom>9</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>17</width>
-  <height>11</height>
+  <width>10</width>
+  <height>10</height>
   <frames>
     <frame index="0">images\sprHUDEnergyTank_0.png</frame>
+    <frame index="1">images\sprHUDEnergyTank_1.png</frame>
+    <frame index="2">images\sprHUDEnergyTank_2.png</frame>
   </frames>
 </sprite>

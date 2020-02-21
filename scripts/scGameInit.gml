@@ -21,8 +21,8 @@ scLootInit(); // Initialize loot system.
 hiteffectfadestart = 1; // Starting alpha of "hit" effects on objects making contact with certain things.
 hiteffectfadespeed = 0.2; // How quickly "hit" effects fade off of objects making contact with certain things.
 // Create special sprite fonts.
-sfont = font_add_sprite_ext(sprFont,"AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890,.!?>^<*+-=()[]/:;' ",1,-1);
-//sfont2x = font_add_sprite_ext(sprFont2x,"AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890,.!?>^<*+-=()[]/: ",1,2);
+sfont =   font_add_sprite_ext(sprFont,  "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890,.!?>^<*+-=()[]/:;' ",1,-1);
+sfont2x = font_add_sprite_ext(sprFont2x,"AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890,.!?>^<*+-=()[]/:;' ",1,0);
 
 // Initialize fade effect stuff.
 // See scFade();

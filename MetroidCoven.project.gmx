@@ -325,32 +325,15 @@
       <sprite>sprites\sprShockwave</sprite>
     </sprites>
     <sprites name="Interface">
-      <sprites name="HUD">
-        <sprite>sprites\sprText</sprite>
-        <sprite>sprites\sprTextSkewed</sprite>
-        <sprite>sprites\sprHUDAccentTop</sprite>
-        <sprite>sprites\sprHUDAccentLeft</sprite>
-        <sprite>sprites\sprHUDAccentRight</sprite>
-        <sprite>sprites\sprHUDBeam</sprite>
-        <sprite>sprites\sprHUDAddonBombs</sprite>
-        <sprite>sprites\sprHUDAddonPowerBomb</sprite>
-        <sprite>sprites\sprHUDSecondaryMissile</sprite>
-        <sprite>sprites\sprHUDSecondarySuperMissile</sprite>
-        <sprite>sprites\sprHUDMap</sprite>
-        <sprite>sprites\sprHUDTextCharge</sprite>
-        <sprite>sprites\sprHUDTextHeat</sprite>
-        <sprite>sprites\sprHUDTextPhazon</sprite>
-        <sprite>sprites\sprHUDTextLightsear</sprite>
-        <sprite>sprites\sprHUDAmmoIcons</sprite>
+      <sprites name="HUD v2.0">
         <sprite>sprites\sprHUDEnergyTank</sprite>
-        <sprite>sprites\sprHUDEnergyBar</sprite>
-        <sprite>sprites\sprHUDChargeBar</sprite>
-        <sprite>sprites\sprHUDHeatBar</sprite>
-        <sprite>sprites\sprHUDPhazonBar</sprite>
-        <sprite>sprites\sprHUDLightsearBar</sprite>
-      </sprites>
-      <sprites name="HUD 2.0">
-        <sprite>sprites\sprHUDText</sprite>
+        <sprite>sprites\sprHUDSecondaryWeaponBorder</sprite>
+        <sprite>sprites\sprHUDBombs</sprite>
+        <sprite>sprites\sprHUDMissile</sprite>
+        <sprite>sprites\sprHUDMissileOutline</sprite>
+        <sprite>sprites\sprHUDSuperMissile</sprite>
+        <sprite>sprites\sprHUDSuperMissileOutline</sprite>
+        <sprite>sprites\sprHUDPowerBomb</sprite>
       </sprites>
       <sprites name="Menus">
         <sprites name="Death">
@@ -597,7 +580,6 @@
       <script>scripts\scEIDDraw.gml</script>
       <script>scripts\scDrawHUD.gml</script>
       <script>scripts\scDrawHUD1.gml</script>
-      <script>scripts\scDrawHUD2.gml</script>
       <script>scripts\scDebugModeDraw.gml</script>
       <script>scripts\scDebugModeDrawActor.gml</script>
       <script>scripts\scMusic.gml</script>

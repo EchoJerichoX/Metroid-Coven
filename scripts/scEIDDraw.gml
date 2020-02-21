@@ -53,8 +53,6 @@ if (eId.paused > 0) and (fadeStage = -1)
     draw_set_valign(fa_middle);
     draw_text_ext(view_xview[0]+view_wview[0]/2,view_yview[0]+view_hview[0]/2,"Paused",-15,560);
 }
-// If we are NOT paused, draw the HUD like normal.
-scDrawHUD();
 // Draw the mouse stuff.
 if (eId.visor = 0) sprite_index = sprCombatVisor;
 else sprite_index = sprScanVisor;
