@@ -23,6 +23,8 @@ if (CanTakeHit)
     if (Energy <= 0)
     {
         FullTanks -= 1;
+        eId.etflash = 1; // Lost a tank.
+        eId.etflashreset = eId.animdelay;
         if (FullTanks < 0) and (Energy <= 0) instance_destroy(); // Run "scPlayerDeath".
         if (FullTanks >= 0) Energy += 100;
     }

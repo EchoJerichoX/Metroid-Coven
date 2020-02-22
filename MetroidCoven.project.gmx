@@ -327,6 +327,7 @@
     <sprites name="Interface">
       <sprites name="HUD v2.0">
         <sprite>sprites\sprHUDEnergyTank</sprite>
+        <sprite>sprites\sprite215</sprite>
         <sprite>sprites\sprHUDSecondaryWeaponBorder</sprite>
         <sprite>sprites\sprHUDBombs</sprite>
         <sprite>sprites\sprHUDMissile</sprite>
@@ -573,6 +574,7 @@
       <script>scripts\scGameInit.gml</script>
       <script>scripts\scEIDMasterList.gml</script>
       <script>scripts\scEIDAudioInit.gml</script>
+      <script>scripts\scHUDInit.gml</script>
       <script>scripts\scEIDStep.gml</script>
       <script>scripts\scEIDInput.gml</script>
       <script>scripts\scEIDEndStep.gml</script>

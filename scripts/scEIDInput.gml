@@ -161,7 +161,7 @@ if (keyboard_check_pressed(vk_multiply))
         with (oPlayer)
         {
             scDefineSuit(Other.sCorruptionSuit);
-            EnergyTanks = 12;
+            EnergyTanks = 10;
             FullTanks = EnergyTanks;
             Energy = 100;
         }

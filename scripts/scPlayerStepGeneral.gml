@@ -36,11 +36,25 @@ if (point_distance(x,y,stepx,stepy) > 20)
 }
 
 // Add energy if we just got a pickup.
-if (GainEnergy > 0) and (Energy < 100)
+if (GainEnergy > 0)
 {
-    Energy += 1;
-    if (Energy = 100) GainEnergy = 0;
-    else GainEnergy -= 1;
+    if (Energy < 100)
+    {
+        Energy += 1;
+        if (Energy = 100)
+        {
+            if (FullTanks < EnergyTanks)
+            {
+                FullTanks += 1;
+                Energy = 1;
+                eId.etflash = 2; // Gained a tank.
+                eId.etflashreset = eId.animdelay;
+            }
+            else GainEnergy = 0;
+        }
+        GainEnergy -= 1;
+    }
+    else GainEnergy = 0;
 }
 
 // Flashlight controller.

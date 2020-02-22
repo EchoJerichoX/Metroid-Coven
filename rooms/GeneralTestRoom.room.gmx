@@ -52,18 +52,7 @@ vector_path_add(oVectorLine,GeneralTestRoomPath1,0,0,0);</code>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="oItem" x="208" y="80" name="inst_9EBCFBCA" locked="0" code="scDefineItem(Items.iEnergyTank);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="224" y="80" name="inst_C0C520AE" locked="0" code="scDefineItem(Items.iEnergyTank);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="224" y="96" name="inst_823EAA17" locked="0" code="scDefineItem(Items.iEnergyTank);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="240" y="96" name="inst_1E26BFC3" locked="0" code="scDefineItem(Items.iEnergyTank);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="256" y="96" name="inst_294A7EB1" locked="0" code="scDefineItem(Items.iEnergyTank);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="288" y="80" name="inst_411DC689" locked="0" code="scDefineItem(Items.iEnergyTank);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="288" y="96" name="inst_734B00C2" locked="0" code="scDefineItem(Items.iEnergyTank);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="272" y="96" name="inst_46DBB174" locked="0" code="scDefineItem(Items.iEnergyTank);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="272" y="80" name="inst_E38B5B9E" locked="0" code="scDefineItem(Items.iEnergyTank);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="256" y="80" name="inst_D29F9D40" locked="0" code="scDefineItem(Items.iEnergyTank);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="240" y="80" name="inst_AEF4BC29" locked="0" code="scDefineItem(Items.iEnergyTank);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPlayer" x="304" y="464" name="inst_80456030" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oPlayer" x="464" y="112" name="inst_80456030" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oTestItemSpawner" x="224" y="160" name="inst_CE274E12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock16" x="96" y="288" name="inst_0C0E576E" locked="0" code="scDefineBlock(Blocks.bReform);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock16" x="128" y="320" name="inst_C44C2B8A" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -80,15 +69,7 @@ vector_path_add(oVectorLine,GeneralTestRoomPath1,0,0,0);</code>
     <instance objName="oBlock8" x="224" y="416" name="inst_A22512EA" locked="0" code="scDefineBlock(Blocks.bSuperMissile);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock8" x="256" y="352" name="inst_43675ADC" locked="0" code="scDefineBlock(Blocks.bArcDash);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oViewController" x="0" y="0" name="inst_E390C63E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="512" y="80" name="inst_8853DBC0" locked="0" code="scDefineItem(Items.iMissileExpansion);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="544" y="80" name="inst_E43F2287" locked="0" code="scDefineItem(Items.iMissileExpansion);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="576" y="80" name="inst_FEC854FB" locked="0" code="scDefineItem(Items.iMissileExpansion);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="512" y="112" name="inst_936D40F3" locked="0" code="scDefineItem(Items.iSuperMissileExpansion);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="544" y="112" name="inst_7DE57FC2" locked="0" code="scDefineItem(Items.iSuperMissileExpansion);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="576" y="112" name="inst_827DB2EE" locked="0" code="scDefineItem(Items.iSuperMissileExpansion);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="512" y="144" name="inst_BDB627D3" locked="0" code="scDefineItem(Items.iPowerBombExpansion);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="544" y="144" name="inst_07003380" locked="0" code="scDefineItem(Items.iPowerBombExpansion);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="576" y="144" name="inst_B40499E9" locked="0" code="scDefineItem(Items.iPowerBombExpansion);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oItem" x="512" y="80" name="inst_8853DBC0" locked="0" code="scDefineItem(Items.iEnergyTank);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock16" x="461" y="541" name="inst_3A27FD77" locked="0" code="scDefineBlock(Blocks.bReform);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oZoomerDen" x="112" y="480" name="inst_60797A8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oActor" x="320" y="656" name="inst_63EE3452" locked="0" code="scDefineTurret(270);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -102,6 +83,15 @@ vector_path_add(oVectorLine,GeneralTestRoomPath1,0,0,0);</code>
     <instance objName="oLargeCrate" x="656" y="608" name="inst_AA09817D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLargeCrate" x="656" y="656" name="inst_DD55A7C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLargeCrate" x="656" y="704" name="inst_1D0D44FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oItem" x="576" y="144" name="inst_0C870748" locked="0" code="scDefineItem(Items.iEnergyTank);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oItem" x="544" y="144" name="inst_A69DB501" locked="0" code="scDefineItem(Items.iEnergyTank);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oItem" x="608" y="112" name="inst_55E95F87" locked="0" code="scDefineItem(Items.iEnergyTank);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oItem" x="576" y="112" name="inst_0D735763" locked="0" code="scDefineItem(Items.iEnergyTank);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oItem" x="544" y="112" name="inst_15F3D544" locked="0" code="scDefineItem(Items.iEnergyTank);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oItem" x="512" y="144" name="inst_6418760C" locked="0" code="scDefineItem(Items.iEnergyTank);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oItem" x="512" y="112" name="inst_5E192F59" locked="0" code="scDefineItem(Items.iEnergyTank);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oItem" x="576" y="80" name="inst_C617BD6A" locked="0" code="scDefineItem(Items.iEnergyTank);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oItem" x="544" y="80" name="inst_DD54B47F" locked="0" code="scDefineItem(Items.iEnergyTank);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilBarriaIceCave" x="64" y="448" w="64" h="64" xo="16" yo="320" id="10009142" name="tile_B7771496" depth="1999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

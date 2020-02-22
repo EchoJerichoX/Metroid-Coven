@@ -6,6 +6,9 @@
 
 // Initialize general eId variables.
 scEIDMasterList(); // Init the enums for all IDs in the game.
+// Create special sprite fonts.
+sfont =   font_add_sprite_ext(sprFont,  "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890,.!?>^<*+-=()[]/:;' ",1,-1);
+sfont2x = font_add_sprite_ext(sprFont2x,"AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890,.!?>^<*+-=()[]/:;' ",1,0);
 tutorialroom = 0;
 scEIDMessagesInit(); // Init the various messages of the game.
 scEIDAudioInit();
@@ -15,14 +18,11 @@ scTitleInit(); // Initialize various title variables.
 StartRoom = TutorialStart; // Determines where we go after the player leaves the title screen.
 wait = 120; // Delay to start intro scene.
 tutorialmessageshown = 0; // Has the tutorial "welcome" message been shown?
-drawhud = 1; // Draw HUD in gameplay rooms.
+scHUDInit(); // Initialize various HUD variables.
 trueshakemax = 8; // The absolute maximum shaking distance of the view.
 scLootInit(); // Initialize loot system.
 hiteffectfadestart = 1; // Starting alpha of "hit" effects on objects making contact with certain things.
 hiteffectfadespeed = 0.2; // How quickly "hit" effects fade off of objects making contact with certain things.
-// Create special sprite fonts.
-sfont =   font_add_sprite_ext(sprFont,  "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890,.!?>^<*+-=()[]/:;' ",1,-1);
-sfont2x = font_add_sprite_ext(sprFont2x,"AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890,.!?>^<*+-=()[]/:;' ",1,0);
 
 // Initialize fade effect stuff.
 // See scFade();
