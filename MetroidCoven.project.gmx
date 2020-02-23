@@ -554,6 +554,7 @@
       <script>scripts\scActorRoomEnd.gml</script>
       <script>scripts\scActorDeath.gml</script>
       <script>scripts\scActorLight.gml</script>
+      <script>scripts\scActorSnapToNearestPath.gml</script>
       <scripts name="Actor-specific">
         <scripts name="Zoomer">
           <script>scripts\scZoomerInit.gml</script>
@@ -730,8 +731,11 @@
       <object>objects\oVectorLine</object>
       <object>objects\oWallShootThrough</object>
       <object>objects\pCollision</object>
-      <object>objects\oShipIntro</object>
       <object>objects\oUnknownPlanetMessage</object>
+    </objects>
+    <objects name="Cinematics">
+      <object>objects\oShipFront</object>
+      <object>objects\oShipIntro</object>
     </objects>
     <objects name="Classes">
       <object>objects\oActor</object>
@@ -849,6 +853,21 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\InitRoom</room>
+    <rooms name="Generic Rooms">
+      <room>rooms\DashTestRoom</room>
+      <room>rooms\DeathRoom</room>
+      <room>rooms\EnemyTestRoom</room>
+      <room>rooms\Fire1</room>
+      <room>rooms\GeneralTestRoom</room>
+      <room>rooms\IntroRoom</room>
+      <room>rooms\NewRoomTemplate</room>
+      <room>rooms\Sandbox</room>
+      <room>rooms\TitleRoom</room>
+      <room>rooms\TransitionRoom</room>
+    </rooms>
+    <rooms name="Cinematics">
+      <room>rooms\rm</room>
+    </rooms>
     <rooms name="Tutorial">
       <room>rooms\TutorialStart</room>
       <room>rooms\Tutorial2</room>
@@ -872,18 +891,6 @@
       <room>rooms\BarriaCacheMissile</room>
       <room>rooms\BarriaIntEast</room>
       <room>rooms\BarriaCacheMorphBall</room>
-    </rooms>
-    <rooms name="Generic Rooms">
-      <room>rooms\DashTestRoom</room>
-      <room>rooms\DeathRoom</room>
-      <room>rooms\EnemyTestRoom</room>
-      <room>rooms\Fire1</room>
-      <room>rooms\GeneralTestRoom</room>
-      <room>rooms\IntroRoom</room>
-      <room>rooms\NewRoomTemplate</room>
-      <room>rooms\Sandbox</room>
-      <room>rooms\TitleRoom</room>
-      <room>rooms\TransitionRoom</room>
     </rooms>
   </rooms>
   <help>

@@ -28,6 +28,7 @@
             <string>image_angle = 30;
 speed = 45;
 direction = 315;
+image_speed = 0;
 scale = 0.1;
 scalebooster = 0.05;
 thrustersprite = 0;
