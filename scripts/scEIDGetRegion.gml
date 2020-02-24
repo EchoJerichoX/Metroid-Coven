@@ -27,9 +27,12 @@ switch (room)
     // Show guide sprite if no region is set.
     default: region = 0; break;
 }
+// Set region name and weather type.
 switch (region)
 {
     case 1: // Barria Tundra.
+        eId.regionname = "Barria Tundra";
         if (!instance_exists(oWeatherSnow)) instance_create(0,0,oWeatherSnow); // Snow weather system.
+        break;
     case 0: exit; break; // Do nothing if the region wasn't set.
 }

@@ -38,7 +38,7 @@ if (transfade > 0)
     var tspr;
     if (transdir = 0) or (transdir = 180) tspr = sprTransitionGuideLR;
     if (transdir = 90) or (transdir = 270) tspr = sprTransitionGuideUD;
-    draw_sprite_ext(tspr,region,view_xview[0]+tx,view_yview[0]+ty,1,1,0,c_white,transfade);
+    draw_sprite_ext(tspr,regionname,view_xview[0]+tx,view_yview[0]+ty,1,1,0,c_white,transfade);
 }
 // If we are paused, darken and show the word "paused".
 if (eId.paused > 0) and (fadeStage = -1)

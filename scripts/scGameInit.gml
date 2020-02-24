@@ -12,7 +12,8 @@ sfont2x = font_add_sprite_ext(sprFont2x,"AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsT
 tutorialroom = 0;
 scEIDMessagesInit(); // Init the various messages of the game.
 scEIDAudioInit();
-region = 0; // Determines what region we are in.
+region = 0; // Determines what region player is in.
+regionname = "Default"; // Name of region player is in.
 fullscreen = 0; // Determines whether the game is in fullscreen or not.
 scTitleInit(); // Initialize various title variables.
 StartRoom = TutorialStart; // Determines where we go after the player leaves the title screen.

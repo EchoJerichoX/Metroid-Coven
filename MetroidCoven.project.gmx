@@ -162,6 +162,8 @@
       <sprite>sprites\sprBlank</sprite>
       <sprite>sprites\sprGunshipBack</sprite>
       <sprite>sprites\sprGunshipFront</sprite>
+      <sprite>sprites\sprIntroLightL</sprite>
+      <sprite>sprites\sprIntroLightR</sprite>
       <sprite>sprites\sprGunshipThruster</sprite>
       <sprite>sprites\sprPlanet</sprite>
       <sprite>sprites\sprUnknownPlanetMessage</sprite>
@@ -328,13 +330,16 @@
       <sprites name="HUD v2.0">
         <sprite>sprites\sprHUDEnergyTank</sprite>
         <sprite>sprites\sprite215</sprite>
-        <sprite>sprites\sprHUDSecondaryWeaponBorder</sprite>
+        <sprite>sprites\sprHUDBracket</sprite>
+        <sprite>sprites\sprHUDBracketL</sprite>
+        <sprite>sprites\sprHUDBracketR</sprite>
         <sprite>sprites\sprHUDBombs</sprite>
         <sprite>sprites\sprHUDMissile</sprite>
         <sprite>sprites\sprHUDMissileOutline</sprite>
         <sprite>sprites\sprHUDSuperMissile</sprite>
         <sprite>sprites\sprHUDSuperMissileOutline</sprite>
         <sprite>sprites\sprHUDPowerBomb</sprite>
+        <sprite>sprites\sprHUDMapBorder</sprite>
       </sprites>
       <sprites name="Menus">
         <sprites name="Death">
@@ -437,6 +442,7 @@
       <background>background\tilFlora</background>
       <background>background\tilGroundAccents</background>
       <background>background\bgrMapGrid</background>
+      <background>background\tilBarriaIntroLanding</background>
     </backgrounds>
     <backgrounds name="Barria Tundra">
       <background>background\grdSnow</background>
@@ -444,7 +450,6 @@
       <background>background\tilBarriaIceCave</background>
       <background>background\tilBarriaIceCave2</background>
       <background>background\tilBarriaInner</background>
-      <background>background\tilBarriaInner2</background>
       <background>background\tilBarriaOuter</background>
       <background>background\tilBarriaInstInner</background>
       <background>background\tilBarriaInstOuter</background>
@@ -575,13 +580,11 @@
       <script>scripts\scGameInit.gml</script>
       <script>scripts\scEIDMasterList.gml</script>
       <script>scripts\scEIDAudioInit.gml</script>
-      <script>scripts\scHUDInit.gml</script>
       <script>scripts\scEIDStep.gml</script>
       <script>scripts\scEIDInput.gml</script>
       <script>scripts\scEIDEndStep.gml</script>
       <script>scripts\scEIDMessagesInit.gml</script>
       <script>scripts\scEIDDraw.gml</script>
-      <script>scripts\scDrawHUD.gml</script>
       <script>scripts\scDrawHUD1.gml</script>
       <script>scripts\scDebugModeDraw.gml</script>
       <script>scripts\scDebugModeDrawActor.gml</script>
@@ -639,6 +642,10 @@
         <script>scripts\scTitleObjectInit.gml</script>
         <script>scripts\scTitleObjectStep.gml</script>
         <script>scripts\scTitleObjectMouseEnter.gml</script>
+      </scripts>
+      <scripts name="HUD">
+        <script>scripts\scHUDInit.gml</script>
+        <script>scripts\scDrawHUD.gml</script>
       </scripts>
     </scripts>
     <scripts name="Inventory">
@@ -736,6 +743,7 @@
     <objects name="Cinematics">
       <object>objects\oShipFront</object>
       <object>objects\oShipIntro</object>
+      <object>objects\oLightIntro</object>
     </objects>
     <objects name="Classes">
       <object>objects\oActor</object>
@@ -853,6 +861,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\InitRoom</room>
+    <room>rooms\rmIntroLanding</room>
     <rooms name="Generic Rooms">
       <room>rooms\DashTestRoom</room>
       <room>rooms\DeathRoom</room>
@@ -864,9 +873,6 @@
       <room>rooms\Sandbox</room>
       <room>rooms\TitleRoom</room>
       <room>rooms\TransitionRoom</room>
-    </rooms>
-    <rooms name="Cinematics">
-      <room>rooms\rm</room>
     </rooms>
     <rooms name="Tutorial">
       <room>rooms\TutorialStart</room>

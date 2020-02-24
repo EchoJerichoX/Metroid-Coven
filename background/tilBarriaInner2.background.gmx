@@ -13,7 +13,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>192</width>
-  <height>320</height>
+  <width>336</width>
+  <height>608</height>
   <data>images\tilBarriaInner2.png</data>
 </background>
