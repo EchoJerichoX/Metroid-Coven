@@ -2,7 +2,7 @@
 
 // Do not draw HUD in certain cases.
 if (room = TitleRoom)
-or (room = IntroRoom)
+or (room = rmIntro1)
 or (room = DeathRoom)
 or (!drawhud)
 or (instance_exists(oDeathAnim))

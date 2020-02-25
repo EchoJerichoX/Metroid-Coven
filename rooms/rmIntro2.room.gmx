@@ -4,9 +4,9 @@
   <width>640</width>
   <height>480</height>
   <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <hsnap>64</hsnap>
   <isometric>0</isometric>
-  <speed>30</speed>
+  <speed>60</speed>
   <persistent>0</persistent>
   <colour>12943418</colour>
   <showcolour>0</showcolour>
@@ -52,7 +52,17 @@ for (var i = 0; i &lt; array_length_1d(tiles); i++;)
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
-  <instances/>
+  <instances>
+    <instance objName="oLightIntroL" x="80" y="272" name="inst_3681E2FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLightIntroR" x="528" y="288" name="inst_098B3158" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLight" x="128" y="240" name="inst_8B7F7D65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLight" x="496" y="248" name="inst_5450A9D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLight" x="144" y="224" name="inst_85C3AF95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLight" x="112" y="232" name="inst_112A7C98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLight" x="480" y="256" name="inst_732A25B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLight" x="464" y="240" name="inst_9B1D065A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oShipIntro" x="320" y="336" name="inst_E6D3FF61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+  </instances>
   <tiles>
     <tile bgName="tilBarriaOuter" x="64" y="208" w="32" h="32" xo="64" yo="256" id="10037867" name="inst_2ABEBEDF" depth="6" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaOuter" x="48" y="176" w="32" h="32" xo="128" yo="160" id="10037868" name="inst_E58D4F47" depth="6" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -3,7 +3,7 @@
   <spriteName>sprGunshipFront</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>1</depth>
+  <depth>3</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,29 +25,69 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_angle = 30;
-speed = 45;
-direction = 315;
-image_speed = 0;
-scale = 0.1;
-scalebooster = 0.05;
-thrustersprite = 0;
+            <string>thrustersprite = 0;
 currentthrustimg = 0;
+image_speed = 0;
 image_alpha = 0;
-whitealpha1 = 0; // Controls horizontal block fade.
-whitealpha2 = 0; // Controls flat white fade.
-delay = 1;
-delay2 = 120;
-delay3 = 60;
-delay4 = 10;
-rcx = 0;
-rcy = 0;
-d = 0;
-offset = 0;
-offsetbooster = 0;
-blackalpha = 0;
-planetrot = 0;
-moverooms = 120;
+if (room = rmIntro1)
+{
+    image_angle = 30;
+    speed = 45;
+    direction = 315;
+    scale = 0.1;
+scalebooster = 0.05;
+    whitealpha1 = 0; // Controls horizontal block fade.
+    whitealpha2 = 0; // Controls flat white fade.
+    delay = 1;
+    delay2 = 120;
+    delay3 = 60;
+    delay4 = 10;
+    rcx = 0;
+    rcy = 0;
+    d = 0;
+    offset = 0;
+    offsetbooster = 0;
+    blackalpha = 0;
+    planetrot = 0;
+    moverooms = 120;
+}
+if (room = rmIntro2)
+{
+    scale = 0;
+    scalebooster = 0.001;
+    x = 320;
+    y = 20;
+    speed = 0;
+    direction = 270;
+    go1 = 0;
+    go2 = 0;
+    alarm[0] = 1;
+    thrust = 1;
+    landheight = 315;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (room = rmIntro2) go1 = 1;
 </string>
           </argument>
         </arguments>
@@ -70,70 +110,76 @@ moverooms = 120;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (sprite_index = sprGunshipFront) // Part 1.
+            <string>if (room = rmIntro1)
 {
-    speed -= 2.2;
-    scalebooster += 0.003;
-    scale += 0.05+scalebooster;
-    if (image_alpha &lt; 1) image_alpha += 0.1;
-    
-    if (y &lt; 25) // Conclude part 1.
+    if (sprite_index = sprGunshipFront) // Part 1.
     {
-        sprite_index = sprGunshipBack;
-        speed = 0.65;
-        direction = 0;
-        whitealpha1 = 1;
-        whitealpha2 = 1;
-        y = 600;
-        x = -400;
-        scalebooster = 0.003;
-        image_angle = -30;
+        speed -= 2.2;
+        scalebooster += 0.003;
+        scale += 0.05+scalebooster;
+        if (image_alpha &lt; 1) image_alpha += 0.1;
+        if (y &lt; 25) // Conclude part 1.
+        {
+            sprite_index = sprGunshipBack;
+            speed = 0.65;
+            direction = 0;
+            whitealpha1 = 1;
+            whitealpha2 = 1;
+            y = 600;
+            x = -400;
+            scalebooster = 0.003;
+            image_angle = -30;
+        }
+    }
+    else
+    {
+        move_towards_point(320,240,(point_distance(x,y,320,240))/60);
+        scale = (point_distance(x,y,320,240))/100;
+        if (speed &lt; 0.025) and (image_alpha &gt; 0) image_alpha -= 0.0125;
+        if (speed &lt; 0.35) and (!instance_exists(oUnknownPlanetMessage)) instance_create(320,440,oUnknownPlanetMessage);
+        if (image_alpha &lt;= 0) speed = 0;
+        if (whitealpha1 &gt; 0) whitealpha1 -= 0.0125;
+        if (whitealpha2 &gt; 0) whitealpha2 -= 0.05;
     }
 }
-else
-{
-    move_towards_point(320,240,(point_distance(x,y,320,240))/60);
-    scale = (point_distance(x,y,320,240))/100;
-    
-    /*if (scale &gt; 0.025) scale = scale/1.0175;
-    if (scalebooster &lt; 0.045) scalebooster += 0.001;
-    if (scale &gt; 0.65)
-        { if (speed &lt; 1.5) speed += 0.005; }
-    else
-        { if (speed &gt; 0.25) speed -= 0.0075; }*/
-    
-    if (speed &lt; 0.025) and (image_alpha &gt; 0) image_alpha -= 0.0125;
-    if (speed &lt; 0.35) and (!instance_exists(oUnknownPlanetMessage)) instance_create(320,440,oUnknownPlanetMessage);
-    if (image_alpha &lt;= 0) speed = 0;
-    
-    if (whitealpha1 &gt; 0) whitealpha1 -= 0.0125;
-    if (whitealpha2 &gt; 0) whitealpha2 -= 0.05;
-}
-/*
-else // Part 2.
-{
-    if (scale &gt; 0.05) scale = scale/1.0125;
-    if (scalebooster &lt; 0.045) scalebooster += 0.001;
-    if (speed &gt; 0) and (delay &gt; 0) speed -= 0.15;
-    if (speed &lt;= 0) and (delay &gt; 0)
-        { speed = 0; delay -= 1; }
-    if (delay = 0) and (speed &gt; -0.6) and (delay4 = 10) speed -= 0.0125;
-    if (speed = -0.6) and (delay = 0) and (delay2 &gt; 0) delay2 -= 1;
-    if (speed = -0.6) and (delay = 0) and (delay2 = 0) and (delay3 &gt; 0)
-        { delay3 -= 1; image_angle += 1; }
-    if (delay3 = 0) and (delay4 &gt; 0)
-        { delay4 -= 1; speed = 0.2; }
-    if (delay4 = 0) and (image_alpha &gt; 0) image_alpha -= 0.0125;
-    if (delay4 = 0) and (image_alpha = 0) speed = 0;
-    if (whitealpha1 &gt; 0) whitealpha1 -= 0.025;
-    if (whitealpha2 &gt; 0) whitealpha2 -= 0.05;
-}
-*/
-
 thrustersprite += 1;
 if (thrustersprite &gt; 4) thrustersprite = 1;
 if (thrustersprite = 1) currentthrustimg = 0;
 if (thrustersprite = 3) currentthrustimg = 1;
+if (room = rmIntro2)
+{
+    if (go1) // Fly in.
+    {
+        if (speed &lt; 2) and (image_alpha &lt; 0.5) speed += 0.05;
+        if (image_alpha &lt; 1) image_alpha += 0.01;
+        else thrust = 0;
+        if (image_alpha &gt;= 0.5) and (speed &gt; 0) speed -= 0.025;
+        if (scale &lt; 1)
+        {
+            scalebooster -= 0.000005;
+            scale += 0.003+scalebooster;
+        }
+        else scale = 1;
+        if (scale &gt; 0.7)
+            { go2 = 1; go1 = 0; }
+    }
+    if (go2) // Land.
+    {
+        if (scale &lt; 1)
+        {
+            scalebooster -= 0.000015;
+            scale += 0.003+scalebooster;
+        }
+        else scale = 1;
+        if (speed &lt; 1) and (y &lt; 300) speed += 0.01;
+        if (y &gt; 300) and (speed &gt; 0) speed -= 0.018;
+        if (speed &lt; 0) speed = 0;
+        if (y &gt; landheight-27) image_index = 1;
+        if (y &gt; landheight-18) image_index = 2;
+        if (y &gt; landheight-9) image_index = 3;
+        if (y &gt; landheight) image_index = 4;
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -156,51 +202,59 @@ if (thrustersprite = 3) currentthrustimg = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (sprite_index = sprGunshipFront) // Part 1.
+            <string>if (room = rmIntro1)
 {
-    xx = point_distance(rcx,rcy,x,0);
-    yy = point_distance(rcx,rcy,0,y);
-    if (speed &lt; 0) rcx -= speed*1.5; rcy -= speed*1.5;
-    
-    //if (y &lt; 20) yy = 20;
-    draw_background_ext(IntroBackground,xx/3-350,yy/3-350,1,1,0,c_white,1);
-    draw_sprite_ext(sprGunshipThruster,currentthrustimg,x,y,scale,scale,image_angle,c_white,image_alpha*0.9);
-    draw_sprite_ext(sprite_index,0,x,y,scale,scale,image_angle,c_white,image_alpha);
-}
-else // Part 2.
-{
-    if (instance_exists(oUnknownPlanetMessage))
+    if (sprite_index = sprGunshipFront) // Part 1.
     {
-        if (oUnknownPlanetMessage.image_alpha = 0)
-        {
-            offset += 1+offsetbooster;
-            offsetbooster += 1;
-            if (blackalpha &lt; 1) blackalpha += 0.0125;
-            if (blackalpha = 1) moverooms -= 1;
-            if (moverooms = 0)
-                { scMusic(0,eId.musicselected,1,0); room_goto(eId.StartRoom); }
-        }
+        xx = point_distance(rcx,rcy,x,0);
+        yy = point_distance(rcx,rcy,0,y);
+        if (speed &lt; 0) rcx -= speed*1.5; rcy -= speed*1.5;
+        
+        //if (y &lt; 20) yy = 20;
+        draw_background_ext(IntroBackground,xx/3-350,yy/3-350,1,1,0,c_white,1);
+        draw_sprite_ext(sprGunshipThruster,currentthrustimg,x,y,scale,scale,image_angle,c_white,image_alpha*0.9);
+        draw_sprite_ext(sprite_index,0,x,y,scale,scale,image_angle,c_white,image_alpha);
     }
-    
-    draw_background_ext(IntroBackground,0,0-offset*0.15,1,1,0,c_white,1);
-    draw_sprite_ext(sprPlanet,0,320,240-offset*0.1,0.85,0.85,planetrot,c_white,1);
-    planetrot += 0.005;
-    draw_sprite_ext(sprite_index,0,x,y,scale,scale,image_angle,c_white,image_alpha);
-    draw_sprite_ext(sprGunshipThruster,currentthrustimg,x,y,scale,scale,image_angle,c_white,image_alpha*0.9);
+    else // Part 2.
+    {
+        if (instance_exists(oUnknownPlanetMessage))
+        {
+            if (oUnknownPlanetMessage.image_alpha = 0)
+            {
+                offset += 1+offsetbooster;
+                offsetbooster += 1;
+                if (blackalpha &lt; 1) blackalpha += 0.0125;
+                if (blackalpha = 1) moverooms -= 1;
+                if (moverooms = 0)
+                    { scMusic(0,eId.musicselected,1,0); room_goto(rmIntro2); }
+            }
+        }
+        
+        draw_background_ext(IntroBackground,0,0-offset*0.15,1,1,0,c_white,1);
+        draw_sprite_ext(sprPlanet,0,320,240-offset*0.1,0.85,0.85,planetrot,c_white,1);
+        planetrot += 0.005;
+        draw_sprite_ext(sprite_index,0,x,y,scale,scale,image_angle,c_white,image_alpha);
+        draw_sprite_ext(sprGunshipThruster,currentthrustimg,x,y,scale,scale,image_angle,c_white,image_alpha*0.9);
+    }
+    if (blackalpha &gt; 0)
+    {
+        draw_set_alpha(blackalpha);
+        draw_set_color(c_black);
+        draw_rectangle(0,0,room_width,room_height,0);
+    }
+    if (whitealpha2 &gt; 0)
+    {
+        draw_set_alpha(whitealpha2);
+        draw_set_color(c_white);
+        draw_rectangle(0,0,room_width,room_height,0);
+    }
+    if (whitealpha1 &gt; 0) draw_background_stretched_ext(IntroWhiteFlash,0,0,640,480,c_white,whitealpha1);
 }
-if (blackalpha &gt; 0)
+if (room = rmIntro2)
 {
-    draw_set_alpha(blackalpha);
-    draw_set_color(c_black);
-    draw_rectangle(0,0,room_width,room_height,0);
+    if (thrust) draw_sprite_ext(sprGunshipThruster,currentthrustimg,x,y,scale,scale,image_angle,c_white,image_alpha*0.9);
+    draw_sprite_ext(sprite_index,image_index,x,y,scale,scale,image_angle,c_white,image_alpha);
 }
-if (whitealpha2 &gt; 0)
-{
-    draw_set_alpha(whitealpha2);
-    draw_set_color(c_white);
-    draw_rectangle(0,0,room_width,room_height,0);
-}
-if (whitealpha1 &gt; 0) draw_background_stretched_ext(IntroWhiteFlash,0,0,640,480,c_white,whitealpha1);
 </string>
           </argument>
         </arguments>

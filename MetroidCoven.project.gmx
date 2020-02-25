@@ -162,8 +162,7 @@
       <sprite>sprites\sprBlank</sprite>
       <sprite>sprites\sprGunshipBack</sprite>
       <sprite>sprites\sprGunshipFront</sprite>
-      <sprite>sprites\sprIntroLightL</sprite>
-      <sprite>sprites\sprIntroLightR</sprite>
+      <sprite>sprites\sprGunshipLandingGearFlash</sprite>
       <sprite>sprites\sprGunshipThruster</sprite>
       <sprite>sprites\sprPlanet</sprite>
       <sprite>sprites\sprUnknownPlanetMessage</sprite>
@@ -241,6 +240,8 @@
         <sprite>sprites\sprStickLightN</sprite>
         <sprite>sprites\sprStickLightS</sprite>
         <sprite>sprites\sprStickLightW</sprite>
+        <sprite>sprites\sprIntroLightL</sprite>
+        <sprite>sprites\sprIntroLightR</sprite>
       </sprites>
       <sprites name="Obstructions">
         <sprites name="Blocks">
@@ -741,7 +742,6 @@
       <object>objects\oUnknownPlanetMessage</object>
     </objects>
     <objects name="Cinematics">
-      <object>objects\oShipFront</object>
       <object>objects\oShipIntro</object>
       <object>objects\oLightIntro</object>
     </objects>
@@ -798,6 +798,8 @@
         <object>objects\oStickLightN</object>
         <object>objects\oStickLightW</object>
         <object>objects\oStickLightS</object>
+        <object>objects\oLightIntroL</object>
+        <object>objects\oLightIntroR</object>
       </objects>
       <objects name="Obstructions">
         <object>objects\oDestructibleBlockParent</object>
@@ -860,21 +862,30 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\InitRoom</room>
-    <room>rooms\rmIntroLanding</room>
+    <room>rooms\rmInit</room>
+    <rooms name="Cinematics">
+      <room>rooms\rmIntro1</room>
+      <room>rooms\rmIntro2</room>
+    </rooms>
     <rooms name="Generic Rooms">
       <room>rooms\DashTestRoom</room>
       <room>rooms\DeathRoom</room>
       <room>rooms\EnemyTestRoom</room>
       <room>rooms\Fire1</room>
       <room>rooms\GeneralTestRoom</room>
-      <room>rooms\IntroRoom</room>
       <room>rooms\NewRoomTemplate</room>
       <room>rooms\Sandbox</room>
       <room>rooms\TitleRoom</room>
       <room>rooms\TransitionRoom</room>
     </rooms>
-    <rooms name="Tutorial">
+    <rooms name="Barria">
+      <room>rooms\BarriaLandingSite</room>
+      <room>rooms\BarriaIntWest</room>
+      <room>rooms\BarriaCacheMissile</room>
+      <room>rooms\BarriaIntEast</room>
+      <room>rooms\BarriaCacheMorphBall</room>
+    </rooms>
+    <rooms name="Old">
       <room>rooms\TutorialStart</room>
       <room>rooms\Tutorial2</room>
       <room>rooms\Tutorial3</room>
@@ -890,13 +901,6 @@
       <room>rooms\Tutorial13</room>
       <room>rooms\Tutorial14</room>
       <room>rooms\Tutorial15</room>
-    </rooms>
-    <rooms name="Barria">
-      <room>rooms\BarriaLandingSite</room>
-      <room>rooms\BarriaIntWest</room>
-      <room>rooms\BarriaCacheMissile</room>
-      <room>rooms\BarriaIntEast</room>
-      <room>rooms\BarriaCacheMorphBall</room>
     </rooms>
   </rooms>
   <help>

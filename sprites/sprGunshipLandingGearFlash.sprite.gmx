@@ -7,10 +7,10 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>0</bbox_left>
-  <bbox_right>302</bbox_right>
-  <bbox_top>0</bbox_top>
-  <bbox_bottom>113</bbox_bottom>
+  <bbox_left>43</bbox_left>
+  <bbox_right>259</bbox_right>
+  <bbox_top>83</bbox_top>
+  <bbox_bottom>104</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -20,10 +20,9 @@
   <width>303</width>
   <height>114</height>
   <frames>
-    <frame index="0">images\sprGunshipFront_0.png</frame>
-    <frame index="1">images\sprGunshipFront_1.png</frame>
-    <frame index="2">images\sprGunshipFront_2.png</frame>
-    <frame index="3">images\sprGunshipFront_3.png</frame>
-    <frame index="4">images\sprGunshipFront_4.png</frame>
+    <frame index="0">images\sprGunshipLandingGearFlash_0.png</frame>
+    <frame index="1">images\sprGunshipLandingGearFlash_1.png</frame>
+    <frame index="2">images\sprGunshipLandingGearFlash_2.png</frame>
+    <frame index="3">images\sprGunshipLandingGearFlash_3.png</frame>
   </frames>
 </sprite>

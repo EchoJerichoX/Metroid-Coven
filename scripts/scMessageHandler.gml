@@ -8,8 +8,7 @@ if (keyboard_check_pressed(vk_enter))
 or (keyboard_check_pressed(vk_return))
 {
     if (fadeStage = -1)
-    and (room != TitleRoom)
-    and (room != IntroRoom)
+    and (room != TitleRoom || rmIntro1 || rmIntro2)
         { scPause(); exit; }
 }
 if (keyboard_check_pressed(vk_escape))
@@ -41,7 +40,7 @@ switch (fadeStage)
             if (alpha1 < 1) alpha1 += 0.02;
             if (alpha1 = 1) 
             {
-                if (wait > 0) and (targetroom = IntroRoom) wait -= 1;
+                if (wait > 0) and (targetroom = rmIntro1) wait -= 1;
                 else
                 {
                     if (eId.paused = .2) scPause();

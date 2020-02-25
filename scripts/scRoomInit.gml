@@ -11,7 +11,7 @@ switch (room)
         scFade(c_black,0,0.015); // Fade in from black.
         scMusic(1,musTitle,0,0);
         break;
-    case IntroRoom:
+    case rmIntro1:
         scMusic(1,musIntro,1,0);
         break;
     case TutorialStart:

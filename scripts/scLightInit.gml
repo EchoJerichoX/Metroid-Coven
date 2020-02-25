@@ -51,6 +51,7 @@ switch (object_index)
     case oDomeLight:
         size = .15; angle = random(360);
         break;
+    // --------
 }
 light1 = instance_create(ox,oy,oLight);
 light1.image_xscale = size*xsize*eId.brightness;
