@@ -1,0 +1,63 @@
+Curt Stern <echojerichox@gmail.com>
+7:45 PM (0 minutes ago)
+
+to DoctorM64 
+Very nice... This is all much easier to see and understand. Thanks man.
+
+I am taking a slight break from the map to work on cleaning up my project file and some large amounts of code. I should be done soon, then it is going to be some level design/redesign and will work on the map in between then. I will definitely hit you up when that time comes.
+
+Thanks again!
+
+On Wed, Feb 6, 2013 at 5:09 PM, DoctorM64 _ <doctorm64@live.com> wrote:
+Sorry for the delay.
+Last time it was evident that my system wasn't meant to be shared. I mean, it was done in a rush, mostly tailored to fit my engine and nothing else. This has to do with the way menus and screens are managed in AM2R, that differ from other projects. That's mainly why last time I utterly failed at implementing the map, and completely forgot to pick up that challenge again.
+ 
+Now, if you're OK with this, I propose to add the elements one by one, and fit each one into your project as needed. This will be a lot less clunky than last time, I hope.
+So, now you'll find in the package:
+- An updated map editor. It changed the way the map data is saved. It still loads any map you made with the last version. Also, it creates a two extra .txt files with scripts to be used later on the engine. This is done this way (by calling a script only with the squares that have map data) to avoid unnecesary draw events during the surface generation.
+- A simple project that draws the entire map in a surface. It has two objects, oInit (initializes the map data) and oMapControl (it creates the surface and draws it).
+In order to draw your own map data, you need to paste the text saved by the editor. You need to paste...
+load_map()  <-  filename.txt
+draw_surface_map()  <- filename.txt.draw_event.txt
+show_all_map()  <-  filename.txt.showall_event.txt
+ 
+I avoid using external files for this, in order to minimize the chances of people hacking the map data by changing plain text files.
+Anyway, I simplified the system a lot, in order for you to insert it into Coven without much trouble. Once you get the map running, we can focus on the position marker and the scrolling.
+ 
+Let me know if you need asistance with anything.
+DoctorM64
+Date: Fri, 1 Feb 2013 19:01:15 -0800
+Subject: Re: Map system
+From: echojerichox@gmail.com
+To: doctorm64@live.com
+
+No problem man, as I've said before, I can be very discreet. I won't even mention the "updated" map system in the next news post I make, nor where it came from ;) You could probably trust me with your engine (*HINT HINT* Lol, only kidding). Anyway, thanks a TON for the new map editor. It will make me feel a lot better about it :D so thanks!
+
+I've said this before as well, I believe: It is always an honor to speak with you and I take your compliments to heart and they really make me feel awesome. Especially in times like this (Out of work again). I also appreciate your help and at times wish I could just see your engine to advance my coding skills. Anyway, thanks again, Doc. You always seem to come through with things and you aren't even on my dev. team!
+
+Talk to ya soon!
+- Echo
+
+On Fri, Feb 1, 2013 at 6:28 PM, DoctorM64 _ <doctorm64@live.com> wrote:
+Hi!
+Sorry I disappeared last time, I got pretty distracted with life and the demo.
+ 
+Here, this is the latest version of the map editor. It's pretty much the same, but with a ton of special blocks (for the rounded/diagonal corners).
+You can start doing some map work with it, while I make an example on how to draw that map data into a surface for your drawing needs.
+ 
+The main keys were: 
+- F1 Load map data
+- F8 Reset
+- Enter Save
+- WASD walls
+- Num0,1,2 color
+- QE clear/fill all walls
+- RF special blocks (corners)
+- 12345... more special blocks (save, ship, etc)
+ 
+The code isn't that complicated for you to mod to your needs. Please, be discrete with this. The only reason I share this latest version of the map with you is because your project is awesome, and it has potential to be one of the best Metroid fangames made with original assets and gameplay.
+ 
+I'll try to get the drawing code done this weekend.
+Keep up the good work!
+ 
+DoctorM64
