@@ -25,5 +25,10 @@
     <frame index="2">images\sprGunshipFront_2.png</frame>
     <frame index="3">images\sprGunshipFront_3.png</frame>
     <frame index="4">images\sprGunshipFront_4.png</frame>
+    <frame index="5">images\sprGunshipFront_5.png</frame>
+    <frame index="6">images\sprGunshipFront_6.png</frame>
+    <frame index="7">images\sprGunshipFront_7.png</frame>
+    <frame index="8">images\sprGunshipFront_8.png</frame>
+    <frame index="9">images\sprGunshipFront_9.png</frame>
   </frames>
 </sprite>

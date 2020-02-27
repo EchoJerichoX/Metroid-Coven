@@ -51,6 +51,11 @@
       <sound>sound\musGameOver</sound>
     </sounds>
     <sounds name="Sound Effects (89, 84, and 80dB)">
+      <sounds name="Cinematics">
+        <sound>sound\snShipLanding</sound>
+        <sound>sound\snShipLandingThrusters</sound>
+        <sound>sound\snShipLandingDecompress</sound>
+      </sounds>
       <sounds name="Enemies">
         <sound>sound\snZoomerHit</sound>
         <sound>sound\snZoomerDeath</sound>
@@ -162,6 +167,7 @@
       <sprite>sprites\sprBlank</sprite>
       <sprite>sprites\sprGunshipBack</sprite>
       <sprite>sprites\sprGunshipFront</sprite>
+      <sprite>sprites\sprGunshipHatch</sprite>
       <sprite>sprites\sprGunshipLandingGearFlash</sprite>
       <sprite>sprites\sprGunshipThruster</sprite>
       <sprite>sprites\sprPlanet</sprite>
