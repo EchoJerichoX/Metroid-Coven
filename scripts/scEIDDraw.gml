@@ -1,4 +1,4 @@
-if (room = TitleRoom)
+if (room = rmTitleRoom)
 {
     draw_set_alpha(1);
     draw_sprite(sprTitle,0,320,96);

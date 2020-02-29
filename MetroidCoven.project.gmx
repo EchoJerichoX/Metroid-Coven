@@ -434,24 +434,31 @@
     </sprites>
   </sprites>
   <backgrounds name="background">
-    <backgrounds name="General">
-      <backgrounds name="Title">
-        <background>background\bgrTitleBack</background>
-        <background>background\bgrTitleMountains1</background>
-        <background>background\bgrTitleMountains2</background>
-        <background>background\bgrTitleMountains3</background>
-        <background>background\bgrTitleMountains4</background>
-        <background>background\bgrTitleMountains5</background>
-      </backgrounds>
+    <backgrounds name="1 - General">
+      <background>background\bgrDeathRoom</background>
+      <background>background\bgrMapGrid</background>
       <background>background\grdDirt</background>
-      <background>background\trnDirt</background>
+      <background>background\tilBarriaIntroLanding</background>
       <background>background\tilCave</background>
       <background>background\tilFlora</background>
       <background>background\tilGroundAccents</background>
-      <background>background\bgrMapGrid</background>
-      <background>background\tilBarriaIntroLanding</background>
+      <background>background\trnDirt</background>
     </backgrounds>
-    <backgrounds name="Barria Tundra">
+    <backgrounds name="2 - Title">
+      <background>background\bgrTitleBack</background>
+      <background>background\bgrTitleMountains1</background>
+      <background>background\bgrTitleMountains2</background>
+      <background>background\bgrTitleMountains3</background>
+      <background>background\bgrTitleMountains4</background>
+      <background>background\bgrTitleMountains5</background>
+    </backgrounds>
+    <backgrounds name="3 - Intro">
+      <background>background\bgrIntro1</background>
+      <background>background\bgrIntro1WhiteFlash</background>
+      <background>background\bgrIntro2</background>
+      <background>background\bgrIntro2Stars</background>
+    </backgrounds>
+    <backgrounds name="4 - Barria Tundra">
       <background>background\grdSnow</background>
       <background>background\grdGeneral</background>
       <background>background\tilBarriaIceCave</background>
@@ -460,21 +467,13 @@
       <background>background\tilBarriaOuter</background>
       <background>background\tilBarriaInstInner</background>
       <background>background\tilBarriaInstOuter</background>
+      <background>background\tilBarriaInnerWalls</background>
     </backgrounds>
-    <backgrounds name="Fire Region">
+    <backgrounds name="5 - Fire Region">
       <background>background\grdRock</background>
       <background>background\tilFireInner</background>
       <background>background\tilFireOuter</background>
     </backgrounds>
-    <background>background\TitleBG</background>
-    <background>background\bgrDeathRoom</background>
-    <background>background\TitleBGParallax1</background>
-    <background>background\TitleBGParallax2</background>
-    <background>background\TitleBGParallax3</background>
-    <background>background\TitleBGParallax4</background>
-    <background>background\TitleBGParallax5</background>
-    <background>background\IntroBackground</background>
-    <background>background\IntroWhiteFlash</background>
   </backgrounds>
   <paths name="paths">
     <paths name="Generic">
@@ -869,25 +868,28 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>
-    <rooms name="Cinematics">
+    <rooms name="1 - Generic Rooms">
+      <room>rooms\rmDeathRoom</room>
+      <room>rooms\rmSandbox</room>
+      <room>rooms\rmTransitionRoom</room>
+    </rooms>
+    <rooms name="2 - Cinematics">
       <room>rooms\rmIntro1</room>
       <room>rooms\rmIntro2</room>
     </rooms>
-    <rooms name="Generic Rooms">
-      <room>rooms\DashTestRoom</room>
-      <room>rooms\DeathRoom</room>
-      <room>rooms\EnemyTestRoom</room>
-      <room>rooms\Fire1</room>
-      <room>rooms\GeneralTestRoom</room>
-      <room>rooms\NewRoomTemplate</room>
-      <room>rooms\Sandbox</room>
-      <room>rooms\TitleRoom</room>
-      <room>rooms\TransitionRoom</room>
+    <rooms name="3 - Barria">
+      <room>rooms\rmBarria1LandingSite</room>
     </rooms>
-    <rooms name="Barria">
-      <room>rooms\Barria1LandingSite</room>
+    <rooms name="997 - Menus">
+      <room>rooms\rmTitleRoom</room>
     </rooms>
-    <rooms name="Old">
+    <rooms name="998 - Test Rooms">
+      <room>rooms\rmTestRoom</room>
+      <room>rooms\rmTestRoomDash</room>
+      <room>rooms\rmTestRoomEnemies</room>
+      <room>rooms\rmTestFireTileset</room>
+    </rooms>
+    <rooms name="999 - Old">
       <rooms name="Barria">
         <room>rooms\BarriaLandingSite</room>
         <room>rooms\BarriaIntWest</room>
@@ -895,6 +897,7 @@
         <room>rooms\BarriaIntEast</room>
         <room>rooms\BarriaCacheMorphBall</room>
       </rooms>
+      <room>rooms\NewRoomTemplate</room>
       <room>rooms\TutorialStart</room>
       <room>rooms\Tutorial2</room>
       <room>rooms\Tutorial3</room>

@@ -1,7 +1,7 @@
 if (pausedelay > 0) pausedelay -= 1; // Give a moment before we take control again.
 if (paused > 0) and (paused < .2) paused += 0.025; // Fade in pause? Research.
 scEIDInput();
-//if (room = TitleRoom) scTitleHandler();
+//if (room = rmTitleRoom) scTitleHandler();
 
 /*
 // Music fade handling...

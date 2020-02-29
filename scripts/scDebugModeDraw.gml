@@ -20,7 +20,7 @@ if (object_index = eId)
             { draw_line(i,0,i,room_height); }
         draw_set_alpha(1);
     }
-    if (room = TransitionRoom)
+    if (room = rmTransitionRoom)
     {
         draw_text(5,20,"tx:"); draw_text(40,20,tx);
         draw_text(5,40,"ty:"); draw_text(40,40,ty);
@@ -39,7 +39,7 @@ if (object_index = eId)
     
     // Track title stuff.
     /*
-    if (room = TitleRoom)
+    if (room = rmTitleRoom)
     {
         draw_text(20,20,titlemouseover);
     }

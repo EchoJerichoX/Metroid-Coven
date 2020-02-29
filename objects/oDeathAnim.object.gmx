@@ -65,7 +65,7 @@ scMusic(0,eId.musicselected,1,0);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(DeathRoom);
+            <string>room_goto(rmDeathRoom);
 </string>
           </argument>
         </arguments>

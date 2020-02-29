@@ -46,7 +46,7 @@ if (debugmode)
 {
     if (instance_exists(oVectorLine))
         { with (oVectorLine) visible = true; }
-    if (room != TitleRoom) background_visible[7] = true;
+    if (room != rmTitleRoom) background_visible[7] = true;
 }
 else
 {

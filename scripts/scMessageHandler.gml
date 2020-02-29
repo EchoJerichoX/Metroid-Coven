@@ -8,7 +8,7 @@ if (keyboard_check_pressed(vk_enter))
 or (keyboard_check_pressed(vk_return))
 {
     if (fadeStage = -1)
-    and (room != TitleRoom || rmIntro1 || rmIntro2)
+    and (room != rmTitleRoom || rmIntro1 || rmIntro2)
         { scPause(); exit; }
 }
 if (keyboard_check_pressed(vk_escape))
@@ -128,7 +128,7 @@ if (fadeStage > -1)
                 fadeStage = 2;
                 canenter = false;
                 gonextroom = 1;
-                targetroom = GeneralTestRoom;
+                targetroom = rmTestRoom;
                 scMusic(0,eId.musicselected,0,0);
             }
             if (keyboard_check_pressed(vk_escape))
@@ -168,7 +168,7 @@ if (fadeStage > -1)
                 fadeStage = 2;
                 canenter = false;
                 gonextroom = 1;
-                targetroom = TitleRoom;
+                targetroom = rmTitleRoom;
                 scMusic(0,eId.musicselected,0,0);
             }
             if (keyboard_check_pressed(vk_escape))

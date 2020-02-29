@@ -1,9 +1,7 @@
 // This script runs within eId's Draw GUI event.
 
 // Do not draw HUD in certain cases.
-if (room = TitleRoom)
-or (room = rmIntro1)
-or (room = DeathRoom)
+if (room = rmTitleRoom || rmIntro1 || rmIntro2 || rmDeathRoom)
 or (!drawhud)
 or (instance_exists(oDeathAnim))
 or (!instance_exists(oPlayer)) exit;

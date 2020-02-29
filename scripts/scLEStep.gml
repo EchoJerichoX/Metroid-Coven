@@ -4,7 +4,15 @@ draw_clear(AmbientColor);
 if (AmbientColor != c_white)
 {
     draw_set_blend_mode(bm_add);
-    with(oLight)
+    if (room = rmIntro2) and (instance_exists(oShipIntro))
+    {
+        with (oShipIntro)
+        {
+            draw_sprite_ext(sprGunshipHatch,hatchimg,x,y,scale,scale,image_angle,c_white,image_alpha);
+            draw_sprite_ext(sprite_index,image_index,x,y,scale,scale,image_angle,c_white,image_alpha);
+        }
+    }
+    with (oLight)
     {
         if (fade < 1) && (point_in_view_ext(0,x,y,Radius*3*image_xscale))
         {

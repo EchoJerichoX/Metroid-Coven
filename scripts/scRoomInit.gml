@@ -7,7 +7,7 @@ if (!instance_exists(oViewController)) instance_create(x,y,oViewController);
 // Before we do anything, see if we need to do anything special!
 switch (room)
 {
-    case TitleRoom:
+    case rmTitleRoom:
         scFade(c_black,0,0.015); // Fade in from black.
         scMusic(1,musTitle,0,0);
         break;
@@ -111,7 +111,7 @@ background_foreground[7] = true;
 
 // Step 5: Set the AI movement planning grid to fit the size of the room, if there are actors in the room.
 if (object_index = oLE) exit; // If this script is run from the light engine, don't use this code!
-if (instance_exists(oActor)) or (room = GeneralTestRoom)
+if (instance_exists(oActor)) or (room = rmTestRoom)
 {
     aigrid = mp_grid_create(0,0,room_width/aigridcellsize,
                                 room_height/aigridcellsize,

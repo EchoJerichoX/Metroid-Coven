@@ -16,7 +16,7 @@ switch (transstep)
     case 1:
         if (transbuffer < transbuffermax) transbuffer += 1;
         if (transbuffer = transbuffermax) 
-            { transstep = 2; transbuffer = 0; room_goto(TransitionRoom); }
+            { transstep = 2; transbuffer = 0; room_goto(rmTransitionRoom); }
         break;
     case 2:
     // --- Part 2 ---
