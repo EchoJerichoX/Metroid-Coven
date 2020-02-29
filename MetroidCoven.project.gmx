@@ -885,13 +885,16 @@
       <room>rooms\TransitionRoom</room>
     </rooms>
     <rooms name="Barria">
-      <room>rooms\BarriaLandingSite</room>
-      <room>rooms\BarriaIntWest</room>
-      <room>rooms\BarriaCacheMissile</room>
-      <room>rooms\BarriaIntEast</room>
-      <room>rooms\BarriaCacheMorphBall</room>
+      <room>rooms\Barria1LandingSite</room>
     </rooms>
     <rooms name="Old">
+      <rooms name="Barria">
+        <room>rooms\BarriaLandingSite</room>
+        <room>rooms\BarriaIntWest</room>
+        <room>rooms\BarriaCacheMissile</room>
+        <room>rooms\BarriaIntEast</room>
+        <room>rooms\BarriaCacheMorphBall</room>
+      </rooms>
       <room>rooms\TutorialStart</room>
       <room>rooms\Tutorial2</room>
       <room>rooms\Tutorial3</room>
