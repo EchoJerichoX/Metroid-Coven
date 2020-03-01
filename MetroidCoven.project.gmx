@@ -156,22 +156,9 @@
     <sprites name="- Miscellaneous">
       <sprite>sprites\sprItems</sprite>
       <sprite>sprites\sprItemScan</sprite>
-      <sprite>sprites\sprLightEffect</sprite>
-      <sprite>sprites\sprLightEffectSmall</sprite>
-      <sprite>sprites\sprLightEffectBright</sprite>
-      <sprite>sprites\sprLightFog</sprite>
-      <sprite>sprites\sprLightTorch</sprite>
-      <sprite>sprites\sprRevealCircle</sprite>
       <sprite>sprites\sprVectorLine</sprite>
       <sprite>sprites\sprLightIcon</sprite>
       <sprite>sprites\sprBlank</sprite>
-      <sprite>sprites\sprGunshipBack</sprite>
-      <sprite>sprites\sprGunshipFront</sprite>
-      <sprite>sprites\sprGunshipHatch</sprite>
-      <sprite>sprites\sprGunshipLandingGearFlash</sprite>
-      <sprite>sprites\sprGunshipThruster</sprite>
-      <sprite>sprites\sprPlanet</sprite>
-      <sprite>sprites\sprUnknownPlanetMessage</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprites name="Gamet">
@@ -231,6 +218,13 @@
         <sprite>sprites\sprBarriaSpikes</sprite>
       </sprites>
       <sprites name="Lighting">
+        <sprite>sprites\sprLightEffect</sprite>
+        <sprite>sprites\sprLightEffectBright</sprite>
+        <sprite>sprites\sprLightEffectSmall</sprite>
+        <sprite>sprites\sprLightFog</sprite>
+        <sprite>sprites\sprLightFogExperimental</sprite>
+        <sprite>sprites\sprLightTorch</sprite>
+        <sprite>sprites\sprLightTorchExperimental</sprite>
         <sprite>sprites\sprDomeLight</sprite>
         <sprite>sprites\sprSmallLightEW</sprite>
         <sprite>sprites\sprSmallLightNS</sprite>
@@ -279,6 +273,10 @@
             <sprite>sprites\sprIceShatter</sprite>
             <sprite>sprites\sprIcePart</sprite>
             <sprite>sprites\sprIceMelt</sprite>
+            <sprite>sprites\sprIceCrystalFormation</sprite>
+            <sprite>sprites\sprIceCrystalFormationShatter</sprite>
+            <sprite>sprites\sprIceCrystalFormationPart</sprite>
+            <sprite>sprites\sprIceCrystalFormationMelt</sprite>
             <sprite>sprites\sprCrateSmallBarria</sprite>
             <sprite>sprites\sprCrateSmallBarriaLights</sprite>
             <sprite>sprites\sprCrateSmallBarriaHit</sprite>
@@ -432,6 +430,15 @@
       <sprite>sprites\sprTransitionMaskLR</sprite>
       <sprite>sprites\sprTransitionMaskUD</sprite>
     </sprites>
+    <sprites name="Cinematics">
+      <sprite>sprites\sprPlanet</sprite>
+      <sprite>sprites\sprUnknownPlanetMessage</sprite>
+      <sprite>sprites\sprGunshipBack</sprite>
+      <sprite>sprites\sprGunshipFront</sprite>
+      <sprite>sprites\sprGunshipHatch</sprite>
+      <sprite>sprites\sprGunshipLandingGearFlash</sprite>
+      <sprite>sprites\sprGunshipThruster</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="1 - General">
@@ -462,12 +469,12 @@
       <background>background\grdSnow</background>
       <background>background\grdGeneral</background>
       <background>background\tilBarriaIceCave</background>
-      <background>background\tilBarriaIceCave2</background>
       <background>background\tilBarriaInner</background>
       <background>background\tilBarriaOuter</background>
       <background>background\tilBarriaInstInner</background>
       <background>background\tilBarriaInstOuter</background>
       <background>background\tilBarriaInnerWalls</background>
+      <background>background\tilBarriaIceCaveInnerWalls</background>
     </backgrounds>
     <backgrounds name="5 - Fire Region">
       <background>background\grdRock</background>
@@ -837,6 +844,7 @@
       </objects>
       <objects name="Weather">
         <object>objects\oWeatherSnow</object>
+        <object>objects\oWeatherSnowIntro</object>
       </objects>
     </objects>
     <objects name="Interface">

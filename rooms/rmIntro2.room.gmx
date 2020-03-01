@@ -4,7 +4,7 @@
   <width>640</width>
   <height>480</height>
   <vsnap>16</vsnap>
-  <hsnap>64</hsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -18,8 +18,8 @@ for (var i = 0; i &lt; array_length_1d(tiles); i++;)
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>2576</w>
-    <h>1394</h>
+    <w>1016</w>
+    <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -28,9 +28,9 @@ for (var i = 0; i &lt; array_length_1d(tiles); i++;)
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>2</page>
-    <xoffset>-188</xoffset>
-    <yoffset>-80</yoffset>
+    <page>0</page>
+    <xoffset>-128</xoffset>
+    <yoffset>-88</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bgrIntro2" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -55,6 +55,7 @@ for (var i = 0; i &lt; array_length_1d(tiles); i++;)
   <instances>
     <instance objName="oShipIntro" x="320" y="336" name="inst_E6D3FF61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLE" x="0" y="0" name="inst_AEE9AC32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWeatherSnowIntro" x="16" y="0" name="inst_CF56F111" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
