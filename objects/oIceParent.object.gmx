@@ -55,7 +55,7 @@ stopdash = 0;
 {
     o1 = sprite_width;
     o2 = sprite_height;
-    if (sprite_index = sprIceLR) image_angle += 90;
+    if (sprite_index = sprIceRL) image_angle += 90;
     so = 15; // Distance in from the edge of the sprite we will create a doodad.
     repeat(25+round(random(10))) with (instance_create(x-(o1/2)+so+random(o1)-so,y-(o2/2)+so+random(o2)-so,oDoodad))
     {

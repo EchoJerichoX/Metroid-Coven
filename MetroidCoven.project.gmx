@@ -47,8 +47,10 @@
     <sounds name="Music (80dB)">
       <sound>sound\musTitle</sound>
       <sound>sound\musIntro</sound>
-      <sound>sound\musTutorial</sound>
       <sound>sound\musGameOver</sound>
+      <sounds name="Region - Barria">
+        <sound>sound\musBarriaSerene</sound>
+      </sounds>
     </sounds>
     <sounds name="Sound Effects (89, 84, and 80dB)">
       <sounds name="Cinematics">
@@ -155,10 +157,18 @@
   <sprites name="sprites">
     <sprites name="- Miscellaneous">
       <sprite>sprites\sprItems</sprite>
-      <sprite>sprites\sprItemScan</sprite>
       <sprite>sprites\sprVectorLine</sprite>
       <sprite>sprites\sprLightIcon</sprite>
       <sprite>sprites\sprBlank</sprite>
+    </sprites>
+    <sprites name="Cinematics">
+      <sprite>sprites\sprPlanet</sprite>
+      <sprite>sprites\sprUnknownPlanetMessage</sprite>
+      <sprite>sprites\sprGunshipBack</sprite>
+      <sprite>sprites\sprGunshipFront</sprite>
+      <sprite>sprites\sprGunshipHatch</sprite>
+      <sprite>sprites\sprGunshipLandingGearFlash</sprite>
+      <sprite>sprites\sprGunshipThruster</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprites name="Gamet">
@@ -269,11 +279,14 @@
         <sprites name="By Region">
           <sprites name="Barria Tundra">
             <sprite>sprites\sprIceUD</sprite>
-            <sprite>sprites\sprIceLR</sprite>
+            <sprite>sprites\sprIceRL</sprite>
             <sprite>sprites\sprIceShatter</sprite>
             <sprite>sprites\sprIcePart</sprite>
             <sprite>sprites\sprIceMelt</sprite>
-            <sprite>sprites\sprIceCrystalFormation</sprite>
+            <sprite>sprites\sprIceCrystalFormationU</sprite>
+            <sprite>sprites\sprIceCrystalFormationR</sprite>
+            <sprite>sprites\sprIceCrystalFormationD</sprite>
+            <sprite>sprites\sprIceCrystalFormationL</sprite>
             <sprite>sprites\sprIceCrystalFormationShatter</sprite>
             <sprite>sprites\sprIceCrystalFormationPart</sprite>
             <sprite>sprites\sprIceCrystalFormationMelt</sprite>
@@ -287,6 +300,7 @@
             <sprite>sprites\sprCrateLargeBarriaLights</sprite>
             <sprite>sprites\sprCrateLargeBarriaHit</sprite>
             <sprite>sprites\sprCratePartBarria</sprite>
+            <sprite>sprites\sprFrozenWaterfall1</sprite>
           </sprites>
         </sprites>
       </sprites>
@@ -294,13 +308,11 @@
         <sprite>sprites\sprShip</sprite>
       </sprites>
       <sprites name="Scannables and Details">
-        <sprites name="Fire Region">
-          <sprite>sprites\sprSteamVentE</sprite>
-          <sprite>sprites\sprSteamVentW</sprite>
-          <sprite>sprites\sprSteamVentS</sprite>
-          <sprite>sprites\sprSteamVentN</sprite>
-        </sprites>
         <sprite>sprites\sprScanTarget</sprite>
+        <sprite>sprites\sprWallScreenMediumU</sprite>
+        <sprite>sprites\sprWallScreenMediumR</sprite>
+        <sprite>sprites\sprWallScreenMediumD</sprite>
+        <sprite>sprites\sprWallScreenMediumL</sprite>
         <sprite>sprites\sprPCE</sprite>
         <sprite>sprites\sprPCW</sprite>
         <sprite>sprites\sprPCN</sprite>
@@ -332,7 +344,7 @@
       <sprite>sprites\sprShockwave</sprite>
     </sprites>
     <sprites name="Interface">
-      <sprites name="HUD v2.0">
+      <sprites name="HUD">
         <sprite>sprites\sprHUDEnergyTank</sprite>
         <sprite>sprites\sprite215</sprite>
         <sprite>sprites\sprHUDBracket</sprite>
@@ -345,6 +357,9 @@
         <sprite>sprites\sprHUDSuperMissileOutline</sprite>
         <sprite>sprites\sprHUDPowerBomb</sprite>
         <sprite>sprites\sprHUDMapBorder</sprite>
+        <sprite>sprites\sprHUDScanVisor</sprite>
+        <sprite>sprites\sprCursorCombatVisor</sprite>
+        <sprite>sprites\sprCursorScanVisor</sprite>
       </sprites>
       <sprites name="Menus">
         <sprites name="Death">
@@ -382,8 +397,6 @@
       <sprite>sprites\sprPlayerDeathFlicker</sprite>
       <sprite>sprites\sprPlayerDeathEffect</sprite>
       <sprite>sprites\sprFootPrint</sprite>
-      <sprite>sprites\sprCombatVisor</sprite>
-      <sprite>sprites\sprScanVisor</sprite>
       <sprite>sprites\sprPlayerArcDashGuide</sprite>
       <sprite>sprites\sprArcDashReady</sprite>
       <sprite>sprites\sprPlayerArcDash</sprite>
@@ -430,26 +443,16 @@
       <sprite>sprites\sprTransitionMaskLR</sprite>
       <sprite>sprites\sprTransitionMaskUD</sprite>
     </sprites>
-    <sprites name="Cinematics">
-      <sprite>sprites\sprPlanet</sprite>
-      <sprite>sprites\sprUnknownPlanetMessage</sprite>
-      <sprite>sprites\sprGunshipBack</sprite>
-      <sprite>sprites\sprGunshipFront</sprite>
-      <sprite>sprites\sprGunshipHatch</sprite>
-      <sprite>sprites\sprGunshipLandingGearFlash</sprite>
-      <sprite>sprites\sprGunshipThruster</sprite>
-    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="1 - General">
       <background>background\bgrDeathRoom</background>
       <background>background\bgrMapGrid</background>
-      <background>background\grdDirt</background>
+      <background>background\tilFloors</background>
       <background>background\tilBarriaIntroLanding</background>
       <background>background\tilCave</background>
       <background>background\tilFlora</background>
       <background>background\tilGroundAccents</background>
-      <background>background\trnDirt</background>
     </backgrounds>
     <backgrounds name="2 - Title">
       <background>background\bgrTitleBack</background>
@@ -466,15 +469,13 @@
       <background>background\bgrIntro2Stars</background>
     </backgrounds>
     <backgrounds name="4 - Barria Tundra">
-      <background>background\grdSnow</background>
-      <background>background\grdGeneral</background>
-      <background>background\tilBarriaIceCave</background>
-      <background>background\tilBarriaInner</background>
-      <background>background\tilBarriaOuter</background>
-      <background>background\tilBarriaInstInner</background>
-      <background>background\tilBarriaInstOuter</background>
+      <background>background\bgrSnow</background>
       <background>background\tilBarriaInnerWalls</background>
-      <background>background\tilBarriaIceCaveInnerWalls</background>
+      <background>background\tilBarriaOuterWalls</background>
+      <background>background\tilBarriaIceCaveWalls</background>
+      <background>background\tilBarriaIceCaveExtraWalls</background>
+      <background>background\tilBarriaStructureInnerWalls</background>
+      <background>background\tilBarriaStructureOuterWalls</background>
     </backgrounds>
     <backgrounds name="5 - Fire Region">
       <background>background\grdRock</background>
@@ -822,9 +823,15 @@
           <object>objects\oIceParent</object>
           <object>objects\oIceLR</object>
           <object>objects\oIceUD</object>
+          <object>objects\oIceCrystalFormationParent</object>
+          <object>objects\oIceCrystalFormationU</object>
+          <object>objects\oIceCrystalFormationR</object>
+          <object>objects\oIceCrystalFormationD</object>
+          <object>objects\oIceCrystalFormationL</object>
           <object>objects\oSmallCrateBarria</object>
           <object>objects\oMediumCrateBarria</object>
           <object>objects\oLargeCrate</object>
+          <object>objects\oFrozenWaterfall1</object>
         </objects>
       </objects>
       <objects name="Other">

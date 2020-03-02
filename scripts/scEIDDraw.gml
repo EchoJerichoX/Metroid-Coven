@@ -54,9 +54,10 @@ if (eId.paused > 0) and (fadeStage = -1)
     draw_text_ext(view_xview[0]+view_wview[0]/2,view_yview[0]+view_hview[0]/2,"Paused",-15,560);
 }
 // Draw the mouse stuff.
-if (eId.visor = 0) sprite_index = sprCombatVisor;
-else sprite_index = sprScanVisor;
+if (eId.visor = 0) sprite_index = sprCursorCombatVisor;
+else sprite_index = sprCursorScanVisor;
 x = mouse_x; y = mouse_y;
+window_mouse_set(clamp(window_mouse_get_x(),0,window_get_width()),clamp(window_mouse_get_y(),0,window_get_height())); // Clamp mouse to screen.
 draw_self();
 // If we are currently trying to post a message, do the drawing for that.
 if (fadeStage != -1)

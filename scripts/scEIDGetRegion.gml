@@ -3,26 +3,7 @@ if (room = rmTransitionRoom) exit; // Keep region the same in transition rooms.
 switch (room)
 {
     // Tutorial: 1.
-    case TutorialStart:
-    case Tutorial2:
-    case Tutorial3:
-    case Tutorial4:
-    case Tutorial5:
-    case Tutorial6:
-    case Tutorial7:
-    case Tutorial8:
-    case Tutorial9:
-    case Tutorial10:
-    case Tutorial11:
-    case Tutorial12:
-    case Tutorial13:
-    case Tutorial14:
-    case Tutorial15:
-    // Barria Tundra: 1.
-    case BarriaLandingSite:
-    case BarriaIntWest:
-    case BarriaCacheMorphBall:
-    case BarriaCacheMissile:
+    case rmBarria1LandingSite:
         region = 1; break;
     // Show guide sprite if no region is set.
     default: region = 0; break;
@@ -31,7 +12,7 @@ switch (room)
 switch (region)
 {
     case 1: // Barria Tundra.
-        eId.regionname = "Barria Tundra";
+        eId.regionname = "Barria";
         if (!instance_exists(oWeatherSnow)) instance_create(0,0,oWeatherSnow); // Snow weather system.
         break;
     case 0: exit; break; // Do nothing if the region wasn't set.

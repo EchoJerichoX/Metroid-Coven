@@ -7,6 +7,7 @@ if (!instance_exists(oViewController)) instance_create(x,y,oViewController);
 // Before we do anything, see if we need to do anything special!
 switch (room)
 {
+    // General rooms.
     case rmTitleRoom:
         scFade(c_black,0,0.015); // Fade in from black.
         scMusic(1,musTitle,0,0);
@@ -14,13 +15,16 @@ switch (room)
     case rmIntro1:
         scMusic(1,musIntro,1,0);
         break;
-    case TutorialStart:
-        scMusic(1,musTutorial,0,0);
+    // Game rooms.
+    // Barria.
+    case rmBarria1LandingSite:
+        scMusic(1,musBarriaSerene,0,0);
         break;
 }
 // Step 1: Determine weather type by region.
 scEIDGetRegion();
 
+/*
 // Step 2: Build vector collisions and room-specific variables.
 if (object_index = eId)
 {
@@ -29,80 +33,18 @@ if (object_index = eId)
                       // See "scItemPickup" for the message calls.
     switch (room)
     {
-        // NOTE that some rooms initialize their vector paths from the room creation code.
-        // - Tutorial -
-        case TutorialStart:
-            // Run the tutorial "welcome" message.
-            // This used to run on a 10-frame alarm.
-            /*
-            if (tutorialmessageshown = 0)
-            {
-                scan = 1;
-                tutorialmessageshown = 1;
-                scPause();
-                fadeStage = 0;
-                text = TutorialWelcomeMessage;
-                alarm[0] = 5;
-            }
-            */
-        case Tutorial2:
-        case Tutorial3:
-        case Tutorial4:
-        case Tutorial5:
-        case Tutorial6:
-        case Tutorial7:
-        case Tutorial8:
-        case Tutorial9:
-        case Tutorial10:
-        case Tutorial11:
-        case Tutorial12:
-        case Tutorial13:
-        case Tutorial14:
-        case Tutorial15:
-            tutorialroom = 1;
-            scEIDMessagesInit(); // Tell the item pickup strings to update to the tutorial versions.
-            break;
-        // - Barria Tundra -
-        case BarriaLandingSite:
-            vector_world_add(oVectorLine);
-            vector_path_add(oVectorLine,BarriaLandingSitePath1,0,0,0);
-            tutorialroom = 0;
-            break;
-        case BarriaIntWest:
-            vector_world_add(oVectorLine);
-            vector_path_add(oVectorLine,BarriaIntWestPath1,0,0,0);
-            tutorialroom = 0;
-            break;
-        case BarriaCacheMissile:
-            vector_world_add(oVectorLine);
-            vector_path_add(oVectorLine,BarriaCacheMissilePath1,0,0,0);
-            vector_path_add(oVectorLine,BarriaCacheMissilePath2,0,0,0);
-            tutorialroom = 0;
-            break;
-        case BarriaCacheMorphBall:
-            vector_world_add(oVectorLine);
-            vector_path_add(oVectorLine,BarriaCacheMorphBallPath1,0,0,0);
-            vector_path_add(oVectorLine,BarriaCacheMorphBallPath2,0,0,0);
-            tutorialroom = 0;
-            break;
     }
 }
+*/
 
-// Step 3: Set ambient brightness of light engine.
-// LightAlphaMult of 1 for outdoor areas, 0.75 for indoor areas.
-// The lower the number, the brighter the room (this represents the alpha of the dark layer).
-else
+// Step 2: Set ambient brightness of light engine.
+// eId.LightAlphaMult determines brightness of all lights.
+// The lower the number, the dimmer the lights.
+switch (room)
 {
-    switch (room)
-    {
-        default: eId.LightAlphaMult = 1; break;
-        case BarriaLandingSite:
-        case BarriaIntWest:
-        case BarriaCacheMissile:
-            eId.LightAlphaMult = 1; break;
-        case BarriaCacheMorphBall:
-            eId.LightAlphaMult = 0.75; break;
-    }
+    case rmBarria1LandingSite:
+        eId.LightAlphaMult = 1; break;
+    default: eId.LightAlphaMult = 1; break;
 }
 
 // Step 4: Set the debug mode grid foreground.
