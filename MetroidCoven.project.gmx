@@ -321,6 +321,8 @@
         <sprite>sprites\sprLargePCW</sprite>
         <sprite>sprites\sprLargePCN</sprite>
         <sprite>sprites\sprLargePCS</sprite>
+        <sprite>sprites\sprDayBlade</sprite>
+        <sprite>sprites\sprFrostGrass</sprite>
       </sprites>
       <sprite>sprites\sprHMTL</sprite>
       <sprite>sprites\sprHMBR</sprite>
@@ -848,6 +850,9 @@
         <object>objects\oLargePCW</object>
         <object>objects\oLargePCN</object>
         <object>objects\oLargePCS</object>
+        <object>objects\oPlantParent</object>
+        <object>objects\oDayBlade</object>
+        <object>objects\oFrostgrass</object>
       </objects>
       <objects name="Weather">
         <object>objects\oWeatherSnow</object>
