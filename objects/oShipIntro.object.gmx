@@ -322,7 +322,7 @@ if (room = rmIntro2)
         if (speed &lt; 0) rcx -= speed*1.5; rcy -= speed*1.5;
         
         //if (y &lt; 20) yy = 20;
-        draw_background_ext(IntroBackground,xx/3-350,yy/3-350,1,1,0,c_white,1);
+        draw_background_ext(bgrIntro1,xx/3-350,yy/3-350,1,1,0,c_white,1);
         draw_sprite_ext(sprGunshipThruster,currentthrustimg,x,y,scale,scale,image_angle,c_white,image_alpha*0.9);
         draw_sprite_ext(sprite_index,0,x,y,scale,scale,image_angle,c_white,image_alpha);
     }
@@ -341,7 +341,7 @@ if (room = rmIntro2)
             }
         }
         
-        draw_background_ext(IntroBackground,0,0-offset*0.15,1,1,0,c_white,1);
+        draw_background_ext(bgrIntro1,0,0-offset*0.15,1,1,0,c_white,1);
         draw_sprite_ext(sprPlanet,0,320,240-offset*0.1,0.85,0.85,planetrot,c_white,1);
         planetrot += 0.005;
         draw_sprite_ext(sprite_index,0,x,y,scale,scale,image_angle,c_white,image_alpha);
@@ -359,7 +359,7 @@ if (room = rmIntro2)
         draw_set_color(c_white);
         draw_rectangle(0,0,room_width,room_height,0);
     }
-    if (whitealpha1 &gt; 0) draw_background_stretched_ext(IntroWhiteFlash,0,0,640,480,c_white,whitealpha1);
+    if (whitealpha1 &gt; 0) draw_background_stretched_ext(bgrIntro1WhiteFlash,0,0,640,480,c_white,whitealpha1);
 }
 if (room = rmIntro2)
 {

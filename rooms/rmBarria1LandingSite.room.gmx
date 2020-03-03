@@ -17,8 +17,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>2190</w>
-    <h>1088</h>
+    <w>2182</w>
+    <h>1086</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -28,8 +28,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>873</xoffset>
-    <yoffset>715</yoffset>
+    <xoffset>703</xoffset>
+    <yoffset>428</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bgrSnow" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -69,6 +69,7 @@
     <instance objName="oPCS" x="720" y="694" name="inst_B14F9446" locked="0" code="image_angle = -30;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oPlayer" x="656" y="576" name="inst_0CF7F956" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLargePCE" x="840" y="656" name="inst_E0156F5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oIceCrystalFormationD" x="768" y="207" name="inst_B898EAB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilFloors" x="688" y="240" w="16" h="16" xo="96" yo="144" id="10039363" name="inst_742A2431" depth="1999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -191,11 +192,11 @@
     <tile bgName="tilFloors" x="880" y="320" w="16" h="16" xo="0" yo="80" id="10039482" name="inst_1FD7A52B" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilFloors" x="896" y="320" w="16" h="16" xo="0" yo="96" id="10039483" name="inst_997354FC" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilFloors" x="656" y="272" w="16" h="16" xo="16" yo="96" id="10039484" name="inst_EB2F8FB2" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilBarriaIceCaveWalls" x="800" y="192" w="16" h="32" xo="176" yo="144" id="10039433" name="inst_238A8EF3" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilBarriaIceCaveWalls" x="768" y="192" w="16" h="16" xo="176" yo="272" id="10039436" name="inst_14A61277" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="802" y="195" w="16" h="32" xo="176" yo="144" id="10039433" name="inst_238A8EF3" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaIceCaveWalls" x="816" y="224" w="32" h="16" xo="160" yo="16" id="10039438" name="inst_2D1414AF" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaIceCaveWalls" x="834" y="250" w="16" h="16" xo="160" yo="96" id="10039439" name="inst_2B89CF45" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaIceCaveWalls" x="839" y="266" w="16" h="16" xo="176" yo="112" id="10039440" name="inst_2C2B6603" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="709" y="197" w="32" h="32" xo="128" yo="64" id="10039485" name="inst_B4E6941B" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaIceCaveWalls" x="720" y="720" w="32" h="48" xo="32" yo="64" id="10038531" name="inst_2F085DE3" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaIceCaveWalls" x="688" y="688" w="32" h="32" xo="48" yo="288" id="10038533" name="inst_424BEBF6" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaIceCaveWalls" x="784" y="736" w="32" h="32" xo="64" yo="80" id="10038535" name="inst_1B70C22C" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

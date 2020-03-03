@@ -13,14 +13,14 @@
   <code>// This is always the first room.
 instance_create(0,0,eId);
 instance_create(0,0,oViewController);
-room_goto(rmBarria1LandingSite);
+room_goto(rmIntro1);
 sound_loop(ambSnow);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>0</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1016</w>
+    <w>1008</w>
     <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
