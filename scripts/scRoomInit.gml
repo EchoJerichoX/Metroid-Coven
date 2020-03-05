@@ -43,8 +43,8 @@ if (object_index = eId)
 switch (room)
 {
     case rmBarria1LandingSite:
-        eId.LightAlphaMult = 1; break;
-    default: eId.LightAlphaMult = 1; break;
+        eId.RoomBrightness = .025; break;
+    default: eId.RoomBrightness = .025; break;
 }
 
 // Step 4: Set the debug mode grid foreground.

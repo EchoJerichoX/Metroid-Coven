@@ -158,7 +158,6 @@
     <sprites name="- Miscellaneous">
       <sprite>sprites\sprItems</sprite>
       <sprite>sprites\sprVectorLine</sprite>
-      <sprite>sprites\sprLightIcon</sprite>
       <sprite>sprites\sprBlank</sprite>
     </sprites>
     <sprites name="Cinematics">
@@ -228,6 +227,7 @@
         <sprite>sprites\sprBarriaSpikes</sprite>
       </sprites>
       <sprites name="Lighting">
+        <sprite>sprites\sprLightIcon</sprite>
         <sprite>sprites\sprLightEffect</sprite>
         <sprite>sprites\sprLightEffectBright</sprite>
         <sprite>sprites\sprLightEffectSmall</sprite>
@@ -243,9 +243,9 @@
         <sprite>sprites\sprSmallWallLightS</sprite>
         <sprite>sprites\sprSmallWallLightW</sprite>
         <sprite>sprites\sprWallLightE</sprite>
-        <sprite>sprites\sprWallLightN</sprite>
         <sprite>sprites\sprWallLightS</sprite>
         <sprite>sprites\sprWallLightW</sprite>
+        <sprite>sprites\sprWallLightN</sprite>
         <sprite>sprites\sprStickLightE</sprite>
         <sprite>sprites\sprStickLightN</sprite>
         <sprite>sprites\sprStickLightS</sprite>
@@ -899,6 +899,7 @@
     </rooms>
     <rooms name="3 - Barria">
       <room>rooms\rmBarria1LandingSite</room>
+      <room>rooms\room33</room>
     </rooms>
     <rooms name="997 - Menus">
       <room>rooms\rmTitleRoom</room>

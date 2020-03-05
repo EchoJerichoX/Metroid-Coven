@@ -60,6 +60,7 @@ hiddenfade4 = 0; // ^ -10 through -12.
 brightness = 20; // Universal setting for the radius of all lights in the game.
                 // Takes the base size of any light and multiplies by this number.
 LightAlphaMult = 1; // All light alpha values multiplied by this value.
+RoomBrightness = .1;
 secrettilelayer = 2; // Which tile layer is vulnerable to hiding when blocks are destroyed under it.
 
 // Initialize player variables.

@@ -16,40 +16,32 @@ switch (object_index)
         break;
     // --------
     case oSmallLightEW:
-        xsize = .7; ysize = 1; size = .1; angle = 0;
+        xsize = .07; ysize = .1; size = .5; angle = 0;
         break;
     case oSmallLightNS:
-        xsize = 1; ysize = .7; size = .1; angle = 0;
+        xsize = .1; ysize = .07; size = .5; angle = 0;
         break;
     // --------
     case oSmallWallLightE:
-        ox = x-3; xsize = .45; ysize = .7; size = .15; angle = 0;
-        break;
     case oSmallWallLightW:
-        ox = x+3; xsize = .45; ysize = .7; size = .15; angle = 0;
+        xsize = .1; ysize = .07; size = .65; angle = 0;
         break;
     case oSmallWallLightN:
-        oy = y-3; xsize = .7; ysize = .45; size = .15; angle = 0;
-        break;
     case oSmallWallLightS:
-        oy = y+3; xsize = .7; ysize = .45; size = .15; angle = 0;
+        xsize = .07; ysize = .1; size = .65; angle = 0;
         break;
     // --------
     case oWallLightE:
-        xsize = .7; ysize = 1; ox = x-4; size = .6; angle = 0;
-        break;
     case oWallLightW:
-        xsize = .7; ysize = 1; ox = x+4; size = .6; angle = 0;
+        xsize = .1; ysize = .14; size = .8; angle = 0;
         break;
     case oWallLightN:
-        xsize = 1; ysize = .7; oy = y-4; size = .6; angle = 0;
-        break;
     case oWallLightS:
-        xsize = 1; ysize = .7; oy = y+4; size = .6; angle = 0;
+        xsize = .14; ysize = .1; size = .8; angle = 0;
         break;
     // --------
     case oDomeLight:
-        size = .15; angle = random(360);
+        size = .1; angle = random(360);
         break;
     // --------
 }

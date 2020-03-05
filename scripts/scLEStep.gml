@@ -39,6 +39,12 @@ if (AmbientColor != c_white)
             }
         }
     }
+    if (eId.RoomBrightness > 0)
+    {
+        draw_set_alpha(eId.RoomBrightness);
+        draw_set_color(c_white);
+        draw_rectangle(0,0,room_width,room_height,false);
+    }
     //with (oActor) scActorLight();
     draw_set_blend_mode(bm_normal);
 }
