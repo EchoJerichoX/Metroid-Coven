@@ -10,8 +10,8 @@
   <persistent>0</persistent>
   <colour>4194368</colour>
   <showcolour>-1</showcolour>
-  <code>//vector_world_add(oVectorLine);
-//vector_path_add(oVectorLine,Path1,0,0,0);</code>
+  <code>vector_world_add(oVectorLine);
+vector_path_add(oVectorLine,vecBarria1LandingSite1,0,0,0);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -26,10 +26,10 @@
     <showForegrounds>0</showForegrounds>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
-    <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>-123</xoffset>
-    <yoffset>415</yoffset>
+    <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
+    <page>2</page>
+    <xoffset>-66</xoffset>
+    <yoffset>-39</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bgrSnow" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -58,9 +58,9 @@
     <instance objName="oTransitionTubeUD" x="512" y="0" name="inst_C8755703" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oTransitionTubeUD" x="768" y="768" name="inst_8042810B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oTransitionTubeLR" x="1024" y="512" name="inst_AD9A0969" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDoorGuideE" x="976" y="512" name="inst_BF2B1722" locked="0" code="scDefineDoor(Doors.dRed);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDoorGuideE" x="976" y="512" name="inst_BF2B1722" locked="0" code="scDefineDoor(Doors.dBlue);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDoorGuideN" x="512" y="48" name="inst_E56142D3" locked="0" code="scDefineDoor(Doors.dBlue);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDoorGuideS" x="768" y="720" name="inst_BE8C761A" locked="0" code="scDefineDoor(Doors.dBlue);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDoorGuideS" x="768" y="720" name="inst_BE8C761A" locked="0" code="scDefineDoor(Doors.dRed);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDoorGuideS" x="256" y="720" name="inst_48B3EC86" locked="0" code="scDefineDoor(Doors.dBlue);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oStickLightS" x="699" y="676" name="inst_1F504A75" locked="0" code="image_angle = -25;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oFrozenWaterfall1" x="535" y="681" name="inst_69C81981" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -80,8 +80,12 @@
     <instance objName="oSmallLightEW" x="216" y="704" name="inst_0BC0BD93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallLightEW" x="136" y="504" name="inst_4FC15C80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallLightEW" x="920" y="416" name="inst_E7EC7E2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oLight" x="250" y="353" name="inst_A0B915BF" locked="0" code="image_blend = c_green; size = 0.02; image_alpha = 0.1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oShip" x="160" y="376" name="inst_B7108DA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLight" x="265" y="377" name="inst_A0B915BF" locked="0" code="image_blend = c_green; size = 0.02; image_alpha = 0.1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oShip" x="168" y="376" name="inst_B7108DA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="552" y="480" name="inst_24E8FCDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="688" y="528" name="inst_CB6D9EC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="816" y="560" name="inst_1E75E722" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="408" y="512" name="inst_CB55554E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilFloors" x="688" y="240" w="16" h="16" xo="96" yo="144" id="10039363" name="inst_742A2431" depth="1999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -815,7 +819,6 @@
     <tile bgName="tilBarriaInnerWalls" x="176" y="656" w="16" h="16" xo="64" yo="240" id="10038432" name="inst_AEF97F4A" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="192" y="672" w="32" h="48" xo="32" yo="64" id="10038433" name="inst_3381FA73" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="192" y="720" w="16" h="16" xo="64" yo="240" id="10038434" name="inst_35F229A7" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilBarriaInnerWalls" x="208" y="720" w="16" h="16" xo="80" yo="128" id="10038437" name="inst_C8FB9D15" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="208" y="736" w="32" h="32" xo="32" yo="224" id="10038438" name="inst_F895DC68" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="280" y="176" w="32" h="32" xo="32" yo="64" id="10038440" name="inst_0DD660B6" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="280" y="168" w="24" h="8" xo="160" yo="176" id="10038441" name="inst_45A6B442" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1238,6 +1241,7 @@
     <tile bgName="tilBarriaInnerWalls" x="960" y="432" w="16" h="16" xo="16" yo="272" id="10040318" name="inst_FD3A1A21" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="976" y="448" w="16" h="16" xo="16" yo="272" id="10040319" name="inst_07E21CFA" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="992" y="448" w="16" h="16" xo="16" yo="272" id="10040320" name="inst_3C23C07B" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="208" y="704" w="32" h="32" xo="160" yo="192" id="10040922" name="inst_98F80CC4" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaOuterWalls" x="304" y="720" w="32" h="48" xo="176" yo="176" id="10039107" name="inst_E3FB1A9B" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaOuterWalls" x="320" y="704" w="16" h="16" xo="192" yo="224" id="10039108" name="inst_0D605199" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaOuterWalls" x="304" y="672" w="32" h="16" xo="64" yo="368" id="10039110" name="inst_3D0B6DB3" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

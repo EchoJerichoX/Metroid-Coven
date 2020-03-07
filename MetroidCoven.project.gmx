@@ -220,6 +220,7 @@
         <sprite>sprites\sprDoorRed</sprite>
         <sprite>sprites\sprDoorGreen</sprite>
         <sprite>sprites\sprDoorYellow</sprite>
+        <sprite>sprites\sprDoorDeactivated</sprite>
       </sprites>
       <sprites name="Hazards">
         <sprite>sprites\sprSpikesGuideEW</sprite>
@@ -487,40 +488,11 @@
   </backgrounds>
   <paths name="paths">
     <paths name="Generic">
-      <path>paths\GeneralTestRoomPath1</path>
-      <path>paths\DashTestRoomPath1</path>
-    </paths>
-    <paths name="Tutorial">
-      <path>paths\TutorialStartPath1</path>
-      <path>paths\Tutorial2Path1</path>
-      <path>paths\Tutorial3Path1</path>
-      <path>paths\Tutorial3Path2</path>
-      <path>paths\Tutorial4Path1</path>
-      <path>paths\Tutorial4Path2</path>
-      <path>paths\Tutorial5Path1</path>
-      <path>paths\Tutorial6Path1</path>
-      <path>paths\Tutorial6Path2</path>
-      <path>paths\Tutorial6Path3</path>
-      <path>paths\Tutorial7Path1</path>
-      <path>paths\Tutorial8Path1</path>
-      <path>paths\Tutorial9Path1</path>
-      <path>paths\Tutorial10Path1</path>
-      <path>paths\Tutorial11Path1</path>
-      <path>paths\Tutorial12Path1</path>
-      <path>paths\Tutorial13Path1</path>
-      <path>paths\Tutorial13Path2</path>
+      <path>paths\vecTestRoom1</path>
+      <path>paths\vecTestRoomDash1</path>
     </paths>
     <paths name="Barria">
-      <path>paths\BarriaLandingSitePath1</path>
-      <path>paths\BarriaIntWestPath1</path>
-      <path>paths\BarriaIceTunnelNPath1</path>
-      <path>paths\BarriaIceTunnelNPath2</path>
-      <path>paths\BarriaIceTunnelNPath3</path>
-      <path>paths\BarriaIceTunnelNPath4</path>
-      <path>paths\BarriaCacheMissilePath1</path>
-      <path>paths\BarriaCacheMissilePath2</path>
-      <path>paths\BarriaCacheMorphBallPath1</path>
-      <path>paths\BarriaCacheMorphBallPath2</path>
+      <path>paths\vecBarria1LandingSite1</path>
     </paths>
   </paths>
   <scripts name="scripts">
@@ -899,7 +871,7 @@
     </rooms>
     <rooms name="3 - Barria">
       <room>rooms\rmBarria1LandingSite</room>
-      <room>rooms\room33</room>
+      <room>rooms\rmBarria2ZoomerTunnel</room>
     </rooms>
     <rooms name="997 - Menus">
       <room>rooms\rmTitleRoom</room>

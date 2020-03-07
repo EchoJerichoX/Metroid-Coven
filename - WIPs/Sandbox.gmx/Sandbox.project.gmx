@@ -27,6 +27,9 @@
     <sprite>sprites\sprite18</sprite>
     <sprite>sprites\sprite19</sprite>
     <sprite>sprites\sprite20</sprite>
+    <sprite>sprites\sprite21</sprite>
+    <sprite>sprites\sprite22</sprite>
+    <sprite>sprites\sprite23</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>

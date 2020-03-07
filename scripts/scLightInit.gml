@@ -16,32 +16,32 @@ switch (object_index)
         break;
     // --------
     case oSmallLightEW:
-        xsize = .07; ysize = .1; size = .5; angle = 0;
+        xsize = .07; ysize = .1; size = .145; angle = 0;
         break;
     case oSmallLightNS:
-        xsize = .1; ysize = .07; size = .5; angle = 0;
+        xsize = .1; ysize = .07; size = .145; angle = 0;
         break;
     // --------
     case oSmallWallLightE:
     case oSmallWallLightW:
-        xsize = .1; ysize = .07; size = .65; angle = 0;
+        xsize = .1; ysize = .07; size = .19; angle = 0;
         break;
     case oSmallWallLightN:
     case oSmallWallLightS:
-        xsize = .07; ysize = .1; size = .65; angle = 0;
+        xsize = .07; ysize = .1; size = .19; angle = 0;
         break;
     // --------
     case oWallLightE:
     case oWallLightW:
-        xsize = .1; ysize = .14; size = .8; angle = 0;
+        xsize = .1; ysize = .14; size = .225; angle = 0;
         break;
     case oWallLightN:
     case oWallLightS:
-        xsize = .14; ysize = .1; size = .8; angle = 0;
+        xsize = .14; ysize = .1; size = .225; angle = 0;
         break;
     // --------
     case oDomeLight:
-        size = .1; angle = random(360);
+        size = .055; angle = random(360);
         break;
     // --------
 }
