@@ -17,8 +17,8 @@ vector_path_add(oVectorLine,vecBarria1LandingSite1,0,0,0);</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>2576</w>
-    <h>1394</h>
+    <w>1287</w>
+    <h>864</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -28,8 +28,8 @@ vector_path_add(oVectorLine,vecBarria1LandingSite1,0,0,0);</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>2</page>
-    <xoffset>-66</xoffset>
-    <yoffset>-39</yoffset>
+    <xoffset>-194</xoffset>
+    <yoffset>-11</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bgrSnow" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>

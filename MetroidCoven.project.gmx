@@ -873,16 +873,16 @@
       <room>rooms\rmBarria1LandingSite</room>
       <room>rooms\rmBarria2ZoomerTunnel</room>
     </rooms>
-    <rooms name="997 - Menus">
+    <rooms name="998 - Menus">
       <room>rooms\rmTitleRoom</room>
     </rooms>
-    <rooms name="998 - Test Rooms">
+    <rooms name="999 - Test Rooms">
       <room>rooms\rmTestRoom</room>
       <room>rooms\rmTestRoomDash</room>
       <room>rooms\rmTestRoomEnemies</room>
-      <room>rooms\rmTestFireTileset</room>
+      <room>rooms\rmTestDrawing</room>
     </rooms>
-    <rooms name="999 - Old">
+    <rooms name="1000 - Old">
       <rooms name="Barria">
         <room>rooms\BarriaLandingSite</room>
         <room>rooms\BarriaIntWest</room>

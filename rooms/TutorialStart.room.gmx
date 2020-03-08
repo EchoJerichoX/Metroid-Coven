@@ -27,7 +27,7 @@ vector_path_add(oVectorLine,TutorialStartPath1,0,0,0);</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>0</page>
+    <page>1</page>
     <xoffset>-19</xoffset>
     <yoffset>-8</yoffset>
   </makerSettings>

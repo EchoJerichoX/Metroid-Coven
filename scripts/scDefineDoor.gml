@@ -13,4 +13,5 @@ switch (myid)
     case Doors.dRed: scCheckNBDoor(1); en = 3; sprite = sprDoorRed; break;
     case Doors.dGreen: scCheckNBDoor(2); sprite = sprDoorGreen; break;
     case Doors.dYellow: scCheckNBDoor(3); sprite = sprDoorYellow; break;
+    case Doors.dDeactivated: sprite = sprDoorDeactivated; break;
 }

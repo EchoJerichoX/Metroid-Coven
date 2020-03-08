@@ -74,7 +74,8 @@ enum Doors
     dBlue = 50001,
     dRed = 50002,
     dGreen = 50003,
-    dYellow = 50004
+    dYellow = 50004,
+    dDeactivated = 50005
 }
 enum Blocks
 {
