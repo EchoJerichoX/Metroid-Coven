@@ -19,11 +19,8 @@ switch (room)
     case rmBarria2ZoomerTunnel:
         if (object_index = oTransitionTubeLR) trans = 3;
         else {
-            if (y < room_height/2) trans = 4;
-            else {
-                if (x > room_width/2) trans = 2;
-                else trans = 1;
-            }
+            if (y < room_height/2) trans = 1;
+            else trans = 2;
         }
         break;
 }

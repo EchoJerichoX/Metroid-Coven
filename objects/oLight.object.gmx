@@ -119,7 +119,9 @@ if (FlashMe != 0)
         else AmIOn = true;
     }
 }
-
+if (instance_exists(oPlayer)) {
+    if (master = oPlayer.id) exit;
+}
 if (tile_layer_find(-1,x,y))
 or (tile_layer_find(-2,x,y))
 or (tile_layer_find(-3,x,y))

@@ -24,8 +24,6 @@ view_xview = clamp(view_xview,0,room_width-view_wview);
 view_yview = clamp(view_yview,0,room_height-view_hview);
 x = round(x);
 y = round(y);
-
-
 /* Preserved version of old script as of 2/10/2020.
 
 // Check transition scripts for more manipulation of some variables in this object (oViewController).

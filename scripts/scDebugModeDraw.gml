@@ -68,27 +68,29 @@ if (object_index = eId)
     }
     */
     // Track transitions.
-    /*
     draw_text(dxo+4,dyo+13,"transitioning");            draw_text(dxo+180,dyo+13,transitioning);
     draw_text(dxo+4,dyo+26,"thisroom");                 draw_text(dxo+180,dyo+26,thisroom);
     draw_text(dxo+4,dyo+39,"destinationroom");          draw_text(dxo+180,dyo+39,destinationroom);
-    draw_text(dxo+4,dyo+52,"tx");                       draw_text(dxo+180,dyo+52,ty);
-    draw_text(dxo+4,dyo+65,"tdx");                      draw_text(dxo+180,dyo+65,tdx);
-    draw_text(dxo+4,dyo+78,"tdy");                      draw_text(dxo+180,dyo+78,tdy);
-    draw_text(dxo+4,dyo+91,"transfade");                draw_text(dxo+180,dyo+91,transfade);
-    draw_text(dxo+4,dyo+104,"transfaderate");           draw_text(dxo+180,dyo+104,transfaderate);
-    draw_text(dxo+4,dyo+117,"transdone");               draw_text(dxo+180,dyo+117,transdone);
-    draw_text(dxo+4,dyo+130,"transstep");               draw_text(dxo+180,dyo+130,transstep);
-    draw_text(dxo+4,dyo+143,"transbuffer");             draw_text(dxo+180,dyo+143,transbuffer);
-    draw_text(dxo+4,dyo+156,"transbuffermax");          draw_text(dxo+180,dyo+156,transbuffermax);
-    draw_text(dxo+4,dyo+169,"transdir");                draw_text(dxo+180,dyo+169,transdir);
-    draw_text(dxo+4,dyo+182,"transrate");               draw_text(dxo+180,dyo+182,transrate);
+    draw_text(dxo+4,dyo+52,"tdestx");                   draw_text(dxo+180,dyo+52,tdestx);
+    draw_text(dxo+4,dyo+65,"tdesty");                   draw_text(dxo+180,dyo+65,tdesty);
+    if (instance_exists(oTransitionCover)) {
+    draw_text(dxo+4,dyo+78,"cover x");                  draw_text(dxo+180,dyo+78,oTransitionCover.x);
+    draw_text(dxo+4,dyo+91,"cover y");                  draw_text(dxo+180,dyo+91,oTransitionCover.y);
+    draw_text(dxo+4,dyo+104,"cover dist");              draw_text(dxo+180,dyo+104,point_distance(oTransitionCover.x,oTransitionCover.y,other.tdestx,other.tdesty));
+    }
+        draw_text(dxo+4,dyo+117,"tx");                  draw_text(dxo+180,dyo+117,tx);
+        draw_text(dxo+4,dyo+130,"ty");                  draw_text(dxo+180,dyo+130,ty);
+    if (instance_exists(oPlayer)) {
+        draw_text(dxo+4,dyo+143,oPlayer.hittrans);      draw_text(dxo+180,dyo+143,oPlayer.hittrans);
+    }
+    draw_text(dxo+4,dyo+156,"transstep");               draw_text(dxo+180,dyo+156,transstep);
+    draw_text(dxo+4,dyo+169,"view x");                  draw_text(dxo+180,dyo+169,view_xview[0]);
+    draw_text(dxo+4,dyo+182,"view y");                  draw_text(dxo+180,dyo+182,view_yview[0]);
     draw_text(dxo+4,dyo+195,"tsx");                     draw_text(dxo+180,dyo+195,tsx);
     draw_text(dxo+4,dyo+208,"tsy");                     draw_text(dxo+180,dyo+208,tsy);
     draw_text(dxo+4,dyo+221,"vox");                     draw_text(dxo+180,dyo+221,vox);
     draw_text(dxo+4,dyo+234,"voy");                     draw_text(dxo+180,dyo+234,voy);
     draw_text(dxo+4,dyo+247,"oPlayer count");           draw_text(dxo+180,dyo+247,instance_number(oPlayer));
-    */
     // Track message handler variables.
     /*
     draw_text(dxo+4,dyo+13,"fadeStage");                draw_text(dxo+180,dyo+13,fadeStage);

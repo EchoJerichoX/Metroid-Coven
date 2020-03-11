@@ -48,6 +48,8 @@ SpeedInterval = 5; // Determines the rate of movement speed acceleration.
                    // Used, for example, on ice surfaces.
 OnIce = false; // Are we on an ice tile?
 
+hittrans = 0;
+
 startboostcharge = 0;
 boostchargelevel = 0;
 boostchargemax = 60;

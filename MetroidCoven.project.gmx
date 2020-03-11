@@ -451,6 +451,7 @@
     <backgrounds name="1 - General">
       <background>background\bgrDeathRoom</background>
       <background>background\bgrMapGrid</background>
+      <background>background\bgrMapGrid2</background>
       <background>background\tilFloors</background>
       <background>background\tilBarriaIntroLanding</background>
       <background>background\tilCave</background>
@@ -493,6 +494,9 @@
     </paths>
     <paths name="Barria">
       <path>paths\vecBarria1LandingSite1</path>
+      <path>paths\vecBarria2ZoomerTunnel1</path>
+      <path>paths\vecBarria2ZoomerTunnel2</path>
+      <path>paths\vecBarria2ZoomerTunnel3</path>
     </paths>
   </paths>
   <scripts name="scripts">
@@ -856,6 +860,7 @@
       <object>objects\oTransitionParent</object>
       <object>objects\oTransitionTubeLR</object>
       <object>objects\oTransitionTubeUD</object>
+      <object>objects\oTransitionCover</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -872,6 +877,7 @@
     <rooms name="3 - Barria">
       <room>rooms\rmBarria1LandingSite</room>
       <room>rooms\rmBarria2ZoomerTunnel</room>
+      <room>rooms\rmBarria3Atrium</room>
     </rooms>
     <rooms name="998 - Menus">
       <room>rooms\rmTitleRoom</room>

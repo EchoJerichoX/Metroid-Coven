@@ -19,9 +19,27 @@ if (other.object_index = oTransitionTubeUD)
     if (y < other.y) eId.transdir = 270;
     else eId.transdir = 90;
 }
+
 // Determine the room we need to move to.
-switch (room) // Determine current room.
-{
+switch (room) { // Determine current room.
+    case rmBarria1LandingSite:
+        switch (other.trans) {
+            case 1: eId.destinationroom = rmBarria2ZoomerTunnel; break;
+            case 2: break;
+            case 3: break;
+            case 4: break;
+        }
+        break;
+    case rmBarria2ZoomerTunnel:
+        switch (other.trans) {
+            case 1: eId.destinationroom = rmBarria1LandingSite; break;
+            case 2: break;
+            case 3: break;
+            case 4: break;
+        }
+        break;
+}
+    /*
     // - Tutorial -
     case TutorialStart: // Only one destination that applies in this
                         //   room, so we don't care what eId.trans says.
@@ -121,4 +139,4 @@ switch (room) // Determine current room.
     case BarriaCacheMissile:
         eId.destinationroom = BarriaIntWest;
         break;
-}
+    */

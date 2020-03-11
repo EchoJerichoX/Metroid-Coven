@@ -4,6 +4,7 @@ switch (room)
 {
     // Tutorial: 1.
     case rmBarria1LandingSite:
+    case rmBarria2ZoomerTunnel:
         region = 1; break;
     // Show guide sprite if no region is set.
     default: region = 0; break;

@@ -17,8 +17,8 @@ vector_path_add(oVectorLine,vecBarria1LandingSite1,0,0,0);</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1287</w>
-    <h>864</h>
+    <w>1016</w>
+    <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,9 +27,9 @@ vector_path_add(oVectorLine,vecBarria1LandingSite1,0,0,0);</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>2</page>
-    <xoffset>-194</xoffset>
-    <yoffset>-11</yoffset>
+    <page>1</page>
+    <xoffset>-85</xoffset>
+    <yoffset>63</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bgrSnow" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -66,7 +66,6 @@ vector_path_add(oVectorLine,vecBarria1LandingSite1,0,0,0);</code>
     <instance objName="oFrozenWaterfall1" x="535" y="681" name="inst_69C81981" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oIceCrystalFormationU" x="825" y="705" name="inst_57FE4A36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oPCS" x="720" y="694" name="inst_B14F9446" locked="0" code="image_angle = -30;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPlayer" x="288" y="352" name="inst_0CF7F956" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oIceCrystalFormationD" x="768" y="207" name="inst_B898EAB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oStickLightN" x="568" y="64" name="inst_43A53D7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallLightNS" x="416" y="128" name="inst_BC0C1C1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -44,14 +44,19 @@ if (keyboard_check_pressed(vk_numpad0))
 debugmode = !debugmode;
 if (debugmode)
 {
-    if (instance_exists(oVectorLine))
-        { with (oVectorLine) visible = true; }
-    if (room != rmTitleRoom) background_visible[7] = true;
+    if (instance_exists(oVectorLine)) {
+        with (oVectorLine) visible = true;
+    }
+    if (room != rmTitleRoom) {
+        background_visible[6] = true;
+        background_visible[7] = true;
+    }
 }
 else
 {
     if (instance_exists(oVectorLine))
         { with (oVectorLine) visible = false; }
+    background_visible[6] = false;
     background_visible[7] = false;
 }
 

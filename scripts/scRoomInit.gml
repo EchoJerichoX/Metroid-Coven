@@ -43,11 +43,15 @@ if (object_index = eId)
 switch (room)
 {
     case rmBarria1LandingSite:
+        eId.RoomBrightness = .05; break;
+    case rmBarria2ZoomerTunnel:
         eId.RoomBrightness = .025; break;
     default: eId.RoomBrightness = .025; break;
 }
 
 // Step 4: Set the debug mode grid foreground.
+background_index[6] = bgrMapGrid2;
+background_foreground[6] = true;
 background_index[7] = bgrMapGrid;
 background_foreground[7] = true;
 
