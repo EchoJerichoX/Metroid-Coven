@@ -3,7 +3,7 @@
   <caption>DO NOT USE!!!</caption>
   <width>2048</width>
   <height>512</height>
-  <vsnap>8</vsnap>
+  <vsnap>16</vsnap>
   <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
@@ -19,8 +19,8 @@ vector_path_add(oVectorLine,vecBarria2ZoomerTunnel3,0,0,0);</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1686</w>
-    <h>1267</h>
+    <w>2576</w>
+    <h>1394</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -30,8 +30,8 @@ vector_path_add(oVectorLine,vecBarria2ZoomerTunnel3,0,0,0);</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>2</page>
-    <xoffset>-102</xoffset>
-    <yoffset>45</yoffset>
+    <xoffset>-251</xoffset>
+    <yoffset>-490</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bgrSnow" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -68,6 +68,16 @@ vector_path_add(oVectorLine,vecBarria2ZoomerTunnel3,0,0,0);</code>
     <instance objName="oSmallLightNS" x="672" y="354" name="inst_126CE22A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDomeLight" x="575" y="419" name="inst_56BECB6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDomeLight" x="740" y="387" name="inst_778E5675" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oVectorLine" x="1425" y="431" name="inst_0880663C" locked="0" code="" scaleX="5.75" scaleY="1.875" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock16" x="1248" y="352" name="inst_3EB47015" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLargeCrate" x="1267" y="275" name="inst_675AF462" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oMediumCrateBarria" x="1304" y="275" name="inst_1EABE5BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSmallCrateBarria" x="1351" y="267" name="inst_DC69DAE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSmallCrateBarria" x="1330" y="280" name="inst_A84790B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSmallCrateBarria" x="1271" y="311" name="inst_43CCC85B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oGenerator" x="1456" y="272" name="inst_97F0F523" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock16" x="1232" y="352" name="inst_24F276FB" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDoorGuideW" x="1568" y="320" name="inst_67D088CD" locked="0" code="scDefineDoor(Doors.dDeactivated);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilBarriaIceCaveWalls" x="464" y="432" w="32" h="32" xo="16" yo="288" id="10042921" name="inst_EF12EAF4" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -142,8 +152,191 @@ vector_path_add(oVectorLine,vecBarria2ZoomerTunnel3,0,0,0);</code>
     <tile bgName="tilBarriaIceCaveWalls" x="784" y="344" w="16" h="16" xo="64" yo="512" id="10043079" name="inst_77603BDB" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaIceCaveWalls" x="784" y="360" w="16" h="16" xo="64" yo="528" id="10043080" name="inst_6880ECF8" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaIceCaveWalls" x="560" y="248" w="48" h="16" xo="80" yo="528" id="10043081" name="inst_F8C79D68" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="816" y="392" w="64" h="32" xo="0" yo="32" id="10043449" name="inst_CC2D144F" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="880" y="392" w="32" h="32" xo="16" yo="320" id="10043450" name="inst_100EC8B7" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="816" y="400" w="48" h="32" xo="0" yo="0" id="10043452" name="inst_2DD2F767" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="872" y="416" w="32" h="32" xo="48" yo="288" id="10043453" name="inst_FABC9077" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="864" y="408" w="8" h="24" xo="144" yo="232" id="10043454" name="inst_7544BF04" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="904" y="432" w="16" h="16" xo="128" yo="288" id="10043455" name="inst_71D3235E" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="904" y="448" w="16" h="16" xo="144" yo="368" id="10043456" name="inst_FDF72CC2" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="912" y="424" w="16" h="16" xo="80" yo="400" id="10043462" name="inst_0116650B" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="912" y="408" w="16" h="16" xo="144" yo="384" id="10043464" name="inst_8DE45369" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="928" y="424" w="80" h="32" xo="80" yo="256" id="10043465" name="inst_953AAC3F" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1008" y="408" w="32" h="32" xo="128" yo="320" id="10043466" name="inst_3A0F78D5" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1032" y="416" w="32" h="32" xo="0" yo="368" id="10043467" name="inst_FB5A65A4" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1032" y="448" w="16" h="16" xo="144" yo="400" id="10043468" name="inst_8F4E17A9" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="920" y="432" w="32" h="32" xo="0" yo="224" id="10043470" name="inst_0F929542" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="952" y="432" w="64" h="32" xo="80" yo="224" id="10043471" name="inst_E68304A7" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1016" y="432" w="16" h="32" xo="144" yo="224" id="10043473" name="inst_3F40B108" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1096" y="384" w="32" h="32" xo="16" yo="288" id="10043474" name="inst_11E9A2B8" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1128" y="352" w="32" h="32" xo="64" yo="432" id="10043476" name="inst_6D6D5B99" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1048" y="400" w="16" h="16" xo="0" yo="304" id="10043479" name="inst_393BDCA5" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1024" y="376" w="16" h="16" xo="144" yo="352" id="10043480" name="inst_723FD825" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1024" y="392" w="32" h="16" xo="96" yo="176" id="10043482" name="inst_A59347B7" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1096" y="360" w="32" h="32" xo="128" yo="320" id="10043484" name="inst_B250F14F" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1112" y="352" w="24" h="8" xo="96" yo="64" id="10043485" name="inst_7C041B3B" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1112" y="336" w="16" h="16" xo="144" yo="352" id="10043486" name="inst_7210B5F3" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1128" y="336" w="48" h="32" xo="112" yo="32" id="10043490" name="inst_F9626AE4" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1064" y="384" w="32" h="32" xo="96" yo="0" id="10043491" name="inst_7B405057" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1048" y="376" w="48" h="32" xo="64" yo="32" id="10043493" name="inst_BD709670" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1040" y="376" w="8" h="24" xo="144" yo="256" id="10043495" name="inst_12AC5831" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1168" y="352" w="48" h="32" xo="32" yo="224" id="10043497" name="inst_2B94DFAA" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1176" y="336" w="32" h="32" xo="32" yo="32" id="10043498" name="inst_A1DEF2C2" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1128" y="368" w="16" h="32" xo="144" yo="224" id="10043499" name="inst_D56728FA" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1144" y="384" w="16" h="16" xo="144" yo="400" id="10043500" name="inst_263C493B" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1208" y="336" w="8" h="24" xo="144" yo="256" id="10043501" name="inst_BCD7F8DF" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1160" y="360" w="8" h="24" xo="40" yo="8" id="10043506" name="inst_E7D7BD3B" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="816" y="376" w="64" h="16" xo="0" yo="528" id="10043606" name="inst_FDF3C0D8" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="880" y="376" w="64" h="16" xo="64" yo="528" id="10043607" name="inst_0A01E932" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="992" y="360" w="32" h="48" xo="96" yo="496" id="10043608" name="inst_FDB20878" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="912" y="392" w="32" h="16" xo="64" yo="496" id="10043609" name="inst_CDA44871" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="928" y="408" w="16" h="16" xo="64" yo="512" id="10043610" name="inst_7530CBB7" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="976" y="408" w="16" h="16" xo="64" yo="528" id="10043612" name="inst_0CD125A5" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="992" y="408" w="16" h="16" xo="48" yo="528" id="10043613" name="inst_A1BC6369" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1024" y="360" w="32" h="16" xo="0" yo="528" id="10043614" name="inst_258EC206" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1080" y="360" w="16" h="16" xo="48" yo="528" id="10043615" name="inst_FFDE1440" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1080" y="328" w="32" h="32" xo="16" yo="512" id="10043617" name="inst_519F4F2E" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1112" y="320" w="80" h="16" xo="48" yo="528" id="10043618" name="inst_C25C0278" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1096" y="312" w="16" h="16" xo="64" yo="496" id="10043619" name="inst_2722B2C4" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1160" y="384" w="24" h="16" xo="0" yo="512" id="10043659" name="inst_ABF24E46" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1128" y="400" w="48" h="16" xo="64" yo="496" id="10043660" name="inst_35B134C7" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1064" y="416" w="32" h="16" xo="32" yo="512" id="10043661" name="inst_1112C996" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1064" y="432" w="16" h="16" xo="64" yo="512" id="10043662" name="inst_C0BF1678" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1048" y="448" w="16" h="32" xo="80" yo="496" id="10043663" name="inst_7AA6327B" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1032" y="464" w="16" h="16" xo="64" yo="528" id="10043664" name="inst_649D2B89" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="1016" y="464" w="16" h="16" xo="48" yo="528" id="10043665" name="inst_02667A94" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="888" y="464" w="64" h="16" xo="64" yo="496" id="10043666" name="inst_03433E3F" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="952" y="464" w="16" h="16" xo="48" yo="512" id="10043667" name="inst_22F5E0A2" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="872" y="448" w="32" h="16" xo="16" yo="528" id="10043668" name="inst_F307B2F6" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="768" y="432" w="80" h="16" xo="0" yo="512" id="10043669" name="inst_2AB38309" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="856" y="432" w="16" h="16" xo="64" yo="496" id="10043670" name="inst_3182CD92" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="768" y="416" w="16" h="16" xo="112" yo="528" id="10043671" name="inst_72A6F60E" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="672" y="416" w="64" h="16" xo="64" yo="496" id="10043672" name="inst_BC0A175F" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="640" y="432" w="48" h="16" xo="0" yo="512" id="10043673" name="inst_56AD4111" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="512" y="448" w="64" h="16" xo="0" yo="512" id="10043674" name="inst_AA89267F" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCaveWalls" x="576" y="448" w="32" h="16" xo="80" yo="496" id="10043675" name="inst_8767F014" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaStructureInnerWalls" x="1232" y="480" w="16" h="32" xo="16" yo="16" id="10043025" name="inst_F84B50D6" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaStructureInnerWalls" x="1232" y="432" w="16" h="48" xo="16" yo="48" id="10043026" name="inst_8C04C7BC" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1232" y="416" w="16" h="16" xo="16" yo="96" id="10043193" name="inst_73705ECD" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1232" y="384" w="32" h="32" xo="0" yo="192" id="10043194" name="inst_960C0E13" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1248" y="368" w="16" h="16" xo="32" yo="48" id="10043201" name="inst_927BCF21" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1248" y="336" w="16" h="16" xo="32" yo="48" id="10043202" name="inst_6C969AC5" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1344" y="240" w="16" h="16" xo="128" yo="16" id="10043206" name="inst_DFBF5107" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1312" y="480" w="16" h="16" xo="0" yo="48" id="10043211" name="inst_88FFB60E" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1312" y="496" w="16" h="16" xo="0" yo="64" id="10043212" name="inst_EA32C77E" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1312" y="448" w="16" h="32" xo="0" yo="16" id="10043213" name="inst_409A06F4" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1312" y="400" w="32" h="32" xo="32" yo="160" id="10043215" name="inst_2B018B80" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1312" y="432" w="16" h="16" xo="0" yo="96" id="10043216" name="inst_8C1E481E" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1328" y="384" w="16" h="16" xo="0" yo="0" id="10043217" name="inst_C390372E" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1344" y="384" w="16" h="16" xo="96" yo="32" id="10043219" name="inst_95EC2B08" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1360" y="384" w="16" h="16" xo="144" yo="0" id="10043221" name="inst_EF87EC0E" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1360" y="400" w="16" h="32" xo="16" yo="48" id="10043222" name="inst_0355757F" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1360" y="432" w="16" h="32" xo="16" yo="64" id="10043223" name="inst_ED03337D" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1360" y="464" w="16" h="16" xo="16" yo="96" id="10043224" name="inst_C8822B77" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1360" y="480" w="16" h="16" xo="32" yo="64" id="10043225" name="inst_F756304F" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1376" y="480" w="48" h="16" xo="48" yo="0" id="10043226" name="inst_F733487D" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1424" y="480" w="32" h="16" xo="112" yo="0" id="10043227" name="inst_D2DEDDCA" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1456" y="480" w="48" h="16" xo="80" yo="0" id="10043232" name="inst_B8E14F41" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1504" y="480" w="32" h="16" xo="48" yo="64" id="10043233" name="inst_3F4484D8" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1520" y="448" w="16" h="32" xo="0" yo="16" id="10043234" name="inst_1D8D0CA7" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1520" y="432" w="16" h="16" xo="0" yo="96" id="10043235" name="inst_D59A3899" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1520" y="400" w="16" h="16" xo="0" yo="48" id="10043236" name="inst_7C58F5B6" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1520" y="416" w="16" h="16" xo="0" yo="80" id="10043237" name="inst_C8E72217" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1360" y="240" w="16" h="32" xo="128" yo="96" id="10043240" name="inst_8069FF1D" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1376" y="256" w="32" h="32" xo="64" yo="160" id="10043246" name="inst_04BE67EB" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1408" y="272" w="16" h="16" xo="16" yo="112" id="10043248" name="inst_47F21CB6" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1408" y="224" w="16" h="32" xo="32" yo="32" id="10043249" name="inst_0537AECA" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1488" y="272" w="16" h="16" xo="0" yo="112" id="10043253" name="inst_B0245DFB" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1424" y="224" w="48" h="16" xo="80" yo="16" id="10043254" name="inst_9D6C7DB5" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1488" y="224" w="16" h="16" xo="64" yo="32" id="10043256" name="inst_907201A1" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1376" y="240" w="16" h="16" xo="0" yo="256" id="10043260" name="inst_23F86DF6" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1392" y="240" w="16" h="16" xo="96" yo="224" id="10043261" name="inst_DAC866E0" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1520" y="368" w="32" h="32" xo="32" yo="160" id="10043271" name="inst_4B30A44B" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1536" y="352" w="16" h="16" xo="0" yo="0" id="10043272" name="inst_53934D15" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1536" y="288" w="32" h="64" xo="0" yo="272" id="10043276" name="inst_7446856F" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1552" y="272" w="16" h="16" xo="112" yo="64" id="10043277" name="inst_FEC9805D" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1552" y="352" w="16" h="16" xo="144" yo="0" id="10043278" name="inst_C11F1969" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1552" y="368" w="16" h="32" xo="16" yo="16" id="10043279" name="inst_A5BC0F31" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1344" y="400" w="16" h="32" xo="48" yo="224" id="10043301" name="inst_40201E6D" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1536" y="400" w="16" h="16" xo="0" yo="48" id="10043302" name="inst_E732AD49" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1552" y="400" w="16" h="16" xo="16" yo="16" id="10043304" name="inst_0648845C" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1536" y="416" w="16" h="80" xo="0" yo="96" id="10043305" name="inst_82AF37DF" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1536" y="496" w="16" h="16" xo="96" yo="96" id="10043306" name="inst_16664525" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1424" y="496" w="80" h="16" xo="48" yo="16" id="10043308" name="inst_B7948819" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1376" y="496" w="32" h="16" xo="16" yo="16" id="10043310" name="inst_7AF62BCA" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1408" y="496" w="16" h="16" xo="112" yo="16" id="10043311" name="inst_09C1B3A9" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1360" y="496" w="16" h="16" xo="112" yo="16" id="10043312" name="inst_DADCD339" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1344" y="496" w="16" h="16" xo="80" yo="96" id="10043313" name="inst_D1C1798F" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1344" y="464" w="16" h="32" xo="16" yo="96" id="10043315" name="inst_ED654439" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1344" y="448" w="16" h="16" xo="16" yo="160" id="10043316" name="inst_2A86DD62" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1328" y="432" w="32" h="16" xo="0" yo="48" id="10043317" name="inst_F5923E1B" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1328" y="448" w="16" h="32" xo="0" yo="64" id="10043318" name="inst_751FC92F" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1328" y="480" w="16" h="16" xo="0" yo="160" id="10043319" name="inst_DAF12E78" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1328" y="496" w="16" h="16" xo="0" yo="128" id="10043320" name="inst_175755A9" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1232" y="240" w="16" h="32" xo="32" yo="32" id="10043323" name="inst_17C6CDAB" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1232" y="272" w="16" h="32" xo="16" yo="16" id="10043324" name="inst_398C8D42" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1424" y="400" w="16" h="32" xo="32" yo="0" id="10043329" name="inst_30F890CA" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1456" y="400" w="16" h="32" xo="144" yo="0" id="10043330" name="inst_7B940545" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1440" y="416" w="16" h="16" xo="128" yo="16" id="10043331" name="inst_E4E8257C" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1440" y="400" w="16" h="16" xo="48" yo="64" id="10043333" name="inst_A365B897" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1232" y="304" w="32" h="32" xo="0" yo="160" id="10043336" name="inst_65CE69C9" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1248" y="240" w="32" h="16" xo="48" yo="16" id="10043337" name="inst_A57C36E5" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1280" y="240" w="32" h="16" xo="80" yo="16" id="10043338" name="inst_59C8D05A" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1312" y="240" w="32" h="16" xo="96" yo="16" id="10043339" name="inst_1F808ED5" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1216" y="240" w="16" h="96" xo="16" yo="64" id="10043352" name="inst_0507E97D" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1216" y="384" w="16" h="16" xo="16" yo="160" id="10043353" name="inst_A694F996" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1216" y="336" w="16" h="16" xo="128" yo="32" id="10043354" name="inst_C2F675BA" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1216" y="368" w="16" h="16" xo="128" yo="16" id="10043355" name="inst_DCA43E15" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1232" y="368" w="16" h="16" xo="112" yo="224" id="10043361" name="inst_235396A9" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1232" y="336" w="16" h="16" xo="48" yo="240" id="10043362" name="inst_98C69717" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1504" y="272" w="16" h="16" xo="80" yo="16" id="10043364" name="inst_4B2BD0AF" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1520" y="272" w="16" h="16" xo="112" yo="16" id="10043365" name="inst_A9A81F93" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1536" y="272" w="16" h="16" xo="96" yo="64" id="10043366" name="inst_B5C21BE7" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1472" y="224" w="16" h="16" xo="128" yo="16" id="10043367" name="inst_7D0F923F" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1408" y="256" w="16" h="16" xo="112" yo="48" id="10043368" name="inst_7F673C10" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1488" y="240" w="16" h="32" xo="0" yo="16" id="10043369" name="inst_8E086961" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1536" y="256" w="16" h="16" xo="16" yo="176" id="10043372" name="inst_483923CB" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1520" y="256" w="16" h="16" xo="112" yo="32" id="10043373" name="inst_C41C402D" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1504" y="256" w="16" h="16" xo="0" yo="176" id="10043374" name="inst_DBF1E9AF" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1504" y="224" w="16" h="16" xo="0" yo="96" id="10043375" name="inst_48E3DC25" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1504" y="240" w="16" h="16" xo="0" yo="80" id="10043376" name="inst_48D4C060" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1504" y="496" w="16" h="16" xo="48" yo="16" id="10043377" name="inst_B15FE80D" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1520" y="496" w="16" h="16" xo="32" yo="16" id="10043379" name="inst_95C1F23E" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1216" y="400" w="16" h="16" xo="16" yo="64" id="10043380" name="inst_6ABCED17" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1216" y="416" w="16" h="16" xo="16" yo="112" id="10043382" name="inst_5AA6C2CE" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1216" y="448" w="16" h="64" xo="16" yo="96" id="10043384" name="inst_65EB2820" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1216" y="432" w="16" h="16" xo="16" yo="160" id="10043385" name="inst_9AB9849C" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1216" y="224" w="16" h="16" xo="80" yo="80" id="10043388" name="inst_398EA674" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1232" y="224" w="80" h="16" xo="48" yo="32" id="10043389" name="inst_83803004" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1312" y="224" w="16" h="16" xo="48" yo="32" id="10043390" name="inst_5CFD8354" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1328" y="224" w="16" h="16" xo="32" yo="32" id="10043391" name="inst_7918954B" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1344" y="224" w="16" h="16" xo="112" yo="32" id="10043392" name="inst_127CF1F2" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1392" y="224" w="16" h="16" xo="16" yo="176" id="10043393" name="inst_5621BF9A" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1360" y="224" w="32" h="16" xo="16" yo="32" id="10043394" name="inst_BA5934E9" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1392" y="208" w="16" h="16" xo="80" yo="80" id="10043395" name="inst_FCA03041" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1504" y="208" w="16" h="16" xo="96" yo="80" id="10043396" name="inst_6B977296" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1408" y="208" w="16" h="16" xo="112" yo="32" id="10043398" name="inst_714F55B7" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1488" y="208" w="16" h="16" xo="112" yo="32" id="10043399" name="inst_2EFEC76D" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1440" y="208" w="16" h="16" xo="64" yo="32" id="10043400" name="inst_21833085" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1424" y="208" w="16" h="16" xo="16" yo="32" id="10043401" name="inst_02CD71F5" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1456" y="208" w="32" h="16" xo="48" yo="32" id="10043402" name="inst_ADEDFB68" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1184" y="320" w="32" h="32" xo="32" yo="224" id="10043513" name="inst_243C6E11" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1184" y="368" w="32" h="32" xo="32" yo="192" id="10043514" name="inst_9301B4A8" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1184" y="400" w="16" h="16" xo="0" yo="96" id="10043516" name="inst_9B568951" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1184" y="304" w="16" h="16" xo="0" yo="144" id="10043517" name="inst_3F56541C" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1552" y="256" w="16" h="16" xo="112" yo="48" id="10043579" name="inst_52B9970A" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1520" y="240" w="16" h="16" xo="48" yo="96" id="10043580" name="inst_0A4C5BA9" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1392" y="192" w="32" h="16" xo="48" yo="64" id="10043581" name="inst_A2A610F3" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1424" y="192" w="32" h="16" xo="80" yo="64" id="10043582" name="inst_BED2739A" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1376" y="208" w="16" h="16" xo="112" yo="64" id="10043583" name="inst_F9E749B4" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1344" y="208" w="32" h="16" xo="80" yo="64" id="10043584" name="inst_EA3A28AE" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1248" y="208" w="32" h="16" xo="48" yo="64" id="10043585" name="inst_09AD8933" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1232" y="208" w="16" h="16" xo="112" yo="64" id="10043586" name="inst_2B36812D" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1216" y="208" w="16" h="16" xo="96" yo="64" id="10043588" name="inst_98730CFF" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1200" y="256" w="16" h="32" xo="64" yo="80" id="10043589" name="inst_CC56AF88" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1200" y="240" w="16" h="16" xo="64" yo="144" id="10043590" name="inst_C899476F" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1200" y="448" w="16" h="16" xo="64" yo="128" id="10043657" name="inst_42CBFA87" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureOuterWalls" x="1200" y="464" w="16" h="16" xo="64" yo="80" id="10043658" name="inst_CC5E5890" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="0" y="208" w="48" h="32" xo="64" yo="32" id="10042686" name="inst_39B1BE33" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="0" y="272" w="48" h="32" xo="112" yo="0" id="10042687" name="inst_D901BF9D" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="16" y="192" w="16" h="16" xo="112" yo="272" id="10042688" name="inst_315E87FF" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -163,7 +356,6 @@ vector_path_add(oVectorLine,vecBarria2ZoomerTunnel3,0,0,0);</code>
     <tile bgName="tilBarriaInnerWalls" x="320" y="96" w="32" h="32" xo="160" yo="96" id="10042891" name="inst_952E73E8" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="320" y="128" w="32" h="32" xo="160" yo="288" id="10042892" name="inst_165D8A5A" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="336" y="80" w="16" h="16" xo="64" yo="224" id="10042893" name="inst_25171390" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilBarriaInnerWalls" x="352" y="80" w="64" h="32" xo="80" yo="32" id="10042894" name="inst_A2226665" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="112" y="320" w="32" h="64" xo="32" yo="192" id="10042896" name="inst_DEB15299" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="112" y="384" w="16" h="16" xo="64" yo="240" id="10042897" name="inst_4DF60A83" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="128" y="368" w="48" h="32" xo="80" yo="0" id="10042899" name="inst_BE51D4DD" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -176,8 +368,6 @@ vector_path_add(oVectorLine,vecBarria2ZoomerTunnel3,0,0,0);</code>
     <tile bgName="tilBarriaInnerWalls" x="320" y="432" w="16" h="16" xo="96" yo="240" id="10042906" name="inst_E64D1648" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="336" y="416" w="32" h="32" xo="160" yo="0" id="10042907" name="inst_6CF52C18" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="368" y="416" w="64" h="32" xo="0" yo="0" id="10042908" name="inst_7D65A456" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilBarriaInnerWalls" x="416" y="80" w="16" h="16" xo="112" yo="224" id="10042913" name="inst_F7238E83" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilBarriaInnerWalls" x="400" y="96" w="32" h="64" xo="0" yo="64" id="10042914" name="inst_21A5AE2B" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="464" y="432" w="48" h="32" xo="64" yo="0" id="10042918" name="inst_07EDAF31" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="432" y="432" w="32" h="32" xo="96" yo="64" id="10042920" name="inst_1CFC3969" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="464" y="392" w="48" h="32" xo="144" yo="32" id="10042927" name="inst_0B26423C" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -213,7 +403,6 @@ vector_path_add(oVectorLine,vecBarria2ZoomerTunnel3,0,0,0);</code>
     <tile bgName="tilBarriaInnerWalls" x="784" y="336" w="32" h="16" xo="0" yo="128" id="10043059" name="inst_4029B9B0" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="808" y="280" w="24" h="8" xo="136" yo="160" id="10043060" name="inst_ECDD2E12" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="800" y="288" w="32" h="16" xo="0" yo="96" id="10043061" name="inst_2A210032" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilBarriaInnerWalls" x="792" y="352" w="24" h="8" xo="136" yo="176" id="10043062" name="inst_121D8C9A" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="512" y="448" w="32" h="32" xo="96" yo="64" id="10043082" name="inst_BE99C9C8" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="544" y="448" w="64" h="32" xo="0" yo="0" id="10043083" name="inst_475FE12F" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="592" y="432" w="32" h="32" xo="128" yo="192" id="10043084" name="inst_19F3D35B" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -270,6 +459,233 @@ vector_path_add(oVectorLine,vecBarria2ZoomerTunnel3,0,0,0);</code>
     <tile bgName="tilBarriaInnerWalls" x="576" y="208" w="32" h="8" xo="160" yo="144" id="10043159" name="inst_A8C73DE2" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="592" y="200" w="48" h="32" xo="144" yo="0" id="10043160" name="inst_09948CE9" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaInnerWalls" x="496" y="256" w="16" h="8" xo="16" yo="272" id="10043161" name="inst_01741F84" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="352" y="80" w="64" h="32" xo="80" yo="32" id="10043162" name="inst_BCC56077" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="416" y="80" w="16" h="16" xo="80" yo="144" id="10043163" name="inst_B735332E" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="416" y="64" w="16" h="16" xo="96" yo="224" id="10043164" name="inst_5C7FC937" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="432" y="64" w="48" h="32" xo="144" yo="32" id="10043166" name="inst_2172E219" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="480" y="64" w="32" h="32" xo="64" yo="96" id="10043167" name="inst_8AA18360" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="512" y="80" w="80" h="32" xo="0" yo="32" id="10043168" name="inst_85EED268" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="544" y="232" w="16" h="16" xo="80" yo="272" id="10043170" name="inst_7DE4F7FE" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="512" y="232" w="16" h="16" xo="16" yo="288" id="10043171" name="inst_8C94929E" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="528" y="232" w="16" h="16" xo="16" yo="288" id="10043172" name="inst_071ED7B9" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="512" y="224" w="16" h="8" xo="16" yo="280" id="10043173" name="inst_C4D5A3E9" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="528" y="224" w="16" h="8" xo="16" yo="280" id="10043174" name="inst_8FFA5453" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="544" y="224" w="16" h="8" xo="16" yo="280" id="10043175" name="inst_6432E3CF" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="560" y="224" w="16" h="8" xo="16" yo="280" id="10043176" name="inst_689ACE1B" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="592" y="96" w="32" h="32" xo="128" yo="96" id="10043177" name="inst_1BEB7E1A" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="592" y="80" w="16" h="16" xo="112" yo="224" id="10043178" name="inst_6C5A145D" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="640" y="216" w="16" h="16" xo="80" yo="240" id="10043181" name="inst_36FD7528" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="624" y="208" w="32" h="8" xo="128" yo="160" id="10043182" name="inst_ADF109FF" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="640" y="176" w="32" h="32" xo="128" yo="64" id="10043183" name="inst_A1BFDFF5" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="656" y="160" w="16" h="16" xo="64" yo="128" id="10043184" name="inst_B82D308E" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="608" y="128" w="16" h="16" xo="64" yo="144" id="10043185" name="inst_27ABFEED" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="624" y="112" w="32" h="32" xo="96" yo="96" id="10043186" name="inst_325E30F2" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="672" y="144" w="48" h="32" xo="0" yo="0" id="10043188" name="inst_531F7DF3" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="656" y="96" w="16" h="16" xo="64" yo="224" id="10043190" name="inst_A1659030" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="656" y="112" w="32" h="32" xo="160" yo="224" id="10043191" name="inst_6CEC9F15" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="672" y="96" w="64" h="32" xo="80" yo="32" id="10043192" name="inst_FF385DD9" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaStructureInnerWalls" x="1248" y="352" w="16" h="16" xo="16" yo="96" id="10043351" name="inst_78FAF9B1" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="720" y="160" w="32" h="32" xo="96" yo="64" id="10043403" name="inst_40E104E7" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="752" y="160" w="32" h="32" xo="160" yo="192" id="10043404" name="inst_198D9BD8" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="752" y="192" w="32" h="32" xo="160" yo="64" id="10043405" name="inst_58B7FC73" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="768" y="224" w="16" h="16" xo="64" yo="240" id="10043406" name="inst_B2148FF3" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="816" y="360" w="32" h="32" xo="64" yo="96" id="10043522" name="inst_8A44A2E8" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="784" y="352" w="32" h="8" xo="128" yo="136" id="10043524" name="inst_1EA569CC" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="864" y="376" w="16" h="16" xo="80" yo="144" id="10043525" name="inst_9F0DAE7D" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="880" y="360" w="48" h="32" xo="0" yo="32" id="10043526" name="inst_7F307A5A" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="928" y="360" w="16" h="16" xo="112" yo="224" id="10043527" name="inst_58E045DC" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="928" y="376" w="32" h="32" xo="128" yo="96" id="10043528" name="inst_A805ABA3" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="928" y="408" w="32" h="32" xo="128" yo="224" id="10043529" name="inst_5320FAB3" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="976" y="408" w="16" h="16" xo="80" yo="144" id="10043530" name="inst_ECA2DD95" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="976" y="360" w="32" h="32" xo="160" yo="96" id="10043531" name="inst_7FFF46AF" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="992" y="344" w="16" h="16" xo="64" yo="224" id="10043532" name="inst_36A23573" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="976" y="392" w="32" h="16" xo="32" yo="192" id="10043533" name="inst_9BE064D6" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="960" y="408" w="16" h="32" xo="112" yo="32" id="10043534" name="inst_DB5E7752" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1008" y="344" w="32" h="32" xo="80" yo="32" id="10043535" name="inst_4CBA836A" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1040" y="360" w="16" h="16" xo="64" yo="144" id="10043536" name="inst_FD4301C5" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1072" y="320" w="32" h="32" xo="160" yo="96" id="10043537" name="inst_18919850" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1072" y="352" w="32" h="8" xo="160" yo="176" id="10043539" name="inst_D4D158BB" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1072" y="360" w="32" h="32" xo="160" yo="224" id="10043540" name="inst_58B175D2" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1056" y="360" w="16" h="32" xo="128" yo="32" id="10043541" name="inst_5706B780" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1040" y="344" w="16" h="16" xo="112" yo="224" id="10043542" name="inst_5828118D" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1104" y="304" w="48" h="32" xo="144" yo="32" id="10043544" name="inst_6A1C8000" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="848" y="376" w="16" h="32" xo="176" yo="32" id="10043550" name="inst_0E502122" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="864" y="360" w="16" h="16" xo="96" yo="224" id="10043551" name="inst_3DCE4F3F" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1088" y="304" w="16" h="16" xo="96" yo="224" id="10043552" name="inst_F45EEFA0" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1184" y="256" w="32" h="32" xo="160" yo="64" id="10043553" name="inst_236C60E2" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1200" y="288" w="32" h="16" xo="32" yo="240" id="10043555" name="inst_0A2D43DB" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1200" y="224" w="32" h="32" xo="160" yo="288" id="10043557" name="inst_A52D41DA" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1184" y="224" w="16" h="16" xo="96" yo="224" id="10043558" name="inst_53EEBC37" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1184" y="240" w="32" h="16" xo="32" yo="208" id="10043560" name="inst_8ABF8351" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1216" y="208" w="16" h="16" xo="80" yo="144" id="10043561" name="inst_BCD754AB" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1200" y="208" w="16" h="16" xo="64" yo="224" id="10043562" name="inst_F473666D" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1232" y="192" w="16" h="32" xo="16" yo="32" id="10043563" name="inst_96BE883D" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1248" y="192" w="32" h="32" xo="64" yo="96" id="10043564" name="inst_ADC71DF5" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1280" y="208" w="64" h="32" xo="48" yo="32" id="10043566" name="inst_C3BCE27A" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1344" y="192" w="32" h="32" xo="96" yo="96" id="10043567" name="inst_7BB4AE1F" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1376" y="192" w="32" h="32" xo="160" yo="224" id="10043568" name="inst_6CFA9892" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1376" y="176" w="16" h="16" xo="64" yo="224" id="10043569" name="inst_BBD8DFDC" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1392" y="176" w="32" h="32" xo="112" yo="32" id="10043570" name="inst_CC112987" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1424" y="176" w="32" h="32" xo="64" yo="96" id="10043571" name="inst_777A9C75" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1504" y="192" w="16" h="16" xo="112" yo="224" id="10043572" name="inst_A933A81C" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1504" y="208" w="32" h="32" xo="128" yo="96" id="10043573" name="inst_9BECED17" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1520" y="240" w="16" h="16" xo="64" yo="144" id="10043574" name="inst_FA03CF06" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1536" y="240" w="32" h="32" xo="64" yo="96" id="10043578" name="inst_661173A0" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1152" y="304" w="16" h="32" xo="0" yo="32" id="10043597" name="inst_9F5528A8" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1168" y="304" w="32" h="32" xo="64" yo="96" id="10043598" name="inst_BB021043" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1200" y="320" w="16" h="16" xo="80" yo="144" id="10043600" name="inst_7AF939A4" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1200" y="304" w="32" h="16" xo="32" yo="64" id="10043601" name="inst_FE722648" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1216" y="192" w="16" h="16" xo="96" yo="224" id="10043602" name="inst_1EF577DC" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1456" y="192" w="48" h="32" xo="144" yo="32" id="10043605" name="inst_7DF2C122" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="816" y="432" w="32" h="32" xo="64" yo="64" id="10043620" name="inst_7F406A00" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="864" y="432" w="16" h="16" xo="80" yo="128" id="10043621" name="inst_8A78DE26" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="848" y="416" w="16" h="32" xo="144" yo="0" id="10043624" name="inst_DB3A715D" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="864" y="448" w="32" h="32" xo="160" yo="64" id="10043625" name="inst_5EBA4A44" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="880" y="480" w="16" h="16" xo="64" yo="240" id="10043626" name="inst_618DC165" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="896" y="464" w="32" h="32" xo="160" yo="0" id="10043627" name="inst_E1C203FD" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="928" y="464" w="32" h="32" xo="64" yo="64" id="10043628" name="inst_1C9DFCAB" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="960" y="448" w="64" h="32" xo="0" yo="0" id="10043629" name="inst_5FD0A9DF" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1024" y="464" w="32" h="32" xo="96" yo="64" id="10043632" name="inst_74B09ECE" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1056" y="480" w="16" h="16" xo="112" yo="240" id="10043633" name="inst_D1F196F8" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1040" y="464" w="32" h="16" xo="0" yo="176" id="10043635" name="inst_2F59EC22" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1056" y="432" w="32" h="32" xo="128" yo="64" id="10043636" name="inst_078F580E" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1072" y="416" w="16" h="16" xo="64" yo="128" id="10043637" name="inst_D2C15636" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1088" y="400" w="32" h="32" xo="80" yo="0" id="10043638" name="inst_26FC7464" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1120" y="400" w="32" h="32" xo="128" yo="0" id="10043640" name="inst_FBDAA49F" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1152" y="400" w="16" h="16" xo="64" yo="128" id="10043641" name="inst_C8F0DBF7" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1168" y="384" w="32" h="32" xo="64" yo="64" id="10043643" name="inst_1209EB8E" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1200" y="384" w="16" h="16" xo="80" yo="128" id="10043644" name="inst_4F345B9C" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1200" y="400" w="32" h="32" xo="32" yo="64" id="10043646" name="inst_7D716AE9" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1152" y="416" w="16" h="16" xo="112" yo="240" id="10043647" name="inst_BEA906A5" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1200" y="432" w="32" h="16" xo="32" yo="240" id="10043648" name="inst_357B2122" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1200" y="448" w="16" h="16" xo="80" yo="144" id="10043649" name="inst_24534469" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1200" y="464" w="32" h="32" xo="160" yo="192" id="10043651" name="inst_7F62EBFA" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1184" y="448" w="16" h="16" xo="96" yo="224" id="10043652" name="inst_65BB196A" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1184" y="480" w="16" h="16" xo="64" yo="240" id="10043653" name="inst_9B6898BD" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1184" y="464" w="32" h="16" xo="32" yo="224" id="10043654" name="inst_F6790A18" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1200" y="496" w="32" h="16" xo="32" yo="176" id="10043655" name="inst_274B7038" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="48" y="304" w="16" h="16" xo="80" yo="288" id="10043678" name="inst_69E14D66" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="80" y="320" w="16" h="16" xo="96" yo="288" id="10043679" name="inst_0E606F42" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="96" y="352" w="16" h="16" xo="112" yo="288" id="10043680" name="inst_4860571E" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="96" y="384" w="16" h="16" xo="64" yo="272" id="10043681" name="inst_A4DFB711" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="128" y="400" w="16" h="16" xo="80" yo="272" id="10043682" name="inst_CFB3F9E9" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="176" y="400" w="16" h="16" xo="96" yo="272" id="10043683" name="inst_2366800E" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="208" y="384" w="16" h="16" xo="112" yo="272" id="10043684" name="inst_2E1937C4" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="256" y="400" w="16" h="16" xo="64" yo="288" id="10043685" name="inst_7241954A" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="288" y="400" w="16" h="16" xo="80" yo="288" id="10043686" name="inst_C550E316" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="304" y="432" w="16" h="16" xo="96" yo="288" id="10043687" name="inst_ED219A19" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="336" y="448" w="16" h="16" xo="112" yo="288" id="10043688" name="inst_5E5AAF85" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="368" y="448" w="16" h="16" xo="64" yo="272" id="10043689" name="inst_D5E8434E" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="416" y="448" w="16" h="16" xo="80" yo="272" id="10043690" name="inst_5EE5DBDB" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="448" y="464" w="16" h="16" xo="96" yo="272" id="10043691" name="inst_3ABE4621" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="480" y="464" w="16" h="16" xo="112" yo="272" id="10043692" name="inst_557D7AFD" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="512" y="480" w="16" h="16" xo="64" yo="288" id="10043693" name="inst_A783C135" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="560" y="480" w="16" h="16" xo="80" yo="288" id="10043694" name="inst_A80B8209" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="592" y="480" w="16" h="16" xo="96" yo="288" id="10043695" name="inst_9A2614D6" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="624" y="464" w="16" h="16" xo="112" yo="288" id="10043696" name="inst_B4C07E19" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="672" y="464" w="16" h="16" xo="64" yo="272" id="10043697" name="inst_470F8D3C" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="704" y="448" w="16" h="16" xo="64" yo="288" id="10043698" name="inst_24B5B465" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="736" y="432" w="16" h="16" xo="80" yo="288" id="10043699" name="inst_EB77178A" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="768" y="464" w="16" h="16" xo="96" yo="288" id="10043700" name="inst_358524B6" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="816" y="464" w="16" h="16" xo="112" yo="288" id="10043701" name="inst_FBA7F12E" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="848" y="448" w="16" h="16" xo="64" yo="272" id="10043702" name="inst_C0C20384" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="864" y="480" w="16" h="16" xo="80" yo="272" id="10043703" name="inst_12D5B243" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="896" y="496" w="16" h="16" xo="96" yo="272" id="10043704" name="inst_083FF855" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="944" y="496" w="16" h="16" xo="112" yo="272" id="10043705" name="inst_FC6A1434" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="976" y="480" w="16" h="16" xo="64" yo="288" id="10043706" name="inst_1E4CC550" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1008" y="480" w="16" h="16" xo="80" yo="288" id="10043707" name="inst_ABF6B902" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1040" y="496" w="16" h="16" xo="96" yo="288" id="10043708" name="inst_39D002B7" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1072" y="480" w="16" h="16" xo="112" yo="288" id="10043709" name="inst_C9208F92" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1088" y="448" w="16" h="16" xo="64" yo="272" id="10043710" name="inst_C6AC9243" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1120" y="432" w="16" h="16" xo="80" yo="272" id="10043711" name="inst_4893F7A4" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1152" y="432" w="16" h="16" xo="96" yo="272" id="10043712" name="inst_F582637C" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1184" y="416" w="16" h="16" xo="112" yo="272" id="10043713" name="inst_6106753A" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1168" y="464" w="16" h="16" xo="64" yo="288" id="10043714" name="inst_BEAEF995" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1184" y="496" w="16" h="16" xo="80" yo="288" id="10043715" name="inst_25376FF2" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="16" y="304" w="16" h="16" xo="32" yo="304" id="10043841" name="inst_6288FE09" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="32" y="304" w="16" h="16" xo="32" yo="304" id="10043842" name="inst_32EEFE9C" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="48" y="320" w="16" h="16" xo="32" yo="304" id="10043843" name="inst_4D67537C" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="64" y="320" w="16" h="16" xo="32" yo="304" id="10043844" name="inst_2499B233" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="64" y="304" w="16" h="16" xo="32" yo="304" id="10043845" name="inst_B4742A3B" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="96" y="320" w="16" h="16" xo="32" yo="304" id="10043846" name="inst_FB1034F7" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="96" y="336" w="16" h="16" xo="32" yo="304" id="10043847" name="inst_1427D3C1" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="80" y="336" w="16" h="16" xo="32" yo="304" id="10043848" name="inst_EE0191E1" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="80" y="352" w="16" h="16" xo="32" yo="304" id="10043849" name="inst_9F6BDA6A" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="96" y="368" w="16" h="16" xo="32" yo="304" id="10043850" name="inst_6FC1D599" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="112" y="400" w="16" h="16" xo="32" yo="304" id="10043851" name="inst_290585E5" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="144" y="400" w="16" h="16" xo="32" yo="304" id="10043852" name="inst_830369B0" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="160" y="400" w="16" h="16" xo="32" yo="304" id="10043853" name="inst_B8925BE2" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="144" y="416" w="16" h="16" xo="32" yo="304" id="10043854" name="inst_67453A14" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="192" y="400" w="16" h="16" xo="32" yo="304" id="10043855" name="inst_6DBE2232" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="208" y="400" w="16" h="16" xo="32" yo="304" id="10043856" name="inst_6CD43ADC" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="224" y="400" w="16" h="16" xo="32" yo="304" id="10043857" name="inst_C6029C3D" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="240" y="400" w="16" h="16" xo="32" yo="304" id="10043858" name="inst_282C4A9D" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="272" y="400" w="16" h="16" xo="32" yo="304" id="10043859" name="inst_16F3BA40" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="288" y="416" w="16" h="16" xo="32" yo="304" id="10043860" name="inst_BC028E32" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="288" y="432" w="16" h="16" xo="32" yo="304" id="10043861" name="inst_B0539EA6" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="304" y="448" w="16" h="16" xo="32" yo="304" id="10043862" name="inst_6FF4832F" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="320" y="448" w="16" h="16" xo="32" yo="304" id="10043863" name="inst_262892D7" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="352" y="448" w="16" h="16" xo="32" yo="304" id="10043864" name="inst_5258213E" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="384" y="448" w="16" h="16" xo="32" yo="304" id="10043865" name="inst_4E967557" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="400" y="448" w="16" h="16" xo="32" yo="304" id="10043866" name="inst_B8A5DC74" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="432" y="464" w="16" h="16" xo="32" yo="304" id="10043867" name="inst_5FEF0710" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="416" y="464" w="16" h="16" xo="32" yo="304" id="10043868" name="inst_B42D11D0" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="432" y="480" w="16" h="16" xo="32" yo="304" id="10043869" name="inst_30D19AB1" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="464" y="464" w="16" h="16" xo="32" yo="304" id="10043870" name="inst_33097743" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="496" y="464" w="16" h="16" xo="32" yo="304" id="10043871" name="inst_F5BED1B9" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="496" y="480" w="16" h="16" xo="32" yo="304" id="10043872" name="inst_36BB16D8" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="528" y="480" w="16" h="16" xo="32" yo="304" id="10043873" name="inst_70C5C930" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="544" y="480" w="16" h="16" xo="32" yo="304" id="10043874" name="inst_34F040FB" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="576" y="480" w="16" h="16" xo="32" yo="304" id="10043875" name="inst_4048716B" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="608" y="480" w="16" h="16" xo="32" yo="304" id="10043876" name="inst_617A7242" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="624" y="480" w="16" h="16" xo="32" yo="304" id="10043877" name="inst_5CBD386D" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="640" y="464" w="16" h="16" xo="32" yo="304" id="10043878" name="inst_4DD9EC30" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="640" y="480" w="16" h="16" xo="32" yo="304" id="10043879" name="inst_B1D6AB7A" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="656" y="464" w="16" h="16" xo="32" yo="304" id="10043880" name="inst_D5CE198C" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="656" y="480" w="16" h="16" xo="32" yo="304" id="10043881" name="inst_B7857B51" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="672" y="480" w="16" h="16" xo="32" yo="304" id="10043882" name="inst_D34F905F" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="688" y="448" w="16" h="16" xo="32" yo="304" id="10043883" name="inst_EB1D228B" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="688" y="464" w="16" h="16" xo="32" yo="304" id="10043884" name="inst_FB6FD56A" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="720" y="448" w="16" h="16" xo="32" yo="304" id="10043885" name="inst_3615853A" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="736" y="448" w="16" h="16" xo="32" yo="304" id="10043886" name="inst_E47185D3" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="752" y="448" w="16" h="16" xo="32" yo="304" id="10043887" name="inst_F0273EA0" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="752" y="464" w="16" h="16" xo="32" yo="304" id="10043888" name="inst_6ACFE737" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="784" y="480" w="16" h="16" xo="32" yo="304" id="10043889" name="inst_E0ABF8C4" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="784" y="464" w="16" h="16" xo="32" yo="304" id="10043890" name="inst_633DEFD9" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="800" y="464" w="16" h="16" xo="32" yo="304" id="10043891" name="inst_C9866855" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="832" y="464" w="16" h="16" xo="32" yo="304" id="10043892" name="inst_2F1BD2D2" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="848" y="464" w="16" h="16" xo="32" yo="304" id="10043893" name="inst_9F4EDB0E" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="848" y="480" w="16" h="16" xo="32" yo="304" id="10043894" name="inst_C5011697" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="832" y="480" w="16" h="16" xo="32" yo="304" id="10043895" name="inst_ECFBA9F8" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="864" y="496" w="16" h="16" xo="32" yo="304" id="10043896" name="inst_8ABC0C9E" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="880" y="496" w="16" h="16" xo="32" yo="304" id="10043897" name="inst_76EE7DCB" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="912" y="496" w="16" h="16" xo="32" yo="304" id="10043898" name="inst_A12A0AD2" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="928" y="496" w="16" h="16" xo="32" yo="304" id="10043899" name="inst_E3DEDFF3" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="960" y="480" w="16" h="16" xo="32" yo="304" id="10043900" name="inst_331F97F3" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="976" y="496" w="16" h="16" xo="32" yo="304" id="10043901" name="inst_A0B4701D" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="960" y="496" w="16" h="16" xo="32" yo="304" id="10043902" name="inst_A2C33FF2" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="992" y="480" w="16" h="16" xo="32" yo="304" id="10043903" name="inst_361146B4" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="992" y="496" w="16" h="16" xo="32" yo="304" id="10043904" name="inst_73141EDC" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1008" y="496" w="16" h="16" xo="32" yo="304" id="10043905" name="inst_CC54FED5" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1024" y="496" w="16" h="16" xo="32" yo="304" id="10043906" name="inst_6AC1C330" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1056" y="496" w="16" h="16" xo="32" yo="304" id="10043907" name="inst_2815E611" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1072" y="496" w="16" h="16" xo="32" yo="304" id="10043908" name="inst_4645F198" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1072" y="464" w="16" h="16" xo="32" yo="304" id="10043909" name="inst_1DFC6B7D" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1088" y="464" w="16" h="16" xo="32" yo="304" id="10043910" name="inst_332CC4FD" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1104" y="448" w="16" h="16" xo="32" yo="304" id="10043911" name="inst_93B40EE1" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1088" y="432" w="16" h="16" xo="32" yo="304" id="10043912" name="inst_87E5B288" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1104" y="432" w="16" h="16" xo="32" yo="304" id="10043913" name="inst_2ADBE907" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1120" y="448" w="16" h="16" xo="32" yo="304" id="10043914" name="inst_D2CE3D18" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1136" y="448" w="16" h="16" xo="32" yo="304" id="10043915" name="inst_C5AE3F4E" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1136" y="432" w="16" h="16" xo="32" yo="304" id="10043916" name="inst_5BE303B4" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1152" y="448" w="16" h="16" xo="32" yo="304" id="10043917" name="inst_B29E0C82" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1168" y="448" w="16" h="16" xo="32" yo="304" id="10043918" name="inst_2C662958" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1152" y="464" w="16" h="16" xo="32" yo="304" id="10043919" name="inst_62D1646D" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1168" y="480" w="16" h="16" xo="32" yo="304" id="10043920" name="inst_386C12A8" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1168" y="496" w="16" h="16" xo="32" yo="304" id="10043921" name="inst_BF164614" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1168" y="416" w="16" h="16" xo="32" yo="304" id="10043922" name="inst_71E3349C" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1168" y="432" w="16" h="16" xo="32" yo="304" id="10043923" name="inst_6FB6D2F6" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaInnerWalls" x="1184" y="432" w="16" h="16" xo="32" yo="304" id="10043924" name="inst_614F8C0B" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaOuterWalls" x="0" y="304" w="48" h="32" xo="96" yo="0" id="10042691" name="inst_CDBC5C09" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaOuterWalls" x="0" y="176" w="48" h="32" xo="128" yo="32" id="10042692" name="inst_34B5041E" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaOuterWalls" x="16" y="160" w="16" h="16" xo="176" yo="400" id="10042693" name="inst_9E7D66FD" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -283,6 +699,119 @@ vector_path_add(oVectorLine,vecBarria2ZoomerTunnel3,0,0,0);</code>
     <tile bgName="tilBarriaOuterWalls" x="432" y="336" w="32" h="16" xo="176" yo="192" id="10043121" name="inst_5DB028D1" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaOuterWalls" x="448" y="352" w="16" h="16" xo="128" yo="112" id="10043122" name="inst_07C6A4E0" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaOuterWalls" x="464" y="352" w="32" h="16" xo="160" yo="240" id="10043123" name="inst_5F3A7F96" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="48" y="320" w="32" h="32" xo="96" yo="80" id="10043716" name="inst_21439919" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="80" y="336" w="32" h="16" xo="160" yo="224" id="10043717" name="inst_C7643F10" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="80" y="352" w="32" h="32" xo="208" yo="80" id="10043718" name="inst_894F9FC3" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="80" y="384" w="32" h="32" xo="0" yo="320" id="10043719" name="inst_634A32BE" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="112" y="400" w="32" h="32" xo="32" yo="80" id="10043721" name="inst_212F853E" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="144" y="400" w="64" h="32" xo="32" yo="0" id="10043722" name="inst_91C4B478" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="208" y="400" w="16" h="32" xo="128" yo="320" id="10043723" name="inst_989F2808" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="224" y="400" w="32" h="32" xo="96" yo="80" id="10043724" name="inst_A8C13AE8" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="288" y="416" w="16" h="16" xo="144" yo="64" id="10043725" name="inst_F7A5DD56" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="288" y="432" w="16" h="16" xo="208" yo="80" id="10043726" name="inst_981688AA" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="288" y="448" w="32" h="32" xo="0" yo="320" id="10043727" name="inst_44C5E676" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="256" y="400" w="32" h="32" xo="112" yo="0" id="10043728" name="inst_EF2616A7" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="320" y="448" w="16" h="32" xo="96" yo="0" id="10043729" name="inst_4736B738" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="336" y="448" w="48" h="32" xo="144" yo="0" id="10043730" name="inst_1A0FD896" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="384" y="448" w="16" h="32" xo="128" yo="320" id="10043731" name="inst_2CAC4516" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="400" y="464" w="32" h="32" xo="0" yo="320" id="10043733" name="inst_5D368940" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="496" y="480" w="32" h="32" xo="32" yo="80" id="10043734" name="inst_1A6D703C" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="432" y="464" w="64" h="32" xo="32" yo="0" id="10043735" name="inst_D3AC31B3" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="400" y="432" w="16" h="32" xo="208" yo="48" id="10043736" name="inst_2A531E26" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="528" y="480" w="96" h="32" xo="96" yo="0" id="10043737" name="inst_6DBD0922" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="624" y="480" w="32" h="32" xo="0" yo="80" id="10043738" name="inst_3BFD4A13" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="656" y="480" w="16" h="32" xo="144" yo="320" id="10043739" name="inst_27120A13" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="672" y="480" w="32" h="32" xo="96" yo="320" id="10043740" name="inst_D4568088" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="672" y="464" w="32" h="16" xo="0" yo="16" id="10043741" name="inst_E6F735F7" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="736" y="448" w="16" h="32" xo="144" yo="320" id="10043743" name="inst_687FC0C9" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="704" y="448" w="32" h="32" xo="64" yo="80" id="10043744" name="inst_4CB43B06" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="752" y="464" w="32" h="32" xo="96" yo="80" id="10043745" name="inst_1C8E6C07" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="784" y="464" w="48" h="32" xo="32" yo="0" id="10043746" name="inst_A68087F3" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="832" y="480" w="32" h="32" xo="32" yo="80" id="10043747" name="inst_355CA1D6" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="864" y="496" w="16" h="16" xo="144" yo="320" id="10043748" name="inst_E490B259" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="880" y="496" w="80" h="16" xo="80" yo="0" id="10043749" name="inst_F6C3BB97" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="960" y="496" w="32" h="16" xo="64" yo="80" id="10043752" name="inst_CC8F329D" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="992" y="496" w="16" h="16" xo="144" yo="320" id="10043753" name="inst_85840DE1" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="1008" y="496" w="32" h="16" xo="160" yo="0" id="10043754" name="inst_4877B4A1" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="1072" y="496" w="32" h="16" xo="96" yo="320" id="10043756" name="inst_1A1FAD22" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="1056" y="496" w="16" h="16" xo="48" yo="0" id="10043760" name="inst_E4D1D519" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="1072" y="480" w="32" h="16" xo="176" yo="192" id="10043761" name="inst_FACB8A07" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="1088" y="464" w="32" h="16" xo="64" yo="352" id="10043762" name="inst_80E223CC" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="1104" y="448" w="16" h="16" xo="128" yo="64" id="10043763" name="inst_A587A823" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="1120" y="448" w="32" h="32" xo="96" yo="80" id="10043765" name="inst_9A8DF944" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="1152" y="448" w="16" h="32" xo="144" yo="256" id="10043766" name="inst_8E783152" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="1152" y="480" w="32" h="32" xo="128" yo="160" id="10043767" name="inst_9975269C" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="1136" y="480" w="16" h="16" xo="160" yo="384" id="10043768" name="inst_39EE2028" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="1104" y="496" w="16" h="16" xo="176" yo="384" id="10043769" name="inst_E570FD07" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="1104" y="480" w="16" h="16" xo="176" yo="304" id="10043770" name="inst_A0C9F73F" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="1120" y="480" w="16" h="16" xo="176" yo="304" id="10043771" name="inst_061E43B2" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="1120" y="496" w="16" h="16" xo="176" yo="304" id="10043772" name="inst_DAD3477D" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="816" y="496" w="16" h="16" xo="160" yo="400" id="10043773" name="inst_09C8EE2C" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="768" y="496" w="16" h="16" xo="176" yo="400" id="10043774" name="inst_7447BC7D" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="736" y="480" w="16" h="16" xo="160" yo="384" id="10043775" name="inst_0AF6449F" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="704" y="496" w="16" h="16" xo="176" yo="384" id="10043776" name="inst_FE993968" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="464" y="496" w="16" h="16" xo="176" yo="400" id="10043777" name="inst_9714E87B" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="432" y="496" w="16" h="16" xo="176" yo="400" id="10043778" name="inst_1349207D" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="384" y="480" w="16" h="16" xo="176" yo="384" id="10043779" name="inst_B60D3DD8" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="352" y="480" w="16" h="16" xo="160" yo="384" id="10043780" name="inst_DE75F3EF" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="304" y="480" w="16" h="16" xo="176" yo="400" id="10043781" name="inst_E990CCC3" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="272" y="464" w="16" h="16" xo="160" yo="400" id="10043782" name="inst_3ACAABC3" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="256" y="432" w="16" h="16" xo="176" yo="384" id="10043783" name="inst_D551D21C" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="208" y="432" w="16" h="16" xo="160" yo="384" id="10043784" name="inst_149C4410" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="176" y="432" w="16" h="16" xo="176" yo="400" id="10043785" name="inst_EDC1FEE3" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="128" y="432" w="16" h="16" xo="160" yo="400" id="10043786" name="inst_A92D66BD" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="96" y="416" w="16" h="16" xo="176" yo="384" id="10043787" name="inst_BF09D737" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="48" y="352" w="16" h="16" xo="160" yo="400" id="10043790" name="inst_0F373D20" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="64" y="384" w="16" h="16" xo="176" yo="400" id="10043791" name="inst_80FA7B1E" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="0" y="384" w="64" h="64" xo="160" yo="272" id="10043792" name="inst_997DBCBF" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="0" y="448" w="64" h="64" xo="160" yo="272" id="10043793" name="inst_DF751BBE" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="64" y="448" w="64" h="64" xo="160" yo="272" id="10043794" name="inst_25C94F88" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="128" y="448" w="64" h="64" xo="160" yo="272" id="10043795" name="inst_4C542BA1" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="192" y="448" w="64" h="64" xo="160" yo="272" id="10043796" name="inst_CE1B4B47" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="0" y="0" w="64" h="64" xo="160" yo="272" id="10043797" name="inst_6849605D" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="0" y="64" w="64" h="64" xo="160" yo="272" id="10043798" name="inst_9268614B" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="0" y="352" w="32" h="32" xo="160" yo="272" id="10043799" name="inst_7A3C54BA" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="64" y="416" w="32" h="32" xo="160" yo="272" id="10043800" name="inst_ACE596A1" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="256" y="480" w="32" h="32" xo="160" yo="272" id="10043801" name="inst_B47172DC" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="320" y="480" w="32" h="32" xo="160" yo="272" id="10043802" name="inst_55795A38" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="0" y="336" w="16" h="16" xo="192" yo="288" id="10043803" name="inst_9F99F05A" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="32" y="336" w="16" h="16" xo="192" yo="288" id="10043804" name="inst_51A6271C" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="32" y="352" w="16" h="16" xo="192" yo="288" id="10043805" name="inst_17F1DEB2" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="32" y="368" w="16" h="16" xo="192" yo="288" id="10043806" name="inst_B77EF265" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="48" y="368" w="16" h="16" xo="192" yo="288" id="10043807" name="inst_6FB13B49" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="64" y="352" w="16" h="16" xo="192" yo="288" id="10043808" name="inst_21CCB23A" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="64" y="368" w="16" h="16" xo="192" yo="288" id="10043809" name="inst_3BE509DE" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="64" y="400" w="16" h="16" xo="192" yo="288" id="10043810" name="inst_3625699F" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="96" y="432" w="16" h="16" xo="192" yo="288" id="10043811" name="inst_AAA2A623" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="112" y="432" w="16" h="16" xo="192" yo="288" id="10043812" name="inst_152D8025" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="144" y="432" w="16" h="16" xo="192" yo="288" id="10043813" name="inst_6C4A7676" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="160" y="432" w="16" h="16" xo="192" yo="288" id="10043814" name="inst_ADC623B4" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="192" y="432" w="16" h="16" xo="192" yo="288" id="10043815" name="inst_9E95A306" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="224" y="432" w="16" h="16" xo="192" yo="288" id="10043816" name="inst_5E22BA6D" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="240" y="432" w="16" h="16" xo="192" yo="288" id="10043817" name="inst_3BF80226" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="256" y="464" w="16" h="16" xo="192" yo="288" id="10043818" name="inst_271F2B1D" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="256" y="448" w="16" h="16" xo="192" yo="288" id="10043819" name="inst_2DF5FE69" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="272" y="448" w="16" h="16" xo="192" yo="288" id="10043820" name="inst_EE7225B9" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="272" y="432" w="16" h="16" xo="192" yo="288" id="10043821" name="inst_D6F4D0A3" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="288" y="480" w="16" h="16" xo="192" yo="288" id="10043822" name="inst_87E256F2" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="288" y="496" w="16" h="16" xo="192" yo="288" id="10043823" name="inst_C119A566" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="304" y="496" w="16" h="16" xo="192" yo="288" id="10043824" name="inst_00E0D4DD" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="368" y="496" w="16" h="16" xo="192" yo="288" id="10043825" name="inst_2B45A4FB" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="368" y="480" w="16" h="16" xo="192" yo="288" id="10043826" name="inst_6308A40A" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="352" y="496" w="16" h="16" xo="192" yo="288" id="10043827" name="inst_B674C6DF" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="384" y="496" w="16" h="16" xo="192" yo="288" id="10043828" name="inst_47274EBF" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="400" y="496" w="16" h="16" xo="192" yo="288" id="10043829" name="inst_7BCA95D1" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="416" y="496" w="16" h="16" xo="192" yo="288" id="10043830" name="inst_A2B838F9" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="448" y="496" w="16" h="16" xo="192" yo="288" id="10043831" name="inst_37D03A55" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="480" y="496" w="16" h="16" xo="192" yo="288" id="10043832" name="inst_6C8C8485" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="704" y="480" w="16" h="16" xo="192" yo="288" id="10043833" name="inst_9E3615FC" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="720" y="480" w="16" h="16" xo="192" yo="288" id="10043834" name="inst_D66DF176" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="720" y="496" w="16" h="16" xo="192" yo="288" id="10043835" name="inst_0D45531A" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="736" y="496" w="16" h="16" xo="192" yo="288" id="10043836" name="inst_012D0046" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="752" y="496" w="16" h="16" xo="192" yo="288" id="10043837" name="inst_4104E86A" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="784" y="496" w="16" h="16" xo="192" yo="288" id="10043838" name="inst_7A06172F" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="800" y="496" w="16" h="16" xo="192" yo="288" id="10043839" name="inst_75FA092B" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaOuterWalls" x="1136" y="496" w="16" h="16" xo="192" yo="288" id="10043840" name="inst_37F8DAA0" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

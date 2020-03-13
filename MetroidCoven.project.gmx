@@ -307,6 +307,8 @@
       </sprites>
       <sprites name="Other">
         <sprite>sprites\sprShip</sprite>
+        <sprite>sprites\sprGenerator</sprite>
+        <sprite>sprites\sprGeneratorOff</sprite>
       </sprites>
       <sprites name="Scannables and Details">
         <sprite>sprites\sprScanTarget</sprite>
@@ -815,6 +817,7 @@
       <objects name="Other">
         <object>objects\oShip</object>
         <object>objects\oZoomerDen</object>
+        <object>objects\oGenerator</object>
       </objects>
       <objects name="Scannables and Details">
         <object>objects\oScanTargetParent</object>
