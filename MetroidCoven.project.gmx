@@ -312,18 +312,17 @@
       </sprites>
       <sprites name="Scannables and Details">
         <sprite>sprites\sprScanTarget</sprite>
-        <sprite>sprites\sprWallScreenMediumU</sprite>
-        <sprite>sprites\sprWallScreenMediumR</sprite>
-        <sprite>sprites\sprWallScreenMediumD</sprite>
-        <sprite>sprites\sprWallScreenMediumL</sprite>
-        <sprite>sprites\sprPCE</sprite>
-        <sprite>sprites\sprPCW</sprite>
-        <sprite>sprites\sprPCN</sprite>
-        <sprite>sprites\sprPCS</sprite>
-        <sprite>sprites\sprLargePCE</sprite>
-        <sprite>sprites\sprLargePCW</sprite>
-        <sprite>sprites\sprLargePCN</sprite>
-        <sprite>sprites\sprLargePCS</sprite>
+        <sprite>sprites\sprSmallWallScreen</sprite>
+        <sprite>sprites\sprWallScreen</sprite>
+        <sprite>sprites\sprLargeWallScreen</sprite>
+        <sprite>sprites\sprSmallPC</sprite>
+        <sprite>sprites\sprPC</sprite>
+        <sprite>sprites\sprDualPCR</sprite>
+        <sprite>sprites\sprDualPCL</sprite>
+        <sprite>sprites\sprLargePC</sprite>
+        <sprite>sprites\sprLargeDualPCR</sprite>
+        <sprite>sprites\sprLargeDualPCL</sprite>
+        <sprite>sprites\sprStasisTank</sprite>
         <sprite>sprites\sprDayBlade</sprite>
         <sprite>sprites\sprFrostGrass</sprite>
       </sprites>
@@ -456,7 +455,7 @@
       <background>background\bgrMapGrid2</background>
       <background>background\tilFloors</background>
       <background>background\tilBarriaIntroLanding</background>
-      <background>background\tilCave</background>
+      <background>background\tilCaveWallsInner</background>
       <background>background\tilFlora</background>
       <background>background\tilGroundAccents</background>
     </backgrounds>
@@ -821,15 +820,17 @@
       </objects>
       <objects name="Scannables and Details">
         <object>objects\oScanTargetParent</object>
-        <object>objects\oPCE</object>
-        <object>objects\oPCW</object>
-        <object>objects\oPCN</object>
-        <object>objects\oPCS</object>
-        <object>objects\oLargePCE</object>
-        <object>objects\oLargePCW</object>
-        <object>objects\oLargePCN</object>
-        <object>objects\oLargePCS</object>
-        <object>objects\oPlantParent</object>
+        <object>objects\oSmallWallScreen</object>
+        <object>objects\oWallScreen</object>
+        <object>objects\oLargeWallScreen</object>
+        <object>objects\oSmallPC</object>
+        <object>objects\oPC</object>
+        <object>objects\oDualPCR</object>
+        <object>objects\oDualPCL</object>
+        <object>objects\oLargePC</object>
+        <object>objects\oLargeDualPCR</object>
+        <object>objects\oLargeDualPCL</object>
+        <object>objects\oStasisTank</object>
         <object>objects\oDayBlade</object>
         <object>objects\oFrostgrass</object>
       </objects>

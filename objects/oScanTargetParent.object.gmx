@@ -50,7 +50,7 @@ Scanned = 0;
           <argument>
             <kind>1</kind>
             <string>draw_self();
-if (eId.visor = 1) draw_sprite(sprScanTarget,Scanned,x,y);
+if (eId.visor = 1) and (ScanMessage != -1) draw_sprite(sprScanTarget,Scanned,x,y);
 </string>
           </argument>
         </arguments>

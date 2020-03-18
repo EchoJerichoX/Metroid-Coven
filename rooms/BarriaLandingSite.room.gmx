@@ -65,16 +65,16 @@
     <instance objName="oSmallLightNS" x="360" y="696" name="inst_19BA64C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallLightEW" x="456" y="576" name="inst_210FD122" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oItem" x="640" y="632" name="inst_FEFFCA85" locked="0" code="scDefineItem(Items.iMissileExpansion);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oLargePCW" x="312" y="384" name="inst_9CE203D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oLargePCN" x="384" y="312" name="inst_51C8D4B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPCW" x="312" y="336" name="inst_257039D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPCW" x="312" y="432" name="inst_E5FB7A14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPCN" x="336" y="312" name="inst_18E20738" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPCN" x="432" y="312" name="inst_2426CDE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPCS" x="336" y="456" name="inst_B316CB38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPCS" x="432" y="456" name="inst_68425CB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPCE" x="456" y="432" name="inst_06EC48CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPCE" x="456" y="336" name="inst_90617D59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLargeDualPCL" x="312" y="384" name="inst_9CE203D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oStasisTank" x="384" y="312" name="inst_51C8D4B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDualPCL" x="312" y="336" name="inst_257039D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDualPCL" x="312" y="432" name="inst_E5FB7A14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oPC" x="336" y="312" name="inst_18E20738" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oPC" x="432" y="312" name="inst_2426CDE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLargePC" x="336" y="456" name="inst_B316CB38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLargePC" x="432" y="456" name="inst_68425CB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDualPCR" x="456" y="432" name="inst_06EC48CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDualPCR" x="456" y="336" name="inst_90617D59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDoorGuideW" x="480" y="384" name="inst_9AD65839" locked="0" code="scDefineDoor(Doors.dBlue);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDoorGuideN" x="384" y="480" name="inst_3CF00468" locked="0" code="scDefineDoor(Doors.dBlue);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oShip" x="144" y="144" name="inst_60B1D6BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

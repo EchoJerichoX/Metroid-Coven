@@ -17,8 +17,8 @@ vector_path_add(oVectorLine,Path1,0,0,0);</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1016</w>
-    <h>600</h>
+    <w>1808</w>
+    <h>1038</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,12 +27,12 @@ vector_path_add(oVectorLine,Path1,0,0,0);</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>1788</xoffset>
-    <yoffset>2895</yoffset>
+    <page>2</page>
+    <xoffset>1043</xoffset>
+    <yoffset>446</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="grdRock" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="-1" foreground="-1" name="bgrMapGrid" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -168,6 +168,22 @@ vector_path_add(oVectorLine,Path1,0,0,0);</code>
     <tile bgName="tilBarriaStructureInnerWalls" x="368" y="592" w="16" h="16" xo="128" yo="48" id="10041647" name="inst_3DC76C59" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaStructureInnerWalls" x="368" y="576" w="16" h="16" xo="128" yo="48" id="10041648" name="inst_509652FE" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaStructureInnerWalls" x="416" y="576" w="16" h="16" xo="128" yo="48" id="10041650" name="inst_B5DEFC7E" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilCaveWallsInner" x="560" y="480" w="16" h="32" xo="48" yo="128" id="10044399" name="inst_33EE57C4" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilCaveWallsInner" x="376" y="352" w="48" h="16" xo="32" yo="0" id="10044423" name="inst_5453A85E" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilCaveWallsInner" x="424" y="336" w="32" h="32" xo="96" yo="32" id="10044424" name="inst_2C2A33AD" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilCaveWallsInner" x="456" y="320" w="16" h="16" xo="160" yo="0" id="10044425" name="inst_92433DA4" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilCaveWallsInner" x="456" y="336" w="16" h="16" xo="48" yo="112" id="10044426" name="inst_EE63057D" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilCaveWallsInner" x="472" y="320" w="32" h="16" xo="32" yo="0" id="10044427" name="inst_D359B088" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilCaveWallsInner" x="520" y="304" w="16" h="16" xo="48" yo="112" id="10044429" name="inst_CE5D34AA" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilCaveWallsInner" x="520" y="288" w="16" h="16" xo="192" yo="0" id="10044430" name="inst_C12A3EEA" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilCaveWallsInner" x="536" y="288" w="32" h="32" xo="128" yo="32" id="10044431" name="inst_1F9EC54C" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilCaveWallsInner" x="584" y="288" w="32" h="16" xo="32" yo="0" id="10044434" name="inst_DF53ECAE" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilCaveWallsInner" x="504" y="304" w="16" h="16" xo="160" yo="32" id="10044436" name="inst_412D4311" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilCaveWallsInner" x="568" y="288" w="16" h="16" xo="192" yo="32" id="10044437" name="inst_F9F0E327" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilCaveWallsInner" x="504" y="320" w="16" h="16" xo="48" yo="112" id="10044438" name="inst_E2BCADE0" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilCaveWallsInner" x="568" y="304" w="16" h="16" xo="48" yo="112" id="10044439" name="inst_F8A555A5" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilCaveWallsInner" x="456" y="352" w="16" h="16" xo="192" yo="80" id="10044440" name="inst_6819588D" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilCaveWallsInner" x="472" y="336" w="16" h="16" xo="192" yo="80" id="10044441" name="inst_820CAFCB" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilFireOuter" x="0" y="736" w="32" h="32" xo="128" yo="192" id="10011704" name="tile_13D0676A" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilFireOuter" x="16" y="656" w="32" h="80" xo="208" yo="160" id="10011708" name="tile_93977A1B" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilFireOuter" x="32" y="608" w="32" h="32" xo="0" yo="224" id="10011710" name="tile_041E0A1C" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

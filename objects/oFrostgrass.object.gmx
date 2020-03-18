@@ -3,9 +3,9 @@
   <spriteName>sprFrostGrass</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>6</depth>
+  <depth>7</depth>
   <persistent>0</persistent>
-  <parentName>oPlantParent</parentName>
+  <parentName>oScanTargetParent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events/>
   <PhysicsObject>0</PhysicsObject>

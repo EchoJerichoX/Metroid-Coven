@@ -24,7 +24,7 @@ switch (sprite_index)
         break;
 }
 image_index = round(random(4));
-image_angle = random(360);
+//image_angle = random(360);
 image_speed = 0;
 hp = maxhp;
 hitfade = 0;
