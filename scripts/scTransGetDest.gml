@@ -26,7 +26,7 @@ switch (room) { // Determine current room.
         switch (other.trans) {
             case 1: eId.destinationroom = rmBarria2ZoomerTunnel; break;
             case 2: break;
-            case 3: break;
+            case 3: eId.destinationroom = rmBarria3Atrium; break;
             case 4: break;
         }
         break;
@@ -35,9 +35,21 @@ switch (room) { // Determine current room.
             case 1: eId.destinationroom = rmBarria1LandingSite; break;
             case 2: break;
             case 3: break;
-            case 4: break;
         }
         break;
+    case rmBarria3Atrium:
+        switch (other.trans) {
+            case 1: break;
+            case 2: break;
+            case 3: eId.destinationroom = rmBarria1LandingSite; break;
+            case 4: eId.destinationroom = rmBarria4RuinsAccess; break;
+        }
+        break;
+    case rmBarria4RuinsAccess:
+        switch (other.trans) {
+            case 1: break;
+            case 4: eId.destinationroom = rmBarria3Atrium; break;
+        }
 }
     /*
     // - Tutorial -

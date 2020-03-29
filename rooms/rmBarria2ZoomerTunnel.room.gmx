@@ -19,8 +19,8 @@ vector_path_add(oVectorLine,vecBarria2ZoomerTunnel3,0,0,0);</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>2141</w>
-    <h>1241</h>
+    <w>1016</w>
+    <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -29,9 +29,9 @@ vector_path_add(oVectorLine,vecBarria2ZoomerTunnel3,0,0,0);</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>-446</xoffset>
-    <yoffset>794</yoffset>
+    <page>2</page>
+    <xoffset>-233</xoffset>
+    <yoffset>791</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bgrSnow" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -71,10 +71,9 @@ vector_path_add(oVectorLine,vecBarria2ZoomerTunnel3,0,0,0);</code>
     <instance objName="oStickLightN" x="319" y="285" name="inst_4A0FB654" locked="0" code="image_angle = 5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oTransitionTubeLR" x="0" y="512" name="inst_9E2EFDB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDoorGuideW" x="48" y="512" name="inst_286A12BE" locked="0" code="scDefineDoor(Doors.dDeactivated);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPlayer" x="480" y="80" name="inst_D855BD9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oLargeCrate" x="96" y="584" name="inst_9C6B1160" locked="0" code="image_angle = 45;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSmallCrateBarria" x="170" y="575" name="inst_57E2EC9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSmallCrateBarria" x="142" y="589" name="inst_A57386E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLargeCrate" x="100" y="593" name="inst_9C6B1160" locked="0" code="image_angle = 45;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="170"/>
+    <instance objName="oSmallCrateBarria" x="160" y="592" name="inst_57E2EC9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="60"/>
+    <instance objName="oSmallCrateBarria" x="128" y="608" name="inst_A57386E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oZoomerDen" x="608" y="592" name="inst_F05FE53B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oActor" x="640" y="608" name="inst_E3641204" locked="0" code="scDefineActor(Enemies.eZoomer);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oActor" x="656" y="560" name="inst_C8F7A9C8" locked="0" code="scDefineActor(Enemies.eZoomer);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -151,6 +150,13 @@ vector_path_add(oVectorLine,vecBarria2ZoomerTunnel3,0,0,0);</code>
     <tile bgName="tilFloors" x="64" y="576" w="48" h="48" xo="192" yo="144" id="10041718" name="inst_939E1DFE" depth="1002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilFloors" x="144" y="576" w="48" h="48" xo="192" yo="144" id="10041719" name="inst_71B16AF7" depth="1002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilFloors" x="112" y="576" w="32" h="48" xo="192" yo="144" id="10041720" name="inst_834946C8" depth="1002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilFloors" x="608" y="592" w="16" h="16" xo="80" yo="112" id="10049069" name="inst_F7731579" depth="1002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilFloors" x="624" y="576" w="16" h="16" xo="64" yo="112" id="10049070" name="inst_E6F187CA" depth="1002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilFloors" x="592" y="592" w="16" h="16" xo="64" yo="112" id="10049071" name="inst_A528D33D" depth="1002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilFloors" x="208" y="352" w="16" h="16" xo="64" yo="112" id="10049072" name="inst_C4976BF6" depth="1002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilFloors" x="176" y="352" w="16" h="16" xo="96" yo="112" id="10049073" name="inst_4AA6503E" depth="1002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilFloors" x="192" y="368" w="16" h="16" xo="80" yo="112" id="10049074" name="inst_C4CB34FF" depth="1002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilFloors" x="208" y="336" w="16" h="16" xo="64" yo="112" id="10049076" name="inst_FF19B5F5" depth="1002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilFloors" x="112" y="576" w="8" h="8" xo="48" yo="240" id="10041723" name="inst_863419C4" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilFloors" x="136" y="576" w="8" h="8" xo="88" yo="288" id="10041724" name="inst_4F5505EA" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilFloors" x="120" y="576" w="16" h="8" xo="64" yo="240" id="10041726" name="inst_A7E22039" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -23,4 +23,17 @@ switch (room)
             else trans = 2;
         }
         break;
+    case rmBarria3Atrium:
+        if (object_index = oTransitionTubeLR) trans = 3;
+        else {
+            if (y > room_height/2) trans = 2;
+            else {
+                if (x > room_width*0.75) trans = 1;
+                else trans = 4;
+            }
+        }
+        break;
+    case rmBarria4RuinsAccess:
+        if (y < room_height/2) trans = 1;
+        else trans = 4;
 }

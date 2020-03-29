@@ -16,10 +16,10 @@ switch (object_index)
         break;
     // --------
     case oSmallLightEW:
-        xsize = .7; size = .1; angle = 0;
+        xsize = .3; size = .1; angle = 0;
         break;
     case oSmallLightNS:
-        ysize = .7; size = .1; angle = 0;
+        ysize = .3; size = .1; angle = 0;
         break;
     // --------
     case oSmallWallLightE:

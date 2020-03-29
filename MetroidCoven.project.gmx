@@ -482,7 +482,10 @@
       <background>background\tilBarriaStructureInnerWalls</background>
       <background>background\tilBarriaStructureOuterWalls</background>
     </backgrounds>
-    <backgrounds name="5 - Fire Region">
+    <backgrounds name="5 - Ruins Region">
+      <background>background\tilRuinsInnerWalls</background>
+    </backgrounds>
+    <backgrounds name="? - Fire Region">
       <background>background\grdRock</background>
       <background>background\tilFireInner</background>
       <background>background\tilFireOuter</background>
@@ -498,6 +501,9 @@
       <path>paths\vecBarria2ZoomerTunnel1</path>
       <path>paths\vecBarria2ZoomerTunnel2</path>
       <path>paths\vecBarria2ZoomerTunnel3</path>
+      <path>paths\vecBarria3Atrium1</path>
+      <path>paths\vecBarria3Atrium2</path>
+      <path>paths\vecBarria3Atrium3</path>
     </paths>
   </paths>
   <scripts name="scripts">
@@ -819,7 +825,6 @@
         <object>objects\oGenerator</object>
       </objects>
       <objects name="Scannables and Details">
-        <object>objects\oScanTargetParent</object>
         <object>objects\oSmallWallScreen</object>
         <object>objects\oWallScreen</object>
         <object>objects\oLargeWallScreen</object>
@@ -882,6 +887,7 @@
       <room>rooms\rmBarria1LandingSite</room>
       <room>rooms\rmBarria2ZoomerTunnel</room>
       <room>rooms\rmBarria3Atrium</room>
+      <room>rooms\rmBarria4RuinsAccess</room>
     </rooms>
     <rooms name="998 - Menus">
       <room>rooms\rmTitleRoom</room>

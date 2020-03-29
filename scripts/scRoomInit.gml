@@ -43,8 +43,10 @@ if (object_index = eId)
 switch (room)
 {
     case rmBarria1LandingSite:
+    case rmBarria3Atrium:
         eId.RoomBrightness = .05; break;
     case rmBarria2ZoomerTunnel:
+    case rmBarria4RuinsAccess:
         eId.RoomBrightness = .025; break;
     default: eId.RoomBrightness = .025; break;
 }

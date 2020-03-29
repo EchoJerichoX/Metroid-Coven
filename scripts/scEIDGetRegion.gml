@@ -5,6 +5,8 @@ switch (room)
     // Tutorial: 1.
     case rmBarria1LandingSite:
     case rmBarria2ZoomerTunnel:
+    case rmBarria3Atrium:
+    case rmBarria4RuinsAccess:
         region = 1; break;
     // Show guide sprite if no region is set.
     default: region = 0; break;

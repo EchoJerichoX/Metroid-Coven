@@ -17,8 +17,8 @@ vector_path_add(oVectorLine,vecBarria1LandingSite1,0,0,0);</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1016</w>
-    <h>600</h>
+    <w>2576</w>
+    <h>1394</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,9 +27,9 @@ vector_path_add(oVectorLine,vecBarria1LandingSite1,0,0,0);</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>29</xoffset>
-    <yoffset>134</yoffset>
+    <page>2</page>
+    <xoffset>116</xoffset>
+    <yoffset>-47</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bgrSnow" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -84,6 +84,7 @@ vector_path_add(oVectorLine,vecBarria1LandingSite1,0,0,0);</code>
     <instance objName="oDomeLight" x="688" y="528" name="inst_CB6D9EC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDomeLight" x="816" y="560" name="inst_1E75E722" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDomeLight" x="408" y="512" name="inst_CB55554E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oPlayer" x="320" y="376" name="inst_F9308F47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilFloors" x="688" y="240" w="16" h="16" xo="96" yo="144" id="10039363" name="inst_742A2431" depth="1999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -343,7 +344,6 @@ vector_path_add(oVectorLine,vecBarria1LandingSite1,0,0,0);</code>
     <tile bgName="tilFloors" x="528" y="672" w="16" h="16" xo="128" yo="128" id="10039872" name="inst_9B5F5ED6" depth="1999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilFloors" x="544" y="672" w="16" h="16" xo="128" yo="128" id="10039873" name="inst_0F09DDE2" depth="1999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilFloors" x="560" y="672" w="16" h="16" xo="128" yo="128" id="10039874" name="inst_B4AB6107" depth="1999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilFloors" x="720" y="304" w="16" h="16" xo="144" yo="192" id="10039463" name="inst_AC584281" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilFloors" x="800" y="304" w="16" h="16" xo="0" yo="80" id="10039478" name="inst_837C2C00" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilFloors" x="672" y="256" w="16" h="16" xo="16" yo="192" id="10039505" name="inst_A6AD777B" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilFloors" x="688" y="256" w="16" h="16" xo="176" yo="160" id="10039506" name="inst_E6F6F78E" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

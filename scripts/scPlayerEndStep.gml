@@ -13,7 +13,7 @@ else
 if (eId.transitioning) or (eId.paused > 0) exit; // Leave current hidden area alpha levels alone
                                                  //   if we are transitioning or paused.
 // Check and fade tile layers -1 through -3.
-if (tile_layer_find(-1,x,y)) {
+if (tile_layer_find(-1,x,y) || tile_layer_find(-2,x,y) || tile_layer_find(-3,x,y)) {
     if (eId.hiddenfade1 > 0) {
         eId.hiddenfade1 -= 0.05; scFadeHiddenArea(-1,eId.hiddenfade1); 
 } }
@@ -21,7 +21,7 @@ else if (eId.hiddenfade1 < 1) {
     eId.hiddenfade1 += 0.1; scFadeHiddenArea(-1,eId.hiddenfade1);
 }
 // Check and fade tile layers -4 through -6.
-if (tile_layer_find(-4,x,y)) {
+if (tile_layer_find(-4,x,y) || tile_layer_find(-5,x,y) || tile_layer_find(-6,x,y)) {
     if (eId.hiddenfade2 > 0) {
         eId.hiddenfade2 -= 0.05; scFadeHiddenArea(-4,eId.hiddenfade2); 
 } }
@@ -29,7 +29,7 @@ else if (eId.hiddenfade2 < 1) {
     eId.hiddenfade2 += 0.1; scFadeHiddenArea(-4,eId.hiddenfade2);
 }
 // Check and fade tile layers -7 through -9.
-if (tile_layer_find(-7,x,y)) {
+if (tile_layer_find(-7,x,y) || tile_layer_find(-8,x,y) || tile_layer_find(-9,x,y)) {
     if (eId.hiddenfade3 > 0) {
         eId.hiddenfade3 -= 0.05; scFadeHiddenArea(-7,eId.hiddenfade3); 
 } }
@@ -37,7 +37,7 @@ else if (eId.hiddenfade3 < 1) {
     eId.hiddenfade3 += 0.1; scFadeHiddenArea(-7,eId.hiddenfade3);
 }
 // Check and fade tile layers -10 through -12.
-if (tile_layer_find(-10,x,y)) {
+if (tile_layer_find(-10,x,y) || tile_layer_find(-11,x,y) || tile_layer_find(-12,x,y)) {
     if (eId.hiddenfade4 > 0) {
         eId.hiddenfade4 -= 0.05; scFadeHiddenArea(-10,eId.hiddenfade4); 
 } }
