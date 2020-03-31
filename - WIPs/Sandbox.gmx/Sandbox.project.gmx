@@ -44,6 +44,8 @@
     <sprite>sprites\sprite35</sprite>
     <sprite>sprites\sprite36</sprite>
     <sprite>sprites\sprite37</sprite>
+    <sprite>sprites\sprite38</sprite>
+    <sprite>sprites\sprite39</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>

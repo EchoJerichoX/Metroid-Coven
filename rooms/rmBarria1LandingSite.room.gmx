@@ -11,14 +11,14 @@
   <colour>4194368</colour>
   <showcolour>-1</showcolour>
   <code>vector_world_add(oVectorLine);
-vector_path_add(oVectorLine,vecBarria1LandingSite1,0,0,0);</code>
+vector_path_add(oVectorLine,vecBarria1LandingSite,0,0,0);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>2576</w>
-    <h>1394</h>
+    <w>1016</w>
+    <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,12 +27,12 @@ vector_path_add(oVectorLine,vecBarria1LandingSite1,0,0,0);</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>2</page>
+    <page>1</page>
     <xoffset>116</xoffset>
     <yoffset>-47</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="bgrSnow" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="flrSnow" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>

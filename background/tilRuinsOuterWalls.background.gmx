@@ -13,7 +13,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>208</width>
-  <height>336</height>
-  <data>images\tilRuinsInnerWalls.png</data>
+  <width>240</width>
+  <height>304</height>
+  <data>images\tilRuinsOuterWalls.png</data>
 </background>

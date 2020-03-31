@@ -453,6 +453,9 @@
       <background>background\bgrDeathRoom</background>
       <background>background\bgrMapGrid</background>
       <background>background\bgrMapGrid2</background>
+      <background>background\background29</background>
+      <background>background\flrSnow</background>
+      <background>background\flrDirt</background>
       <background>background\tilFloors</background>
       <background>background\tilBarriaIntroLanding</background>
       <background>background\tilCaveWallsInner</background>
@@ -474,7 +477,6 @@
       <background>background\bgrIntro2Stars</background>
     </backgrounds>
     <backgrounds name="4 - Barria Tundra">
-      <background>background\bgrSnow</background>
       <background>background\tilBarriaInnerWalls</background>
       <background>background\tilBarriaOuterWalls</background>
       <background>background\tilBarriaIceCaveWalls</background>
@@ -484,6 +486,7 @@
     </backgrounds>
     <backgrounds name="5 - Ruins Region">
       <background>background\tilRuinsInnerWalls</background>
+      <background>background\tilRuinsOuterWalls</background>
     </backgrounds>
     <backgrounds name="? - Fire Region">
       <background>background\grdRock</background>
@@ -497,13 +500,14 @@
       <path>paths\vecTestRoomDash1</path>
     </paths>
     <paths name="Barria">
-      <path>paths\vecBarria1LandingSite1</path>
+      <path>paths\vecBarria1LandingSite</path>
       <path>paths\vecBarria2ZoomerTunnel1</path>
       <path>paths\vecBarria2ZoomerTunnel2</path>
       <path>paths\vecBarria2ZoomerTunnel3</path>
       <path>paths\vecBarria3Atrium1</path>
       <path>paths\vecBarria3Atrium2</path>
       <path>paths\vecBarria3Atrium3</path>
+      <path>paths\vecBarria4RuinsAccess</path>
     </paths>
   </paths>
   <scripts name="scripts">
