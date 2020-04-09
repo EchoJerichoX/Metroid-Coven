@@ -33,6 +33,8 @@ pbix = 12;  pbiy = 84;  // Power Bomb icon.
 pbcx = 34;  pbcy = 85;  // Power Bomb counter.
 
 // Top right.
-maprx = 635;    mapry = 4;  // Map region name.
-mapnx = 635;    mapny = 22; // Map room name.
-mapx = 635;     mapy = 34;  // Map.
+maprx = 635;    mapry = 4;          // Map region name.
+mapnx = 635;    mapny = 22;         // Map room name.
+mapx = 635;     mapy = 34;          // Map border.
+minimapx = 532; minimapy = 38;      // Minimap top-left corner (80x60).
+minimapspr = sprBarria1LandingSite; // Minimap current room sprite.

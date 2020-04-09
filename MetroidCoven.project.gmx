@@ -349,8 +349,13 @@
     </sprites>
     <sprites name="Interface">
       <sprites name="HUD">
+        <sprites name="Maps">
+          <sprite>sprites\sprMapPlayer</sprite>
+          <sprites name="Rooms">
+            <sprite>sprites\sprBarria1LandingSite</sprite>
+          </sprites>
+        </sprites>
         <sprite>sprites\sprHUDEnergyTank</sprite>
-        <sprite>sprites\sprite215</sprite>
         <sprite>sprites\sprHUDBracket</sprite>
         <sprite>sprites\sprHUDBracketL</sprite>
         <sprite>sprites\sprHUDBracketR</sprite>
@@ -588,7 +593,6 @@
       <script>scripts\scEIDEndStep.gml</script>
       <script>scripts\scEIDMessagesInit.gml</script>
       <script>scripts\scEIDDraw.gml</script>
-      <script>scripts\scDrawHUD1.gml</script>
       <script>scripts\scDebugModeDraw.gml</script>
       <script>scripts\scDebugModeDrawActor.gml</script>
       <script>scripts\scMusic.gml</script>
@@ -649,6 +653,7 @@
       <scripts name="HUD">
         <script>scripts\scHUDInit.gml</script>
         <script>scripts\scDrawHUD.gml</script>
+        <script>scripts\scDrawMap.gml</script>
       </scripts>
     </scripts>
     <scripts name="Inventory">

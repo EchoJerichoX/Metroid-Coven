@@ -111,6 +111,10 @@ draw_text_color(mapnx,mapny,room_get_name(room),c_white,c_white,c_white,c_white,
 //   Return the font alignment to default.
 draw_set_halign(fa_left);
 // Draw map.
-// WIP.
+scDrawMap();
+// Draw player icon on map.
+texture_set_interpolation(1);
+draw_sprite_ext(sprMapPlayer,0,minimapx+50,minimapy+37.5,1,1,oPlayer.image_angle,c_white,0.8);
+texture_set_interpolation(0);
 // Draw map border.
 draw_sprite_ext(sprHUDMapBorder,0,mapx,mapy,1,1,0,c_white,hudopacity);
