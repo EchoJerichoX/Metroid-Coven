@@ -3,8 +3,8 @@
   <caption>DO NOT USE!!!</caption>
   <width>640</width>
   <height>768</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -27,9 +27,9 @@ vector_path_add(oVectorLine,vecBarria4RuinsAccess,0,0,0);</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>1</page>
-    <xoffset>-425</xoffset>
-    <yoffset>-294</yoffset>
+    <page>0</page>
+    <xoffset>-472</xoffset>
+    <yoffset>-226</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="flrDirt" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -69,7 +69,7 @@ vector_path_add(oVectorLine,vecBarria4RuinsAccess,0,0,0);</code>
     <instance objName="oSmallLightEW" x="380" y="421" name="inst_1BFA9E0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallLightEW" x="292" y="324" name="inst_8C2EC299" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallLightEW" x="396" y="214" name="inst_DF6BC5E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSmallLightEW" x="324" y="157" name="inst_654E26F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSmallLightEW" x="277" y="152" name="inst_654E26F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallLightEW" x="396" y="84" name="inst_A55D28F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
@@ -373,6 +373,18 @@ vector_path_add(oVectorLine,vecBarria4RuinsAccess,0,0,0);</code>
     <tile bgName="tilFloors" x="272" y="64" w="16" h="16" xo="48" yo="32" id="10050470" name="inst_3039D2FD" depth="2000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilFloors" x="272" y="80" w="16" h="16" xo="48" yo="16" id="10050471" name="inst_F4C45F38" depth="2000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilFloors" x="272" y="96" w="16" h="16" xo="48" yo="0" id="10050472" name="inst_442AA6DE" depth="2000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilFloors" x="272" y="112" w="16" h="16" xo="16" yo="0" id="10050482" name="inst_3D736CC1" depth="2000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilFloors" x="288" y="176" w="16" h="16" xo="0" yo="16" id="10050483" name="inst_02B03C8A" depth="2000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilFloors" x="304" y="144" w="16" h="16" xo="16" yo="16" id="10050484" name="inst_48C870A1" depth="2000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilFloors" x="288" y="128" w="16" h="16" xo="0" yo="32" id="10050485" name="inst_8ECE27BA" depth="2000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilFloors" x="288" y="144" w="16" h="16" xo="0" yo="32" id="10050487" name="inst_E9DCF5DF" depth="2000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilFloors" x="272" y="128" w="16" h="16" xo="16" yo="0" id="10050488" name="inst_26FC44A8" depth="2000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilFloors" x="272" y="144" w="16" h="16" xo="16" yo="0" id="10050489" name="inst_A7544BEA" depth="2000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilFloors" x="272" y="160" w="16" h="16" xo="16" yo="0" id="10050490" name="inst_17F4180D" depth="2000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilFloors" x="288" y="160" w="16" h="16" xo="16" yo="0" id="10050491" name="inst_E32C2928" depth="2000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilFloors" x="272" y="176" w="16" h="16" xo="16" yo="0" id="10050492" name="inst_84A9EA7B" depth="2000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilFloors" x="256" y="160" w="16" h="16" xo="16" yo="0" id="10050493" name="inst_C9F430DE" depth="2000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilFloors" x="256" y="144" w="16" h="16" xo="16" yo="0" id="10050494" name="inst_AB1DA6E1" depth="2000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilCaveWallsInner" x="272" y="704" w="16" h="64" xo="16" yo="0" id="10049108" name="inst_B8A07CFA" depth="5" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilCaveWallsInner" x="352" y="704" w="16" h="64" xo="0" yo="64" id="10049109" name="inst_47AD9B86" depth="5" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilCaveWallsInner" x="272" y="672" w="32" h="32" xo="64" yo="64" id="10049110" name="inst_406C9E33" depth="5" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -462,7 +474,6 @@ vector_path_add(oVectorLine,vecBarria4RuinsAccess,0,0,0);</code>
     <tile bgName="tilRuinsOuterWalls" x="240" y="80" w="16" h="16" xo="208" yo="256" id="10049729" name="inst_7E6AC881" depth="5" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilRuinsOuterWalls" x="240" y="64" w="16" h="16" xo="208" yo="256" id="10049730" name="inst_F22FA633" depth="5" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilRuinsOuterWalls" x="256" y="64" w="16" h="16" xo="208" yo="256" id="10049731" name="inst_F039DC26" depth="5" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilRuinsOuterWalls" x="272" y="128" w="16" h="16" xo="208" yo="256" id="10049732" name="inst_CCBEB214" depth="5" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilRuinsOuterWalls" x="277" y="207" w="16" h="16" xo="208" yo="256" id="10049733" name="inst_86BC0C9D" depth="5" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilRuinsOuterWalls" x="422" y="236" w="16" h="16" xo="208" yo="256" id="10049734" name="inst_A54603D5" depth="5" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilRuinsOuterWalls" x="405" y="413" w="16" h="16" xo="208" yo="256" id="10049736" name="inst_93AC59A7" depth="5" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -488,10 +499,6 @@ vector_path_add(oVectorLine,vecBarria4RuinsAccess,0,0,0);</code>
     <tile bgName="tilRuinsInnerWalls" x="432" y="192" w="16" h="48" xo="64" yo="0" id="10049207" name="inst_E336A928" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilRuinsInnerWalls" x="400" y="224" w="16" h="16" xo="128" yo="176" id="10049208" name="inst_09C00A76" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilRuinsInnerWalls" x="288" y="208" w="16" h="48" xo="64" yo="144" id="10049209" name="inst_E44DC7B7" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilRuinsInnerWalls" x="288" y="176" w="16" h="16" xo="64" yo="80" id="10049215" name="inst_6560ADC0" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilRuinsInnerWalls" x="288" y="128" w="32" h="16" xo="64" yo="48" id="10049216" name="inst_34014981" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilRuinsInnerWalls" x="304" y="160" w="16" h="16" xo="80" yo="64" id="10049217" name="inst_11DDA5AC" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilRuinsInnerWalls" x="304" y="144" w="16" h="16" xo="80" yo="16" id="10049218" name="inst_76A1B8DC" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilRuinsInnerWalls" x="416" y="208" w="16" h="16" xo="64" yo="64" id="10049227" name="inst_4DC85F4D" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilRuinsInnerWalls" x="256" y="80" w="32" h="48" xo="0" yo="192" id="10049243" name="inst_7742CD7C" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilRuinsInnerWalls" x="416" y="144" w="16" h="32" xo="48" yo="64" id="10049288" name="inst_E0B2378A" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -534,11 +541,6 @@ vector_path_add(oVectorLine,vecBarria4RuinsAccess,0,0,0);</code>
     <tile bgName="tilRuinsOuterWalls" x="96" y="416" w="16" h="16" xo="208" yo="256" id="10049663" name="inst_A653751A" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilCaveWallsInner" x="269" y="504" w="16" h="16" xo="160" yo="64" id="10049699" name="inst_2B279A39" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilRuinsInnerWalls" x="240" y="400" w="16" h="16" xo="64" yo="16" id="10049735" name="inst_170C4753" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilRuinsInnerWalls" x="288" y="144" w="16" h="16" xo="64" yo="16" id="10049816" name="inst_96DD8553" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilRuinsInnerWalls" x="288" y="160" w="16" h="16" xo="64" yo="16" id="10049817" name="inst_2E3D65D9" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilRuinsInnerWalls" x="304" y="176" w="16" h="16" xo="160" yo="176" id="10049818" name="inst_E258DF5E" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilRuinsInnerWalls" x="272" y="176" w="16" h="16" xo="64" yo="16" id="10049819" name="inst_10B87AF8" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilRuinsInnerWalls" x="256" y="176" w="16" h="16" xo="64" yo="16" id="10049820" name="inst_684B811D" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilRuinsOuterWalls" x="512" y="448" w="16" h="16" xo="208" yo="208" id="10049905" name="inst_7C0C1AD5" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilRuinsOuterWalls" x="464" y="448" w="16" h="16" xo="192" yo="256" id="10049907" name="inst_5C31DC6B" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilRuinsOuterWalls" x="480" y="432" w="16" h="16" xo="192" yo="256" id="10049908" name="inst_D3F20086" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -557,14 +559,13 @@ vector_path_add(oVectorLine,vecBarria4RuinsAccess,0,0,0);</code>
     <tile bgName="tilCaveWallsInner" x="414" y="365" w="16" h="16" xo="160" yo="96" id="10050189" name="inst_DB4EE851" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilCaveWallsInner" x="384" y="468" w="16" h="16" xo="64" yo="112" id="10050191" name="inst_DEA7618E" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilCaveWallsInner" x="371" y="461" w="16" h="16" xo="160" yo="112" id="10050192" name="inst_2DC54BE4" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilRuinsInnerWalls" x="288" y="112" w="16" h="32" xo="32" yo="48" id="10049229" name="inst_CA70F01C" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilRuinsInnerWalls" x="272" y="144" w="32" h="32" xo="16" yo="16" id="10049230" name="inst_8CC3679F" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilRuinsInnerWalls" x="272" y="112" w="16" h="16" xo="16" yo="0" id="10049232" name="inst_422F7EB4" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilRuinsInnerWalls" x="256" y="112" w="16" h="16" xo="16" yo="48" id="10049233" name="inst_516F2BE8" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilRuinsInnerWalls" x="256" y="128" w="16" h="16" xo="16" yo="16" id="10049234" name="inst_E4E6B156" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilRuinsInnerWalls" x="272" y="128" w="16" h="16" xo="16" yo="64" id="10049235" name="inst_951E1B65" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilRuinsInnerWalls" x="256" y="144" w="16" h="16" xo="16" yo="16" id="10049237" name="inst_C8B15E77" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tilRuinsInnerWalls" x="256" y="160" w="16" h="16" xo="16" yo="32" id="10049238" name="inst_4161CEB9" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilRuinsInnerWalls" x="256" y="144" w="16" h="16" xo="80" yo="16" id="10050476" name="inst_682B1360" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilRuinsInnerWalls" x="256" y="160" w="16" h="16" xo="80" yo="64" id="10050477" name="inst_874525B8" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilRuinsInnerWalls" x="256" y="176" w="16" h="16" xo="80" yo="16" id="10050478" name="inst_57407C46" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilRuinsInnerWalls" x="272" y="128" w="16" h="16" xo="192" yo="160" id="10050479" name="inst_0B9DD72F" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilRuinsInnerWalls" x="256" y="128" w="16" h="16" xo="64" yo="16" id="10050480" name="inst_09B99855" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilRuinsInnerWalls" x="272" y="160" w="16" h="16" xo="112" yo="176" id="10050481" name="inst_9B038006" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilRuinsInnerWalls" x="272" y="176" w="8" h="8" xo="200" yo="96" id="10050497" name="inst_38710B72" depth="4" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilRuinsInnerWalls" x="256" y="64" w="32" h="32" xo="96" yo="288" id="10049245" name="inst_31FB48EE" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilRuinsInnerWalls" x="256" y="16" w="32" h="16" xo="64" yo="16" id="10049246" name="inst_CF982823" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilRuinsInnerWalls" x="256" y="0" w="16" h="16" xo="64" yo="64" id="10049247" name="inst_F7641FA5" depth="3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

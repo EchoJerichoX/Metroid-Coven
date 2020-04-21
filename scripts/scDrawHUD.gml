@@ -50,11 +50,13 @@ if (oPlayer.EnergyTanks > 0) // If the player has any Energy Tanks at all...
     if (etflashreset = 0) etflash = 0;
 }
 // Ball Bomb text and counter.
+/*
 if (HasBallBomb)
 {
     draw_text_color(btx,bty,"Bombs",c_white,c_white,c_white,c_white,hudopacity);
     draw_sprite_ext(sprHUDBombs,oPlayer.ExistingBombs,bcx,bcy,1,1,0,c_white,hudopacity);
 }
+*/
 // Missile Launcher indicator and ammo counter.
 if (HasMissileLauncher)
 {
@@ -96,25 +98,10 @@ if (HasPowerBomb)
 // ============= //
 //   TOP RIGHT   //
 // ============= //
-// Region name text.
-//   Set the font and alignment.
-draw_set_font(sfont2x);
-draw_set_halign(fa_right);
-//   Draw the text.
-draw_text_color(maprx,mapry,eId.regionname,c_white,c_white,c_white,c_white,hudopacity);
-// Room name text.
-//   Set the font.
-draw_set_font(sfont);
-//   Draw the text.
-//   Temporarily draw actual room name. Eventually, each room will have a unique name.
-draw_text_color(mapnx,mapny,room_get_name(room),c_white,c_white,c_white,c_white,hudopacity);
-//   Return the font alignment to default.
-draw_set_halign(fa_left);
+
+// Draw minimap background.
+draw_sprite_ext(sprHUDMapBackground,0,mmx-mmw+4,mmy+4,1,1,0,c_white,hudopacity*0.1);
 // Draw map.
-scDrawMap();
-// Draw player icon on map.
-texture_set_interpolation(1);
-draw_sprite_ext(sprMapPlayer,0,minimapx+50,minimapy+37.5,1,1,oPlayer.image_angle,c_white,0.8);
-texture_set_interpolation(0);
-// Draw map border.
-draw_sprite_ext(sprHUDMapBorder,0,mapx,mapy,1,1,0,c_white,hudopacity);
+scDrawMinimap();
+// Draw minimap border.
+draw_sprite_ext(sprHUDMapBorder,0,mmx-mmw,mmy,1,1,0,c_white,hudopacity);

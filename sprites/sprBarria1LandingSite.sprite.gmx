@@ -7,20 +7,21 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>14</bbox_left>
-  <bbox_right>255</bbox_right>
+  <bbox_left>0</bbox_left>
+  <bbox_right>204</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>191</bbox_bottom>
+  <bbox_bottom>153</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>256</width>
-  <height>192</height>
+  <width>205</width>
+  <height>154</height>
   <frames>
     <frame index="0">images\sprBarria1LandingSite_0.png</frame>
     <frame index="1">images\sprBarria1LandingSite_1.png</frame>
+    <frame index="2">images\sprBarria1LandingSite_2.png</frame>
   </frames>
 </sprite>

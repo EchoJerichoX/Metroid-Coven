@@ -23,15 +23,15 @@ vector_path_add(oVectorLine,vecBarria3Atrium3,0,0,0);</code>
     <h>1394</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
-    <showTiles>-1</showTiles>
+    <showTiles>0</showTiles>
     <showBackgrounds>-1</showBackgrounds>
     <showForegrounds>0</showForegrounds>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>2</page>
-    <xoffset>-72</xoffset>
-    <yoffset>-356</yoffset>
+    <page>0</page>
+    <xoffset>-28</xoffset>
+    <yoffset>-93</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="flrSnow" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>

@@ -1,18 +1,14 @@
 // Runs within oDoorParent when a door is hit by something that can open it.
 // Mark a special door as opened so the player doesn't have to open it again.
 // See switch statement case numbers for argument0 meaning.
-switch (argument0)
-{
+switch (argument0) {
     // --- Red (Missile) ---
     case 1:
         // - Tutorial -
-        if (room = Tutorial3) or (room = Tutorial5) eId.OpenedTutorial35Red = true;
-        if (room = Tutorial9) eId.OpenedTutorial9Red = true;
-        // - Barria Tundra -
-        if (room = BarriaIntWest) eId.OpenedBarriaIntWestRed = true;
-        if (room = BarriaCacheMissile) eId.OpenedBarriaCacheMissileRedE = true;
-        if (room = BarriaCacheMissile) eId.OpenedBarriaCacheMissileRedW = true;
-        break;
+        switch (room) {
+            case rmBarria1LandingSite: mapBarria1RedDoorOpened = 1; break;
+            break;
+        }
     // --- Green (Super Missile) ---
     case 2:
         // - Tutorial -

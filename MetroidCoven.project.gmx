@@ -353,6 +353,9 @@
           <sprite>sprites\sprMapPlayer</sprite>
           <sprites name="Rooms">
             <sprite>sprites\sprBarria1LandingSite</sprite>
+            <sprite>sprites\sprBarria2ZoomerTunnel</sprite>
+            <sprite>sprites\sprBarria3Atrium</sprite>
+            <sprite>sprites\sprBarria4Ruins</sprite>
           </sprites>
         </sprites>
         <sprite>sprites\sprHUDEnergyTank</sprite>
@@ -365,6 +368,7 @@
         <sprite>sprites\sprHUDSuperMissile</sprite>
         <sprite>sprites\sprHUDSuperMissileOutline</sprite>
         <sprite>sprites\sprHUDPowerBomb</sprite>
+        <sprite>sprites\sprHUDMapBackground</sprite>
         <sprite>sprites\sprHUDMapBorder</sprite>
         <sprite>sprites\sprHUDScanVisor</sprite>
         <sprite>sprites\sprCursorCombatVisor</sprite>
@@ -653,7 +657,7 @@
       <scripts name="HUD">
         <script>scripts\scHUDInit.gml</script>
         <script>scripts\scDrawHUD.gml</script>
-        <script>scripts\scDrawMap.gml</script>
+        <script>scripts\scDrawMinimap.gml</script>
       </scripts>
     </scripts>
     <scripts name="Inventory">
