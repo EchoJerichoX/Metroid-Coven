@@ -329,8 +329,7 @@ if (DiesOnContact = true) instance_destroy();
           <argument>
             <kind>1</kind>
             <string>scDoorHit(hittype,other);
-if (DiesOnContact) 
-    { instance_destroy(); }
+if (DiesOnContact) instance_destroy();
 </string>
           </argument>
         </arguments>

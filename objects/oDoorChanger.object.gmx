@@ -51,11 +51,10 @@ myid = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(oPlayer))
-{
-    if (point_distance(x,y,oPlayer.x,oPlayer.y) &lt; 50) then
-      { alarm[0] = 1; exit; }
-}
+            <string>if (instance_exists(oPlayer)) {
+    if (point_distance(x,y,oPlayer.x,oPlayer.y) &lt; 50) {
+        alarm[0] = 1; exit;
+}}
 sprite_index = sprDoorClose;
 image_speed = .25;
 sound_play(snDoorClose);
@@ -81,13 +80,11 @@ sound_play(snDoorClose);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (sprite_index = sprDoorOpen)
-{
+            <string>if (sprite_index = sprDoorOpen) {
     sprite_index = -1;
     alarm[0] = 180;
 }
-if (sprite_index = sprDoorClose)
-{
+if (sprite_index = sprDoorClose) {
     o = instance_create(x,y,oid)
     with (o) scDefineDoor(other.myid);
     instance_destroy();

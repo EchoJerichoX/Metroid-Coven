@@ -4,27 +4,26 @@
 switch (argument0) {
     // --- Red (Missile) ---
     case 1:
-        // - Tutorial -
+        // - Barria -
         switch (room) {
-            case rmBarria1LandingSite: mapBarria1RedDoorOpened = 1; break;
-            break;
+            case rmBarria1LandingSite: eId.mapBarria1RedDoorOpened = 1; break;
+            case rmBarria4RuinsAccess: eId.mapBarria4RedDoorOpened = 1; break;
         }
+        break;
     // --- Green (Super Missile) ---
     case 2:
-        // - Tutorial -
-        if (room = Tutorial3)
-        {
-            if (object_index = oDoorGuideS) eId.OpenedTutorial313Green = true;
-            else eId.OpenedTutorial315Green = true;
-        }
-        if (room = Tutorial11) eId.OpenedTutorial11Green = true;
-        if (room = Tutorial13)
-        {
-            if (y < room_height/2) eId.OpenedTutorial313Green = true;
-            else eId.OpenedTutorial1113Green = true;
+        switch (room) {
+            case rmBarria3Atrium: eId.mapBarria3GreenDoorOpened = 1; break;
         }
         break;
     // --- Yellow (Power Bomb) ---
     case 3:
+        break;
+    // --- Gray (Deactivated) ---
+    case 4:
+        // - Barria -
+        switch (room) {
+            case rmBarria2ZoomerTunnel: eId.mapBarria2GrayDoorActive = 1; break;
+        }
         break;
 }

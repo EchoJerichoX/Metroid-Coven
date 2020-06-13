@@ -6,32 +6,26 @@ switch (argument0)
 {
     // --- Red (Missile) ---
     case 1:
-        // - Tutorial -
-        if (room = Tutorial3) or (room = Tutorial5)
-            { if (eId.OpenedTutorial35Red = true) scDefineDoor(Doors.dBlue); }
-        if (room = Tutorial9) and (eId.OpenedTutorial9Red = true) scDefineDoor(Doors.dBlue);
         // - Barria Tundra -
-        if (room = BarriaIntWest) and (eId.OpenedBarriaIntWestRed = true) scDefineDoor(Doors.dBlue);
-        if (room = BarriaCacheMissile) and (eId.OpenedBarriaCacheMissileRedE = true) and (object_index = oDoorGuideE) scDefineDoor(Doors.dBlue);
-        if (room = BarriaCacheMissile) and (eId.OpenedBarriaCacheMissileRedW = true) and (object_index = oDoorGuideW) scDefineDoor(Doors.dBlue);
+        switch (room) {
+            case rmBarria1LandingSite: if (eId.mapBarria1RedDoorOpened = 1) scDefineDoor(Doors.dBlue); break;
+            case rmBarria4RuinsAccess: if (eId.mapBarria4RedDoorOpened = 1) scDefineDoor(Doors.dBlue); break;
+        }
         break;
     // --- Green (Super Missile) ---
     case 2:
-        // - Tutorial -
-        if (room = Tutorial3)
-        {
-            if (object_index = oDoorGuideS) and (eId.OpenedTutorial313Green = true) scDefineDoor(Doors.dBlue);
-            if (object_index = oDoorGuideE) and (eId.OpenedTutorial315Green = true) scDefineDoor(Doors.dBlue);
+        switch (room) {
+            case rmBarria3Atrium: if (eId.mapBarria3GreenDoorOpened = 1) scDefineDoor(Doors.dBlue); break;
         }
-        if (room = Tutorial11) and (eId.OpenedTutorial1113Green = true) scDefineDoor(Doors.dBlue);
-        if (room = Tutorial13)
-        {
-            if (y < room_height/2) and (eId.OpenedTutorial313Green = true) scDefineDoor(Doors.dBlue);
-            if (y > room_height/2) and (eId.OpenedTutorial1113Green = true) scDefineDoor(Doors.dBlue);
-        }
-        if (room = Tutorial15) and (eId.OpenedTutorial315Green = true) scDefineDoor(Doors.dBlue);
         break;
     // --- Yellow (Power Bomb) ---
     case 3:
+        break;
+    // --- Gray (Deactivated) ---
+    case 4:
+        // - Barria -
+        switch (room) {
+            case rmBarria2ZoomerTunnel: if (mapBarria2GrayDoorActive = 1) scDefineDoor(Doors.dBlue); break;
+        }
         break;
 }

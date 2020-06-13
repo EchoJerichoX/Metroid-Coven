@@ -355,7 +355,7 @@
             <sprite>sprites\sprBarria1LandingSite</sprite>
             <sprite>sprites\sprBarria2ZoomerTunnel</sprite>
             <sprite>sprites\sprBarria3Atrium</sprite>
-            <sprite>sprites\sprBarria4Ruins</sprite>
+            <sprite>sprites\sprBarria4RuinsAccess</sprite>
           </sprites>
         </sprites>
         <sprite>sprites\sprHUDEnergyTank</sprite>
@@ -780,6 +780,7 @@
       <objects name="Doors">
         <object>objects\oDoorParent</object>
         <object>objects\oDoorChanger</object>
+        <object>objects\oDoorFader</object>
         <object>objects\oDoorGuideE</object>
         <object>objects\oDoorGuideN</object>
         <object>objects\oDoorGuideS</object>
@@ -901,6 +902,7 @@
       <room>rooms\rmBarria2ZoomerTunnel</room>
       <room>rooms\rmBarria3Atrium</room>
       <room>rooms\rmBarria4RuinsAccess</room>
+      <room>rooms\rmBarria5RuinsElevNorth</room>
     </rooms>
     <rooms name="998 - Menus">
       <room>rooms\rmTitleRoom</room>

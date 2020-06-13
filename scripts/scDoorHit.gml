@@ -2,14 +2,12 @@ var hit,dir,xx,yy;
 hit = argument0;
 xx = argument1.x;
 yy = argument1.y;
-switch (argument1.object_index)
-{
+switch (argument1.object_index) {
     case oDoorGuideW: dir = 0; break;
     case oDoorGuideE: dir = 180; break;
     case oDoorGuideN: dir = 270; break;
     case oDoorGuideS: dir = 90; break;
 }
-
 // Hit:
 // 1 = Beam.
 // 2 = Missile.
@@ -17,9 +15,7 @@ switch (argument1.object_index)
 // 4 = Bomb.
 // 5 = Power Bomb.
 // argument1 is contextual.
-
-switch (argument1.myid)
-{
+switch (argument1.myid) {
     case Doors.dBlue:
         dc = instance_create(xx,yy,oDoorChanger);
         dc.image_angle = dir;
@@ -57,11 +53,20 @@ switch (argument1.myid)
         break;
     case Doors.dYellow:
         if (hit != 5) exit;
-            scOpenNBDoor(3);
+        scOpenNBDoor(3);
         dc = instance_create(xx,yy,oDoorChanger);
         dc.image_angle = dir;
         dc.myid = Doors.dBlue;
         dc.oid = argument1.object_index;
         with (argument1) instance_destroy();
         break;
+    case Doors.dDeactivated:
+        if (hit != 1) or (myid != Weapons.wWaveBeam) exit;
+        scOpenNBDoor(4);
+        dc = instance_create(xx,yy,oDoorChanger);
+        dc.gray = 1;
+        dc.image_angle = dir;
+        dc.myid = Doors.dBlue;
+        dc.oid = argument1.object_index;
+        with (argument1) instance_destroy();
 }

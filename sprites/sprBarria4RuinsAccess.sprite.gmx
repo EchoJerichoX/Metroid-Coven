@@ -20,8 +20,8 @@
   <width>128</width>
   <height>154</height>
   <frames>
-    <frame index="0">images\sprBarria4Ruins_0.png</frame>
-    <frame index="1">images\sprBarria4Ruins_1.png</frame>
-    <frame index="2">images\sprBarria4Ruins_2.png</frame>
+    <frame index="0">images\sprBarria4RuinsAccess_0.png</frame>
+    <frame index="1">images\sprBarria4RuinsAccess_1.png</frame>
+    <frame index="2">images\sprBarria4RuinsAccess_2.png</frame>
   </frames>
 </sprite>
