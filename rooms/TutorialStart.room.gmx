@@ -17,7 +17,7 @@ vector_path_add(oVectorLine,TutorialStartPath1,0,0,0);</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1016</w>
+    <w>1008</w>
     <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
@@ -27,7 +27,7 @@ vector_path_add(oVectorLine,TutorialStartPath1,0,0,0);</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>1</page>
+    <page>2</page>
     <xoffset>-19</xoffset>
     <yoffset>-8</yoffset>
   </makerSettings>

@@ -4,7 +4,7 @@
   <width>640</width>
   <height>480</height>
   <vsnap>16</vsnap>
-  <hsnap>320</hsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -17,8 +17,8 @@ vector_path_add(oVectorLine,vecBarria4RuinsAccess,0,0,0);</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1936</w>
-    <h>1216</h>
+    <w>1016</w>
+    <h>910</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,9 +27,9 @@ vector_path_add(oVectorLine,vecBarria4RuinsAccess,0,0,0);</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>1</page>
-    <xoffset>-177</xoffset>
-    <yoffset>-82</yoffset>
+    <page>2</page>
+    <xoffset>448</xoffset>
+    <yoffset>659</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="flrDirt" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -57,7 +57,9 @@ vector_path_add(oVectorLine,vecBarria4RuinsAccess,0,0,0);</code>
     <instance objName="oTransitionTubeUD" x="320" y="480" name="inst_35287E41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDoorGuideS" x="320" y="432" name="inst_48B3EC86" locked="0" code="scDefineDoor(Doors.dBlue);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="tilRuinsInnerWalls" x="256" y="432" w="32" h="48" xo="64" yo="0" id="10050500" name="inst_9325F99C" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>

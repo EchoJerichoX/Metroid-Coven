@@ -56,8 +56,8 @@
     <point>304,640,100</point>
     <point>304,704,100</point>
     <point>288,720,100</point>
-    <point>288,768,100</point>
-    <point>224,768,100</point>
+    <point>256,720,100</point>
+    <point>224,720,100</point>
     <point>224,688,100</point>
     <point>240,656,100</point>
     <point>240,640,100</point>
@@ -73,8 +73,8 @@
     <point>80,608,100</point>
     <point>64,576,100</point>
     <point>64,544,100</point>
-    <point>0,544,100</point>
-    <point>0,480,100</point>
+    <point>48,544,100</point>
+    <point>48,480,100</point>
     <point>192,480,100</point>
     <point>208,496,100</point>
     <point>224,496,100</point>

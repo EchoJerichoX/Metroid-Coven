@@ -108,7 +108,7 @@ if (fadeStage > -1)
                 fadeStage = 2;
                 canenter = false;
                 gonextroom = 1;
-                targetroom = IntroRoom;
+                targetroom = rmIntro1;
                 scMusic(0,eId.musicselected,0,0);
             }
             if (keyboard_check_pressed(vk_escape))

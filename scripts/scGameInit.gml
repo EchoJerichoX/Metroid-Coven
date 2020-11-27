@@ -16,7 +16,7 @@ region = 0; // Determines what region player is in.
 regionname = "Default"; // Name of region player is in.
 fullscreen = 0; // Determines whether the game is in fullscreen or not.
 scTitleInit(); // Initialize various title variables.
-StartRoom = TutorialStart; // Determines where we go after the player leaves the title screen.
+StartRoom = rmBarria1LandingSite; // Determines where we go after the player leaves the title screen.
 wait = 120; // Delay to start intro scene.
 tutorialmessageshown = 0; // Has the tutorial "welcome" message been shown?
 scHUDInit(); // Initialize various HUD variables.
@@ -131,4 +131,4 @@ scDefineExpansions(); // Initialize expansions to prevent re-acquisitions.
 scDefineNBDoor(); // Initialize non-blue doors to prevent re-opening.
 window_set_cursor(cr_none); // Hide the mouse cursor because we use our own.
 sound_global_volume(1); // Master volume control.
-InfoURL = "https://bit.ly/2Pfox2a"; // URL to Metroid Coven design document.
+InfoURL = "https://bit.ly/34MTbt1"; // URL to Metroid Coven design document.

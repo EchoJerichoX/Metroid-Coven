@@ -27,7 +27,7 @@ mmsx = oPlayer.x/mscale; // Top-left corner of minimap's
 mmsy = oPlayer.y/mscale; //   drawing area.
 mmsx = clamp(mmsx,mmw/2,sprite_get_width(minimapspr)-mmw/2);    // Stop map from drawing outside of 
 mmsy = clamp(mmsy,mmh/2,sprite_get_height(minimapspr)-mmh/2);   //   where player can see.
-if (transstep != -1) {
+if (transstep = -1) {
     draw_sprite_part_ext(minimapspr,mimg,mmsx-mmw/2,mmsy-mmh/2,
                          mmw,mmh,mmx-mmw,mmy,1,1,c_white,hudopacity*0.75);
 }

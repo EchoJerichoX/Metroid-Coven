@@ -63,8 +63,8 @@
     <point>1712,96,100</point>
     <point>1744,80,100</point>
     <point>1760,64,100</point>
-    <point>1760,0,100</point>
-    <point>1824,0,100</point>
+    <point>1760,48,100</point>
+    <point>1792,48,100</point>
     <point>1824,48,100</point>
     <point>1840,80,100</point>
     <point>1840,128,100</point>
@@ -117,8 +117,8 @@
     <point>1328,384,100</point>
     <point>1328,400,100</point>
     <point>1312,432,100</point>
-    <point>1312,512,100</point>
-    <point>1248,512,100</point>
+    <point>1312,464,100</point>
+    <point>1248,464,100</point>
     <point>1248,416,100</point>
     <point>1264,384,100</point>
     <point>1264,368,100</point>

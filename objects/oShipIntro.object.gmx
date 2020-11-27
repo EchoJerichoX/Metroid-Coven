@@ -337,7 +337,7 @@ if (room = rmIntro2)
                 if (blackalpha &lt; 1) blackalpha += 0.0125;
                 if (blackalpha = 1) moverooms -= 1;
                 if (moverooms = 0)
-                    { scMusic(0,eId.musicselected,1,0); room_goto(rmIntro2); }
+                    { scMusic(0,eId.musicselected,1,0); room_goto(eId.StartRoom); }
             }
         }
         
